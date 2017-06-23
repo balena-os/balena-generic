@@ -1,0 +1,3 @@
+[submodule "resin-yocto-scripts"]
+	path = resin-yocto-scripts
+	url = https://github.com/resin-os/resin-yocto-scripts.git

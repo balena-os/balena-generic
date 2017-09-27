@@ -4,7 +4,6 @@ module.exports =
 	name: 'Generic amd64'
 	arch: 'amd64'
 	state: 'released'
-	isDependent: true
 	yocto:
 		machine: ''
 		deployArtifact: 'empty'

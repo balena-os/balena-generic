@@ -4,6 +4,12 @@ set -e
 
 MACHINE=$1
 
+# Install node 8.x
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm install 8
+
+# Build deploy artifacts
 $WORKSPACE/resin-yocto-scripts/build/build-device-type-json.sh
 
 # Write deploy artifacts

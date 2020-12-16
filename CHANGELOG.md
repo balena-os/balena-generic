@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.12.4+rev2
+## (2020-12-16)
+
+* Add versionist support [Giovanni Garufi]
+
 # v2.12.4+rev1
 ## (2018-03-23)
 

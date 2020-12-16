@@ -28,5 +28,5 @@ module.exports =
 	yocto:
 		machine: 'generic-aarch64'
 		image: 'resin-image'
-		version: 'yocto-pyro'
+		version: 'yocto-dunfell'
 		deployArtifact: 'docker-image'

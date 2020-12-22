@@ -5,3 +5,4 @@ This repository enables building resin.io for chosen generic machines.
 
 ## Supported machines
 * generic-aarch64
+* generic-amd64

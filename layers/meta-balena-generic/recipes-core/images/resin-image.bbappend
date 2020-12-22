@@ -14,3 +14,7 @@ RESIN_BOOT_PARTITION_FILES_append_generic-aarch64 = " \
     grub/arm64-efi/:/EFI/BOOT/arm64-efi/ \
     "
 
+RESIN_BOOT_PARTITION_FILES_append_generic-amd64 = " \
+    grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
+    grub/x86_64-efi/:/EFI/BOOT/x86_64-efi/ \
+    "

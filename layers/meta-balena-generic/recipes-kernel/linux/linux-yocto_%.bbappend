@@ -20,3 +20,8 @@ RESIN_CONFIGS[serial] = " \
     CONFIG_SERIAL_8250=y \
     CONFIG_SERIAL_8250_CONSOLE=y \
     "
+RESIN_CONFIGS_append = " nvme"
+
+RESIN_CONFIGS[nvme] = " \
+    CONFIG_BLK_DEV_NVME=y \
+    "

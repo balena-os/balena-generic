@@ -1,4 +1,4 @@
-#  resin-generic repository
+#  balena-generic repository
 
 ## Clone/Initialize the repository
 
@@ -14,7 +14,7 @@ bring in all the needed dependencies.
 
 ### Build flags
 
-* Consult layers/meta-resin/README.md for info on various build flags (setting
+* Consult layers/meta-balena/README.md for info on various build flags (setting
 up serial console support for example) and build prerequisites. Build flags can
 be set by using the build script (barys) or by manually modifying `local.conf`.
 
@@ -23,14 +23,14 @@ See below for using the build script.
 ### Build this repository
 
 * Run the build script:
-  `./resin-yocto-scripts/build/barys`
+  `./balena-yocto-scripts/build/barys`
 
 * You can also run barys with the -h switch to inspect the available options
 
 ### Custom build using this repository
 
 * Run the build script in dry run mode to setup an empty `build` directory
-    `./resin-yocto-scripts/build/barys --remove-build --dry-run`
+    `./balena-yocto-scripts/build/barys --remove-build --dry-run`
 
 * Edit the `local.conf` in the `build/conf` directory
 
@@ -43,7 +43,7 @@ See below for using the build script.
 
 ### Issues
 
-For issues we use an aggregated github repository available [here](https://github.com/resin-os/resinos/issues). When you create issue make sure you select the right labels.
+For issues we use an aggregated github repository available [here](https://github.com/balena-os/balena-os/issues). When you create issue make sure you select the right labels.
 
 ### Pull requests
 

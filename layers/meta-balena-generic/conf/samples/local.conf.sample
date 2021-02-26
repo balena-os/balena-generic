@@ -2,7 +2,7 @@
 #MACHINE ?= "generic-aarch64.conf"
 #MACHINE ?= "generic-armv7hf.conf"
 
-# More info meta-resin/README.md
+# More info meta-balena/README.md
 #RESIN_CONNECTABLE ?= "1"
 #RESIN_CONNECTABLE_ENABLE_SERVICES ?= "0"
 #TARGET_REPOSITORY ?= ""

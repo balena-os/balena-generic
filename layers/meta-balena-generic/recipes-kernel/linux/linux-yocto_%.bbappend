@@ -39,3 +39,9 @@ RESIN_CONFIGS_append = " nvme"
 RESIN_CONFIGS[nvme] = " \
     CONFIG_BLK_DEV_NVME=y \
     "
+
+RESIN_CONFIGS_append = " aws"
+
+RESIN_CONFIGS[aws] = " \
+    CONFIG_ENA_ETHERNET=m \
+    "

@@ -13,3 +13,10 @@ RESIN_CONFIGS[efi] = " \
     CONFIG_EFIVAR_FS=y \
     CONFIG_ACPI=y \
     "
+
+RESIN_CONFIGS_append = " serial"
+
+RESIN_CONFIGS[serial] = " \
+    CONFIG_SERIAL_8250=y \
+    CONFIG_SERIAL_8250_CONSOLE=y \
+    "

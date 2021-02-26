@@ -1,1 +1,27 @@
-[]
+- commits:
+    - subject: Update to Dunfell
+      hash: 18fae4a347e78f85c0b1d3292e7ae1d23411063b
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+        Changelog-entry: Update to Dunfell
+        changelog-entry: Update to Dunfell
+      author: Joseph Kogut
+      nested: []
+    - subject: Add versionist support
+      hash: 05a639ff9a512b2ded5eabbf6be4757c760f7477
+      body: |
+        Also adds package.json to include the dependencies required in
+        versionist.conf.js
+      footer:
+        Changelog-entry: Add versionist support
+        changelog-entry: Add versionist support
+        Signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        signed-off-by: Giovanni Garufi <giovanni@resin.io>
+      author: Giovanni Garufi
+      nested: []
+  version: 2.65.0+rev1
+  date: 2021-02-23T19:59:59.711Z

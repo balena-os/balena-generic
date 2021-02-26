@@ -20,6 +20,20 @@ RESIN_CONFIGS[serial] = " \
     CONFIG_SERIAL_8250=y \
     CONFIG_SERIAL_8250_CONSOLE=y \
     "
+
+RESIN_CONFIGS_append = " virtio"
+
+RESIN_CONFIGS[virtio] = " \
+    CONFIG_VIRTIO=y \
+    CONFIG_VIRTIO_PCI=y \
+    CONFIG_SCSI_VIRTIO=y \
+    CONFIG_VIRTIO_NET=y \
+    CONFIG_VIRTIO_BLK=y \
+    CONFIG_VIRTIO_BLK_SCSI=y \
+    CONFIG_VIRTIO_CONSOLE=y \
+    CONFIG_I6300ESB_WDT=m \
+    "
+
 RESIN_CONFIGS_append = " nvme"
 
 RESIN_CONFIGS[nvme] = " \

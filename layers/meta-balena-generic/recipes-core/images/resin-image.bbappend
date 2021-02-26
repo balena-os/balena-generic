@@ -18,3 +18,5 @@ RESIN_BOOT_PARTITION_FILES_append_generic-amd64 = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     grub/x86_64-efi/:/EFI/BOOT/x86_64-efi/ \
     "
+# Increase image rootfs size to accomodate more drivers and functionality in generic images
+IMAGE_ROOTFS_SIZE = "1048576"

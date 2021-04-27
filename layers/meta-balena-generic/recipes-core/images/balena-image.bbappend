@@ -1,6 +1,8 @@
 DEPENDS_remove = "kernel-modules-headers"
 IMAGE_FSTYPES = " balenaos-img"
 
+PARTITION_TABLE_TYPE = "gpt"
+
 BALENA_IMAGE_BOOTLOADER = "grub-efi"
 
 BALENA_BOOT_PARTITION_FILES = " \

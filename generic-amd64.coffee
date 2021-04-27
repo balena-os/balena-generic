@@ -27,8 +27,8 @@ module.exports =
 
 	yocto:
 		machine: 'generic-amd64'
-		image: 'resin-image'
-		fstype: 'resinos-img'
+		image: 'balena-image'
+		fstype: 'balenaos-img'
 		version: 'yocto-dunfell'
 		deployArtifact: 'docker-image'
 

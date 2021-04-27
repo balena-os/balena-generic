@@ -68,6 +68,53 @@ do_deploy_append() {
     fi
 }
 
+do_configure_append () {
+    mkdir -p certs
+    if [ "x${SIGN_API}" = "x" ]; then
+        return 0
+    fi
+
+    export CURL_CA_BUNDLE="${STAGING_DIR_NATIVE}/etc/ssl/certs/ca-certificates.crt"
+
+    RESPONSE_FILE=$(mktemp)
+    curl --fail "${SIGN_API}/kmod/cert/${SIGN_KMOD_KEY_ID}" > "${RESPONSE_FILE}"
+    jq -r .cert "${RESPONSE_FILE}" > certs/balenaos.crt
+    rm -f "${RESPONSE_FILE}"
+}
+
+do_sign () {
+    if [ "x${SIGN_API}" = "x" ]; then
+        return 0
+    fi
+
+    export CURL_CA_BUNDLE="${STAGING_DIR_NATIVE}/etc/ssl/certs/ca-certificates.crt"
+
+    TO_SIGN=$(mktemp)
+
+    # Sign kernel for grub
+    echo "${B}/${KERNEL_OUTPUT_DIR}/${KERNEL_IMAGETYPE}.initramfs" > "${TO_SIGN}"
+
+    for FILE_TO_SIGN in $(cat "${TO_SIGN}")
+    do
+        REQUEST_FILE=$(mktemp)
+        RESPONSE_FILE=$(mktemp)
+        echo "{\"key_id\": \"${SIGN_GRUB_KEY_ID}\", \"payload\": \"$(base64 -w 0 ${FILE_TO_SIGN})\"}" > "${REQUEST_FILE}"
+        curl --fail "${SIGN_API}/gpg/sign" -X POST -H "Content-Type: application/json" -H "X-API-Key: ${SIGN_API_KEY}" -d "@${REQUEST_FILE}" > "${RESPONSE_FILE}"
+        jq -r .signature < "${RESPONSE_FILE}" | base64 -d > "${FILE_TO_SIGN}.sig"
+        rm -f "${REQUEST_FILE}" "${RESPONSE_FILE}"
+    done
+
+    rm -f "${TO_SIGN}"
+}
+
+addtask sign before do_deploy after do_bundle_initramfs
+
+do_deploy_append() {
+    if [ "x${SIGN_API}" != "x" ]; then
+        install -m 0644 ${B}/${KERNEL_OUTPUT_DIR}/${KERNEL_IMAGETYPE}.initramfs.sig ${DEPLOYDIR}/${KERNEL_IMAGETYPE}.sig
+    fi
+}
+
 BALENA_CONFIGS_append = " efi"
 
 BALENA_CONFIGS[efi] = " \

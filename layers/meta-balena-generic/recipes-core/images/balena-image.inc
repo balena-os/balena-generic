@@ -23,9 +23,12 @@ BALENA_BOOT_PARTITION_FILES_append_genericx86-64-ext = " \
     "
 
 # Increase image rootfs size to accomodate more drivers and functionality in generic images
+
 # This matches the value in the balena-intel genericx86-64-ext DT for compatibility
 IMAGE_ROOTFS_SIZE = "1024000"
 
 IMAGE_INSTALL_append = " \
     linux-firmware \
     "
+
+IMAGE_INSTALL_append = " cryptsetup e2fsprogs-mke2fs efibootmgr lvm2-udevrules tpm2-tools"

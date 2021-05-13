@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove unused dependent-devices folder
+      hash: 0c28a070872b12e6f97bb5d8c5f5bdc507a22c3a
+      body: |
+        This is not a current product feature.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Remove unused dependent-devices folder
+        changelog-entry: Remove unused dependent-devices folder
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.78.2+rev1
+  date: 2021-05-13T17:50:30.635Z
+- commits:
     - subject: Update meta-balena from v2.65.0 to v2.71.3
       hash: 6bf5e831eaa33fa1231008054d402ea05526177e
       body: |

@@ -3,24 +3,24 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 
 module.exports =
 	version: 1
-	slug: 'generic-aarch64'
-	name: 'Generic AARCH64 (ARMv8)'
-	arch: 'aarch64'
+	slug: 'generic-amd64'
+	name: 'Generic AMD64 (x86-64)'
+	arch: 'amd64'
 	state: 'new'
 
 	instructions: commonImg.instructions
 	gettingStartedLink:
-		windows: 'https://www.balena.io/docs/learn/getting-started/generic-aarch64/nodejs/'
-		osx: 'https://www.balena.io/docs/learn/getting-started/generic-aarch64/nodejs/'
-		linux: 'https://www.balena.io/docs/learn/getting-started/generic-aarch64/nodejs/'
+		windows: 'https://www.balena.io/docs/learn/getting-started/generic-amd64/nodejs/'
+		osx: 'https://www.balena.io/docs/learn/getting-started/generic-amd64/nodejs/'
+		linux: 'https://www.balena.io/docs/learn/getting-started/generic-amd64/nodejs/'
 	supportsBlink: false
 
 	yocto:
-		machine: 'generic-aarch64'
+		machine: 'generic-amd64'
 		image: 'balena-image'
 		fstype: 'balenaos-img'
 		version: 'yocto-dunfell'
-		deployArtifact: 'balena-image-generic-aarch64.balenaos-img'
+		deployArtifact: 'balena-image-generic-amd64.balenaos-img'
 		compressed: true
 
 	configuration:

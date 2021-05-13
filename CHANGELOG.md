@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.74.0+rev2
+## (2021-05-13)
+
+* Remove unused dependent-devices folder [Alex Gonzalez]
+
 # v2.74.0+rev1
 ## (2021-05-13)
 

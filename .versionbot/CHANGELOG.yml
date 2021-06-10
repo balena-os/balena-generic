@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.14.3
+      hash: 3cc3c27205c20cd5488370cbaa8926b973e94bd4
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.14.3
+        changelog-entry: Update balena-yocto-scripts to v1.14.3
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.74.0+rev3
+  date: 2021-06-10T16:52:05.470Z
+- commits:
     - subject: Remove unused dependent-devices folder
       hash: 0c28a070872b12e6f97bb5d8c5f5bdc507a22c3a
       body: |

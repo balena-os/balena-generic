@@ -31,4 +31,5 @@ IMAGE_INSTALL_append = " \
     linux-firmware \
     "
 
-IMAGE_INSTALL_append = " cryptsetup e2fsprogs-mke2fs efibootmgr lvm2-udevrules tpm2-tools"
+IMAGE_INSTALL_append = " e2fsprogs-mke2fs efibootmgr"
+IMAGE_INSTALL_append_generic-amd64-fde = " cryptsetup libtss2-tcti-device lvm2-udevrules tpm2-tools"

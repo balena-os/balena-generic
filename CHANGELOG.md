@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.74.0+rev4
+## (2021-06-10)
+
+* meta-balena-generic: default to linux v5.10 [Joseph Kogut]
+
 # v2.74.0+rev3
 ## (2021-06-10)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update balena-yocto-scripts from v1.14.3 to v1.14.8
+      hash: 33d490ced95a8c6ea062aa8b270ac198cdb70990
+      body: |
+        Update balena-yocto-scripts from 1.14.3 to 1.14.8
+      footer:
+        Changelog-entry: Update balena-yocto-scripts from v1.14.3 to v1.14.8
+        changelog-entry: Update balena-yocto-scripts from v1.14.3 to v1.14.8
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.74.0+rev5
+  date: 2021-07-27T19:03:55.263Z
+- commits:
     - subject: 'meta-balena-generic: default to linux v5.10'
       hash: 850aee7cb1e23276760aa0a03241cd300b2b40a4
       body: ''

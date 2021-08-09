@@ -5,7 +5,9 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 DEPENDS_append = " ca-certificates-native coreutils-native curl-native jq-native"
 
 SRC_URI += " \
-    file://efi-secureboot.patch \
+    file://0001-efi-Add-an-EFI_SECURE_BOOT-flag-to-indicate-secure-b.patch \
+    file://0001-security-lockdown-expose-a-hook-to-lock-the-kernel-d.patch \
+    file://0001-efi-Lock-down-the-kernel-if-booted-in-secure-boot-mo.patch \
 "
 
 SRC_URI_append_genericx86-64-ext = " \

@@ -1,4 +1,47 @@
 - commits:
+    - subject: 'layers/meta-rust: update to hardknott'
+      hash: 47c325c78ab459256ff565da487c9bfb21aae52a
+      body: ''
+      footer:
+        Changelog-entry: 'layers/meta-rust: update to hardknott'
+        changelog-entry: 'layers/meta-rust: update to hardknott'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'layers/meta-openembedded: update to hardknott'
+      hash: b75d9ab0ff35b376a14481e9fa8ee501a350bb2d
+      body: ''
+      footer:
+        Changelog-entry: 'layers/meta-openembedded: update to hardknott'
+        changelog-entry: 'layers/meta-openembedded: update to hardknott'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'layers/meta-balena: update to hardknott'
+      hash: 4e83cb5d40fe5a86807510362b7caaa593684c82
+      body: ''
+      footer:
+        Changelog-entry: 'layers/meta-balena: update to hardknott'
+        changelog-entry: 'layers/meta-balena: update to hardknott'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'layers/poky: update to hardknott'
+      hash: 1c9afd0e8625d85ce65600e9263d55c1c613e3d9
+      body: ''
+      footer:
+        Changelog-entry: 'layers/poky: update to hardknott'
+        changelog-entry: 'layers/poky: update to hardknott'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.74.0+rev5
+  date: 2021-08-09T20:52:38.938Z
+- commits:
     - subject: 'meta-balena-generic: default to linux v5.10'
       hash: 850aee7cb1e23276760aa0a03241cd300b2b40a4
       body: ''

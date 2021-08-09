@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.74.0+rev5
+## (2021-08-09)
+
+* layers/meta-rust: update to hardknott [Joseph Kogut]
+* layers/meta-openembedded: update to hardknott [Joseph Kogut]
+* layers/meta-balena: update to hardknott [Joseph Kogut]
+* layers/poky: update to hardknott [Joseph Kogut]
+
 # v2.74.0+rev4
 ## (2021-06-10)
 

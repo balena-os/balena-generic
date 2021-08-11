@@ -9,7 +9,7 @@ DEPENDS_append = " ca-certificates-native coreutils-native curl-native jq-native
 GRUB_BUILDIN += " gcry_sha256 gcry_sha512 gcry_rijndael gcry_rsa luks tpm"
 
 do_configure_append_class-target() {
-    if [ "x${SIGN_API}" = "x" ]; then
+    if [ "${SIGN}" != "true" ]; then
         return 0
     fi
 
@@ -26,7 +26,7 @@ do_configure_append_class-target() {
 do_mkimage() {
     cd ${B}
 
-    if [ "x${SIGN_API}" != "x" ]; then
+    if [ "${SIGN}" = "true" ]; then
         GRUB_PUBKEY_ARG="--pubkey "${B}/pubkey.gpg""
     fi
 
@@ -46,7 +46,7 @@ do_sign_efi_class-native() {
 }
 
 do_sign_efi_append_generic-amd64-fde () {
-    if [ "x${SIGN_API}" = "x" ]; then
+    if [ "${SIGN}" != "true" ]; then
         return 0
     fi
 

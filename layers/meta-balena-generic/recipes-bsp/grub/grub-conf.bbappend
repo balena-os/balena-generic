@@ -1,7 +1,7 @@
 DEPENDS_append += " ca-certificates-native coreutils-native curl-native jq-native"
 
 do_sign() {
-    if [ "x${SIGN_API}" = "x" ]; then
+    if [ "${SIGN}" != "true" ]; then
         return 0
     fi
 
@@ -27,7 +27,7 @@ do_sign() {
 }
 
 do_deploy_append() {
-    if [ "x${SIGN_API}" != "x" ]; then
+    if [ "${SIGN}" = "true" ]; then
         install -m 644 ${B}/grub.cfg_external.sig ${DEPLOYDIR}/grub.cfg_external.sig
         install -m 644 ${B}/grub.cfg_internal.sig ${DEPLOYDIR}/grub.cfg_internal.sig
     fi

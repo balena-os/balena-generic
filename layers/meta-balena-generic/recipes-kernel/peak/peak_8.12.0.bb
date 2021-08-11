@@ -58,7 +58,7 @@ do_install() {
 }
 
 do_sign () {
-    if [ "x${SIGN_API}" = "x" ]; then
+    if [ "${SIGN}" != "true" ]; then
         return 0
     fi
 

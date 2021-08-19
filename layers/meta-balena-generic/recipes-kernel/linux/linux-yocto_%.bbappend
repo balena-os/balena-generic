@@ -11,8 +11,6 @@ SRC_URI_append_generic-aarch64 = " \
     "
 
 KCONFIG_MODE="--alldefconfig"
-COMPATIBLE_MACHINE_generic-aarch64 = "generic-aarch64"
-COMPATIBLE_MACHINE_generic-amd64 ?= "generic-amd64"
 
 BALENA_CONFIGS_append = " efi"
 

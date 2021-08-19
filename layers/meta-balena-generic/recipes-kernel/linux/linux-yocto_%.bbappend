@@ -1,10 +1,15 @@
 inherit kernel-resin
 
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+
+SRC_URI_append_generic-amd64 = " \
+    file://defconfig;sha256sum=b3bd4d2b6a45d94603890880c0941bb554a429336bf8c088993602c126c3e137 \
+    "
+
 KCONFIG_MODE="--alldefconfig"
 COMPATIBLE_MACHINE_generic-aarch64 = "generic-aarch64"
 COMPATIBLE_MACHINE_generic-amd64 ?= "generic-amd64"
 KBUILD_DEFCONFIG_generic-aarch64 ?= "defconfig"
-KBUILD_DEFCONFIG_generic-amd64 ?= "x86_64_defconfig"
 
 BALENA_CONFIGS_append = " efi"
 

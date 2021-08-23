@@ -24,5 +24,5 @@ BALENA_BOOT_PARTITION_FILES_append_generic-amd64 = " \
 IMAGE_ROOTFS_SIZE = "1048576"
 
 IMAGE_INSTALL_append_generic-amd64 = " \
-    linux-firmware-iwlwifi \
+    linux-firmware \
     "

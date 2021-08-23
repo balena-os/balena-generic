@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.74.0+rev8
+## (2021-08-23)
+
+* generic-amd64: install complete linux-firmware [Joseph Kogut]
+
 # v2.74.0+rev7
 ## (2021-08-05)
 

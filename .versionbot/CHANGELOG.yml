@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'generic-amd64: install complete linux-firmware'
+      hash: 85c4d7f0249d9f7c36c99767176f493b166ebe52
+      body: |
+        Instead of specifying specific subpackages, install entire
+        linux-firmware package.
+      footer:
+        Changelog-entry: 'generic-amd64: install complete linux-firmware'
+        changelog-entry: 'generic-amd64: install complete linux-firmware'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.74.0+rev8
+  date: 2021-08-23T21:28:19.080Z
+- commits:
     - subject: 'balena-image: add linux-firmware-iwlwifi to generic-amd64'
       hash: 025bc0331b2c2d5599195ac43b1c18f2a139ccf5
       body: |

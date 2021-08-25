@@ -1,4 +1,79 @@
 - commits:
+    - subject: Enable firmware compression
+      hash: 4cc28bd8f72a07c2c23ddfd0c1445adeee10c677
+      body: |
+        Compress firmware to save space and disk writes
+      footer:
+        Changelog-entry: Enable firmware compression
+        changelog-entry: Enable firmware compression
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: Update meta-balena from v2.83.10 to v2.83.11
+      hash: 81bd0720a78b7278c177c6e1f6f063dc18056767
+      body: |
+        Update meta-balena from 2.83.10 to 2.83.11
+      footer:
+        Changelog-entry: Update meta-balena from v2.83.10 to v2.83.11
+        changelog-entry: Update meta-balena from v2.83.10 to v2.83.11
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested:
+        - commits:
+            - subject: 'linux-firmware: Use wildcards when selecting files to package'
+              hash: 16598bcffda7206d9a2ab9d96860cecf7de62756
+              body: >
+                Firmware files can be compressed with an xz extension or not, so
+                use
+
+                wildcards to cover both cases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'linux-firmware: Add firmware compression support'
+              hash: 2ee6d2e652772d28c25df94aa400e7ccd9f207de
+              body: >
+                This commit adds a FIRMWARE_COMPRESSION distro configuration
+                that
+
+                performs the compression of linux-firmware files. Only kernel
+                versions
+
+                above 5.3 support loading compressed firmware.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: >-
+                kernel-balena: Support firmware compression from kernel version
+                5.3
+              hash: c8faa130b88f11af86619d69a115be96dfbc894a
+              body: >
+                Kernel version 5.3 supports loading compressed firmware files
+                saving
+
+                storage space.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.83.11
+          date: 2021-08-24T14:52:41.041Z
+  version: 2.83.11+rev1
+  date: 2021-08-25T18:21:10.767Z
+- commits:
     - subject: Update meta-balena from v2.74.0 to v2.83.10
       hash: edfa5b71cf867a9809cb47bb49ac6a2eb62105a5
       body: |

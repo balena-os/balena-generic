@@ -1,6 +1,23 @@
 Change log
 -----------
 
+# v2.83.11+rev1
+## (2021-08-25)
+
+* Enable firmware compression [Joseph Kogut]
+
+<details>
+<summary> Update meta-balena from v2.83.10 to v2.83.11 [Joseph Kogut] </summary>
+
+> ## meta-balena-2.83.11
+> ### (2021-08-24)
+> 
+> * linux-firmware: Use wildcards when selecting files to package [Alex Gonzalez]
+> * linux-firmware: Add firmware compression support [Alex Gonzalez]
+> * kernel-balena: Support firmware compression from kernel version 5.3 [Alex Gonzalez]
+> 
+</details>
+
 # v2.83.10+rev1
 ## (2021-08-23)
 

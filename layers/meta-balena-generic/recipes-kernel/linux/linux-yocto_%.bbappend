@@ -12,6 +12,9 @@ SRC_URI_append_generic-aarch64 = " \
 
 KCONFIG_MODE="--alldefconfig"
 
+# enable AUFS support from kernel-balena
+BALENA_CONFIGS_append = " aufs"
+
 BALENA_CONFIGS_append = " efi"
 
 BALENA_CONFIGS[efi] = " \

@@ -1,4 +1,65 @@
 - commits:
+    - subject: Enable AUFS module for all devices
+      hash: a6aa6fa1f29419c1a22d4c3bfd34f91e99e76e5a
+      body: |
+        We still need AUFS for builders when building images for devices with
+        BALENA_STORAGE="aufs", so include the module by default.
+      footer:
+        Changelog-entry: Enable AUFS module for all devices
+        changelog-entry: Enable AUFS module for all devices
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: Update linux-yocto to version 5.10.43
+      hash: 4e46a2448e2490a7af84efc9edc602aaf9c10849
+      body: |
+        This recipe comes from poky hardknott-3.3.2, copied from balena-intel
+        commit 8e5faed.
+      footer:
+        Changelog-entry: Update linux-yocto to version 5.10.43
+        changelog-entry: Update linux-yocto to version 5.10.43
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'linux-yocto: generic-aarch64: copy defconfig from debian'
+      hash: 704e1f468785ae8aaf29bd66fa3c4697a5c8faf7
+      body: |
+        Install a config for generic-aarch64, in kind with the generic-amd64
+        config copied from the genericx86-64-ext config. However, copy the
+        config directly from the Debian Bullseye linux-config-5.10 (5.10.46-4)
+        package, as we don't already have a config in use for this architecture.
+
+        Also save this as a defconfig.
+      footer:
+        Changelog-entry: 'linux-yocto: generic-aarch64: copy defconfig from debian'
+        changelog-entry: 'linux-yocto: generic-aarch64: copy defconfig from debian'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+    - subject: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
+      hash: 3afd7e4a002e270f72cf8d9319e7d62c418f0350
+      body: |
+        The linux-yocto package includes no defconfig, and specifying
+        KCONFIG_MODE="--alldefconfig" results in a config containing only
+        architecture defaults, with meta-balena overrides and machine specific
+        overrides. This results in a lack of hardware support unless it's
+        explicitly enabled.
+
+        Copy the full defconfig from balena-intel, used for the
+        genericx86-64-ext device type, itself based on an Ubuntu config.
+      footer:
+        Changelog-entry: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
+        changelog-entry: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.83.11+rev2
+  date: 2021-08-27T17:12:04.585Z
+- commits:
     - subject: Enable firmware compression
       hash: 4cc28bd8f72a07c2c23ddfd0c1445adeee10c677
       body: |

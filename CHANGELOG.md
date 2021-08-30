@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.83.11+rev2
+## (2021-08-27)
+
+* Enable AUFS module for all devices [Joseph Kogut]
+* Update linux-yocto to version 5.10.43 [Joseph Kogut]
+* linux-yocto: generic-aarch64: copy defconfig from debian [Joseph Kogut]
+* linux-yocto: generic-amd64: copy defconfig from generic86-64-ext [Joseph Kogut]
+
 # v2.83.11+rev1
 ## (2021-08-25)
 

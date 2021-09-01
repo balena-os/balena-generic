@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.83.11+rev3
+## (2021-09-01)
+
+* Match image rootfs size from genericx86-64-ext [Joseph Kogut]
+
 # v2.83.11+rev2
 ## (2021-08-27)
 

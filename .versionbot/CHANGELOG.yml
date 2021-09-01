@@ -1,4 +1,20 @@
 - commits:
+    - subject: Match image rootfs size from genericx86-64-ext
+      hash: 0c3c0163321853db9ea77484051b7bb696bb704f
+      body: |
+        Use the same image size as genericx86-64-ext for compatiblity. This
+        allows the generic-amd64 image to replace genericx86-64-ext when they
+        reach feature parity, without causing hostapp-update problems later.
+      footer:
+        Changelog-entry: Match image rootfs size from genericx86-64-ext
+        changelog-entry: Match image rootfs size from genericx86-64-ext
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.83.11+rev3
+  date: 2021-09-01T17:07:10.374Z
+- commits:
     - subject: Enable AUFS module for all devices
       hash: a6aa6fa1f29419c1a22d4c3bfd34f91e99e76e5a
       body: |

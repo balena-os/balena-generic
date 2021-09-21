@@ -1,1 +1,1 @@
-PACKAGE_INSTALL_append = " initramfs-module-cryptsetup"
+PACKAGE_INSTALL_append = " initramfs-module-cryptsetup initramfs-module-kexec"

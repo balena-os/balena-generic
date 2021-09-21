@@ -1,4 +1,17 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/grub-conf:"
+
 DEPENDS_append += " ca-certificates-native coreutils-native curl-native jq-native"
+
+SRC_URI += " \
+    file://grub.cfg_internal_luks_template \
+    "
+
+do_compile_append() {
+    sed -e 's/@@TIMEOUT@@/${BOOTLOADER_TIMEOUT}/' \
+        -e 's/@@KERNEL_IMAGETYPE@@/${KERNEL_IMAGETYPE}/' \
+        -e 's/@@KERNEL_CMDLINE@@/rootwait ${OS_KERNEL_CMDLINE} ${MACHINE_SPECIFIC_EXTRA_CMDLINE}/' \
+        "${WORKDIR}/grub.cfg_internal_luks_template" > "${B}/grub.cfg_internal_luks"
+}
 
 do_sign() {
     if [ "${SIGN}" != "true" ]; then
@@ -10,6 +23,7 @@ do_sign() {
 
     echo "${B}/grub.cfg_external" > "${TO_SIGN}"
     echo "${B}/grub.cfg_internal" >> "${TO_SIGN}"
+    echo "${B}/grub.cfg_internal_luks" >> "${TO_SIGN}"
 
     export CURL_CA_BUNDLE="${STAGING_DIR_NATIVE}/etc/ssl/certs/ca-certificates.crt"
 
@@ -30,6 +44,8 @@ do_deploy_append() {
     if [ "${SIGN}" = "true" ]; then
         install -m 644 ${B}/grub.cfg_external.sig ${DEPLOYDIR}/grub.cfg_external.sig
         install -m 644 ${B}/grub.cfg_internal.sig ${DEPLOYDIR}/grub.cfg_internal.sig
+        install -m 644 ${B}/grub.cfg_internal_luks ${DEPLOYDIR}/grub.cfg_internal_luks
+        install -m 644 ${B}/grub.cfg_internal_luks.sig ${DEPLOYDIR}/grub.cfg_internal_luks.sig
     fi
 }
 

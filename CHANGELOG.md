@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev2
+## (2021-09-22)
+
+* Remove generic-armv7ahf logo [Alex Gonzalez]
+
 # v2.85.3+rev1
 ## (2021-09-21)
 

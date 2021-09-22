@@ -1,4 +1,26 @@
 - commits:
+    - subject: Remove generic-armv7ahf logo
+      hash: a100a6e228dbf6b1beda75c8cc362d3163953024
+      body: >
+        This device-type was removed in
+        3ef7f46a0499689264f771aaa923cace5a375337,
+
+        so remove the logo too.
+
+
+        This device was never released to production, so there is no hostapp
+
+        created for it.
+      footer:
+        Changelog-entry: Remove generic-armv7ahf logo
+        changelog-entry: Remove generic-armv7ahf logo
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.3+rev2
+  date: 2021-09-22T14:46:45.106Z
+- commits:
     - subject: Update meta-balena from v2.83.11 to v2.85.3
       hash: 3fb363cb2af59729620795dbce6487624dd1133d
       body: |

@@ -16,7 +16,7 @@ BALENA_BOOT_PARTITION_FILES_append_generic-aarch64 = " \
     grub/arm64-efi/:/EFI/BOOT/arm64-efi/ \
     "
 
-BALENA_BOOT_PARTITION_FILES_append_generic-amd64 = " \
+BALENA_BOOT_PARTITION_FILES_append_genericx86-64-ext = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     grub/x86_64-efi/:/EFI/BOOT/x86_64-efi/ \
     "
@@ -24,6 +24,6 @@ BALENA_BOOT_PARTITION_FILES_append_generic-amd64 = " \
 # This matches the value in the balena-intel genericx86-64-ext DT for compatibility
 IMAGE_ROOTFS_SIZE = "1024000"
 
-IMAGE_INSTALL_append_generic-amd64 = " \
+IMAGE_INSTALL_append_genericx86-64-ext = " \
     linux-firmware \
     "

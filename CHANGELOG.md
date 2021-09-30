@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev3
+## (2021-09-29)
+
+* Rename generic-amd64 to genericx86-64-ext [Michal Toman]
+
 # v2.85.3+rev2
 ## (2021-09-22)
 

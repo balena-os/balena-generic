@@ -1,4 +1,21 @@
 - commits:
+    - subject: Rename generic-amd64 to genericx86-64-ext
+      hash: 63557bef9a828c0aef7d4196875bb2f77aed2bdc
+      body: >
+        We are moving the genericx86-64-ext device type from balena-intel
+
+        repository to balena-generic and need to keep the slug for the time
+        being.
+      footer:
+        Changelog-entry: Rename generic-amd64 to genericx86-64-ext
+        changelog-entry: Rename generic-amd64 to genericx86-64-ext
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev3
+  date: 2021-09-29T12:51:18.782Z
+- commits:
     - subject: Remove generic-armv7ahf logo
       hash: a100a6e228dbf6b1beda75c8cc362d3163953024
       body: >

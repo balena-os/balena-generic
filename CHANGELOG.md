@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev4
+## (2021-09-30)
+
+* Add support for AMI builds [Michal Toman]
+
 # v2.85.3+rev3
 ## (2021-09-29)
 

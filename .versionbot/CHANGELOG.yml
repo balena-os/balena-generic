@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add support for AMI builds
+      hash: e1a28d45f27f5c02cb1da5aae277c8a0a9f1f1c1
+      body: |
+        This brings support for building AMIs.
+      footer:
+        Changelog-entry: Add support for AMI builds
+        changelog-entry: Add support for AMI builds
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev4
+  date: 2021-09-30T18:57:44.938Z
+- commits:
     - subject: Rename generic-amd64 to genericx86-64-ext
       hash: 63557bef9a828c0aef7d4196875bb2f77aed2bdc
       body: >

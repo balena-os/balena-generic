@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix SSH injection during AMI build
+      hash: c1759f441c44a5ef9017a5f38e4a86c17057d91c
+      body: |
+        This fixes injection of SSH key into AMIs
+      footer:
+        Changelog-entry: Fix SSH injection during AMI build
+        changelog-entry: Fix SSH injection during AMI build
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev7
+  date: 2021-10-01T15:06:44.439Z
+- commits:
     - subject: Fix preloading for AMI builds
       hash: 903eb97c5178dd66c98957c0614a8e77cfa347b5
       body: |

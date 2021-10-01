@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev7
+## (2021-10-01)
+
+* Fix SSH injection during AMI build [Michal Toman]
+
 # v2.85.3+rev6
 ## (2021-10-01)
 

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev5
+## (2021-10-01)
+
+* Fix architecture detection for AMI builds [Michal Toman]
+
 # v2.85.3+rev4
 ## (2021-09-30)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix architecture detection for AMI builds
+      hash: 4d281916e85aec9ce0d28d4a7d9c0649711080e8
+      body: |
+        This adds a missing argument for architecture detecion in AMI builds
+      footer:
+        Changelog-entry: Fix architecture detection for AMI builds
+        changelog-entry: Fix architecture detection for AMI builds
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev5
+  date: 2021-10-01T04:25:18.118Z
+- commits:
     - subject: Add support for AMI builds
       hash: e1a28d45f27f5c02cb1da5aae277c8a0a9f1f1c1
       body: |

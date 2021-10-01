@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix preloading for AMI builds
+      hash: 903eb97c5178dd66c98957c0614a8e77cfa347b5
+      body: |
+        This updates balena-cli in automation scripts to fix preloading of AMIs
+      footer:
+        Changelog-entry: Fix preloading for AMI builds
+        changelog-entry: Fix preloading for AMI builds
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev6
+  date: 2021-10-01T10:31:47.499Z
+- commits:
     - subject: Fix architecture detection for AMI builds
       hash: 4d281916e85aec9ce0d28d4a7d9c0649711080e8
       body: |

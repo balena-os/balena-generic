@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev6
+## (2021-10-01)
+
+* Fix preloading for AMI builds [Michal Toman]
+
 # v2.85.3+rev5
 ## (2021-10-01)
 

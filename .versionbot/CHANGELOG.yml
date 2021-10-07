@@ -1,4 +1,19 @@
 - commits:
+    - subject: Support a wider range of RAID controllers
+      hash: 611057f78bdaef4587f866584602b407e09aaa1a
+      body: |
+        These are not all the available RAID controllers, got the list from
+        https://wiki.debian.org/LinuxRaidForAdmins
+      footer:
+        Changelog-entry: Support a wider range of RAID controllers
+        changelog-entry: Support a wider range of RAID controllers
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev8
+  date: 2021-10-06T15:39:06.671Z
+- commits:
     - subject: Fix SSH injection during AMI build
       hash: c1759f441c44a5ef9017a5f38e4a86c17057d91c
       body: |

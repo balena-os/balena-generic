@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev8
+## (2021-10-06)
+
+* Support a wider range of RAID controllers [Michal Toman]
+
 # v2.85.3+rev7
 ## (2021-10-01)
 

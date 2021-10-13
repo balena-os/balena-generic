@@ -45,7 +45,7 @@ do_sign_efi_class-native() {
     :
 }
 
-do_sign_efi_append_generic-amd64-fde () {
+do_sign_efi_append_genericx86-64-ext () {
     if [ "${SIGN}" != "true" ]; then
         return 0
     fi

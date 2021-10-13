@@ -1,4 +1,4 @@
-do_install_append_generic-amd64-fde () {
+do_install_append_genericx86-64-ext () {
     if [ "${SIGN}" != "true" ]; then
         return 0
     fi

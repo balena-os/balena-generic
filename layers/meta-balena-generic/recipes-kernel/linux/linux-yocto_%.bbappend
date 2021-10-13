@@ -70,7 +70,7 @@ do_deploy_append() {
     fi
 }
 
-do_configure_append_generic-amd64-fde () {
+do_configure_append_genericx86-64-ext () {
     mkdir -p certs
     if [ "${SIGN}" != "true" ]; then
         return 0
@@ -88,7 +88,7 @@ do_sign () {
     :
 }
 
-do_sign_append_generic-amd64-fde () {
+do_sign_append_genericx86-64-ext () {
     if [ "${SIGN}" != "true" ]; then
         return 0
     fi
@@ -115,7 +115,7 @@ do_sign_append_generic-amd64-fde () {
 
 addtask sign before do_deploy after do_bundle_initramfs
 
-do_deploy_append_generic-amd64-fde() {
+do_deploy_append_genericx86-64-ext() {
     if [ "${SIGN}" = "true" ]; then
         install -m 0644 ${B}/${KERNEL_OUTPUT_DIR}/${KERNEL_IMAGETYPE}.initramfs.sig ${DEPLOYDIR}/${KERNEL_IMAGETYPE}.sig
     fi

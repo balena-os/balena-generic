@@ -10,7 +10,7 @@ INTERNAL_DEVICE_BOOTLOADER_CONFIG = "grub.cfg_internal"
 INTERNAL_DEVICE_BOOTLOADER_CONFIG_PATH = "/EFI/BOOT/grub.cfg"
 
 
-do_install_append_generic-amd64-fde() {
+do_install_append_genericx86-64-ext() {
     echo "INTERNAL_DEVICE_BOOTLOADER_CONFIG_LUKS=grub.cfg_internal_luks" >> ${D}/${sysconfdir}/resin-init-flasher.conf
     echo "LUKS=1" >> ${D}/${sysconfdir}/resin-init-flasher.conf
 }

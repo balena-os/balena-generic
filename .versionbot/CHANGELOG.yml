@@ -1,4 +1,21 @@
 - commits:
+    - subject: 'meta-balena-generic: update local.conf.sample'
+      hash: c0535bacdf298377f30e25e153b93d9dff2f034b
+      body: |
+        Update the sample configuration file to use OS_DEVELOPMENT instead of
+        DEVELOPMENT_IMAGE.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: 'meta-balena-generic: update local.conf.sample'
+        changelog-entry: 'meta-balena-generic: update local.conf.sample'
+        Signed-off-by: Mark Corbin <mark@balena.io>
+        signed-off-by: Mark Corbin <mark@balena.io>
+      author: Mark Corbin
+      nested: []
+  version: 2.85.3+rev9
+  date: 2021-10-18T13:42:19.578Z
+- commits:
     - subject: Support a wider range of RAID controllers
       hash: 611057f78bdaef4587f866584602b407e09aaa1a
       body: |

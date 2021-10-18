@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev9
+## (2021-10-18)
+
+* meta-balena-generic: update local.conf.sample [Mark Corbin]
+
 # v2.85.3+rev8
 ## (2021-10-06)
 

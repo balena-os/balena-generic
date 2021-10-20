@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev10
+## (2021-10-20)
+
+* Fix race condition while preloading AMIs [Michal Toman]
+
 # v2.85.3+rev9
 ## (2021-10-18)
 

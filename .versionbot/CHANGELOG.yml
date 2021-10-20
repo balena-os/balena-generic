@@ -1,4 +1,21 @@
 - commits:
+    - subject: Fix race condition while preloading AMIs
+      hash: ebcf6f08bcf3b5fe8efaedd3f11eb5c326232c83
+      body: |
+        This should fix a race condition preloading AMIs while multiple builds
+        are running in parallel (e.g. dev and prod variants during deploy).
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Fix race condition while preloading AMIs
+        changelog-entry: Fix race condition while preloading AMIs
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev10
+  date: 2021-10-20T05:29:10.239Z
+- commits:
     - subject: 'meta-balena-generic: update local.conf.sample'
       hash: c0535bacdf298377f30e25e153b93d9dff2f034b
       body: |

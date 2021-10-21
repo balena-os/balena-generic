@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev11
+## (2021-10-21)
+
+* Fix inaccessible file while preloading AMI [Michal Toman]
+
 # v2.85.3+rev10
 ## (2021-10-20)
 

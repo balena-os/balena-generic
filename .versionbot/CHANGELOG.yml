@@ -1,4 +1,19 @@
 - commits:
+    - subject: Fix inaccessible file while preloading AMI
+      hash: d441ff46a1d56d370069dac9d07442f8742b2aaa
+      body: |
+        This should fix a bug in AMI preloading where the preloaded image
+        is inacessible by balena CLI.
+      footer:
+        Changelog-entry: Fix inaccessible file while preloading AMI
+        changelog-entry: Fix inaccessible file while preloading AMI
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev11
+  date: 2021-10-21T05:01:45.996Z
+- commits:
     - subject: Fix race condition while preloading AMIs
       hash: ebcf6f08bcf3b5fe8efaedd3f11eb5c326232c83
       body: |

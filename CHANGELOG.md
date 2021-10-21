@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev12
+## (2021-10-21)
+
+* Ensure boot partition is available before mounting it during AMI build [Michal Toman]
+
 # v2.85.3+rev11
 ## (2021-10-21)
 

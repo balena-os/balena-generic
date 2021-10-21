@@ -1,4 +1,19 @@
 - commits:
+    - subject: Ensure boot partition is available before mounting it during AMI build
+      hash: 5cc2562cf5d18e1adcaadbe2f7866f42733e29c4
+      body: |
+        This fixes random failures during AMI build where we tried to mount
+        the boot partition before the block device was populated by udev.
+      footer:
+        Changelog-entry: Ensure boot partition is available before mounting it during AMI build
+        changelog-entry: Ensure boot partition is available before mounting it during AMI build
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev12
+  date: 2021-10-21T18:04:11.406Z
+- commits:
     - subject: Fix inaccessible file while preloading AMI
       hash: d441ff46a1d56d370069dac9d07442f8742b2aaa
       body: |

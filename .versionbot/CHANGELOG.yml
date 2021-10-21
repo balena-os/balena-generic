@@ -1,4 +1,17 @@
 - commits:
+    - subject: AMI debug
+      hash: c75995a0dcc8f8e3f26c8a678a2aff4e0b2568e9
+      body: ''
+      footer:
+        Changelog-entry: AMI debug
+        changelog-entry: AMI debug
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.3+rev12
+  date: 2021-10-21T15:13:13.330Z
+- commits:
     - subject: Fix inaccessible file while preloading AMI
       hash: d441ff46a1d56d370069dac9d07442f8742b2aaa
       body: |

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.3+rev12
+## (2021-10-21)
+
+* AMI debug [Michal Toman]
+
 # v2.85.3+rev11
 ## (2021-10-21)
 

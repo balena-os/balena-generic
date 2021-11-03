@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update meta-balena to v2.85.16
+      hash: ab1a284940bff2ab2978a393b3c8736a086ef5e1
+      body: ''
+      footer:
+        Changelog-entry: Update meta-balena to v2.85.16
+        changelog-entry: Update meta-balena to v2.85.16
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.16+rev1
+  date: 2021-11-03T15:28:09.209Z
+- commits:
     - subject: Ensure boot partition is available before mounting it during AMI build
       hash: 5cc2562cf5d18e1adcaadbe2f7866f42733e29c4
       body: |

@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update meta-balena to v2.85.17
+      hash: ed85f9c67eb25c510abce7e83f38d3a7a82e51b4
+      body: ''
+      footer:
+        Changelog-entry: Update meta-balena to v2.85.17
+        changelog-entry: Update meta-balena to v2.85.17
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.85.17+rev1
+  date: 2021-11-05T06:13:03.846Z
+- commits:
     - subject: Update meta-balena to v2.85.16
       hash: ab1a284940bff2ab2978a393b3c8736a086ef5e1
       body: ''

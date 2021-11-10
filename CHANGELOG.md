@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.17+rev2
+## (2021-11-09)
+
+* genericx86-64-ext: Deploy both flasher and non-flasher artifacts [Kyle Harding]
+
 # v2.85.17+rev1
 ## (2021-11-05)
 

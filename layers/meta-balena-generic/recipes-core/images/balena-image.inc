@@ -27,4 +27,14 @@ IMAGE_ROOTFS_SIZE = "1024000"
 
 IMAGE_INSTALL_append = " \
     linux-firmware \
+    grub \
     "
+
+write_mbr() {
+    # Write MBR with first stage bootloader
+    dd if=${DEPLOY_DIR_IMAGE}/grub/boot.img of=${BALENA_RAW_IMG} conv=notrunc bs=1
+    # Write Post-MBR with second stage bootloader
+    dd if=${DEPLOY_DIR_IMAGE}/grub/core.img of=${BALENA_RAW_IMG} conv=notrunc seek=1 bs=$(expr 1024 \* ${DEVICE_SPECIFIC_SPACE})
+}
+
+IMAGE_POSTPROCESS_COMMAND_append = " write_mbr; "

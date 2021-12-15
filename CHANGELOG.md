@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v2.85.17+rev4
+## (2021-12-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts from v1.15.6 to v1.15.10 [Kyle Harding] </summary>
+
+> ## balena-yocto-scripts-1.15.10
+> ### (2021-12-02)
+> 
+> * balena-deploy: Set leviathan networkWireless mode based on device slug [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.9
+> ### (2021-11-26)
+> 
+> * Substitute the worker types for generic device slugs [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.8
+> ### (2021-11-03)
+> 
+> * Dockerfile_yocto-build-env: Install Honister host deps [Alexandru Costache]
+> 
+> ## balena-yocto-scripts-1.15.7
+> ### (2021-10-25)
+> 
+> * jenkins_build.sh: Fix deployment for discontinued device types [Alex Gonzalez]
+> * jenkins_build.sh: Remove PRIVATE_DT as it is unused [Alex Gonzalez]
+> * jenkins_build.sh: Fix lint warnings [Alex Gonzalez]
+> 
+</details>
+
 # v2.85.17+rev3
 ## (2021-11-23)
 

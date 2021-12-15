@@ -1,4 +1,103 @@
 - commits:
+    - subject: Update balena-yocto-scripts from v1.15.6 to v1.15.10
+      hash: b5fce8a4903187b819c24eecceb4c8d4cdcecb5f
+      body: |
+        Update balena-yocto-scripts from 1.15.6 to 1.15.10
+      footer:
+        Changelog-entry: Update balena-yocto-scripts from v1.15.6 to v1.15.10
+        changelog-entry: Update balena-yocto-scripts from v1.15.6 to v1.15.10
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested:
+        - commits:
+            - subject: >-
+                balena-deploy: Set leviathan networkWireless mode based on
+                device slug
+              hash: 891fadcbabe422e24245beb720cf7326a5ea1136
+              body: >
+                These changes are currently made in the Jenkins job, so it's
+                preferrable
+
+                to have it done by the packaging scripts.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.15.10
+          date: 2021-12-02T21:08:09.863Z
+        - commits:
+            - subject: Substitute the worker types for generic device slugs
+              hash: 7539caf732975a5b114abc371a5f6df211d12812
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.15.9
+          date: 2021-11-26T19:20:31.029Z
+        - commits:
+            - subject: 'Dockerfile_yocto-build-env: Install Honister host deps'
+              hash: efc069c609431965394912d3ffd34362a1108852
+              body: >
+                See
+                http://docs.yoctoproject.org/next/migration-guides/migration-3.4.html#new-host-dependencies
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: balena-yocto-scripts-1.15.8
+          date: 2021-11-03T10:01:44.980Z
+        - commits:
+            - subject: 'jenkins_build.sh: Fix deployment for discontinued device types'
+              hash: 84e65e937fef38625277fb8330ebd3179c466d04
+              body: >
+                Do not deploy dockerhub or hostapp images for discontinued
+                device types.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build.sh: Remove PRIVATE_DT as it is unused'
+              hash: 35fd54620ff5eb487b1323a1ead5fef9c157e385
+              body: >
+                The private device types status is checked with the API when
+                required.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build.sh: Fix lint warnings'
+              hash: 068a4197101a2db4aba60793e01564b67d14f820
+              body: |
+                Fix some minor lint warnings.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.15.7
+          date: 2021-10-25T16:57:03.955Z
+  version: 2.85.17+rev4
+  date: 2021-12-15T19:18:32.893Z
+- commits:
     - subject: Revert "Publish both flasher and raw images for Generic x86_64"
       hash: d8b749228178e33f3608f5f1e530962725605c59
       body: ''

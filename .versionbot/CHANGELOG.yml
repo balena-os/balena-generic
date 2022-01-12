@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.16.1
+      hash: 24767415f36b7df322c54e7af4d8e5380cf6f7b3
+      body: |
+        Update balena-yocto-scripts from v1.16.0 to v1.16.1
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.16.1
+        changelog-entry: Update balena-yocto-scripts to v1.16.1
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested:
+        - commits:
+            - subject: 'revert_overrides: Add intel-quark to architecture overrides'
+              hash: cbcbbc42c10700c77e17d8f9224e35bec90280fe
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.16.1
+          date: 2022-01-11T14:37:00.027Z
+  version: 2.85.17+rev5
+  date: 2022-01-12T14:20:49.820Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.16.0
       hash: 0029ab3b4dab3d7656cee14536f82435da5ccbb3
       body: |

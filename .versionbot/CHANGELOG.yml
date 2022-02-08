@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update meta-balena to v2.89.15
+      hash: 165a80809016af50e9bfadf383d21a7e22c13579
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update meta-balena to v2.89.15
+        changelog-entry: Update meta-balena to v2.89.15
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.89.15
+  title: "'Bump meta-balena to v2.89.15'"
+  date: 2022-02-08T12:58:27.706Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.17.0
       hash: bdf0615b1f21d6279b1d3da66d1cedfdc9b6c884
       body: |
@@ -13,7 +29,7 @@
       author: Alex Gonzalez
       nested:
         - commits:
-            - subject: 'balena-lib: Fix fetching meta-balena base version'
+            - subject: "balena-lib: Fix fetching meta-balena base version"
               hash: d5d838339ed23ecd242092bf4214fe2505ccd181
               body: >
                 On an ESR branch the VERSION file contains the ESR version, not
@@ -22,8 +38,7 @@
                 base meta-balena version.
 
 
-                Replace it with searching down the git tree for the commit
-                before the
+                Replace it with searching down the git tree for the commit before the
 
                 branch.
               footer:
@@ -33,7 +48,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build-block: Use true/false for ESR variable'
+            - subject: "jenkins_build-block: Use true/false for ESR variable"
               hash: 24876740b2299d092ea3cd1b54f61a020d12a5ba
               body: |
                 Keep the same boolean format as in the rest of the files.
@@ -44,7 +59,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy-block: Label ESR hostapps'
+            - subject: "balena-deploy-block: Label ESR hostapps"
               hash: 1c6561daf9f16e579d55305471274e7793dc3619
               body: >
                 ESR hostapps need special labels in order to be recognized. This
@@ -58,7 +73,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-api: add balena_api_fetch_fleet_tag'
+            - subject: "balena-api: add balena_api_fetch_fleet_tag"
               hash: 2ced90fc432298abf14e00d4ac58cc8eaf003b24
               body: |
                 Add a function to retrieve fleet tags.
@@ -69,7 +84,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-api: Set policy on ESR hostapps'
+            - subject: "balena-api: Set policy on ESR hostapps"
               hash: 6e4d7b3d2ccbd1a5c67d94cc73c4552775ce3b94
               body: >
                 ESR hostapps need an esr release-policy in order to be
@@ -81,7 +96,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy: Pass ESR variable when creating apps'
+            - subject: "balena-deploy: Pass ESR variable when creating apps"
               hash: 2497bfb59ae16810169718e6d383d0bc9d564a04
               body: >
                 ESR hostapps need special labels in order to be recognized. This
@@ -98,9 +113,8 @@
           version: balena-yocto-scripts-1.17.0
           date: 2022-01-20T12:30:21.992Z
         - commits:
-            - subject: >-
-                balena-deploy: Deploy passing the latest meta-balena version and
-                not tag
+            - subject: "balena-deploy: Deploy passing the latest meta-balena version and not
+                tag"
               hash: 9d5fa316dbda3d4782e782abaceed41efe3e5a99
               body: >
                 The last meta-balena version and tag might not be the same, like
@@ -117,7 +131,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-lib: Add balena_lib_get_meta_balena_base_version'
+            - subject: "balena-lib: Add balena_lib_get_meta_balena_base_version"
               hash: 25840dc98e138781e78530be0437f3950970f263
               body: >
                 Retrieves the last meta-balena version, which may not be the
@@ -126,11 +140,9 @@
                 last meta-balena tag.
 
 
-                For example, when we branch an ESR release, the meta-balena
-                branch is
+                For example, when we branch an ESR release, the meta-balena branch is
 
-                tagged with the ESR name, like 2.83.x, while the last
-                meta-balena version
+                tagged with the ESR name, like 2.83.x, while the last meta-balena version
 
                 will be a proper semver.
               footer:
@@ -159,9 +171,7 @@
       author: Alex Gonzalez
       nested:
         - commits:
-            - subject: >-
-                balena-deploy-block: Check for existing tag only in specific
-                hostapp
+            - subject: "balena-deploy-block: Check for existing tag only in specific hostapp"
               hash: 8893fd94bc0cc31a7fa7af8a87af68a69fec908d
               body: |
                 The same version tag can exist across different hostapps.
@@ -191,15 +201,13 @@
       author: Alex Gonzalez
       nested:
         - commits:
-            - subject: >-
-                balena-api: Propagate balena API environment, token and OS
-                organization
+            - subject: "balena-api: Propagate balena API environment, token and OS
+                organization"
               hash: 64c2854c85aafebf80e6a13b725ff610ae25a467
               body: >
                 This is required to allow building against cloud instances with
 
-                different names for the balenaOS organization and private device
-                types.
+                different names for the balenaOS organization and private device types.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -207,7 +215,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-build.sh: Propagate balena API environment and token'
+            - subject: "balena-build.sh: Propagate balena API environment and token"
               hash: 35d39c4a400df0552bfb3d875c8a9d1289ad8d4e
               body: |
                 This is required to use the API for private slugs.
@@ -218,7 +226,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'prepare-and-start: Propagate balena API environment and token'
+            - subject: "prepare-and-start: Propagate balena API environment and token"
               hash: bb7b903e00fc153afea182a330da08a49b72cced
               body: >
                 The balena-build.sh script accepts a token in the command line.
@@ -255,9 +263,9 @@
       author: Alex Gonzalez
       nested:
         - commits:
-            - subject: 'revert_overrides: Add intel-quark to architecture overrides'
+            - subject: "revert_overrides: Add intel-quark to architecture overrides"
               hash: cbcbbc42c10700c77e17d8f9224e35bec90280fe
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -284,14 +292,13 @@
       author: Alex Gonzalez
       nested:
         - commits:
-            - subject: 'balena-deploy: Check for file existence before deploying'
+            - subject: "balena-deploy: Check for file existence before deploying"
               hash: 36494bf99a08b68a5afac5038d4691a583d01500
               body: >
                 When discontinuing a device type, there are no artifacts apart
                 from
 
-                device-type.json, so check that the logo is there before
-                deploying.
+                device-type.json, so check that the logo is there before deploying.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -299,7 +306,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy-block: Check existence of tag before re-deploying'
+            - subject: "balena-deploy-block: Check existence of tag before re-deploying"
               hash: c1a5b20b0ef0d04a30b6bf0bcfacf0a527e931ae
               body: >
                 If a release is already tagged with this version, issue a
@@ -313,9 +320,9 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-api: Add function to check the existence of a release tag'
+            - subject: "balena-api: Add function to check the existence of a release tag"
               hash: bdc2146c3ad719f5c7335aeb7b4ee43775a20ac7
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -323,7 +330,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy-block: Finalize releases when deployed'
+            - subject: "balena-deploy-block: Finalize releases when deployed"
               hash: 1e3768132d87295998bd9a17d0f01121e161e312
               body: >
                 For now and until a proper CI/CD workflow is in place, finalize
@@ -346,12 +353,10 @@
                 setting a release semver.
 
 
-                For the time being we are still using a version label in the
-                hostapp.
+                For the time being we are still using a version label in the hostapp.
 
 
-                This commit will be reverted once we get rid of the version
-                label.
+                This commit will be reverted once we get rid of the version label.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -361,7 +366,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_generate_ami: Remove variant from image name'
+            - subject: "jenkins_generate_ami: Remove variant from image name"
               hash: 0fe3d6c8d0ebff85248f0bed99750186f05ab686
               body: |
                 The OS is now a unified image so there are no variants.
@@ -372,7 +377,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-build.sh: Stop building OS variants'
+            - subject: "balena-build.sh: Stop building OS variants"
               hash: 4e65c83e7808e91c99e335609142401e0031ed23
               body: |
                 The OS is now a unified image so there are no variants.
@@ -383,7 +388,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build.sh: Remove buildFlavor'
+            - subject: "jenkins_build.sh: Remove buildFlavor"
               hash: b66f7ce58f0c12f78941ed34eb311bbd3a96af1c
               body: |
                 The OS is now a unified image so there are no build flavours.
@@ -394,7 +399,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build-blocks: Remove variant build option'
+            - subject: "jenkins_build-blocks: Remove variant build option"
               hash: e7fb9fc8354445bcbc05687e1f96aa0e8025ecc9
               body: |
                 The OS is now a unified image without variants.
@@ -405,7 +410,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy: Stop using .dev/.prod variant suffixes'
+            - subject: "balena-deploy: Stop using .dev/.prod variant suffixes"
               hash: 65c030b986f62b0faaddba501520662a8ac2777d
               body: >
                 The OS has now a unified image that can be configured to be
@@ -419,7 +424,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy-block: Stop tagging hostapp releases with variant'
+            - subject: "balena-deploy-block: Stop tagging hostapp releases with variant"
               hash: 3fc5efeeef4ae74e499504c1148932539a49c28e
               body: >
                 The API will stop using the variant tag but will still use the
@@ -433,7 +438,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-lib: Use externalVersion to match contracts'
+            - subject: "balena-lib: Use externalVersion to match contracts"
               hash: 385c5bacfc1452e4b065de55bfdf71727b303fff
               body: >
                 The version refers to the actual contract, while the
@@ -447,7 +452,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build: Deploy hostapp like any other block'
+            - subject: "jenkins_build: Deploy hostapp like any other block"
               hash: bfe7f51dc75f335d38fa4dbf824fa887be8d82ee
               body: |
                 Use common functions for block deployments
@@ -458,7 +463,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build-blocks: Separate block build release deployment'
+            - subject: "jenkins_build-blocks: Separate block build release deployment"
               hash: 70fe00969921bbf6894cc86ecb343eb342c6f2ca
               body: >
                 Separating the build and release of blocks allows to use common
@@ -467,8 +472,7 @@
                 block release.
 
 
-                Also, pass a flag to specify whether the block should be
-                deployed as final
+                Also, pass a flag to specify whether the block should be deployed as final
 
                 release.
               footer:
@@ -478,7 +482,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy-block: Use release versioning'
+            - subject: "balena-deploy-block: Use release versioning"
               hash: d1c74d0261f17ebcad9825bc7e0df22142da14a3
               body: >
                 Deploy as draft releases by default. Final releases will be
@@ -492,7 +496,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build: Remove discontinued check'
+            - subject: "jenkins_build: Remove discontinued check"
               hash: 55774ee27f938bbcbb238aa6441680b3d39172c3
               body: >
                 Individual deploy functions now bail out for discontinued device
@@ -506,7 +510,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy: Do not deploy discontinued device types'
+            - subject: "balena-deploy: Do not deploy discontinued device types"
               hash: f54251e61c466018072e04c344595b3eba70bf57
               body: >
                 Check for discontinued device types before deploying to
@@ -520,9 +524,9 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-deploy: Discontinued device types use meta-balena version'
+            - subject: "balena-deploy: Discontinued device types use meta-balena version"
               hash: bbecd72c64bf8ff1277a10c03cb39fbf99748e05
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -530,24 +534,21 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: >-
-                balena-deploy: Adapt balena_deploy_block to release versioning
-                and use it
+            - subject: "balena-deploy: Adapt balena_deploy_block to release versioning and use
+                it"
               hash: cfc0bc43af1fb60ff3ddd56f08ae781edaa90b68
               body: >
                 * Convert balena_deploy_build_block to balena_build_block, and
                 deploy
                   with balena_deploy_block
-                * Remove balena_deploy_hostapp and replace with
-                balena_deploy_block
+                * Remove balena_deploy_hostapp and replace with balena_deploy_block
 
                 * Modify balena_deploy_hostos to use balena_deploy_block
 
                 * Modify balena_deploy_block to use release versioning
 
 
-                By deafult image deployments happen as draft versions, and only
-                become
+                By deafult image deployments happen as draft versions, and only become
 
                 final when passing validation.
               footer:
@@ -557,7 +558,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-build-block: Remove image release'
+            - subject: "balena-build-block: Remove image release"
               hash: 443269afbe867cb5c464ca5dd91bf27aa51427bd
               body: >
                 Deal with the release separately so we can use common code for
@@ -569,14 +570,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-api: Use release revision for fetchers'
+            - subject: "balena-api: Use release revision for fetchers"
               hash: f501ac55e327af0db2142a146423e83f459e0c1f
               body: >
                 When fetching images for blocks, use a given release revision.
 
 
-                Also, add token autentication to the API calls that miss it so
-                that they work
+                Also, add token autentication to the API calls that miss it so that they work
 
                 with private device types.
 
@@ -589,7 +589,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build-block: Remove release version API setter'
+            - subject: "jenkins_build-block: Remove release version API setter"
               hash: 8e27328a0caec2acc7651dfe64f8dfc5510e48e0
               body: >
                 When using the now deprecated release_version field, the API
@@ -598,8 +598,7 @@
                 reject deployments for an existing release.
 
 
-                On the new versioning model, deployments increment a revision
-                field so
+                On the new versioning model, deployments increment a revision field so
 
                 there is no need to check for uniqueness.
               footer:
@@ -609,7 +608,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-api: Remove release version API setter'
+            - subject: "balena-api: Remove release version API setter"
               hash: 42486a59654047cf42f19bd999ef0bcd0a279ea5
               body: >
                 This functionality has now been deprecated in the balena API is
@@ -623,7 +622,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-lib: Use release versioning'
+            - subject: "balena-lib: Use release versioning"
               hash: de2c7af440c1ae4d6f84c5440368f92333500389
               body: >
                 BalenaCloud has now a release versioning feature that deprecates
@@ -632,8 +631,7 @@
                 use of release_version.
 
 
-                Introduce a new balena_lib_release() function that utilises a
-                balena
+                Introduce a new balena_lib_release() function that utilises a balena
 
                 contract and the CLI to set the release version.
               footer:
@@ -646,9 +644,8 @@
           version: balena-yocto-scripts-1.16.0
           date: 2021-12-30T15:08:43.225Z
         - commits:
-            - subject: >-
-                balena-deploy: Set leviathan networkWireless mode based on
-                device slug
+            - subject: "balena-deploy: Set leviathan networkWireless mode based on device
+                slug"
               hash: 891fadcbabe422e24245beb720cf7326a5ea1136
               body: >
                 These changes are currently made in the Jenkins job, so it's
@@ -667,7 +664,7 @@
         - commits:
             - subject: Substitute the worker types for generic device slugs
               hash: 7539caf732975a5b114abc371a5f6df211d12812
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -678,7 +675,7 @@
           version: balena-yocto-scripts-1.15.9
           date: 2021-11-26T19:20:31.029Z
         - commits:
-            - subject: 'Dockerfile_yocto-build-env: Install Honister host deps'
+            - subject: "Dockerfile_yocto-build-env: Install Honister host deps"
               hash: efc069c609431965394912d3ffd34362a1108852
               body: >
                 See
@@ -693,7 +690,7 @@
           version: balena-yocto-scripts-1.15.8
           date: 2021-11-03T10:01:44.980Z
         - commits:
-            - subject: 'jenkins_build.sh: Fix deployment for discontinued device types'
+            - subject: "jenkins_build.sh: Fix deployment for discontinued device types"
               hash: 84e65e937fef38625277fb8330ebd3179c466d04
               body: >
                 Do not deploy dockerhub or hostapp images for discontinued
@@ -705,7 +702,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build.sh: Remove PRIVATE_DT as it is unused'
+            - subject: "jenkins_build.sh: Remove PRIVATE_DT as it is unused"
               hash: 35fd54620ff5eb487b1323a1ead5fef9c157e385
               body: >
                 The private device types status is checked with the API when
@@ -717,7 +714,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'jenkins_build.sh: Fix lint warnings'
+            - subject: "jenkins_build.sh: Fix lint warnings"
               hash: 068a4197101a2db4aba60793e01564b67d14f820
               body: |
                 Fix some minor lint warnings.
@@ -735,7 +732,7 @@
 - commits:
     - subject: Revert "Publish both flasher and raw images for Generic x86_64"
       hash: d8b749228178e33f3608f5f1e530962725605c59
-      body: ''
+      body: ""
       footer:
         Changelog-entry: Revert "Publish both flasher and raw images for Generic x86_64"
         changelog-entry: Revert "Publish both flasher and raw images for Generic x86_64"
@@ -746,13 +743,13 @@
   version: 2.85.17+rev3
   date: 2021-11-23T21:06:05.864Z
 - commits:
-    - subject: 'genericx86-64-ext: Deploy both flasher and non-flasher artifacts'
+    - subject: "genericx86-64-ext: Deploy both flasher and non-flasher artifacts"
       hash: 93ec62dedf55261854ee996ce75a9d3c0b4535a0
       body: |
         This allows leviathan tests to avoid having to unwrap flasher images.
       footer:
-        Changelog-entry: 'genericx86-64-ext: Deploy both flasher and non-flasher artifacts'
-        changelog-entry: 'genericx86-64-ext: Deploy both flasher and non-flasher artifacts'
+        Changelog-entry: "genericx86-64-ext: Deploy both flasher and non-flasher artifacts"
+        changelog-entry: "genericx86-64-ext: Deploy both flasher and non-flasher artifacts"
         Signed-off-by: Kyle Harding <kyle@balena.io>
         signed-off-by: Kyle Harding <kyle@balena.io>
       author: Kyle Harding
@@ -762,7 +759,7 @@
 - commits:
     - subject: Update meta-balena to v2.85.17
       hash: ed85f9c67eb25c510abce7e83f38d3a7a82e51b4
-      body: ''
+      body: ""
       footer:
         Changelog-entry: Update meta-balena to v2.85.17
         changelog-entry: Update meta-balena to v2.85.17
@@ -775,7 +772,7 @@
 - commits:
     - subject: Update meta-balena to v2.85.16
       hash: ab1a284940bff2ab2978a393b3c8736a086ef5e1
-      body: ''
+      body: ""
       footer:
         Changelog-entry: Update meta-balena to v2.85.16
         changelog-entry: Update meta-balena to v2.85.16
@@ -833,7 +830,7 @@
   version: 2.85.3+rev10
   date: 2021-10-20T05:29:10.239Z
 - commits:
-    - subject: 'meta-balena-generic: update local.conf.sample'
+    - subject: "meta-balena-generic: update local.conf.sample"
       hash: c0535bacdf298377f30e25e153b93d9dff2f034b
       body: |
         Update the sample configuration file to use OS_DEVELOPMENT instead of
@@ -841,8 +838,8 @@
       footer:
         Change-type: patch
         change-type: patch
-        Changelog-entry: 'meta-balena-generic: update local.conf.sample'
-        changelog-entry: 'meta-balena-generic: update local.conf.sample'
+        Changelog-entry: "meta-balena-generic: update local.conf.sample"
+        changelog-entry: "meta-balena-generic: update local.conf.sample"
         Signed-off-by: Mark Corbin <mark@balena.io>
         signed-off-by: Mark Corbin <mark@balena.io>
       author: Mark Corbin
@@ -926,8 +923,7 @@
       body: >
         We are moving the genericx86-64-ext device type from balena-intel
 
-        repository to balena-generic and need to keep the slug for the time
-        being.
+        repository to balena-generic and need to keep the slug for the time being.
       footer:
         Changelog-entry: Rename generic-amd64 to genericx86-64-ext
         changelog-entry: Rename generic-amd64 to genericx86-64-ext
@@ -972,7 +968,7 @@
       author: Joseph Kogut
       nested:
         - commits:
-            - subject: 'balena-os-sysctl: Reduce the console default loglevel'
+            - subject: "balena-os-sysctl: Reduce the console default loglevel"
               hash: 626b0e25cbd13ca65a74bbfe09ff9e0828b380bb
               body: >
                 This avoids the kernel printing debug messages on the consoles.
@@ -986,7 +982,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-config-vars: Re-run os-sshkeys if config.json is modified'
+            - subject: "balena-config-vars: Re-run os-sshkeys if config.json is modified"
               hash: 67b7aa5b58a26178411b598415e296fea5628a00
               body: >
                 This change allows to pick-up changes to "os.sshKeys" in
@@ -1000,7 +996,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'systemd: Use drop-in to modify unit files instead of sed'
+            - subject: "systemd: Use drop-in to modify unit files instead of sed"
               hash: b07a78453243d12db59524836c3cc62d355a6f2d
               body: >
                 Performing unit modifications in drop-in files is better
@@ -1029,7 +1025,7 @@
               author: Robert Günzler
               nested:
                 - commits:
-                    - subject: 'pkg/storagemigration: use graphdriver/copy.DirCopy'
+                    - subject: "pkg/storagemigration: use graphdriver/copy.DirCopy"
                       hash: ffbb608492405488bff5e31ea62c0249fb416106
                       body: |
                         instead of our own implementation
@@ -1065,9 +1061,7 @@
                       body: >
                         See https://github.com/containerd/containerd/pull/4530
 
-                        and `git log
-                        ad25c1a9c34361e4071f508b9a91946b05fce165^..2055e12953bb538228d8d9fe627fa545d7cf82be
-                        ./platforms/`
+                        and `git log ad25c1a9c34361e4071f508b9a91946b05fce165^..2055e12953bb538228d8d9fe627fa545d7cf82be ./platforms/`
 
                         in the containerd repo
                       footer:
@@ -1084,7 +1078,7 @@
         - commits:
             - subject: Fix typo in OS_DEVELOPMENT distro feature
               hash: 7992a7900506eaf0279f93c747dea1520875c817
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1092,7 +1086,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'tests: Remove OS variants'
+            - subject: "tests: Remove OS variants"
               hash: 5545c4e15831e16497a737307da69d38f947aa51
               body: >
                 The OS is now a single image that can switch between development
@@ -1132,7 +1126,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-supervisor: Update balena-supervisor to v12.10.10'
+            - subject: "balena-supervisor: Update balena-supervisor to v12.10.10"
               hash: 1aa662a4ab11f32c71d13352eea7e86c0784df33
               body: |
                 Update balena-supervisor from 12.10.3 to 12.10.10
@@ -1144,16 +1138,13 @@
               author: Alex Gonzalez
               nested:
                 - commits:
-                    - subject: >-
-                        api-keys: Remove os variant parameter for authentication
-                        check
+                    - subject: "api-keys: Remove os variant parameter for authentication check"
                       hash: 9e0cbe04c6d1c533c3e66183eca1d3abfb8c381d
                       body: >
                         The current code authenticates unmanaged production
                         devices which makes
 
-                        no sense. Unmanaged devices do not need to authenticate
-                        with the API.
+                        no sense. Unmanaged devices do not need to authenticate with the API.
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1161,19 +1152,16 @@
                         signed-off-by: Alex Gonzalez <alexg@balena.io>
                       author: Alex Gonzalez
                       nested: []
-                    - subject: >-
-                        os-release: Use developmentMode to ascertain OS variant
-                        in new releases
+                    - subject: "os-release: Use developmentMode to ascertain OS variant in new
+                        releases"
                       hash: 1abd10a12947f05ae328496e98fcbcdc6a834ce1
                       body: >
                         Newer BalenaOS releases have replaced OS variants for a
                         developmentMode
 
-                        configuration setting. This commit uses this variable to
-                        set the OS
+                        configuration setting. This commit uses this variable to set the OS
 
-                        variant in the absence of `VARIANT_ID` from the
-                        os-release file.
+                        variant in the absence of `VARIANT_ID` from the os-release file.
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1181,21 +1169,18 @@
                         signed-off-by: Alex Gonzalez <alexg@balena.io>
                       author: Alex Gonzalez
                       nested: []
-                    - subject: 'config: Add developmentMode to schema'
+                    - subject: "config: Add developmentMode to schema"
                       hash: 4ad7a3ae917c888f267463fd3d5b839439cf40e6
                       body: >
                         Add a `developmentMode` configuration variable to the
                         schema. Do not expose
 
-                        this on the device target state until local key-based
-                        authentication is
+                        this on the device target state until local key-based authentication is
 
                         sorted.
                       footer:
-                        Relates-to: >-
-                          https://jel.ly.fish/e9525e9e-aa74-478c-b931-52951c679f78
-                        relates-to: >-
-                          https://jel.ly.fish/e9525e9e-aa74-478c-b931-52951c679f78
+                        Relates-to: https://jel.ly.fish/e9525e9e-aa74-478c-b931-52951c679f78
+                        relates-to: https://jel.ly.fish/e9525e9e-aa74-478c-b931-52951c679f78
                         Change-type: patch
                         change-type: patch
                         Signed-off-by: Alex Gonzalez <alexg@balena.io>
@@ -1210,8 +1195,7 @@
                       body: >
                         Use a GitHub permalink that includes the commit in
 
-                        case the file changes and the reference becomes
-                        out-of-date.
+                        case the file changes and the reference becomes out-of-date.
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1229,11 +1213,9 @@
                         [path-parse](https://github.com/jbgutierrez/path-parse)
                         from 1.0.6 to 1.0.7.
 
-                        - [Release
-                        notes](https://github.com/jbgutierrez/path-parse/releases)
+                        - [Release notes](https://github.com/jbgutierrez/path-parse/releases)
 
-                        -
-                        [Commits](https://github.com/jbgutierrez/path-parse/commits/v1.0.7)
+                        - [Commits](https://github.com/jbgutierrez/path-parse/commits/v1.0.7)
 
 
                         ---
@@ -1246,9 +1228,9 @@
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Signed-off-by: 'dependabot[bot] <support@github.com>'
-                        signed-off-by: 'dependabot[bot] <support@github.com>'
-                      author: 'dependabot[bot]'
+                        Signed-off-by: dependabot[bot] <support@github.com>
+                        signed-off-by: dependabot[bot] <support@github.com>
+                      author: dependabot[bot]
                       nested: []
                   version: balena-supervisor-12.10.8
                   date: 2021-09-01T20:50:51.601Z
@@ -1259,14 +1241,11 @@
                         Bumps [tar](https://github.com/npm/node-tar) from 4.4.13
                         to 4.4.19.
 
-                        - [Release
-                        notes](https://github.com/npm/node-tar/releases)
+                        - [Release notes](https://github.com/npm/node-tar/releases)
 
-                        -
-                        [Changelog](https://github.com/npm/node-tar/blob/main/CHANGELOG.md)
+                        - [Changelog](https://github.com/npm/node-tar/blob/main/CHANGELOG.md)
 
-                        -
-                        [Commits](https://github.com/npm/node-tar/compare/v4.4.13...v4.4.19)
+                        - [Commits](https://github.com/npm/node-tar/compare/v4.4.13...v4.4.19)
 
 
                         ---
@@ -1279,16 +1258,16 @@
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Signed-off-by: 'dependabot[bot] <support@github.com>'
-                        signed-off-by: 'dependabot[bot] <support@github.com>'
-                      author: 'dependabot[bot]'
+                        Signed-off-by: dependabot[bot] <support@github.com>
+                        signed-off-by: dependabot[bot] <support@github.com>
+                      author: dependabot[bot]
                       nested: []
                   version: balena-supervisor-12.10.7
                   date: 2021-09-01T20:40:01.473Z
                 - commits:
                     - subject: Remove "variable list" heading in configuration doc
                       hash: 5205e8ce07375a7bf9ca18f0a28bd73c275acd96
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1301,7 +1280,7 @@
                 - commits:
                     - subject: Clean up configurations.md
                       hash: af51ef8eb54af96cf00657576908f020ac401488
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1314,7 +1293,7 @@
                 - commits:
                     - subject: Include issues with downgrading versions in README
                       hash: 1280ac365618eb4106e9c20dd4e738a22958d0b7
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1324,14 +1303,13 @@
                       nested: []
                   version: balena-supervisor-12.10.4
                   date: 2021-08-31T18:51:02.478Z
-            - subject: 'u-boot: Introduce a compile time osdev-image feature'
+            - subject: "u-boot: Introduce a compile time osdev-image feature"
               hash: b839f2d91ca1844d96f4d3165ae5e2923489d11d
               body: >
                 At runtime we can now enable development features that were
                 previously
 
-                configured using the development-image feature. That feature
-                also
+                configured using the development-image feature. That feature also
 
                 configured U-Boot for OS development.
 
@@ -1339,19 +1317,16 @@
                 Now we have two distinct functionalities:
 
 
-                * A runtime development configuration variable that configures
-                the
+                * A runtime development configuration variable that configures the
 
                 device to facilitate application development
 
-                * A build time osdev-image feature that configures the OS for
-                BSP and OS
+                * A build time osdev-image feature that configures the OS for BSP and OS
 
                 development
 
 
-                This allows us to merge the current production/development
-                images into
+                This allows us to merge the current production/development images into
 
                 a single image.
               footer:
@@ -1361,7 +1336,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'os-release: Remove image variants information'
+            - subject: "os-release: Remove image variants information"
               hash: 4c4dac7e0cc078a9d10c0bb77e4bf702af5f0e55
               body: |
                 There are no more image variants.
@@ -1378,8 +1353,7 @@
                 The images now can be configured for application development
                 mode at runtime.
 
-                This commit introduces a built time option to configure them for
-                BSP or
+                This commit introduces a built time option to configure them for BSP or
 
                 other OS development like board bringup.
               footer:
@@ -1389,14 +1363,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'images: Remove debug-tweaks settings.'
+            - subject: "images: Remove debug-tweaks settings."
               hash: cb1618b6d17a6c1118ea65d7485bb1bea907e18e
               body: >
                 The ssh development configurations are now applied at runtime.
                 The only
 
-                feature that has been left out is the postinst logging.
-                Customers that
+                feature that has been left out is the postinst logging. Customers that
 
                 need to develop the OS can configure this themselves.
               footer:
@@ -1406,7 +1379,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'openssh: Enable runtime development configuration'
+            - subject: "openssh: Enable runtime development configuration"
               hash: 8bac93b3ed8c54452ea858ffc33a2e46a2e3358d
               body: >
                 When a device is configured in development mode, allow password
@@ -1414,8 +1387,7 @@
                 authentication and empty passwords, as well as root logins.
 
 
-                In production mode, disable password authentication to allow
-                only
+                In production mode, disable password authentication to allow only
 
                 SSH access.
               footer:
@@ -1425,7 +1397,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-info: Rename from resin-info'
+            - subject: "balena-info: Rename from resin-info"
               hash: 7f2abbf9a26c376125d18bd625f639f26d578d12
               body: |
                 Replace references to resin for balena.
@@ -1436,7 +1408,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena: Expose engine socket on development mode'
+            - subject: "balena: Expose engine socket on development mode"
               hash: 858f3b983e7842a155f0a34d60b6a8f488bacb2e
               body: >
                 When configured in development mode expose the engine socket.
@@ -1450,14 +1422,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'image-balena: Allow passwordless root logins'
+            - subject: "image-balena: Allow passwordless root logins"
               hash: 71aeea3652bf095544b1083023aa5d4e97448597
               body: >
                 Even without debug-tweaks, allow passwordless root logins. For
                 production
 
-                builds there is no console available so this setting does not
-                change current
+                builds there is no console available so this setting does not change current
 
                 functionality.
               footer:
@@ -1481,7 +1452,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'systemd: Runtime enablement of serial console'
+            - subject: "systemd: Runtime enablement of serial console"
               hash: d80092c6ecf67720175b72ccbcbf7da6c907d48f
               body: >
                 Adapt the systemd getty services to enable for images configured
@@ -1495,9 +1466,8 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: >-
-                development-features: Add service for development features
-                runtime management
+            - subject: "development-features: Add service for development features runtime
+                management"
               hash: 5227ba18d0fe81fabae2b33b3f0cd9f690f85973
               body: >
                 This service will adjust the filesystem with development
@@ -1514,7 +1484,7 @@
           version: meta-balena-2.85.0
           date: 2021-09-15T09:05:37.493Z
         - commits:
-            - subject: 'hostapp-update-hooks: Fix blacklisted extlinux.conf file path'
+            - subject: "hostapp-update-hooks: Fix blacklisted extlinux.conf file path"
               hash: 096024808224aea2100e2a2a1f95ef75e23493ef
               body: >
                 The extlinux.conf file path in meta-balena is currently
@@ -1523,8 +1493,7 @@
 
                 BalenaHUP won't need to transfer the isolcpus setting to
 
-                the new OS anymore. This is necessary only when updating from
-                older
+                the new OS anymore. This is necessary only when updating from older
 
                 OS versions in which the supervisor adds the isolcpus
 
@@ -1539,20 +1508,20 @@
           version: meta-balena-2.84.7
           date: 2021-09-13T12:01:41.123Z
         - commits:
-            - subject: 'balena-persistent-logs: add comment and update logging'
+            - subject: "balena-persistent-logs: add comment and update logging"
               hash: c05ff73df2341ceb182f7bc1acf00d4719a13afd
               body: |
                 Add a comment and update the logging.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'balena-persistent-logs: add comment and update logging'
-                changelog-entry: 'balena-persistent-logs: add comment and update logging'
+                Changelog-entry: "balena-persistent-logs: add comment and update logging"
+                changelog-entry: "balena-persistent-logs: add comment and update logging"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'meta-balena: rename resin-persistent-logs'
+            - subject: "meta-balena: rename resin-persistent-logs"
               hash: 2fa5bead70a700eff06ea8d140974ea3925a0c7d
               body: |
                 Rename 'resin-persistent-logs' to 'balena-persistent-logs' and
@@ -1560,8 +1529,8 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'meta-balena: rename resin-persistent-logs'
-                changelog-entry: 'meta-balena: rename resin-persistent-logs'
+                Changelog-entry: "meta-balena: rename resin-persistent-logs"
+                changelog-entry: "meta-balena: rename resin-persistent-logs"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -1569,7 +1538,7 @@
           version: meta-balena-2.84.6
           date: 2021-09-11T12:14:21.164Z
         - commits:
-            - subject: 'tests: led: require led property from device type'
+            - subject: "tests: led: require led property from device type"
               hash: 0439de2a706cabf2b6b82736fa2959313c653c56
               body: >
                 Only run LED test when device type contract specifies support
@@ -1584,9 +1553,9 @@
           version: meta-balena-2.84.5
           date: 2021-09-10T13:29:21.135Z
         - commits:
-            - subject: 'tests: Remove reboots from redsocks test cases'
+            - subject: "tests: Remove reboots from redsocks test cases"
               hash: 53f58ca927075730d9bb9ebe0a98e525f3d8d793
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1597,11 +1566,9 @@
           version: meta-balena-2.84.4
           date: 2021-09-09T20:26:17.261Z
         - commits:
-            - subject: >-
-                tests: Prevent failure when journalctl has no logs for some
-                boots
+            - subject: "tests: Prevent failure when journalctl has no logs for some boots"
               hash: cab2b5aa7b97afad9006ed3c3701e49a9d76d366
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1612,11 +1579,9 @@
           version: meta-balena-2.84.3
           date: 2021-09-09T11:41:46.786Z
         - commits:
-            - subject: >-
-                contributing-device-support.md: Updates to board support
-                instructions
+            - subject: "contributing-device-support.md: Updates to board support instructions"
               hash: 56d47e97ab2becea9d7ecd96de397d937f539954
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1627,7 +1592,7 @@
           version: meta-balena-2.84.2
           date: 2021-09-08T13:26:00.933Z
         - commits:
-            - subject: 'tests: s/BALENA_MACHINE_NAME/BALENA_ARCH'
+            - subject: "tests: s/BALENA_MACHINE_NAME/BALENA_ARCH"
               hash: 16015b5ba1570777478a585aaea37ed354dacc82
               body: >
                 Replace Dockerfile image %%BALENA_MACHINE_NAME%% var with
@@ -1635,8 +1600,7 @@
                 %%BALENA_ARCH%% for better compatibility
 
 
-                Device types lacking matching tags in the balenalib Docker Hub
-                account
+                Device types lacking matching tags in the balenalib Docker Hub account
 
                 will fail tests when a matching image is not found. Switch to
 
@@ -1651,9 +1615,9 @@
           version: meta-balena-2.84.1
           date: 2021-09-05T16:47:16.988Z
         - commits:
-            - subject: 'balena-engine: Enable storage migration'
+            - subject: "balena-engine: Enable storage migration"
               hash: 7d69faa7889e6725a4397511a6178ed2c745acbd
-              body: ''
+              body: ""
               footer:
                 Change-type: minor
                 change-type: minor
@@ -1675,14 +1639,13 @@
               author: Robert Günzler
               nested:
                 - commits:
-                    - subject: 'storagemigration: capture failcleanup logs in logfile'
+                    - subject: "storagemigration: capture failcleanup logs in logfile"
                       hash: 4f7f543eff08766bc584024afdb57760dfb52130
                       body: >
                         reorder the defer statements in the migrate function to
                         only teardown
 
-                        the logger after the failcleanup function ran. otherwise
-                        errors logged
+                        the logger after the failcleanup function ran. otherwise errors logged
 
                         there won't show up in the logfile
                       footer:
@@ -1695,17 +1658,15 @@
                   version: balena-engine-19.03.26
                   date: 2021-08-31T11:26:15.276Z
                 - commits:
-                    - subject: 'storagemigration: move logic to package'
+                    - subject: "storagemigration: move logic to package"
                       hash: 001835bf61172fdcfdb0416e000852ff05683c71
                       body: >
                         This brings all migration logic into a single call into
                         the
 
-                        storagemigration package, which should make future
-                        maintenance easier
+                        storagemigration package, which should make future maintenance easier
 
-                        and fixes the cleanup logic bug, where the old aufs root
-                        would never be
+                        and fixes the cleanup logic bug, where the old aufs root would never be
 
                         cleaned up.
                       footer:
@@ -1720,9 +1681,9 @@
           version: meta-balena-2.84.0
           date: 2021-09-03T11:43:21.582Z
         - commits:
-            - subject: 'tests: remove healthcheck test race condition'
+            - subject: "tests: remove healthcheck test race condition"
               hash: 4f728271e767e8998f73870c2de23c03a5d12823
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1733,9 +1694,9 @@
           version: meta-balena-2.83.22
           date: 2021-09-02T15:34:27.322Z
         - commits:
-            - subject: 'tests: Register teardown only when DUT is reachable'
+            - subject: "tests: Register teardown only when DUT is reachable"
               hash: 2f01b040236f6565195550cdfde91464687f5cf2
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1746,7 +1707,7 @@
           version: meta-balena-2.83.21
           date: 2021-09-01T22:56:06.844Z
         - commits:
-            - subject: 'tests: Use new Archiver implementation & helpers'
+            - subject: "tests: Use new Archiver implementation & helpers"
               hash: 883ec60492a16b443cb6ce04c12cda8bbf4d028d
               body: |
                 The changes are as follows:
@@ -1763,7 +1724,7 @@
           version: meta-balena-2.83.20
           date: 2021-09-01T19:37:21.036Z
         - commits:
-            - subject: 'tests: List boots when collecting journal logs in hup suite'
+            - subject: "tests: List boots when collecting journal logs in hup suite"
               hash: 8e7b6a157b033db57ff2df75a63b5e054957803f
               body: |
                 Some OS versions before HUP do not support the '-b all' flag
@@ -1779,7 +1740,7 @@
           version: meta-balena-2.83.19
           date: 2021-09-01T13:25:10.726Z
         - commits:
-            - subject: 'balena-supervisor: Update balena-supervisor to v12.10.3'
+            - subject: "balena-supervisor: Update balena-supervisor to v12.10.3"
               hash: 782c9e24b91b5beb1c30c7643015c6fe7f53d2d2
               body: |
                 Update balena-supervisor from 12.9.3 to 12.10.3
@@ -1791,20 +1752,16 @@
               author: Kyle Harding
               nested:
                 - commits:
-                    - subject: >-
-                        Skip restarting services if they are part of conf
-                        targets
+                    - subject: Skip restarting services if they are part of conf targets
                       hash: 669866b4c296529bd5392a0c48cd389a6d1f5770
                       body: >
                         Some recent changes to the OS allowed some services to
                         restart
 
-                        automatically when the associated config files are
-                        changed.
+                        automatically when the associated config files are changed.
 
 
-                        In these cases we want to avoid restarting the same
-                        services
+                        In these cases we want to avoid restarting the same services
 
                         manually from the supervisor.
                       footer:
@@ -1819,7 +1776,7 @@
                 - commits:
                     - subject: Removed fire emoji prefix for firewall logs.
                       hash: 30c728fae23ee66f3c1612736bb0c300f0b0762d
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -1834,23 +1791,18 @@
                         PR #1749 introduced a bug when pushing local target
                         state. An update to
 
-                        the [image name
-                        normalization](https://github.com/balena-os/balena-supervisor/blob/f1bd4b8d9bcef29e326cbf97eaddd837c2704d19/src/lib/docker-utils.ts#L81)
+                        the [image name normalization](https://github.com/balena-os/balena-supervisor/blob/f1bd4b8d9bcef29e326cbf97eaddd837c2704d19/src/lib/docker-utils.ts#L81)
 
-                        failed to consider the local image name format. This
-                        results in mangling
+                        failed to consider the local image name format. This results in mangling
 
-                        of image names in the database, i.e. the image
-                        `ubuntu:latest` is stored
+                        of image names in the database, i.e. the image `ubuntu:latest` is stored
 
-                        as `/ubuntu:latest`. This causes an exception to be
-                        returned by the
+                        as `/ubuntu:latest`. This causes an exception to be returned by the
 
                         dockerode `getImage('/ubuntu:latest').inspect()` call.
 
 
-                        This sends the supervisor into a crash loop and is shown
-                        on the supervisor
+                        This sends the supervisor into a crash loop and is shown on the supervisor
 
                         journal logs as
 
@@ -1862,14 +1814,11 @@
                         ```
 
 
-                        Unfortunately if this happens on a user device, since
-                        the mangled image
+                        Unfortunately if this happens on a user device, since the mangled image
 
-                        name is already on the database, the easiest way to fix
-                        is to remove the
+                        name is already on the database, the easiest way to fix is to remove the
 
-                        supervisor database and let the supervisor recreate it.
-                        Deleting the
+                        supervisor database and let the supervisor recreate it. Deleting the
 
                         database should be side effect free.
                       footer:
@@ -1880,19 +1829,15 @@
                   version: balena-supervisor-12.10.1
                   date: 2021-08-02T15:55:28.001Z
                 - commits:
-                    - subject: >-
-                        Remove comparison based on image, release, and service
-                        ids
+                    - subject: Remove comparison based on image, release, and service ids
                       hash: b67f94802dd8c2e890121f6ca82eda8dff2c051c
                       body: >
                         Preparing for the new v3 target state, where the
                         supervisor will make environment
 
-                        dependent ids optional and rely on using general UUIDs
-                        and user known identifiers
+                        dependent ids optional and rely on using general UUIDs and user known identifiers
 
-                        for comparison. This PR moves forward in that direction
-                        by removing some of those
+                        for comparison. This PR moves forward in that direction by removing some of those
 
                         comparisons for v2 target state.
 
@@ -1901,18 +1846,14 @@
 
                         - serviceId to be replace by serviceName
 
-                        - releaseId to be replaced by commit (future
-                        release_uuid)
+                        - releaseId to be replaced by commit (future release_uuid)
 
 
-                        This is a backwards compatible change, meaning it
-                        doesn't completely get rid of
+                        This is a backwards compatible change, meaning it doesn't completely get rid of
 
-                        these identifiers (which are still being used by
-                        supervisor API and for state
+                        these identifiers (which are still being used by supervisor API and for state
 
-                        patch), but will not depend on those identifiers for
-                        calculating steps to target state.
+                        patch), but will not depend on those identifiers for calculating steps to target state.
                       footer:
                         Change-type: minor
                         change-type: minor
@@ -1927,37 +1868,27 @@
                         The image manager module now uses tags instead of docker
                         IDs as the main
 
-                        way to identify docker images on the engine. That is, if
-                        the target
+                        way to identify docker images on the engine. That is, if the target
 
-                        state image has a name `imageName:tag@digest`, the
-                        supervisor will always use
+                        state image has a name `imageName:tag@digest`, the supervisor will always use
 
-                        the given `imageName` and `tag` (which may be empty) to
-                        tag the image on
+                        the given `imageName` and `tag` (which may be empty) to tag the image on
 
-                        the engine after fetching. This PR also adds checkups to
-                        ensure
+                        the engine after fetching. This PR also adds checkups to ensure
 
-                        consistency is maintained between the database and the
-                        engine.
+                        consistency is maintained between the database and the engine.
 
 
-                        Using tags allows to simplify query and removal
-                        operations, since now
+                        Using tags allows to simplify query and removal operations, since now
 
-                        removing the image now means removing tags matching the
-                        image name.
+                        removing the image now means removing tags matching the image name.
 
 
-                        Before this change the supervisor relied only on
-                        information in the
+                        Before this change the supervisor relied only on information in the
 
-                        supervisor database, and used that to remove images by
-                        docker ID. However, the docker
+                        supervisor database, and used that to remove images by docker ID. However, the docker
 
-                        id is not a reliable identifier, since images retain the
-                        same id between
+                        id is not a reliable identifier, since images retain the same id between
 
                         releases or between services in the same release.
 
@@ -1974,8 +1905,8 @@
 
                         - Only save database image after download confirmed
                       footer:
-                        Relates-to: '#1616 #1579'
-                        relates-to: '#1616 #1579'
+                        Relates-to: "#1616 #1579"
+                        relates-to: "#1616 #1579"
                         Change-type: patch
                         change-type: patch
                       author: Felipe Lalanne
@@ -1985,12 +1916,12 @@
                 - commits:
                     - subject: Log the delta URL that will be downloaded on update
                       hash: c05c5803f08ddd31eeddb2000cc5f162fb916003
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Closes: '#1755'
-                        closes: '#1755'
+                        Closes: "#1755"
+                        closes: "#1755"
                       author: Felipe Lalanne
                       nested: []
                   version: balena-supervisor-12.9.5
@@ -2002,11 +1933,9 @@
                         The previous module was using `rewire` to get the knex
                         instance from the
 
-                        db module but that was leading to issues when running
-                        tests using `test:fast`.
+                        db module but that was leading to issues when running tests using `test:fast`.
 
-                        This provides a fix for the test module that just
-                        removes the destroy
+                        This provides a fix for the test module that just removes the destroy
 
                         call entirely (it turns out it is not necessary).
                       footer:
@@ -2034,27 +1963,25 @@
           version: meta-balena-2.83.17
           date: 2021-08-31T16:04:47.503Z
         - commits:
-            - subject: 'kernel-modules-headers: Copy module.lds'
+            - subject: "kernel-modules-headers: Copy module.lds"
               hash: 9fca34e0f4faffc0fa049e9341e7392f365bea31
               body: >
                 Since kernel v5.10 this file is generated when using
                 modules_prepare. As
 
-                the kernel-modules-headers contains pre-built target binaries,
-                we also
+                the kernel-modules-headers contains pre-built target binaries, we also
 
                 need to include this file in the package.
 
 
-                This is not a problem when using kernel-source as a
-                modules_prepare is
+                This is not a problem when using kernel-source as a modules_prepare is
 
                 always required.
               footer:
-                Fixes: '#2289'
-                fixes: '#2289'
-                Relates-to: '#1822'
-                relates-to: '#1822'
+                Fixes: "#2289"
+                fixes: "#2289"
+                Relates-to: "#1822"
+                relates-to: "#1822"
                 Change-type: patch
                 change-type: patch
                 Signed-off-by: Alex Gonzalez <alexg@balena.io>
@@ -2064,14 +1991,13 @@
           version: meta-balena-2.83.16
           date: 2021-08-31T11:22:51.142Z
         - commits:
-            - subject: 'kernel-balena: remove global blacklist of btrfs'
+            - subject: "kernel-balena: remove global blacklist of btrfs"
               hash: b9d6df84a1acd45df80da8a90ea4ca4dc2940bcf
               body: >
                 The kernel-balena class contains a global blacklist of btrfs
                 that
 
-                disables this filesystem for all device types, regardless of
-                them
+                disables this filesystem for all device types, regardless of them
 
                 explicitly enabling it.
 
@@ -2087,7 +2013,7 @@
           version: meta-balena-2.83.15
           date: 2021-08-30T15:47:20.658Z
         - commits:
-            - subject: 'tests: remove reboot requirement from NTP server test'
+            - subject: "tests: remove reboot requirement from NTP server test"
               hash: 47deb00854eefc2c8ca4103d934713d26077a7c8
               body: |
                 We no longer require a reboot when changing the NTP server
@@ -2097,20 +2023,19 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'tests: remove reboot requirement from NTP server test'
-                changelog-entry: 'tests: remove reboot requirement from NTP server test'
+                Changelog-entry: "tests: remove reboot requirement from NTP server test"
+                changelog-entry: "tests: remove reboot requirement from NTP server test"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'recipes-connectivity: fix auto-update when config.json changes'
+            - subject: "recipes-connectivity: fix auto-update when config.json changes"
               hash: 85df30628278eeb0d55e731319391d3cf98df9a8
               body: >
                 Since adding the 'config-json' systemd target the
                 'balena-ntp-config'
 
-                and 'prepare-openvpn' services have stopped running
-                automatically
+                and 'prepare-openvpn' services have stopped running automatically
 
                 when config.json is updated. This is fixed by adding
 
@@ -2118,8 +2043,10 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'recipes-connectivity: fix auto-update when config.json changes'
-                changelog-entry: 'recipes-connectivity: fix auto-update when config.json changes'
+                Changelog-entry: "recipes-connectivity: fix auto-update when config.json
+                  changes"
+                changelog-entry: "recipes-connectivity: fix auto-update when config.json
+                  changes"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -2127,25 +2054,23 @@
           version: meta-balena-2.83.14
           date: 2021-08-26T17:54:07.640Z
         - commits:
-            - subject: 'networkmanager: fix hostname race condition'
+            - subject: "networkmanager: fix hostname race condition"
               hash: 3f2486bc91994d360086694df9f01bb4b6777284
               body: >
                 Fix a race condition that can occur when setting the hostname at
 
-                boot by disabling NetworkManager's ability to modify the
-                hostname.
+                boot by disabling NetworkManager's ability to modify the hostname.
 
-                The static and transient system hostnames are now managed
-                exclusively
+                The static and transient system hostnames are now managed exclusively
 
                 by the 'balena-hostname' service.
               footer:
                 Change-type: patch
                 change-type: patch
-                Connects-to: '#2244'
-                connects-to: '#2244'
-                Changelog-entry: 'networkmanager: fix hostname race condition'
-                changelog-entry: 'networkmanager: fix hostname race condition'
+                Connects-to: "#2244"
+                connects-to: "#2244"
+                Changelog-entry: "networkmanager: fix hostname race condition"
+                changelog-entry: "networkmanager: fix hostname race condition"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -2153,44 +2078,41 @@
           version: meta-balena-2.83.13
           date: 2021-08-26T12:17:00.556Z
         - commits:
-            - subject: 'tests: remove reboot requirement from hostname test'
+            - subject: "tests: remove reboot requirement from hostname test"
               hash: 34687ca76515d57a77ba12c0fd44632518181392
               body: >
                 We no longer require reboots when changing hostname in
                 config.json.
 
-                The contents of '/etc/hostname' and the avahi mDNS broadcast
-                hostname
+                The contents of '/etc/hostname' and the avahi mDNS broadcast hostname
 
                 are updated automatically without requiring a reboot.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'tests: remove reboot requirement from hostname test'
-                changelog-entry: 'tests: remove reboot requirement from hostname test'
+                Changelog-entry: "tests: remove reboot requirement from hostname test"
+                changelog-entry: "tests: remove reboot requirement from hostname test"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'hostname: update system hostname when config.json changes'
+            - subject: "hostname: update system hostname when config.json changes"
               hash: f7b3d37502f03ca65d3352a8a8cc3b8a5d612ff4
               body: >
                 Automatically update the system hostname when config.json
                 changes.
 
 
-                Changes to 'config.json' will trigger the 'balena-hostname'
-                service
+                Changes to 'config.json' will trigger the 'balena-hostname' service
 
                 to update the static and transient hostnames and the 'avahi'
 
-                service to ensure that any hostname changes are broadcast via
-                mDNS.
+                service to ensure that any hostname changes are broadcast via mDNS.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'hostname: update system hostname when config.json changes'
-                changelog-entry: 'hostname: update system hostname when config.json changes'
+                Changelog-entry: "hostname: update system hostname when config.json changes"
+                changelog-entry: "hostname: update system hostname when config.json changes"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -2240,7 +2162,7 @@
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
       nested: []
-    - subject: 'linux-yocto: generic-aarch64: copy defconfig from debian'
+    - subject: "linux-yocto: generic-aarch64: copy defconfig from debian"
       hash: 704e1f468785ae8aaf29bd66fa3c4697a5c8faf7
       body: |
         Install a config for generic-aarch64, in kind with the generic-amd64
@@ -2250,13 +2172,13 @@
 
         Also save this as a defconfig.
       footer:
-        Changelog-entry: 'linux-yocto: generic-aarch64: copy defconfig from debian'
-        changelog-entry: 'linux-yocto: generic-aarch64: copy defconfig from debian'
+        Changelog-entry: "linux-yocto: generic-aarch64: copy defconfig from debian"
+        changelog-entry: "linux-yocto: generic-aarch64: copy defconfig from debian"
         Signed-off-by: Joseph Kogut <joseph@balena.io>
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
       nested: []
-    - subject: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
+    - subject: "linux-yocto: generic-amd64: copy defconfig from generic86-64-ext"
       hash: 3afd7e4a002e270f72cf8d9319e7d62c418f0350
       body: |
         The linux-yocto package includes no defconfig, and specifying
@@ -2268,8 +2190,8 @@
         Copy the full defconfig from balena-intel, used for the
         genericx86-64-ext device type, itself based on an Ubuntu config.
       footer:
-        Changelog-entry: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
-        changelog-entry: 'linux-yocto: generic-amd64: copy defconfig from generic86-64-ext'
+        Changelog-entry: "linux-yocto: generic-amd64: copy defconfig from generic86-64-ext"
+        changelog-entry: "linux-yocto: generic-amd64: copy defconfig from generic86-64-ext"
         Signed-off-by: Joseph Kogut <joseph@balena.io>
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
@@ -2300,7 +2222,7 @@
       author: Joseph Kogut
       nested:
         - commits:
-            - subject: 'linux-firmware: Use wildcards when selecting files to package'
+            - subject: "linux-firmware: Use wildcards when selecting files to package"
               hash: 16598bcffda7206d9a2ab9d96860cecf7de62756
               body: >
                 Firmware files can be compressed with an xz extension or not, so
@@ -2314,14 +2236,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'linux-firmware: Add firmware compression support'
+            - subject: "linux-firmware: Add firmware compression support"
               hash: 2ee6d2e652772d28c25df94aa400e7ccd9f207de
               body: >
                 This commit adds a FIRMWARE_COMPRESSION distro configuration
                 that
 
-                performs the compression of linux-firmware files. Only kernel
-                versions
+                performs the compression of linux-firmware files. Only kernel versions
 
                 above 5.3 support loading compressed firmware.
               footer:
@@ -2331,9 +2252,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: >-
-                kernel-balena: Support firmware compression from kernel version
-                5.3
+            - subject: "kernel-balena: Support firmware compression from kernel version 5.3"
               hash: c8faa130b88f11af86619d69a115be96dfbc894a
               body: >
                 Kernel version 5.3 supports loading compressed firmware files
@@ -2364,16 +2283,14 @@
       author: Joseph Kogut
       nested:
         - commits:
-            - subject: >-
-                kernel-balena: Add function to conditionally configure based on
-                version
+            - subject: "kernel-balena: Add function to conditionally configure based on
+                version"
               hash: 9787d2879d2f372c19f336c7e08bd0e6fee16ae7
               body: >
                 Some kernel configuration are only applicable from specific
                 kernel
 
-                versions. This commit adds a function that allows to add a
-                specific
+                versions. This commit adds a function that allows to add a specific
 
                 configuration set only from a given kernel version.
               footer:
@@ -2383,20 +2300,17 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'kernel-balena: Split function to get kernel version from source'
+            - subject: "kernel-balena: Split function to get kernel version from source"
               hash: c349f647db328558f026f1b914bc0246dc33bda5
               body: >
                 This allows to re-use this functionality. Note that the
                 `KERNEL_VERSION`
 
-                variable is only available after the kernel has been built as it
-                relies
+                variable is only available after the kernel has been built as it relies
 
-                on get_kernelversion_headers() poky function and utsrelease.h
-                being
+                on get_kernelversion_headers() poky function and utsrelease.h being
 
-                generated. This function parses the Makefile so only needs the
-                source.
+                generated. This function parses the Makefile so only needs the source.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2404,7 +2318,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'kernel-resin: Add as symlink to kernel-balena'
+            - subject: "kernel-resin: Add as symlink to kernel-balena"
               hash: 129128574dbf38c46c0cc7121cdf6fd0f38ef64b
               body: |
                 This avoids introducing a breaking change.
@@ -2415,7 +2329,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'kernel-balena: Replace and deprecate kernel-resin'
+            - subject: "kernel-balena: Replace and deprecate kernel-resin"
               hash: 8c0d2ce52d42e72a939d248784d67dc2413c0443
               body: >
                 New device types should use kernel-balena instead of
@@ -2430,13 +2344,12 @@
           version: meta-balena-2.83.10
           date: 2021-08-18T19:03:21.519Z
         - commits:
-            - subject: 'recipes-connectivity: improve NTP dispatcher script'
+            - subject: "recipes-connectivity: improve NTP dispatcher script"
               hash: d060bfa3581f6920fa2e353abaf82d2913d60e67
               body: >
                 Change the NetworkManager NTP dispatcher script to update the
 
-                on/offline status of the NTP sources on 'connectivity-change'
-                events
+                on/offline status of the NTP sources on 'connectivity-change' events
 
                 instead of 'up/down' events.
 
@@ -2445,8 +2358,7 @@
 
                 network interface. It makes more sense to run it for
 
-                'connectivity-change' events as we are really interested in
-                whether
+                'connectivity-change' events as we are really interested in whether
 
                 the internet is there or not rather than whether an interface is
 
@@ -2454,8 +2366,8 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'recipes-connectivity: improve NTP dispatcher script'
-                changelog-entry: 'recipes-connectivity: improve NTP dispatcher script'
+                Changelog-entry: "recipes-connectivity: improve NTP dispatcher script"
+                changelog-entry: "recipes-connectivity: improve NTP dispatcher script"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -2479,7 +2391,7 @@
                 - commits:
                     - subject: prevent slice oob access in concatReadSeekCloser
                       hash: 1e7045ac957db17fe9838602c9339c0b5ae5c282
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -2490,14 +2402,13 @@
           version: meta-balena-2.83.8
           date: 2021-08-17T07:29:06.381Z
         - commits:
-            - subject: 'grub: don''t package or install bindir utils'
+            - subject: "grub: don't package or install bindir utils"
               hash: f1835282ecd3b0f9dfc52410d8f1628653e2c1b2
               body: >
                 Remove ${bindir} from FILES_grub-common, ensuring grub utilities
                 aren't
 
-                installed to /usr/bin, in addition to a previous similar commit
-                that
+                installed to /usr/bin, in addition to a previous similar commit that
 
                 removed sbin utils. This frees approximately 5.5M.
               footer:
@@ -2510,57 +2421,47 @@
           version: meta-balena-2.83.7
           date: 2021-08-14T14:48:17.382Z
         - commits:
-            - subject: 'balena-os-sysctl: disable user namespacing by default'
+            - subject: "balena-os-sysctl: disable user namespacing by default"
               hash: 31c3ae8ad5c7ad45e450349b6972524da120e96c
               body: >
                 Most major distributions now ship kernels with user namespacing
                 enabled
 
-                in the kernel config. Some distributions, such as Arch and
-                Ubuntu,
+                in the kernel config. Some distributions, such as Arch and Ubuntu,
 
                 default to the upstream behavior of allowing unprivileged user
 
-                namespacing, regardless of potential attack surfaces exposed in
-                the
+                namespacing, regardless of potential attack surfaces exposed in the
 
                 kernel.
 
 
-                Other distributions, such as Debian, are slightly more
-                conservative,
+                Other distributions, such as Debian, are slightly more conservative,
 
                 disabling the feature at runtime behind a sysctl tunable. Debian
 
-                maintains its own patch to add the
-                kernel.unprivileged_userns_clone
+                maintains its own patch to add the kernel.unprivileged_userns_clone
 
                 tunable.
 
 
-                The Debian patch was rejected by upstream over fears of
-                application
+                The Debian patch was rejected by upstream over fears of application
 
-                developers not using this feature due to it being generally
-                unavailable
+                developers not using this feature due to it being generally unavailable
 
                 in systems, as well as fears of bugs going undiscovered.
 
 
-                RHEL uses a newer tunable introduced upstream to set the max
-                number of
+                RHEL uses a newer tunable introduced upstream to set the max number of
 
-                user namespaces to zero, which accomplishes the same thing, but
-                without
+                user namespaces to zero, which accomplishes the same thing, but without
 
                 an out of tree patch.
 
 
-                Disable user namespacing at runtime using the same method as
-                RHEL, in
+                Disable user namespacing at runtime using the same method as RHEL, in
 
-                the same manner as the hardened kernels and distributions have
-                chosen.
+                the same manner as the hardened kernels and distributions have chosen.
 
 
                 https://lwn.net/Articles/673597/
@@ -2573,7 +2474,7 @@
                 signed-off-by: Joseph Kogut <joseph@balena.io>
               author: Joseph Kogut
               nested: []
-            - subject: 'common: kernel-resin: enable user namespacing'
+            - subject: "common: kernel-resin: enable user namespacing"
               hash: 04d9561760b449024a5b411bd366ded2351cd5cd
               body: >
                 Enable CONFIG_USER_NS, a kernel feature used for user
@@ -2590,16 +2491,13 @@
           version: meta-balena-2.83.6
           date: 2021-08-13T16:30:49.145Z
         - commits:
-            - subject: >-
-                resin-u-boot.bbclass: Make console silencing change more
-                resilient
+            - subject: "resin-u-boot.bbclass: Make console silencing change more resilient"
               hash: 6f173d763828d63f70582219aa19333b1e599a57
               body: >
                 There is at least a case in a board where the puts function in
                 u-boot's
 
-                common/console.c is #ifdef'ed and defined twice. Let's
-                accomodate for
+                common/console.c is #ifdef'ed and defined twice. Let's accomodate for
 
                 such cases by correctly looping through more than one function
 
@@ -2614,9 +2512,9 @@
           version: meta-balena-2.83.5
           date: 2021-08-13T08:16:50.739Z
         - commits:
-            - subject: 'balena-os: pin linux-firmware to 20210511 from hardknott'
+            - subject: "balena-os: pin linux-firmware to 20210511 from hardknott"
               hash: e7a72c3e82587ffd2388656de71340afdddc9156
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2624,7 +2522,7 @@
                 signed-off-by: Joseph Kogut <joseph@balena.io>
               author: Joseph Kogut
               nested: []
-            - subject: 'linux-firmware: upgrade 20190815 -> 20210511'
+            - subject: "linux-firmware: upgrade 20190815 -> 20210511"
               hash: 497fa316fec3ef99a14872208abb85f7e932922d
               body: |
                 Add recipe from poky hardknott, revision 74dbb08
@@ -2638,7 +2536,7 @@
           version: meta-balena-2.83.4
           date: 2021-08-11T16:09:10.911Z
         - commits:
-            - subject: 'supervisor: Consolidate supervisor container removal'
+            - subject: "supervisor: Consolidate supervisor container removal"
               hash: f533be0ee1d6f42801f29426929e5f8b18035b9b
               body: |
                 Avoid removing supervisor containers in 3 different places
@@ -2653,7 +2551,7 @@
           version: meta-balena-2.83.3
           date: 2021-08-05T18:58:49.620Z
         - commits:
-            - subject: 'tests: Fix insecure registry error'
+            - subject: "tests: Fix insecure registry error"
               hash: 647d683dbfd0461706e75291c5396752fdc1b2ce
               body: >
                 introduced when images including
@@ -2661,11 +2559,9 @@
 
                 made it to production.
 
-                We can now use a runtime drop-in unit placed under /run/systemd/
-                to
+                We can now use a runtime drop-in unit placed under /run/systemd/ to
 
-                configure the balena-host service, which doesn't require us to
-                remount
+                configure the balena-host service, which doesn't require us to remount
 
                 the rootfs.
               footer:
@@ -2678,7 +2574,7 @@
           version: meta-balena-2.83.2
           date: 2021-08-05T13:55:32.372Z
         - commits:
-            - subject: 'linux-firmware: package i915 generations separately'
+            - subject: "linux-firmware: package i915 generations separately"
               hash: e741dcf6f520765c3345c1e64cfc3f31f5b6a604
               body: >
                 Package Intel graphics firmware generations separately, allowing
@@ -2711,19 +2607,15 @@
           version: meta-balena-2.83.0
           date: 2021-07-29T14:10:41.247Z
         - commits:
-            - subject: >-
-                tests: Symlink /dev/null instead of copying bash to break
-                services
+            - subject: "tests: Symlink /dev/null instead of copying bash to break services"
               hash: eea7514c705b43482dd3656d0c34bb2414c267ee
               body: >
                 Triggered by a failue in the VPN test - the bash binary is
                 bigger than
 
-                the openvpn binary and on devices with limitted rootfs space the
-                copying
+                the openvpn binary and on devices with limitted rootfs space the copying
 
-                is not possible. Symlinking /dev/null will break the services as
-                well.
+                is not possible. Symlinking /dev/null will break the services as well.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2734,7 +2626,7 @@
           version: meta-balena-2.82.13
           date: 2021-07-29T07:32:26.577Z
         - commits:
-            - subject: 'common: grub: don''t install sbin utils'
+            - subject: "common: grub: don't install sbin utils"
               hash: e3bf23c7977c6c0dce9eb0a49172526a7e447522
               body: >
                 These utilities aren't used on device. Don't install them to
@@ -2749,7 +2641,7 @@
           version: meta-balena-2.82.12
           date: 2021-07-24T01:06:12.763Z
         - commits:
-            - subject: 'tests: Remove journalctl line limit from hup suite'
+            - subject: "tests: Remove journalctl line limit from hup suite"
               hash: 5ce248f0d1b37c6500cdd93c639a89027f1fc7f4
               body: |
                 Having the lines limited to 500 meant we were missing
@@ -2764,9 +2656,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'tests: Enable rollback tests in hup suite'
+            - subject: "tests: Enable rollback tests in hup suite"
               hash: 9d1e892324718f2533cae1cf5e09018526d13b20
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2774,9 +2666,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'tests: Update smoke test conditions'
+            - subject: "tests: Update smoke test conditions"
               hash: 64df0c010841b0f00d8025b79ae0f23a6fccdf29
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2784,7 +2676,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'tests: Add rollback tests to HUP suite'
+            - subject: "tests: Add rollback tests to HUP suite"
               hash: 87e89fcf7b07180f3221602afc7a5b4dd8cd9e48
               body: >
                 Adding rollback-health check & rollback-altboot check to the HUP
@@ -2796,9 +2688,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'rollback-altboot: Fix minor typo in log message'
+            - subject: "rollback-altboot: Fix minor typo in log message"
               hash: 1b3405ebf116420de032ccbdac39638a420c4a88
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -2809,7 +2701,7 @@
           version: meta-balena-2.82.11
           date: 2021-07-21T20:25:31.196Z
         - commits:
-            - subject: 'tests: Remove reboot requirement from dnsmasq tests'
+            - subject: "tests: Remove reboot requirement from dnsmasq tests"
               hash: 1ea1985f7ebc56908d018c98211fd52f6fd6701c
               body: >
                 We no longer require reboots when changing dnsServers in
@@ -2826,9 +2718,9 @@
           version: meta-balena-2.82.10
           date: 2021-07-20T20:09:41.348Z
         - commits:
-            - subject: 'patch: Make OS test suite compatible with current helpers'
+            - subject: "patch: Make OS test suite compatible with current helpers"
               hash: 5a7dd196686836bd35a95f3f2c5dadf138b2590f
-              body: ''
+              body: ""
               footer:
                 Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
                 signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
@@ -2837,9 +2729,7 @@
           version: meta-balena-2.82.9
           date: 2021-07-16T22:29:01.729Z
         - commits:
-            - subject: >-
-                kernel-devsrc: Add upstream recipe from hardknott-3.3.1 for
-                dunfell
+            - subject: "kernel-devsrc: Add upstream recipe from hardknott-3.3.1 for dunfell"
               hash: f1d45613abfb3f0178868a2d09c22368e2f705fb
               body: >
                 In recent kernels (i.e. 5.10.31 for Raspberry Pi) the
@@ -2851,8 +2741,7 @@
                 596b0474d3d9b1242eab713f84d8873f9887d980 for details.
 
 
-                Hence we use in meta-balena-dunfell the upstream kernel-devsrc
-                from the
+                Hence we use in meta-balena-dunfell the upstream kernel-devsrc from the
 
                 hardknott-3.3.1 Poky release which handles this module.lds move.
               footer:
@@ -2871,8 +2760,7 @@
                 Update balena-engine from 19.03.18 to 19.03.23
 
 
-                Which brings more resilient layer download (allows proper
-                resuming after
+                Which brings more resilient layer download (allows proper resuming after
 
                 network failures).
               footer:
@@ -2891,8 +2779,7 @@
                         This commit changes the way we retry layer downloads
                         after failures with
 
-                        the goal of making it more resilient, especially for
-                        cases involving
+                        the goal of making it more resilient, especially for cases involving
 
                         large layers and unreliable network connections.
 
@@ -2900,18 +2787,15 @@
                         These are the changes:
 
 
-                        * Make sure we also retry after failures in
-                        `v2LayerDescriptor.reset()`.
+                        * Make sure we also retry after failures in `v2LayerDescriptor.reset()`.
                           This method creates a new HTTP request to resume a failed download,
                           and therefore depends on a working network to succeed.
-                        * Wait exponentially longer times between retries
-                        (instead of retrying
+                        * Wait exponentially longer times between retries (instead of retrying
                           immediately as before). This shall increase of success in case of
                           network issues that take longer to get resolved.
                         * Increase the number of retries to 10.
 
-                        * Reset retry count whenever we successfully download
-                        anything at all.
+                        * Reset retry count whenever we successfully download anything at all.
                           The idea is that we want to give up downloading only after a long
                           continuous period of failures. Combined with the exponential back-off
                           strategy and increased number of retries described above, a layer pull
@@ -2929,7 +2813,7 @@
                 - commits:
                     - subject: Drop CODEOWNERS
                       hash: e70e1a9fe622563719993626e834c85efc17905c
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -2946,16 +2830,13 @@
                         During fingerpinting of the source image the destination
                         layers are not
 
-                        exepmt from being released (e.g. when `balena image rm
-                        <iid>`) is run
+                        exepmt from being released (e.g. when `balena image rm <iid>`) is run
 
                         simultaneously.
 
-                        Similarly when processing the destination layers to
-                        generate deltas we
+                        Similarly when processing the destination layers to generate deltas we
 
-                        only hold one reference at a time, leaving the
-                        subsequent layers
+                        only hold one reference at a time, leaving the subsequent layers
 
                         vulnerable to the same issues.
                       footer:
@@ -2968,11 +2849,9 @@
                   version: balena-engine-19.03.21
                   date: 2021-06-25T12:17:21.340Z
                 - commits:
-                    - subject: >-
-                        pkg/storagemigration: poperly handle errors during state
-                        creation
+                    - subject: "pkg/storagemigration: poperly handle errors during state creation"
                       hash: b8170db554ac1d1abb3adcfe1f6265701e9147c5
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -2983,15 +2862,12 @@
                   version: balena-engine-19.03.20
                   date: 2021-06-17T12:37:04.408Z
                 - commits:
-                    - subject: >-
-                        pkg/storagemigration: allow writing logs to separate
-                        file
+                    - subject: "pkg/storagemigration: allow writing logs to separate file"
                       hash: 77536d3866ac706f049a02d2eed44a7df1cb779c
                       body: >
                         This can be used to keep a record of failed migrations.
 
-                        Only runs if BALENA_MIGRATE_OVERLAY_LOGFILE is set to a
-                        path on disk.
+                        Only runs if BALENA_MIGRATE_OVERLAY_LOGFILE is set to a path on disk.
 
                         The log file will be deleted if there are no errors.
                       footer:
@@ -3001,14 +2877,13 @@
                         signed-off-by: Robert Günzler <robertg@balena.io>
                       author: Robert Günzler
                       nested: []
-                    - subject: 'storagemigration: defer commit to next start'
+                    - subject: "storagemigration: defer commit to next start"
                       hash: bd1628e67136b78ca7e7c83c5569666207d28a84
                       body: >
                         With this change the aufs data is kept around until the
                         next time we
 
-                        start. If we find both an aufs AND an overlay2 storage
-                        root, we cleanup
+                        start. If we find both an aufs AND an overlay2 storage root, we cleanup
 
                         the aufs data.
                       footer:
@@ -3023,9 +2898,9 @@
           version: meta-balena-2.82.7
           date: 2021-07-15T19:58:41.996Z
         - commits:
-            - subject: 'dnsmasq: Restart when config.json changes'
+            - subject: "dnsmasq: Restart when config.json changes"
               hash: 76964657321934e2953c02ee8fdba4d22a9fbcdc
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3033,7 +2908,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'balena-config-vars: Restart target when config.json changes'
+            - subject: "balena-config-vars: Restart target when config.json changes"
               hash: 51005c7a3178bdc73dcff5f790a693aa70936d06
               body: >
                 The config.json watcher service will restart the config.json
@@ -3049,7 +2924,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'balena-config-vars: Add config-json.target service'
+            - subject: "balena-config-vars: Add config-json.target service"
               hash: cacb87d1b088ab1ab42b24b698e4c03d3803855e
               body: |
                 This target service can be used to restart other services
@@ -3064,7 +2939,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'balena-config-vars: Restore null as valid for dnsServers'
+            - subject: "balena-config-vars: Restore null as valid for dnsServers"
               hash: 22602e4c2fafc0f309add8313c14464ba8cd8d4b
               body: |
                 "null" is a valid setting in config.json that should write
@@ -3084,27 +2959,23 @@
           version: meta-balena-2.82.6
           date: 2021-07-15T11:17:28.470Z
         - commits:
-            - subject: 'kernel-headers-test: Update base image to buster'
+            - subject: "kernel-headers-test: Update base image to buster"
               hash: 57f6aee369e8ec4ab8b20ae82a03f8b8fd7aebe4
               body: >
                 Since we don't have devices using older 3.x kernels we update to
                 a newer
 
-                base image so that we don't have problems compiling this test
-                kernel
+                base image so that we don't have problems compiling this test kernel
 
                 module on newer kernels.
 
                 This avoids a compile error on kernel 5.10.31 on arm64
 
-                raspberrypicm4-ioboard for example where it would complain
-                _mcount is
+                raspberrypicm4-ioboard for example where it would complain _mcount is
 
-                undefined because the older gcc in the
-                intel-nuc-debian:stretch-20190717
+                undefined because the older gcc in the intel-nuc-debian:stretch-20190717
 
-                base image would not create the _mcount symbol when compiling
-                against
+                base image would not create the _mcount symbol when compiling against
 
                 the newer 5.10.31 kernel.
               footer:
@@ -3117,7 +2988,7 @@
           version: meta-balena-2.82.5
           date: 2021-07-15T05:18:57.029Z
         - commits:
-            - subject: 'tests: Add hup test suite'
+            - subject: "tests: Add hup test suite"
               hash: 7223cf082fb40e9c707730c19f640d64187516a7
               body: >
                 Add smoke test
@@ -3126,13 +2997,11 @@
                 Resolve `latest` to dev variant
 
 
-                If we want the serial logs of the DUT the image that is flashed
-                needs to
+                If we want the serial logs of the DUT the image that is flashed needs to
 
                 be the development variant. The `latest` shortcut however always
 
-                resolves to the production image. We manually resolve the
-                version to fix
+                resolves to the production image. We manually resolve the version to fix
 
                 this.
 
@@ -3157,11 +3026,9 @@
                 hup due to a lack of space on the inactive partition.
 
 
-                Add a task to check the docker image space against the available
-                space on
+                Add a task to check the docker image space against the available space on
 
-                the root filesystem partition and fail the build if it's too
-                big.
+                the root filesystem partition and fail the build if it's too big.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3171,7 +3038,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'image-balena: Add check for docker image size'
+            - subject: "image-balena: Add check for docker image size"
               hash: 9a75a872dfcf0c3d71d4d5584241b65d07bd7103
               body: >
                 Currently it is possible to build a docker image that will then
@@ -3180,11 +3047,9 @@
                 hup due to a lack of space on the inactive partition.
 
 
-                Add a task to check the docker image space against the available
-                space on
+                Add a task to check the docker image space against the available space on
 
-                the root filesystem partition and fail the build if it's too
-                big.
+                the root filesystem partition and fail the build if it's too big.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3192,7 +3057,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'balena-image: Break down the rootfs image size calculation'
+            - subject: "balena-image: Break down the rootfs image size calculation"
               hash: 8a2b704bd5103ba6419328d0f9cc3d6b667ab5f5
               body: >
                 Replace the IMAGE_ROOTFS_SIZE magic number with a calculation
@@ -3201,14 +3066,11 @@
                 the partition sizes on the balena image classes.
 
 
-                The rootfs size is calculated with the assumption of a total
-                BalenaOS
+                The rootfs size is calculated with the assumption of a total BalenaOS
 
-                size of 700M. This includes boot, state, rootA and rootB
-                partitions. The
+                size of 700M. This includes boot, state, rootA and rootB partitions. The
 
-                data partition will then grow to occupy the rest of the storage
-                media.
+                data partition will then grow to occupy the rest of the storage media.
 
 
                 Device integration layers can override this value if needed.
@@ -3219,14 +3081,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'image_types_balena: Add rootfs size calculation function'
+            - subject: "image_types_balena: Add rootfs size calculation function"
               hash: a4ede069d1ab7cbd2b6830574eb891f8c76a92a9
               body: >
                 Instead of hardcoding the requested root filesystem value, let's
                 explain
 
-                how the calculation is made with a python function that will
-                adjust based
+                how the calculation is made with a python function that will adjust based
 
                 on the sizes of other partitions.
               footer:
@@ -3241,7 +3102,7 @@
         - commits:
             - subject: Update balena-supervisor from v12.8.8 to v12.9.3
               hash: 7903a929e48af889b8df14754d84a8e6b0655752
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3254,20 +3115,20 @@
           version: meta-balena-2.82.2
           date: 2021-07-13T01:37:11.482Z
         - commits:
-            - subject: 'balena-hostname: add comments and improve logging'
+            - subject: "balena-hostname: add comments and improve logging"
               hash: a7a2bb057e22e2ac4fc4cafaf6ba3b533ca5f464
               body: |
                 Add some comments and improve the logging.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'balena-hostname: add comments and improve logging'
-                changelog-entry: 'balena-hostname: add comments and improve logging'
+                Changelog-entry: "balena-hostname: add comments and improve logging"
+                changelog-entry: "balena-hostname: add comments and improve logging"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'meta-balena: rename resin-hostname to balena-hostname'
+            - subject: "meta-balena: rename resin-hostname to balena-hostname"
               hash: 55baa1687ca3c576077b26a31591304911be2581
               body: |
                 Rename 'resin-hostname' to 'balena-hostname' and update all
@@ -3275,8 +3136,8 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'meta-balena: rename resin-hostname to balena-hostname'
-                changelog-entry: 'meta-balena: rename resin-hostname to balena-hostname'
+                Changelog-entry: "meta-balena: rename resin-hostname to balena-hostname"
+                changelog-entry: "meta-balena: rename resin-hostname to balena-hostname"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -3284,9 +3145,9 @@
           version: meta-balena-2.82.1
           date: 2021-07-12T13:01:41.540Z
         - commits:
-            - subject: 'networkmanager: Rename references to resin'
+            - subject: "networkmanager: Rename references to resin"
               hash: c857ecc07325e643c39d30f68621c2807664e36e
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3294,9 +3155,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'resin-proxy-config: Rename to balena-proxy-config'
+            - subject: "resin-proxy-config: Rename to balena-proxy-config"
               hash: 9e40219affeae1e5f7d888439654f9e40cef5fc0
-              body: ''
+              body: ""
               footer:
                 Change-type: minor
                 change-type: minor
@@ -3304,9 +3165,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'resin-ntp-config: Rename to balena-ntp-config'
+            - subject: "resin-ntp-config: Rename to balena-ntp-config"
               hash: e534f24dbce8d883c867d52538ab721c423566a2
-              body: ''
+              body: ""
               footer:
                 Change-type: minor
                 change-type: minor
@@ -3314,9 +3175,9 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'resin-net-config: Rename to balena-net-config'
+            - subject: "resin-net-config: Rename to balena-net-config"
               hash: a3726f421840e0facc21dde81b00a5e0d70e49ba
-              body: ''
+              body: ""
               footer:
                 Change-type: minor
                 change-type: minor
@@ -3327,7 +3188,7 @@
           version: meta-balena-2.82.0
           date: 2021-07-10T11:13:11.567Z
         - commits:
-            - subject: 'balena-engine: Restore previous systemd service settings'
+            - subject: "balena-engine: Restore previous systemd service settings"
               hash: 0b7dac9461193e6c1afbc046337aeb74ca20e84c
               body: |
                 - remove exec-root path from balena engine
@@ -3347,7 +3208,7 @@
           version: meta-balena-2.81.1
           date: 2021-07-09T23:25:52.084Z
         - commits:
-            - subject: 'recipes-core: add a ''network connectivity wait'' service'
+            - subject: "recipes-core: add a 'network connectivity wait' service"
               hash: a6781d54c6edced457ad916cac3fec9c70d25a0a
               body: >
                 Add a new systemd service to check for full network
@@ -3357,42 +3218,33 @@
 
                 connectivity checker doesn't differentiate between the
 
-                CONNECTED_LOCAL, CONNECTED_SITE and CONNECTED_GLOBAL states.
-                This
+                CONNECTED_LOCAL, CONNECTED_SITE and CONNECTED_GLOBAL states. This
 
-                service checks for the CONNECTED_GLOBAL state only and can be
-                used
+                service checks for the CONNECTED_GLOBAL state only and can be used
 
                 to delay the start of other services which require full network
 
-                access to be available. This can help to avoid startup problems
-                on
+                access to be available. This can help to avoid startup problems on
 
                 networks with slow DNS access or that utilise a captive portal.
 
 
-                The script does an initial oneshot check of the NM state to make
-                sure
+                The script does an initial oneshot check of the NM state to make sure
 
                 that we don't wait for an event that doesn't come. This check is
 
-                redundant at boot time due to the fact that the service is
-                started
+                redundant at boot time due to the fact that the service is started
 
-                before NM to ensure that no NM DBus events are missed. The
-                initial
+                before NM to ensure that no NM DBus events are missed. The initial
 
-                check is useful in circumstances where you want to run the
-                script
+                check is useful in circumstances where you want to run the script
 
                 standalone or post-boot.
 
 
-                Other services that wish to make use of this service and wait
-                for
+                Other services that wish to make use of this service and wait for
 
-                full network connectivity should add the following entries to
-                their
+                full network connectivity should add the following entries to their
 
                 systemd unit definition:
 
@@ -3403,8 +3255,8 @@
               footer:
                 Change-type: minor
                 change-type: minor
-                Changelog-entry: 'recipes-core: add a ''network connectivity wait'' service'
-                changelog-entry: 'recipes-core: add a ''network connectivity wait'' service'
+                Changelog-entry: "recipes-core: add a 'network connectivity wait' service"
+                changelog-entry: "recipes-core: add a 'network connectivity wait' service"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -3414,7 +3266,7 @@
         - commits:
             - subject: Remove CODEOWNERS
               hash: da8bfafc94a3815ad62658846d46ec0b4a3edb9b
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3427,7 +3279,7 @@
         - commits:
             - subject: get journal logs at the end of the suite
               hash: 5d6089c3c8210db34ed0e23864b0ec25579d43e4
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3438,7 +3290,7 @@
           version: meta-balena-2.80.11
           date: 2021-07-01T11:51:12.849Z
         - commits:
-            - subject: 'hostapp-update-hooks: Migrate supervisor database'
+            - subject: "hostapp-update-hooks: Migrate supervisor database"
               hash: cad3e4cc49c4fbc275a5448c38e2da550e596573
               body: |
                 forward_supervisor-db will ensure the supervisor database
@@ -3453,9 +3305,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: >-
-                hostapp-update-hooks: Revert sv database path used by previous
-                hooks
+            - subject: "hostapp-update-hooks: Revert sv database path used by previous hooks"
               hash: ef8aa041e4957ef138608959ae87ca9eea7b0774
               body: |
                 This probably should not have been changed during the
@@ -3470,32 +3320,27 @@
           version: meta-balena-2.80.10
           date: 2021-06-24T19:51:43.564Z
         - commits:
-            - subject: 'balena-engine: refactor systemd service'
+            - subject: "balena-engine: refactor systemd service"
               hash: 8227a61f6bef6d93cc6a5acd0ef93a2012079964
               body: >
                 This makes it easier to overwrite the arguments passed in the
                 engine
 
-                unit from drop-in overwrites. See the development image drop-in
-                unit for
+                unit from drop-in overwrites. See the development image drop-in unit for
 
                 reference.
 
 
-                Using `systemctl edit --runtime balena.service`, which puts
-                those
+                Using `systemctl edit --runtime balena.service`, which puts those
 
-                overwrites into `/run/systemd/system/balena.service.d/`, it
-                would be
+                overwrites into `/run/systemd/system/balena.service.d/`, it would be
 
-                possible to modify the runtime behavior of the engine without
-                remounting
+                possible to modify the runtime behavior of the engine without remounting
 
                 the rootfs to be writeable.
 
 
-                See
-                https://www.freedesktop.org/software/systemd/man/systemd.unit.html#System%20Unit%20Search%20Path
+                See https://www.freedesktop.org/software/systemd/man/systemd.unit.html#System%20Unit%20Search%20Path
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3508,7 +3353,7 @@
         - commits:
             - subject: Update balena-supervisor from v12.8.7 to v12.8.8
               hash: 713342af1f30442613a3f8cdf38552d10294a1d5
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3523,7 +3368,7 @@
         - commits:
             - subject: prevent failed teardown from making test hang
               hash: 47b439dfd12a66171ced7b710502dc143fedb686
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3536,7 +3381,7 @@
         - commits:
             - subject: catch error if image path is corrupted
               hash: 883fb0e8ac2570763d5857e1a3f2e3cc8b6fc8b2
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3547,9 +3392,8 @@
           version: meta-balena-2.80.6
           date: 2021-06-17T14:47:58.695Z
         - commits:
-            - subject: >-
-                update-balena-supervisor: Improve obtaining the supervisor
-                directory name
+            - subject: "update-balena-supervisor: Improve obtaining the supervisor directory
+                name"
               hash: 4ed241617668a0d3cc2d505a052bb9cba3178cea
               body: |
                 There are better ways of getting the supervisor
@@ -3564,7 +3408,7 @@
               nested: []
             - subject: Update balena-supervisor from v12.7.0 to v12.8.7
               hash: b935b594c12a2cdd54871bfb064d5cc843442e53
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3577,21 +3421,20 @@
           version: meta-balena-2.80.5
           date: 2021-06-17T14:36:11.613Z
         - commits:
-            - subject: 'kernel-headers-test: simplify example module Makefile'
+            - subject: "kernel-headers-test: simplify example module Makefile"
               hash: 88df9d672d45b7d0bf59d4656654091c3bbfd56b
               body: >
                 The example kernel module has some unnecessary variables and
                 targets.
 
-                Simplify this makefile by passing the kernel source directory to
-                make,
+                Simplify this makefile by passing the kernel source directory to make,
 
                 and using the M variable to build the module.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'kernel-headers-test: simplify example module Makefile'
-                changelog-entry: 'kernel-headers-test: simplify example module Makefile'
+                Changelog-entry: "kernel-headers-test: simplify example module Makefile"
+                changelog-entry: "kernel-headers-test: simplify example module Makefile"
                 Signed-off-by: Joseph Kogut <joseph@balena.io>
                 signed-off-by: Joseph Kogut <joseph@balena.io>
               author: Joseph Kogut
@@ -3605,16 +3448,14 @@
                 The hostapp-update hooks would run before the supervisor update
                 step
 
-                when using balenahup via the dashboard. This resulted in the
-                balena
+                when using balenahup via the dashboard. This resulted in the balena
 
                 supervisor state conf file being out-of-date.
 
 
                 This commit removes the hostapp-update hook and instead uses a
 
-                oneshot service to ensure the conf is migrated if it does not
-                exist
+                oneshot service to ensure the conf is migrated if it does not exist
 
                 in the new path before starting the supervisor.
               footer:
@@ -3627,9 +3468,8 @@
           version: meta-balena-2.80.3
           date: 2021-06-10T13:47:28.925Z
         - commits:
-            - subject: >-
-                update-balena-supervisor: Refactor script to ensure target
-                version is ran
+            - subject: "update-balena-supervisor: Refactor script to ensure target version is
+                ran"
               hash: 0433c666bf4756df30312f0d59ad8a8b94b062ab
               body: |
                 This is a rebase of PR 2180 by Miguel,
@@ -3645,7 +3485,7 @@
           version: meta-balena-2.80.2
           date: 2021-06-09T09:54:10.830Z
         - commits:
-            - subject: 'bluez5: Disable PnP Device Information service'
+            - subject: "bluez5: Disable PnP Device Information service"
               hash: afb3dc0441e9ed0f2f9a08de5dd2a9cc75f09ac3
               body: >
                 This reverts to the behavior before v5.56 as it interferes with
@@ -3671,20 +3511,16 @@
                 balena-engine requires fixes backported from upstream to support
                 a newer
 
-                version of Go, and retaining the new recipes while switching
-                back to the
+                version of Go, and retaining the new recipes while switching back to the
 
-                supported version of Go using the GOVERSION variable is still a
-                work in
+                supported version of Go using the GOVERSION variable is still a work in
 
-                process. Revert these changes for now. We can merge the new
-                recipes
+                process. Revert these changes for now. We can merge the new recipes
 
                 back in once the build issues are resolved.
 
 
-                This reverts commit f36dbd96684f9adfc5ce6faa57aa26fc4ba8e34e,
-                reversing
+                This reverts commit f36dbd96684f9adfc5ce6faa57aa26fc4ba8e34e, reversing
 
                 changes made to b228aea720fd1536ac6904b1886b2d445a582fc9.
               footer:
@@ -3699,9 +3535,9 @@
           version: meta-balena-2.80.0
           date: 2021-06-07T08:31:41.036Z
         - commits:
-            - subject: 'supervisor: Remove symlink to legacy resin sysconfig'
+            - subject: "supervisor: Remove symlink to legacy resin sysconfig"
               hash: 2b04b5a776c9e996ded53dd7c405755c6543d7e5
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3709,9 +3545,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: >-
-                hostapp-update-hooks: Migrate resin-supervisor to
-                balena-supervisor
+            - subject: "hostapp-update-hooks: Migrate resin-supervisor to balena-supervisor"
               hash: 19a9bfc2f172368c8652a448e77a77563a5c32a4
               body: >
                 After a hostapp-update we need to migrate the supervisor.conf
@@ -3720,8 +3554,7 @@
                 mounted from /etc/resin-supervisor in the state cache partition.
 
 
-                Avoid deleting the old supervisor state cache in case of
-                rollback.
+                Avoid deleting the old supervisor state cache in case of rollback.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3729,7 +3562,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'supervisor: Remove legacy resin supervisor container'
+            - subject: "supervisor: Remove legacy resin supervisor container"
               hash: d8dd730edd9e4f4c87fcc0f4774097add68f3422
               body: |
                 Clean up the legacy resin supervisor container if it exists
@@ -3747,7 +3580,7 @@
           version: meta-balena-2.79.10
           date: 2021-06-03T16:04:52.063Z
         - commits:
-            - subject: 'hostapp-update-hooks: Sync to disk when hook is done'
+            - subject: "hostapp-update-hooks: Sync to disk when hook is done"
               hash: 9688de53a3d6ae143b74bb1a7ea446b073755b27
               body: >
                 This makes sure the hook changes are committed if the power is
@@ -3759,14 +3592,13 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'extract-balena-ca: Sync changes to disk in case of power loss'
+            - subject: "extract-balena-ca: Sync changes to disk in case of power loss"
               hash: 62302a2149b886b5e44cd2cc93bdc70e55227bb0
               body: >
                 Sync changes to disk once the certificates have been updated.
                 This
 
-                minimizes the risk of the custom CA to be committed without
-                having the
+                minimizes the risk of the custom CA to be committed without having the
 
                 certificates updated.
               footer:
@@ -3776,9 +3608,8 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: >-
-                resin-net-config: Make sure to sync changes to disk in case of
-                power loss
+            - subject: "resin-net-config: Make sure to sync changes to disk in case of power
+                loss"
               hash: e5733363c4ba2a3e31c4613b34e66e072517d1c8
               body: >
                 Commit disk modifications to minimize data loss in event of
@@ -3796,7 +3627,7 @@
           version: meta-balena-2.79.9
           date: 2021-06-03T13:15:41.101Z
         - commits:
-            - subject: 'bluez: Set policy configuration to AutoEnable'
+            - subject: "bluez: Set policy configuration to AutoEnable"
               hash: 614eaf745b29f6e5f373f9c712a7c533373a6187
               body: >
                 Since bluez 5.35, the bluetooth daemon has the ability to power
@@ -3816,7 +3647,7 @@
                 signed-off-by: Alex Gonzalez <alexg@balena.io>
               author: Alex Gonzalez
               nested: []
-            - subject: 'bluez5: Replace executable path directory in unit file'
+            - subject: "bluez5: Replace executable path directory in unit file"
               hash: 809da983829e97e5cddc424c4ff95054e2404ef0
               body: >
                 The unit file is left with a placeholder to perform the
@@ -3833,15 +3664,15 @@
           version: meta-balena-2.79.8
           date: 2021-06-02T12:32:03.789Z
         - commits:
-            - subject: 'meta-balena: rename connectivity packagegroup'
+            - subject: "meta-balena: rename connectivity packagegroup"
               hash: 8f54c4137f8bb8a83a05d9963cdb1565778c737b
               body: |
                 Rename the resin-connectivity packagegroup.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'meta-balena: rename connectivity packagegroup'
-                changelog-entry: 'meta-balena: rename connectivity packagegroup'
+                Changelog-entry: "meta-balena: rename connectivity packagegroup"
+                changelog-entry: "meta-balena: rename connectivity packagegroup"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -3849,7 +3680,7 @@
           version: meta-balena-2.79.7
           date: 2021-05-26T15:03:08.108Z
         - commits:
-            - subject: 'bluez5: Use bluez5 recipe from poky master'
+            - subject: "bluez5: Use bluez5 recipe from poky master"
               hash: fe3c870eef75927eac740bbc1e8e15b8ed9c7341
               body: |
                 This commit brings the bluez5 recipe from poky master as we need
@@ -3867,7 +3698,7 @@
           version: meta-balena-2.79.6
           date: 2021-05-26T08:26:16.310Z
         - commits:
-            - subject: 'README: Update supported Yocto versions'
+            - subject: "README: Update supported Yocto versions"
               hash: cdbf76ccbaaf6e265f8432eca10d42e55b6969e8
               body: >
                 Add the warrior and dunfell versions to the list of tested
@@ -3897,7 +3728,7 @@
           version: meta-balena-2.79.4
           date: 2021-05-21T10:15:56.497Z
         - commits:
-            - subject: 'kernel-resin: disable panic on hung task'
+            - subject: "kernel-resin: disable panic on hung task"
               hash: ac0ba89f14c0b04b7353192f15a0634be44d910c
               body: >
                 Some BSPs have enabled CONFIG_BOOTPARAM_HUNG_TASK_PANIC which
@@ -3923,8 +3754,7 @@
 
                 Hung tasks are not normally terminal, nor do they affect system
 
-                stability, but panicking during an image write forces a device
-                into a
+                stability, but panicking during an image write forces a device into a
 
                 bootloop that requires manual intervention to remedy.
 
@@ -3932,13 +3762,11 @@
                 See the below stacktrace:
 
 
-                [  243.565482] INFO: task balenad:4049 blocked for more than 120
-                seconds.
+                [  243.565482] INFO: task balenad:4049 blocked for more than 120 seconds.
 
                 [  243.565737]       Not tainted 4.9.140-l4t-r32.4 #1
 
-                [  243.565853] "echo 0 >
-                /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+                [  243.565853] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
 
                 [  243.566032] balenad         D    0  4049      1 0x00000008
 
@@ -3950,8 +3778,7 @@
 
                 [  243.566590] [<ffffff8008f0d420>] schedule+0x40/0xa8
 
-                [  243.566744] [<ffffff8008f1057c>]
-                rwsem_down_read_failed+0xd4/0x128
+                [  243.566744] [<ffffff8008f1057c>] rwsem_down_read_failed+0xd4/0x128
 
                 [  243.566872] [<ffffff8008f0f8a8>] down_read+0x58/0x60
 
@@ -3961,14 +3788,11 @@
 
                 [  243.567237] [<ffffff8008083900>] el0_svc_naked+0x34/0x38
 
-                [  243.567394] Kernel panic - not syncing: hung_task: blocked
-                tasks
+                [  243.567394] Kernel panic - not syncing: hung_task: blocked tasks
 
-                [  243.567533] CPU: 3 PID: 47 Comm: khungtaskd Not tainted
-                4.9.140-l4t-r32.4 #1
+                [  243.567533] CPU: 3 PID: 47 Comm: khungtaskd Not tainted 4.9.140-l4t-r32.4 #1
 
-                [  243.567819] Hardware name: NVIDIA Jetson Xavier NX Developer
-                Kit (DT)
+                [  243.567819] Hardware name: NVIDIA Jetson Xavier NX Developer Kit (DT)
 
                 [  243.568318] Call trace:
 
@@ -3992,14 +3816,13 @@
 
                 [  243.609511] Memory Limit: none
 
-                [  243.612484] trusty-log panic notifier - trusty version Built:
-                12:18:19 Oct 16 2020 [  243.636124] Rebooting in 1 seconds..
+                [  243.612484] trusty-log panic notifier - trusty version Built: 12:18:19 Oct 16 2020 [  243.636124] Rebooting in 1 seconds..
 
 
                 Disable this config for all platforms.
               footer:
-                Changelog-entry: 'kernel-resin: disable panic on hung task'
-                changelog-entry: 'kernel-resin: disable panic on hung task'
+                Changelog-entry: "kernel-resin: disable panic on hung task"
+                changelog-entry: "kernel-resin: disable panic on hung task"
                 Change-type: patch
                 change-type: patch
                 Signed-off-by: Joseph Kogut <joseph@balena.io>
@@ -4011,7 +3834,7 @@
         - commits:
             - subject: Add boot-splash test to unmanaged suite
               hash: a6865f22ba5d5bd60f659daac113cac6ae1aa8f3
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -4022,7 +3845,7 @@
           version: meta-balena-2.79.2
           date: 2021-05-19T09:25:55.145Z
         - commits:
-            - subject: 'balena-os: Add preferred provider for Go native'
+            - subject: "balena-os: Add preferred provider for Go native"
               hash: 20dd5fb4384e78f24d3e3304be38666fdcb859a8
               body: >
                 With Go 1.16 a precompiled go-binary-native that provides
@@ -4030,8 +3853,7 @@
 
                 introduced to bootstrap the Go compilation.
 
-                Specify to use the go-native recipe and not go-binary-native
-                when
+                Specify to use the go-native recipe and not go-binary-native when
 
                 requiring go-native.
               footer:
@@ -4044,18 +3866,16 @@
           version: meta-balena-2.79.1
           date: 2021-05-18T08:37:41.159Z
         - commits:
-            - subject: 'balena-engine: build in GOPATH mode'
+            - subject: "balena-engine: build in GOPATH mode"
               hash: 342a9621b5416d2a1f6aec3948dfdcfe15395d13
               body: >
                 balena-engine hasn't transitioned to building with modules yet,
                 and Go
 
-                1.16 enabled them by default. Revert to the old behavior for now
-                to fix
+                1.16 enabled them by default. Revert to the old behavior for now to fix
                   the build.
 
-                This option will be removed in Go 1.17, so we'll have to update
-                our
+                This option will be removed in Go 1.17, so we'll have to update our
 
                 build before upgrading further.
 
@@ -4068,14 +3888,13 @@
                 signed-off-by: Joseph Kogut <joseph@balena.io>
               author: Joseph Kogut
               nested: []
-            - subject: 'recipes-devtools: go: backport get_linuxloader'
+            - subject: "recipes-devtools: go: backport get_linuxloader"
               hash: 283e7d279ed26c2855b4916c24bb502e2d87a189
               body: >
                 Hardknott introduces get_linuxloader() to linuxloader.bbclass
                 that
 
-                allows for dynamically choosing between different c libraries,
-                which go
+                allows for dynamically choosing between different c libraries, which go
 
                 recipes depend on.
 
@@ -4088,9 +3907,12 @@
                 signed-off-by: Joseph Kogut <joseph@balena.io>
               author: Joseph Kogut
               nested: []
-            - subject: 'meta-resin-pyro: go-native: include fix-goarch.inc'
+            - subject: "meta-resin-pyro: go-native: include fix-goarch.inc"
               hash: 252521185190ac2730fa8a92a5565a6069104e25
-              body: "This fixes the error:\n\n\tInvalid GOMIPS value. Must be hardfloat or softfloat.\n"
+              body: |
+                This fixes the error:
+
+                	Invalid GOMIPS value. Must be hardfloat or softfloat.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -4098,7 +3920,7 @@
                 signed-off-by: Joseph Kogut <joseph.kogut@gmail.com>
               author: Joseph Kogut
               nested: []
-            - subject: 'meta-balena-common: upgrade from go 1.12.17 to 1.16.2'
+            - subject: "meta-balena-common: upgrade from go 1.12.17 to 1.16.2"
               hash: a395e1bdaaba8050042d011e6e5fe40311216d58
               body: |
                 Copy the unmodified golang recipes from poky commit 464472d to
@@ -4117,7 +3939,7 @@
           version: meta-balena-2.79.0
           date: 2021-05-13T18:25:01.396Z
         - commits:
-            - subject: 'balena-config-vars: improve handling of NM config parameters'
+            - subject: "balena-config-vars: improve handling of NM config parameters"
               hash: 61280e84e045a4b235a21eec194fc8cf894c310d
               body: >
                 Improve the handling of the os.network.* parameters defined in
@@ -4133,24 +3955,20 @@
 
                 rather than having to parse them directly. Some of the default
 
-                settings have now been included as part of the jq parsing
-                string.
+                settings have now been included as part of the jq parsing string.
 
-                The jq command has also been assigned to an interim variable
-                rather
+                The jq command has also been assigned to an interim variable rather
 
                 than being evaluated directly. This allows other scripts which
 
-                include balena-config-vars to handle parsing errors correctly
-                when
+                include balena-config-vars to handle parsing errors correctly when
 
                 they are running with 'set -e'.
 
 
                 The os-networkmanager script has been updated to make use of the
 
-                balena-config-vars script and no longer parses config.json
-                itself.
+                balena-config-vars script and no longer parses config.json itself.
 
                 The logging has been standardised and the simplification of the
 
@@ -4159,15 +3977,14 @@
                 to 101 lines.
 
 
-                The build time tests have been removed as the os-networkmanager
-                script
+                The build time tests have been removed as the os-networkmanager script
 
                 is unable to access /usr/sbin/balena-config-vars at buildtime.
               footer:
                 Change-type: patch
                 change-type: patch
-                Changelog-entry: 'balena-config-vars: improve handling of NM config parameters'
-                changelog-entry: 'balena-config-vars: improve handling of NM config parameters'
+                Changelog-entry: "balena-config-vars: improve handling of NM config parameters"
+                changelog-entry: "balena-config-vars: improve handling of NM config parameters"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -4191,7 +4008,7 @@
         - commits:
             - subject: Add symlinks and aliases for legacy resin namespaces
               hash: 16f5437233e88af276d9cce7bc99dd1230f6f10d
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -4201,7 +4018,7 @@
               nested: []
             - subject: Rename resin-supervisor to balena-supervisor
               hash: 8c0b17bc3dbcf0674c7083d5a8dacff64cca48c1
-              body: ''
+              body: ""
               footer:
                 Change-type: minor
                 change-type: minor
@@ -4228,7 +4045,7 @@
                 - commits:
                     - subject: Backwards compatility changes for old resin namespaces
                       hash: 301aa52f032fecd29495894e828f21a93df60caa
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4238,7 +4055,7 @@
                       nested: []
                     - subject: Change container name to balena_supervisor
                       hash: 09615c9d8254d3f62ef1088d0da35485b0c18734
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: minor
                         change-type: minor
@@ -4248,7 +4065,7 @@
                       nested: []
                     - subject: Rename resin-supervisor to balena-supervisor
                       hash: 5faf9d7686d7f03b5bb73ef9a234038e7e61037c
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: minor
                         change-type: minor
@@ -4259,58 +4076,46 @@
                   version: balena-supervisor-12.7.0
                   date: 2021-05-07T12:05:43.135Z
                 - commits:
-                    - subject: >-
-                        Show warning instead of exception for invalid network
-                        config
+                    - subject: Show warning instead of exception for invalid network config
                       hash: 5197a1330d69cbff97f3c53a77f640638e074b8a
                       body: >
                         A previous PR (#1656) fixed validation for network ipam
                         config,
 
-                        checking that both network and subnet are defined for
-                        each ipam config entry
+                        checking that both network and subnet are defined for each ipam config entry
 
                         (as described in the docker documentation).
 
 
-                        After that PR, the validations throws an exception if
-                        the network target state is incorrect,
+                        After that PR, the validations throws an exception if the network target state is incorrect,
 
-                        but this turns out to be the wrong approach, because
-                        that exception is also triggered
+                        but this turns out to be the wrong approach, because that exception is also triggered
 
                         when querying target state.
 
 
-                        This isn't a problem in normal operation, but it is in
-                        local mode, because local
+                        This isn't a problem in normal operation, but it is in local mode, because local
 
-                        mode queries the old target state before sending a new
-                        one. Since the query fails,
+                        mode queries the old target state before sending a new one. Since the query fails,
 
                         the CLI can never push the new target state.
 
 
-                        This PR replaces the exception with a warning on the
-                        logs, since a
+                        This PR replaces the exception with a warning on the logs, since a
 
-                        misconfigured network won't cause any engine failures,
-                        it will just
+                        misconfigured network won't cause any engine failures, it will just
 
-                        prevent containers to communicate through the provided
-                        network.
+                        prevent containers to communicate through the provided network.
 
 
-                        A future improvement should move this validation to an
-                        earlier point in the process,
+                        A future improvement should move this validation to an earlier point in the process,
 
-                        so the target state can get rejected before it even gets
-                        to a point it
+                        so the target state can get rejected before it even gets to a point it
 
                         can be used.
                       footer:
-                        Relates-to: '#1693'
-                        relates-to: '#1693'
+                        Relates-to: "#1693"
+                        relates-to: "#1693"
                         Change-type: patch
                         change-type: patch
                       author: Felipe Lalanne
@@ -4318,11 +4123,9 @@
                   version: balena-supervisor-12.6.8
                   date: 2021-05-06T20:30:52.075Z
                 - commits:
-                    - subject: >-
-                        Patch awaiting response when checking if supervisor0
-                        network exists
+                    - subject: Patch awaiting response when checking if supervisor0 network exists
                       hash: 8b0c2347d8d04d3c7101016f6c885f31d9b3dc6a
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4333,11 +4136,9 @@
                   version: balena-supervisor-12.6.7
                   date: 2021-05-06T15:58:02.661Z
                 - commits:
-                    - subject: >-
-                        Fix parsing driver_opts from compose to docker network
-                        creation
+                    - subject: Fix parsing driver_opts from compose to docker network creation
                       hash: 1408fd7bcb5f25b75679b7ce0e509adc7f8f6004
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4348,22 +4149,17 @@
                   version: balena-supervisor-12.6.6
                   date: 2021-05-06T14:52:59.431Z
                 - commits:
-                    - subject: >-
-                        Update balena-register-device and send extra info at
-                        provision time
+                    - subject: Update balena-register-device and send extra info at provision time
                       hash: 9e52bb33ac931a035b4cd0fd80173bf10db771c0
                       body: >
                         This extra info will mean the API is able to immediately
                         set default
 
-                        config vars based on the os/supervisor version so that
-                        they are
+                        config vars based on the os/supervisor version so that they are
 
-                        available on the first target state fetch rather than
-                        having a delay
+                        available on the first target state fetch rather than having a delay
 
-                        whilst waiting for the supervisor to report them as part
-                        of a state
+                        whilst waiting for the supervisor to report them as part of a state
 
                         patch
 
@@ -4375,12 +4171,9 @@
                       author: Pagan Gazzard
                       nested:
                         - commits:
-                            - subject: >-
-                                Support
-                                `supervisorVersion`/`osVersion`/`osVariant`/`macAddress`
-                                fields
+                            - subject: Support `supervisorVersion`/`osVersion`/`osVariant`/`macAddress` fields
                               hash: 6f10fe77ba11ec57bb012777975423dda498a8bd
-                              body: ''
+                              body: ""
                               footer:
                                 Change-type: minor
                                 change-type: minor
@@ -4390,7 +4183,7 @@
                         - commits:
                             - subject: Update dependencies
                               hash: 8d78459d6cf6e0dcaa4721c38898eeb2d25c5674
-                              body: ''
+                              body: ""
                               footer:
                                 Change-type: patch
                                 change-type: patch
@@ -4398,11 +4191,9 @@
                           version: balena-register-device-7.1.1
                           date: 2021-04-29T12:23:50.655Z
                         - commits:
-                            - subject: >-
-                                Switch from randomstring to uuid for generating
-                                device uuids
+                            - subject: Switch from randomstring to uuid for generating device uuids
                               hash: 596a76abcf0a76aef93d191e4c59b939701c80b8
-                              body: ''
+                              body: ""
                               footer:
                                 Change-type: minor
                                 change-type: minor
@@ -4410,11 +4201,9 @@
                           version: balena-register-device-7.1.0
                           date: 2020-07-13T14:38:52.915Z
                         - commits:
-                            - subject: >-
-                                Add .versionbot/CHANGELOG.yml for nested
-                                changelogs
+                            - subject: Add .versionbot/CHANGELOG.yml for nested changelogs
                               hash: 7444f4ba2538180a5c75fa5f62de6f395ae28ba7
-                              body: ''
+                              body: ""
                               footer:
                                 Change-type: patch
                                 change-type: patch
@@ -4423,52 +4212,50 @@
                           date: 2020-07-13T13:03:45.818Z
                         - commits:
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               hash: 8cfa23ebbe2915b2f37730972cf104cb47f68c65
                               subject: Convert to type checked javascript
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: 0f3e9d26f375554f793dd632b94f33e3ee88933b
-                              subject: >-
-                                Drop callback interface in favor of promise
-                                interface
+                              subject: Drop callback interface in favor of promise interface
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: 67d46678e910c2c8b11f417fa40d00781a1a3905
                               subject: Switch to a named export
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: faa9edc73cf243acd2abe1532e64aab8303031b5
                               subject: Convert to typescript
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: 9e5bdbeaee325c8a523c8498ef023baeb49ef7c1
                               subject: Update to typed-error 3.x
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: 27e78f2ea3f1a059a9fb2ba43dff55f32b0b2b4a
                               subject: Switch to returning native promises
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               footers:
                                 change-type: major
                               hash: dc21eb20dba1a977e74ffadbece66720ced4c529
                               subject: Update to balena-request 11.x
                             - author: Pagan Gazzard
-                              body: ''
+                              body: ""
                               hash: f4008dad3de415cc25987268b387848fc3ed1200
                               subject: Use typescript import helpers
-                          date: '2020-07-06T18:11:23Z'
+                          date: 2020-07-06T18:11:23Z
                           version: balena-register-device-7.0.0
                   version: balena-supervisor-12.6.5
                   date: 2021-05-06T10:19:39.399Z
@@ -4483,23 +4270,21 @@
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Relates-to: '#1680'
-                        relates-to: '#1680'
+                        Relates-to: "#1680"
+                        relates-to: "#1680"
                       author: Felipe Lalanne
                       nested: []
                   version: balena-supervisor-12.6.4
                   date: 2021-05-05T19:06:49.805Z
                 - commits:
-                    - subject: >-
-                        Added configurations.md to document all configurable
-                        vars
+                    - subject: Added configurations.md to document all configurable vars
                       hash: 07a0344dc6ac15a67513080c63dffe0d6b811ebf
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Closes: '#1646'
-                        closes: '#1646'
+                        Closes: "#1646"
+                        closes: "#1646"
                         Signed-off-by: Miguel Casqueira <miguel@balena.io>
                         signed-off-by: Miguel Casqueira <miguel@balena.io>
                       author: Miguel Casqueira
@@ -4513,14 +4298,12 @@
                         The `start-resin-supervisor` script in newer OS version
                         no longer uses the
 
-                        SUPERVISOR_TAG environment variable setup on
-                        supervisor.conf and
+                        SUPERVISOR_TAG environment variable setup on supervisor.conf and
 
                         update-supervisor.conf.
 
 
-                        This change removes the need for that variable with
-                        livepush supervisor
+                        This change removes the need for that variable with livepush supervisor
 
                         to make it compatible with older and newer OS versions
                       footer:
@@ -4531,7 +4314,7 @@
                   version: balena-supervisor-12.6.2
                   date: 2021-04-30T19:54:33.136Z
                 - commits:
-                    - subject: 'Remove mz, mkdirp, body-parser dependencies'
+                    - subject: Remove mz, mkdirp, body-parser dependencies
                       hash: 4a2ac557ef11d334154bafa0cab4e7272cbed749
                       body: |
                         'mz' can be safely replaced with fs.promises
@@ -4540,8 +4323,8 @@
                         is redundant. 'body-parser' is deprecated and
                         contained within express v4.x.
                       footer:
-                        Closes: '#1567'
-                        closes: '#1567'
+                        Closes: "#1567"
+                        closes: "#1567"
                         Change-type: patch
                         change-type: patch
                         Signed-off-by: Christina Wang <christina@balena.io>
@@ -4560,8 +4343,7 @@
                         for custom composer types for network.
 
 
-                        This commit also modifies network tests to use the new
-                        types
+                        This commit also modifies network tests to use the new types
                       footer:
                         Change-type: minor
                         change-type: minor
@@ -4572,7 +4354,7 @@
                 - commits:
                     - subject: Enable docker layer caching on CircleCI
                       hash: dd2df215f0c62459f3e26c56efdfce26edbcc229
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4583,11 +4365,9 @@
                   version: balena-supervisor-12.5.16
                   date: 2021-04-27T16:42:23.485Z
                 - commits:
-                    - subject: >-
-                        Added clean step to remove previous builds before
-                        running tests
+                    - subject: Added clean step to remove previous builds before running tests
                       hash: 6f4030634ad05f29f72cea11456a252570c470d7
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4598,20 +4378,19 @@
                   version: balena-supervisor-12.5.15
                   date: 2021-04-26T19:55:49.189Z
                 - commits:
-                    - subject: 'balena-supervisor: replace references to resin-vars'
+                    - subject: "balena-supervisor: replace references to resin-vars"
                       hash: 6ca9507beb616c4b344e4927cb5db01534c8ae4b
                       body: >
                         Replace all references to the 'resin-vars' script with
 
-                        'balena-config-vars' as it has been renamed. Add a
-                        conditional
+                        'balena-config-vars' as it has been renamed. Add a conditional
 
                         test for compatibility with legacy systems.
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Changelog-entry: 'balena-supervisor: replace references to resin-vars'
-                        changelog-entry: 'balena-supervisor: replace references to resin-vars'
+                        Changelog-entry: "balena-supervisor: replace references to resin-vars"
+                        changelog-entry: "balena-supervisor: replace references to resin-vars"
                         Signed-off-by: Mark Corbin <mark@balena.io>
                         signed-off-by: Mark Corbin <mark@balena.io>
                       author: Mark Corbin
@@ -4621,7 +4400,7 @@
                 - commits:
                     - subject: Update supervisor to typescript 4
                       hash: fd06c06092b61d349e8b40f66f847065368810e3
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4638,24 +4417,22 @@
 
                         - [Release notes](https://github.com/npm/ssri/releases)
 
-                        -
-                        [Changelog](https://github.com/npm/ssri/blob/v6.0.2/CHANGELOG.md)
+                        - [Changelog](https://github.com/npm/ssri/blob/v6.0.2/CHANGELOG.md)
 
-                        -
-                        [Commits](https://github.com/npm/ssri/compare/v6.0.1...v6.0.2)
+                        - [Commits](https://github.com/npm/ssri/compare/v6.0.1...v6.0.2)
                       footer:
                         Change-type: patch
                         change-type: patch
-                        Signed-off-by: 'dependabot[bot] <support@github.com>'
-                        signed-off-by: 'dependabot[bot] <support@github.com>'
-                      author: 'dependabot[bot]'
+                        Signed-off-by: dependabot[bot] <support@github.com>
+                        signed-off-by: dependabot[bot] <support@github.com>
+                      author: dependabot[bot]
                       nested: []
                   version: balena-supervisor-12.5.12
                   date: 2021-04-20T22:52:22.531Z
                 - commits:
                     - subject: Refactor extra_uEnv to not match with intel nuc
                       hash: e6eda0fca7b280aa5453972a26c36ab6895c227a
-                      body: ''
+                      body: ""
                       footer:
                         Change-type: patch
                         change-type: patch
@@ -4682,7 +4459,7 @@
           version: meta-balena-2.77.1
           date: 2021-05-10T13:48:11.472Z
         - commits:
-            - subject: 'grub update hook: move variables from grub.cfg to grubenv'
+            - subject: "grub update hook: move variables from grub.cfg to grubenv"
               hash: 76c82dd987215982dbfcbdf950588dafdc4c129e
               body: >
                 In order to verify GPG signature of grub.cfg it must be
@@ -4703,17 +4480,15 @@
           version: meta-balena-2.77.0
           date: 2021-05-05T15:18:01.595Z
         - commits:
-            - subject: 'kernel: Always include overlayfs support'
+            - subject: "kernel: Always include overlayfs support"
               hash: ddb5dff6b146dfc252aeecede59ad3acc79683f7
               body: >
                 This is needed in preparation for storage migration from aufs to
                 overlayfs.
 
-                When running hostapp-update, we need to create the target
-                hostapp on
+                When running hostapp-update, we need to create the target hostapp on
 
-                overlayfs, which implies the OS we update from can support both
-                drivers
+                overlayfs, which implies the OS we update from can support both drivers
               footer:
                 Change-type: minor
                 change-type: minor
@@ -4724,9 +4499,9 @@
           version: meta-balena-2.76.0
           date: 2021-04-30T16:01:42.415Z
         - commits:
-            - subject: 'grub: grub-efi: buildin gzio for gz compressed kernels'
+            - subject: "grub: grub-efi: buildin gzio for gz compressed kernels"
               hash: 6e0dd4407077d66fa9a0ac16b38a83f6cd46e9b2
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -4756,14 +4531,14 @@
   version: 2.83.10+rev1
   date: 2021-08-23T21:46:10.423Z
 - commits:
-    - subject: 'generic-amd64: install complete linux-firmware'
+    - subject: "generic-amd64: install complete linux-firmware"
       hash: 85c4d7f0249d9f7c36c99767176f493b166ebe52
       body: |
         Instead of specifying specific subpackages, install entire
         linux-firmware package.
       footer:
-        Changelog-entry: 'generic-amd64: install complete linux-firmware'
-        changelog-entry: 'generic-amd64: install complete linux-firmware'
+        Changelog-entry: "generic-amd64: install complete linux-firmware"
+        changelog-entry: "generic-amd64: install complete linux-firmware"
         Signed-off-by: Joseph Kogut <joseph@balena.io>
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
@@ -4771,14 +4546,14 @@
   version: 2.74.0+rev8
   date: 2021-08-23T21:28:19.080Z
 - commits:
-    - subject: 'balena-image: add linux-firmware-iwlwifi to generic-amd64'
+    - subject: "balena-image: add linux-firmware-iwlwifi to generic-amd64"
       hash: 025bc0331b2c2d5599195ac43b1c18f2a139ccf5
       body: |
         This adds firmware for Intel wireless chipsets supported by the iwlwifi
         driver. Tested with AX200 chipset.
       footer:
-        Changelog-entry: 'balena-image: add linux-firmware-iwlwifi to generic-amd64'
-        changelog-entry: 'balena-image: add linux-firmware-iwlwifi to generic-amd64'
+        Changelog-entry: "balena-image: add linux-firmware-iwlwifi to generic-amd64"
+        changelog-entry: "balena-image: add linux-firmware-iwlwifi to generic-amd64"
         Signed-off-by: Joseph Kogut <joseph@balena.io>
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
@@ -4819,14 +4594,14 @@
   version: 2.74.0+rev5
   date: 2021-07-27T19:03:55.263Z
 - commits:
-    - subject: 'meta-balena-generic: default to linux v5.10'
+    - subject: "meta-balena-generic: default to linux v5.10"
       hash: 850aee7cb1e23276760aa0a03241cd300b2b40a4
-      body: ''
+      body: ""
       footer:
         Change-type: patch
         change-type: patch
-        Changelog-entry: 'meta-balena-generic: default to linux v5.10'
-        changelog-entry: 'meta-balena-generic: default to linux v5.10'
+        Changelog-entry: "meta-balena-generic: default to linux v5.10"
+        changelog-entry: "meta-balena-generic: default to linux v5.10"
         Signed-off-by: Joseph Kogut <joseph@balena.io>
         signed-off-by: Joseph Kogut <joseph@balena.io>
       author: Joseph Kogut
@@ -4836,7 +4611,7 @@
 - commits:
     - subject: Update balena-yocto-scripts to v1.14.3
       hash: 3cc3c27205c20cd5488370cbaa8926b973e94bd4
-      body: ''
+      body: ""
       footer:
         Changelog-entry: Update balena-yocto-scripts to v1.14.3
         changelog-entry: Update balena-yocto-scripts to v1.14.3
@@ -4875,9 +4650,7 @@
       author: Joseph Kogut
       nested:
         - commits:
-            - subject: >-
-                balena: Make the healthcheck loading service part of
-                balena.service
+            - subject: "balena: Make the healthcheck loading service part of balena.service"
               hash: c26f2d203a87d1578d9d52d5bbd8b0b18869916e
               body: >
                 This prevents issues with the health check when the image is
@@ -4887,8 +4660,8 @@
               footer:
                 Change-type: patch
                 change-type: patch
-                Connects-to: 'https://github.com/balena-os/meta-balena/issues/2010'
-                connects-to: 'https://github.com/balena-os/meta-balena/issues/2010'
+                Connects-to: https://github.com/balena-os/meta-balena/issues/2010
+                connects-to: https://github.com/balena-os/meta-balena/issues/2010
                 Signed-off-by: Robert Günzler <robertg@balena.io>
                 signed-off-by: Robert Günzler <robertg@balena.io>
               author: Robert Günzler
@@ -4896,7 +4669,7 @@
           version: meta-balena-2.71.3
           date: 2021-02-26T12:34:11.073Z
         - commits:
-            - subject: 'dnsmasq: enable dbus support'
+            - subject: "dnsmasq: enable dbus support"
               hash: 372980ca6aa6bd2793ac856c303c3b3ac4eeffdb
               body: >
                 This config option is disabled by default in the upstream
@@ -4910,7 +4683,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'dnsmasq: update to 2.84 with dnspooq fix'
+            - subject: "dnsmasq: update to 2.84 with dnspooq fix"
               hash: 3afbe8dfbbaf9f73a09048e0350622535befa0a8
               body: >
                 https://github.com/balena-os/meta-balena/issues/2099
@@ -4930,7 +4703,7 @@
           version: meta-balena-2.71.2
           date: 2021-02-23T19:57:37.313Z
         - commits:
-            - subject: 'recipes-bsp: grub: install only release modules'
+            - subject: "recipes-bsp: grub: install only release modules"
               hash: 78a8049218d8ce3a9172b7fca6fe00270544e7f1
               body: >
                 GRUB builds modules with both debug and release variants, with
@@ -4939,8 +4712,7 @@
                 and *.mod extensions respectively.
 
 
-                Install only the release modules in do_deploy() to avoid
-                balooning the
+                Install only the release modules in do_deploy() to avoid balooning the
 
                 size of the boot partition.
               footer:
@@ -4953,7 +4725,7 @@
           version: meta-balena-2.71.1
           date: 2021-02-23T17:59:51.133Z
         - commits:
-            - subject: 'meta-balena-common: add grub-efi support'
+            - subject: "meta-balena-common: add grub-efi support"
               hash: 3bfbd05d81d59c82fb131117700325416fb152cb
               body: >
                 Use upstream grub and grub-efi recipes with a new grub-conf
@@ -4986,7 +4758,7 @@
               nested: []
             - subject: Update codeowners
               hash: a00b54679aa6804f6a5c9fa75826764cf21c5c2e
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -4999,7 +4771,7 @@
         - commits:
             - subject: Add leviathan automated OS test suite
               hash: 3f6d7588874721c506a70f66603d2b153f9a6fcf
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -5010,7 +4782,7 @@
           version: meta-balena-2.70.1
           date: 2021-02-11T16:18:58.778Z
         - commits:
-            - subject: 'systemd/timeinit: use systemd mount unit for /etc/fake-hwclock'
+            - subject: "systemd/timeinit: use systemd mount unit for /etc/fake-hwclock"
               hash: 7d6ec3d411af78b9b1f979b90461e9efb059e4e7
               body: >
                 Replace the 'bind-etc-fake-hwclock.service' with a systemd mount
@@ -5018,20 +4790,15 @@
                 unit (etc-fake\x2dhwclock.mount).
 
 
-                Using a systemd service to bind mount the /etc/fake-hwclock
-                directory
+                Using a systemd service to bind mount the /etc/fake-hwclock directory
 
-                results in systemd generating an internal mount unit for the
-                same
+                results in systemd generating an internal mount unit for the same
 
-                directory. This causes problems at shutdown when both methods
-                try to
+                directory. This causes problems at shutdown when both methods try to
 
-                unmount the directory. This frequently leads to the directory
-                being
+                unmount the directory. This frequently leads to the directory being
 
-                unmounted before the fake-hwclock service has managed to save
-                the
+                unmounted before the fake-hwclock service has managed to save the
 
                 system time. This results in an inaccurate fake-hwclock time
 
@@ -5039,10 +4806,12 @@
               footer:
                 Change-type: minor
                 change-type: minor
-                Connects-to: '#1919 #2107'
-                connects-to: '#1919 #2107'
-                Changelog-entry: 'systemd/timeinit: use systemd mount unit for /etc/fake-hwclock'
-                changelog-entry: 'systemd/timeinit: use systemd mount unit for /etc/fake-hwclock'
+                Connects-to: "#1919 #2107"
+                connects-to: "#1919 #2107"
+                Changelog-entry: "systemd/timeinit: use systemd mount unit for
+                  /etc/fake-hwclock"
+                changelog-entry: "systemd/timeinit: use systemd mount unit for
+                  /etc/fake-hwclock"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -5052,7 +4821,7 @@
         - commits:
             - subject: Update balena-supervisor from v12.3.0 to v12.3.5
               hash: 8f8a57760b82a1378adc078c86bb25aeafd7d6e8
-              body: ''
+              body: ""
               footer:
                 Change-type: patch
                 change-type: patch
@@ -5065,25 +4834,24 @@
           version: meta-balena-2.69.1
           date: 2021-02-03T23:42:05.644Z
         - commits:
-            - subject: 'openvpn: remove resin-ntp-config call from upscript.sh'
+            - subject: "openvpn: remove resin-ntp-config call from upscript.sh"
               hash: 958cd8f4bfc5d052d29c5d60c43e9ede58e39825
               body: >
                 Running resin-ntp-config from openvpn upscript.sh is no longer
 
-                necessary as it is now run automatically when config.json
-                changes.
+                necessary as it is now run automatically when config.json changes.
               footer:
                 Change-type: patch
                 change-type: patch
-                Connects-to: '#2073'
-                connects-to: '#2073'
-                Changelog-entry: 'openvpn: remove resin-ntp-config call from upscript.sh'
-                changelog-entry: 'openvpn: remove resin-ntp-config call from upscript.sh'
+                Connects-to: "#2073"
+                connects-to: "#2073"
+                Changelog-entry: "openvpn: remove resin-ntp-config call from upscript.sh"
+                changelog-entry: "openvpn: remove resin-ntp-config call from upscript.sh"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'resin-vars: trigger NTP config script on config.json changes'
+            - subject: "resin-vars: trigger NTP config script on config.json changes"
               hash: 8dd222087f58c596bf3d30a956c985fcb0214baa
               body: |
                 Add resin-ntp-config.service to config-json.service so that the
@@ -5092,15 +4860,15 @@
               footer:
                 Change-type: minor
                 change-type: minor
-                Connects-to: '#2073'
-                connects-to: '#2073'
-                Changelog-entry: 'resin-vars: trigger NTP config script on config.json changes'
-                changelog-entry: 'resin-vars: trigger NTP config script on config.json changes'
+                Connects-to: "#2073"
+                connects-to: "#2073"
+                Changelog-entry: "resin-vars: trigger NTP config script on config.json changes"
+                changelog-entry: "resin-vars: trigger NTP config script on config.json changes"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'resin-ntp-config: update script and add systemd service'
+            - subject: "resin-ntp-config: update script and add systemd service"
               hash: 7084f736b988706f71fe1d1ec95db6641be8a85e
               body: >
                 Update the resin-ntp-config script to work with dynamic chrony
@@ -5114,43 +4882,37 @@
                 using the chrony-helper script.
 
 
-                A systemd service has been added to run the resin-ntp-config
-                script
+                A systemd service has been added to run the resin-ntp-config script
 
-                once at boot. Previously the script was being run up to 8 times
-                at
+                once at boot. Previously the script was being run up to 8 times at
 
                 boot via a NetworkManager dispatcher script.
               footer:
                 Change-type: minor
                 change-type: minor
-                Connects-to: '#2073'
-                connects-to: '#2073'
-                Changelog-entry: 'resin-ntp-config: update script and add systemd service'
-                changelog-entry: 'resin-ntp-config: update script and add systemd service'
+                Connects-to: "#2073"
+                connects-to: "#2073"
+                Changelog-entry: "resin-ntp-config: update script and add systemd service"
+                changelog-entry: "resin-ntp-config: update script and add systemd service"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'networkmanager: add improved dispatcher scripts for NTP handling'
+            - subject: "networkmanager: add improved dispatcher scripts for NTP handling"
               hash: 23e52eaca7f0983ac6da27289fc293e43e7dbebd
               body: >
                 Update the existing DHCP dispatcher script for adding NTP
                 sources to
 
-                make use of dynamic chrony source configuration. Any DHCP
-                configured
+                make use of dynamic chrony source configuration. Any DHCP configured
 
-                NTP sources for a particular interface are added to a sources
-                file on
+                NTP sources for a particular interface are added to a sources file on
 
-                network 'up' or DHCP lease renewal events. Any DHCP configured
-                NTP
+                network 'up' or DHCP lease renewal events. Any DHCP configured NTP
 
                 sources for a particular interface are deleted on network 'down'
 
-                events. Changes to the sources file are picked up by chrony
-                either
+                events. Changes to the sources file are picked up by chrony either
 
                 when it starts up or at runtime using the chrony-helper script.
 
@@ -5159,36 +4921,31 @@
 
                 status on network 'up' and 'down' events. This will make chrony
 
-                re-run an iburst for sources when the appropriate network
-                interface
+                re-run an iburst for sources when the appropriate network interface
 
                 comes back up.
               footer:
                 Change-type: minor
                 change-type: minor
-                Connects-to: '#2073'
-                connects-to: '#2073'
-                Changelog-entry: >-
-                  networkmanager: add improved dispatcher scripts for NTP
-                  handling
-                changelog-entry: >-
-                  networkmanager: add improved dispatcher scripts for NTP
-                  handling
+                Connects-to: "#2073"
+                connects-to: "#2073"
+                Changelog-entry: "networkmanager: add improved dispatcher scripts for NTP
+                  handling"
+                changelog-entry: "networkmanager: add improved dispatcher scripts for NTP
+                  handling"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
               nested: []
-            - subject: 'chrony: add sourcedir support and helper script'
+            - subject: "chrony: add sourcedir support and helper script"
               hash: d6c64b0a08b64593d6684605bd5268f28ff1b1c9
               body: >
                 Add the 'sourcedir' parameter to the chrony configuration to
                 support
 
-                dynamic source configuration files. Any NTP source files that
-                are
+                dynamic source configuration files. Any NTP source files that are
 
-                created in 'sourcedir' (/run/chrony) can be used to update the
-                chrony
+                created in 'sourcedir' (/run/chrony) can be used to update the chrony
 
                 source configuration at runtime.
 
@@ -5199,10 +4956,10 @@
               footer:
                 Change-type: minor
                 change-type: minor
-                Connects-to: '#2073'
-                connects-to: '#2073'
-                Changelog-entry: 'chrony: add sourcedir support and helper script'
-                changelog-entry: 'chrony: add sourcedir support and helper script'
+                Connects-to: "#2073"
+                connects-to: "#2073"
+                Changelog-entry: "chrony: add sourcedir support and helper script"
+                changelog-entry: "chrony: add sourcedir support and helper script"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -5215,8 +4972,7 @@
               body: >
                 We need to make sure the firmware cleanup function runs before
 
-                do_populate_sysroot otherwise do_populate_sysroot will race with
-                it and
+                do_populate_sysroot otherwise do_populate_sysroot will race with it and
 
                 will fail complaining about the missing firmware that
 
@@ -5239,49 +4995,38 @@
                 Fixes #2075
 
 
-                Needed were a number of various changes to make the package
-                compile properly:
+                Needed were a number of various changes to make the package compile properly:
 
 
-                Removed is
-                0001-wwan-Set-MTU-based-on-what-ModemManager-exposes.patch that
-                is now
+                Removed is 0001-wwan-Set-MTU-based-on-what-ModemManager-exposes.patch that is now
 
                 included upstream.
 
 
-                Our patch for removing HTTPS connectivity checking warning is
-                reworked for ease of
+                Our patch for removing HTTPS connectivity checking warning is reworked for ease of
 
-                maintainance. It now keeps the log entry, but changes it to
-                debug level.
+                maintainance. It now keeps the log entry, but changes it to debug level.
 
 
-                Fixed are UPSTREAM_CHECK_* definitions as they referenced a
-                wrong version number.
+                Fixed are UPSTREAM_CHECK_* definitions as they referenced a wrong version number.
 
 
-                The following additional configuration options were
-                added/removed:
+                The following additional configuration options were added/removed:
 
 
-                *. Introspection is disabled through
-                `--enable-introspection=no`. Other services do
+                *. Introspection is disabled through `--enable-introspection=no`. Other services do
 
-                not depend on it, so it is safe to remove it. A related patch is
-                no longer needed
+                not depend on it, so it is safe to remove it. A related patch is no longer needed
 
                 0002-Do-not-create-settings-settings-property-documentati.patch
 
 
-                *. A new option for using firewalld zone for shared mode is
-                disabled as we do not
+                *. A new option for using firewalld zone for shared mode is disabled as we do not
 
                 use firewalld.
 
 
-                *. The polkit agent option no longer is available, so
-                `--enable-polkit-agent` and
+                *. The polkit agent option no longer is available, so `--enable-polkit-agent` and
 
                 `--disable-polkit-agent` are no longer defined.
               footer:
@@ -5296,12 +5041,12 @@
           version: meta-balena-2.68.0
           date: 2021-01-29T09:45:01.458Z
         - commits:
-            - subject: 'docs: mention balenaRootCA as a config.json parameter'
+            - subject: "docs: mention balenaRootCA as a config.json parameter"
               hash: d0be88530c630d68f8582dce99442c6d94ba5455
-              body: ''
+              body: ""
               footer:
-                Connects-to: 'https://github.com/balena-os/meta-balena/issues/2011'
-                connects-to: 'https://github.com/balena-os/meta-balena/issues/2011'
+                Connects-to: https://github.com/balena-os/meta-balena/issues/2011
+                connects-to: https://github.com/balena-os/meta-balena/issues/2011
                 Change-type: patch
                 change-type: patch
                 Signed-off-by: Matthew McGinn <matthew@balena.io>
@@ -5311,7 +5056,7 @@
           version: meta-balena-2.67.6
           date: 2021-01-28T17:45:30.693Z
         - commits:
-            - subject: 'replace busybox ps with procps [klutchell]'
+            - subject: replace busybox ps with procps [klutchell]
               hash: 00556af37cf241e2b95d9b719f1ab58cc9bbddb6
               body: >
                 Replace busybox ps link with ps.procps without installing
@@ -5323,34 +5068,29 @@
 
                 By using procps as docker expects we can properly handle ps args
 
-                such as -e and -o to format output. Busybox is only capable of
-                this
+                such as -e and -o to format output. Busybox is only capable of this
 
                 when compiled in "desktop" mode.
 
 
-                This upstream commit to poky has already split the ps binary
-                into
+                This upstream commit to poky has already split the ps binary into
 
                 a separate procps package:
 
 
-                -
-                https://git.yoctoproject.org/cgit/cgit.cgi/poky/commit/?id=507a47a4e5077d5f8f76d9629be6b871dfd8eb90
+                - https://git.yoctoproject.org/cgit/cgit.cgi/poky/commit/?id=507a47a4e5077d5f8f76d9629be6b871dfd8eb90
 
 
-                So for now we can copy this recipe at the commit above into
-                compat branches
+                So for now we can copy this recipe at the commit above into compat branches
 
-                and use that version until we pick up a branch newer than
-                gatesgarth.
+                and use that version until we pick up a branch newer than gatesgarth.
               footer:
                 Change-type: patch
                 change-type: patch
-                Connects-to: 'https://github.com/balena-os/balena-engine/issues/236'
-                connects-to: 'https://github.com/balena-os/balena-engine/issues/236'
-                Changelog-entry: 'replace busybox ps with procps [klutchell]'
-                changelog-entry: 'replace busybox ps with procps [klutchell]'
+                Connects-to: https://github.com/balena-os/balena-engine/issues/236
+                connects-to: https://github.com/balena-os/balena-engine/issues/236
+                Changelog-entry: replace busybox ps with procps [klutchell]
+                changelog-entry: replace busybox ps with procps [klutchell]
                 Signed-off-by: Kyle Harding <kyle@balena.io>
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
@@ -5374,7 +5114,7 @@
           version: meta-balena-2.67.4
           date: 2021-01-27T11:08:07.030Z
         - commits:
-            - subject: 'kernel-headers-test: Install python dependency'
+            - subject: "kernel-headers-test: Install python dependency"
               hash: 6b648fa36bb8f7b2f90799a9c331210e34d3c438
               body: |
                 Some makefiles for the kernel modules build, like for
@@ -5399,14 +5139,12 @@
 
                 UART modems (RaspberryPi HATs) are not working currently under
 
-                balenaOS as NetworkManager times out while attempting to
-                establish
+                balenaOS as NetworkManager times out while attempting to establish
 
                 ppp connection. This is not a balenaOS specific issue.
 
 
-                This commits adds a `connect ""` declaration to
-                `/etc/ppp/options`
+                This commits adds a `connect ""` declaration to `/etc/ppp/options`
 
                 to workaround this as the NULL default value causes the timeout.
 
@@ -5415,8 +5153,7 @@
 
                 physical link. When using NetworkManager/ModemManager it is
 
-                ModemManager that establishes the physical link before passing
-                it
+                ModemManager that establishes the physical link before passing it
 
                 to NetworkManager. Thus `connect` should be empty.
               footer:
@@ -5431,24 +5168,21 @@
           version: meta-balena-2.67.2
           date: 2021-01-14T12:39:10.901Z
         - commits:
-            - subject: 'resin-device-register: Fix post provisioning state not reported'
+            - subject: "resin-device-register: Fix post provisioning state not reported"
               hash: 62016c3931c08cbc4c4bdb1e4069c6f9d9533b04
               body: >
                 Starting with dee971c0dbeb6e8363f3e321af582e99627626e9, flasher
 
-                images, which don't contain a supervisor version, try to
-                register
+                images, which don't contain a supervisor version, try to register
 
                 in the API using the parameter supervisor_version='null'.
 
 
-                However, the API expects this parameter to be unset completely
-                if
+                However, the API expects this parameter to be unset completely if
 
                 there's no version to be reported during registration, otherwise
 
-                the call fails and the device doesn't show up in dashboard
-                during
+                the call fails and the device doesn't show up in dashboard during
 
                 flashing or report the post-provisioning state.
               footer:
@@ -5463,7 +5197,7 @@
         - commits:
             - subject: Update balena-supervisor from v12.2.11 to v12.3.0
               hash: fc41d16085b331d032a3666fc25af7c43eee5369
-              body: ''
+              body: ""
               footer:
                 Changelog-entry: Update balena-supervisor from v12.2.11 to v12.3.0
                 changelog-entry: Update balena-supervisor from v12.2.11 to v12.3.0
@@ -5482,11 +5216,9 @@
                 This is necessary because node has its own built-in CA bundle
                 and ignores
 
-                the system-wide bundle. Bind-mount the system-wide bundle to the
-                supervisor
+                the system-wide bundle. Bind-mount the system-wide bundle to the supervisor
 
-                container as well to keep the previous behavior. Make it
-                read-only though,
+                container as well to keep the previous behavior. Make it read-only though,
 
                 any modifications should be performed by the host OS.
               footer:
@@ -5501,7 +5233,7 @@
           version: meta-balena-2.66.3
           date: 2021-01-12T09:38:46.408Z
         - commits:
-            - subject: 'README: Rename resin-logo to balena-logo.'
+            - subject: "README: Rename resin-logo to balena-logo."
               hash: 47a7a0ab9a99ea45b4fcf4e684d973088328eca9
               body: >
                 The file rename happened in v2.51 but the README has not been
@@ -5518,7 +5250,7 @@
           version: meta-balena-2.66.2
           date: 2021-01-11T17:30:40.806Z
         - commits:
-            - subject: 'kernel-devsrc: use upstream recipe starting with dunfell'
+            - subject: "kernel-devsrc: use upstream recipe starting with dunfell"
               hash: 1300a223f5b58dd4584b62e87df41ec72f783961
               body: |
                 Remove the kernel-devsrc package from meta-balena and
@@ -5535,7 +5267,7 @@
                 signed-off-by: Kyle Harding <kyle@balena.io>
               author: Kyle Harding
               nested: []
-            - subject: 'gen_mod_headers: add missing arch headers to tools'
+            - subject: "gen_mod_headers: add missing arch headers to tools"
               hash: 5485f1fbc901a04eedbcc3b72cc95fdfb2d03665
               body: >
                 Upstream changes to the kernel have switched to a shared x86
@@ -5556,7 +5288,7 @@
           version: meta-balena-2.66.1
           date: 2021-01-04T13:06:56.017Z
         - commits:
-            - subject: 'chrony: bump to version 4.0'
+            - subject: "chrony: bump to version 4.0"
               hash: 67e8632a8a6c82dcf382b0204af40b79dd1a279a
               body: |
                 Update chrony from version 3.4 to version 4.0.
@@ -5573,8 +5305,8 @@
               footer:
                 Change-type: minor
                 change-type: minor
-                Changelog-entry: 'chrony: bump to version 4.0'
-                changelog-entry: 'chrony: bump to version 4.0'
+                Changelog-entry: "chrony: bump to version 4.0"
+                changelog-entry: "chrony: bump to version 4.0"
                 Signed-off-by: Mark Corbin <mark@balena.io>
                 signed-off-by: Mark Corbin <mark@balena.io>
               author: Mark Corbin
@@ -5582,7 +5314,7 @@
           version: meta-balena-2.66.0
           date: 2020-12-18T11:02:16.858Z
         - commits:
-            - subject: 'u-boot: Add required configuration for BalenaOS environment'
+            - subject: "u-boot: Add required configuration for BalenaOS environment"
               hash: 401345c86a3a017dc548a94c7afa3977d547fc21
               body: >
                 The BalenaOS u-boot environment patch requires u-boot to support
@@ -5603,7 +5335,7 @@
 - commits:
     - subject: Update to Dunfell
       hash: 18fae4a347e78f85c0b1d3292e7ae1d23411063b
-      body: ''
+      body: ""
       footer:
         Change-type: minor
         change-type: minor

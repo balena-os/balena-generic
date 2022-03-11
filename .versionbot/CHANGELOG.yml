@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update meta-balena to v2.95.1
+      hash: fdc36d979ec74dbb75895b2d21d5e3292fd8a41e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update meta-balena to v2.95.1
+        changelog-entry: Update meta-balena to v2.95.1
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.95.1
+  title: "'Bump meta-balena to v2.95.1'"
+  date: 2022-03-11T17:51:54.326Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.17.2
       hash: dd1100fa1b22e38cc49e0aa034f45edda0e05736
       body: |

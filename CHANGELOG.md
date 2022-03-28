@@ -1,6 +1,65 @@
 Change log
 -----------
 
+# v2.95.1+rev1
+## (2022-03-28)
+
+
+<details>
+<summary> Update balena-yocto-scripts to v1.17.10 [ab77] </summary>
+
+> ## balena-yocto-scripts-1.17.10
+> ### (2022-03-28)
+> 
+> * Pass environment to docker [ab77]
+> 
+> ## balena-yocto-scripts-1.17.9
+> ### (2022-03-25)
+> 
+> * automation: ami: make BALENA_PRELOAD_COMMIT optional [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.8
+> ### (2022-03-15)
+> 
+> * balena-deploy: s/resin-flasher/balena-flasher [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.7
+> ### (2022-03-15)
+> 
+> * jenkins_generate_ami: surface preload app commit as variable [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.6
+> ### (2022-03-08)
+> 
+> * barys: Remove RESINHUP setting [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.5
+> ### (2022-03-08)
+> 
+> * balena-deploy: Avoid patching test suites config.js during deploy [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.4
+> ### (2022-03-03)
+> 
+> * Init and update submodules when switching meta-balena branches [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.3
+> ### (2022-03-02)
+> 
+> * jenkins_build: Use recurse-submodules when checking out meta-balena [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.2
+> ### (2022-02-25)
+> 
+> * prepare-and-start: Remove balena login [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.1
+> ### (2022-01-27)
+> 
+> * balena-deploy.inc: Do no deploy device logo to deprecated endpoint [Florin Sarbu]
+> 
+</details>
+
 # v2.95.1
 ## (2022-03-11)
 

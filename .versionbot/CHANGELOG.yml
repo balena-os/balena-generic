@@ -1,4 +1,187 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.17.10
+      hash: 0be2c5b7a00d891aa72bef902dba1f9ea151f872
+      body: |
+        Update balena-yocto-scripts from v1.17.0 to v1.17.10
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.17.10
+        changelog-entry: Update balena-yocto-scripts to v1.17.10
+        Signed-off-by: Anton Belodedenko <anton@balena.io>
+        signed-off-by: Anton Belodedenko <anton@balena.io>
+      author: ab77
+      nested:
+        - commits:
+            - subject: Pass environment to docker
+              hash: ac8be68fb073aed53b21b2e66df4fb54adb64e22
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+          version: balena-yocto-scripts-1.17.10
+          title: "'Pass environment to docker'"
+          date: 2022-03-28T17:26:04.107Z
+        - commits:
+            - subject: "automation: ami: make BALENA_PRELOAD_COMMIT optional"
+              hash: b365cb9ba359637a3a6a8451b8d83142bb167571
+              body: >
+                Remove BALENA_PRELOAD_COMMIT from required env vars, as we have
+                a
+
+                default if it's not specified.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: balena-yocto-scripts-1.17.9
+          title: "'automation: ami: make BALENA_PRELOAD_COMMIT optional'"
+          date: 2022-03-25T23:25:09.583Z
+        - commits:
+            - subject: "balena-deploy: s/resin-flasher/balena-flasher"
+              hash: abdae4c86ed213a64bb1fa7498f4837f53d95448
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: balena-yocto-scripts-1.17.8
+          title: "'balena-deploy: s/resin-flasher/balena-flasher'"
+          date: 2022-03-15T20:11:21.544Z
+        - commits:
+            - subject: "jenkins_generate_ami: surface preload app commit as variable"
+              hash: 7248b344198ba09a219ee227ffea4b6f0a4850d7
+              body: >
+                Surface the preloaded app commit as a variable that can be
+                overridden in
+
+                the build job. Default to "current" to maintain existing behavior when
+
+                the variable isn't set.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: balena-yocto-scripts-1.17.7
+          title: "'jenkins_generate_ami: surface preload app commit as variable'"
+          date: 2022-03-15T16:36:33.654Z
+        - commits:
+            - subject: "barys: Remove RESINHUP setting"
+              hash: 367f153009928f36de8edcd97a56d6f58b5d6773
+              body: |
+                This has now been removed from meta-balena.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.17.6
+          title: "'barys: Remove RESINHUP setting'"
+          date: 2022-03-08T19:00:31.730Z
+        - commits:
+            - subject: "balena-deploy: Avoid patching test suites config.js during deploy"
+              hash: 21c27cd41cda7ee7f5041752cca1f79280c51a7e
+              body: >
+                This will allow us to make changes to config.js in meta-balena
+                without
+
+                breaking the deploy steps. If additional changes are needed at runtime
+
+                the substitutions can be made by the leviathan Jenkins job.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.5
+          title: "'balena-deploy: Avoid patching test suites config.js during deploy'"
+          date: 2022-03-08T13:38:17.771Z
+        - commits:
+            - subject: Init and update submodules when switching meta-balena branches
+              hash: 5162e7c9fa39498488303caab7d746456fc9abd4
+              body: >
+                If the submodule was recently added to meta-balena, the checkout
+
+                command will not initialize it without a separate submodule update
+
+                command.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.4
+          title: "'Init and update submodules when switching meta-balena branches'"
+          date: 2022-03-03T16:46:17.542Z
+        - commits:
+            - subject: "jenkins_build: Use recurse-submodules when checking out meta-balena"
+              hash: 00fb29b9a7a00dc1209be497ef171736e6229954
+              body: >
+                If meta-balena has submodule updates we want to make sure to use
+                them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.17.3
+          title: "'jenkins_build: Use recurse-submodules when checking out meta-balena'"
+          date: 2022-03-02T17:17:21.631Z
+        - commits:
+            - subject: "prepare-and-start: Remove balena login"
+              hash: 67568d3a5eceb45ee65c245baae18fa299366f9e
+              body: |
+                The login will happen as needed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.17.2
+          title: "'prepare-and-start: Remove balena login'"
+          date: 2022-02-25T09:19:00.323Z
+        - commits:
+            - subject: "balena-deploy.inc: Do no deploy device logo to deprecated endpoint"
+              hash: 54ad619b8b9c00d7c52cfc90593b22c70233d973
+              body: |
+                As per https://jel.ly.fish/a533a6bd-1c98-412c-ae60-8427e3f7b005,
+                the /device-types/v1 endpoint is deprecated and we can remove
+                the logo from the device repos so we can also stop handling it
+                from here. Instead, the logo will be used from the hw contracts.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: balena-yocto-scripts-1.17.1
+          date: 2022-01-27T07:38:18.417Z
+  version: 2.95.1+rev1
+  title: "'balena-yocto-scripts: Update to v1.17.10'"
+  date: 2022-03-28T17:44:17.411Z
+- commits:
     - subject: Update meta-balena to v2.95.1
       hash: fdc36d979ec74dbb75895b2d21d5e3292fd8a41e
       body: ""

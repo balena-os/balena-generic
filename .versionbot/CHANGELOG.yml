@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.17.12
+      hash: 7b1722d89f0720edf92d7b8d037b3852007bd309
+      body: |
+        Update balena-yocto-scripts from v1.17.11 to v1.17.12
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.17.12
+        changelog-entry: Update balena-yocto-scripts to v1.17.12
+        Signed-off-by: Anton Belodedenko <anton@balena.io>
+        signed-off-by: Anton Belodedenko <anton@balena.io>
+      author: ab77
+      nested:
+        - commits:
+            - subject: Remove superfluous preload flag
+              hash: a124b525ca058ead27eb43c0a799eb692c79fa80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+          version: balena-yocto-scripts-1.17.12
+          title: "'Remove superfluous preload flag'"
+          date: 2022-03-29T17:38:21.495Z
+  version: 2.95.1+rev4
+  title: "'balena-yocto-scripts: Update to v1.17.12'"
+  date: 2022-03-29T19:16:48.244Z
+- commits:
     - subject: Specify full path in repo.yml upstreams
       hash: d107da0d1185427fb5ae8ed95605ce23527f7786
       body: |

@@ -1,6 +1,427 @@
 Change log
 -----------
 
+# v2.98.28
+## (2022-05-20)
+
+
+<details>
+<summary> Update layers/meta-balena to 7e98e8f49aee1f5538da16ff564c7d8fb009800e [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.28
+> ### (2022-05-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 727ba9f [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.3.4
+>> #### (2022-05-20)
+>> 
+>> * worker: qemu: add new qemu firmware paths [Joseph Kogut]
+>> * worker: install edk2 firmware for aarch64 [Joseph Kogut]
+>> * worker: Change default qemu memory from 2G to 512M [Kyle Harding]
+>> * make: Do not assume qemu DUT arch will match the host [Kyle Harding]
+>> * make: Allow passed env vars to replace any .env values [Kyle Harding]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.98.27
+> ### (2022-05-18)
+> 
+> * patch: Fix heading anchor links in CDS doc index [Vipul Gupta]
+> 
+> ## meta-balena-2.98.26
+> ### (2022-05-17)
+> 
+> * balena-supervisor: Randomize the updater timer period [Alex Gonzalez]
+> 
+> ## meta-balena-2.98.25
+> ### (2022-05-16)
+> 
+> * patch: Get CDS doc ready for docs sync [Vipul Gupta]
+> * test: os-config: Use common code to wait for service state [Alex Gonzalez]
+> 
+> ## meta-balena-2.98.24
+> ### (2022-05-15)
+> 
+> * os-config: Randomize the timer period [Alex Gonzalez]
+> 
+> ## meta-balena-2.98.23
+> ### (2022-05-11)
+> 
+> * linux-firmware: Fix quz-a0-hr-b0 and quz-a0-jf-b0 packaging for compression [Michal Toman]
+> 
+> ## meta-balena-2.98.22
+> ### (2022-05-11)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 01719b5 [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.3.3
+>> #### (2022-05-09)
+>> 
+>> * Fixes spelling and grammar in e2e [Alex]
+>> 
+>> ### leviathan-2.3.2
+>> #### (2022-05-02)
+>> 
+>> * Record environment variables to file for client env [Kyle Harding]
+>> 
+>> ### leviathan-2.3.1
+>> #### (2022-05-02)
+>> 
+>> * patch: Remove development shortcuts [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.3.0
+>> #### (2022-04-29)
+>> 
+>> * minor: Add support for debug object [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.2.14
+>> #### (2022-04-29)
+>> 
+>> * patch: Remove Express server port config [Vipul Gupta (@vipulgupta2048)]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.98.21
+> ### (2022-05-11)
+> 
+> * contributing-device-support.md: Enhance device contribution guide [Florin Sarbu]
+> 
+> ## meta-balena-2.98.20
+> ### (2022-05-10)
+> 
+> * renovate: Override commit body for meta-balena to Change-type [Kyle Harding]
+> * renovate: Remove extra leviathan package rules [Kyle Harding]
+> 
+> ## meta-balena-2.98.19
+> ### (2022-05-10)
+> 
+> * tests/connectivity: Force proxy tests to use IPv4 [Kyle Harding]
+> * tests/connectivity: Fix compose warnings for expected string [Kyle Harding]
+> 
+> ## meta-balena-2.98.18
+> ### (2022-05-10)
+> 
+> 
+> <details>
+> <summary> supervisor: Update balena-supervisor to v13.1.6 [Alex Gonzalez] </summary>
+> 
+>> ### balena-supervisor-13.1.6
+>> #### (2022-05-06)
+>> 
+>> * Avoid splash image failures if image is corrupt [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-13.1.5
+>> #### (2022-05-03)
+>> 
+>> * Use write + sync when writing configs to /mnt/boot [Felipe Lalanne]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.98.17
+> ### (2022-05-06)
+> 
+> * renovate: Override default package rules to enable leviathan [Kyle Harding]
+> 
+> ## meta-balena-2.98.16
+> ### (2022-05-05)
+> 
+> * renovate: Replace tests with tests/suites in default ignorePaths [Kyle Harding]
+> 
+> ## meta-balena-2.98.15
+> ### (2022-05-04)
+> 
+> * Rename renovate config [Kyle Harding]
+> 
+> ## meta-balena-2.98.14
+> ### (2022-05-04)
+> 
+> 
+> <details>
+> <summary> supervisor: Update balena-supervisor to v13.1.4 [Kyle Harding] </summary>
+> 
+>> ### balena-supervisor-13.1.4
+>> #### (2022-04-28)
+>> 
+>> * Use delay instead of interval to recursively report state [20k-ultra]
+>> 
+>> ### balena-supervisor-13.1.3
+>> #### (2022-04-20)
+>> 
+>> * Remove in memory storage of started/stopped containers [20k-ultra]
+>> * Only start a container once in its lifetime This will ensure the restart policy specified is not violated [20k-ultra]
+>> 
+>> ### balena-supervisor-13.1.2
+>> #### (2022-04-18)
+>> 
+>> * Explain /v2/state/status's status field in its response [Christina Wang]
+>> 
+>> ### balena-supervisor-13.1.1
+>> #### (2022-04-13)
+>> 
+>> * Do not fail lockfile cleanup if files do not exist [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-13.1.0
+>> #### (2022-04-12)
+>> 
+>> * Add lockfile binary and internal lib for interfacing with it [Christina Wang]
+>> 
+>> ### balena-supervisor-13.0.3
+>> #### (2022-04-08)
+>> 
+>> * Add system id/model support for Compulab IOT-gate [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-13.0.2
+>> #### (2022-04-08)
+>> 
+>> * Correctly evaluate downloadProgress when computing current state [20k-ultra]
+>> 
+>> ### balena-supervisor-13.0.1
+>> #### (2022-04-01)
+>> 
+>> * Fix database migration for legacyApps [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-13.0.0
+>> #### (2022-03-23)
+>> 
+>> * Add support for GET v3 target state [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-12.11.43
+>> #### (2022-03-21)
+>> 
+>> * Always add status to image download report [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-12.11.42
+>> #### (2022-03-18)
+>> 
+>> * Moved test setup into file included for all tests [20k-ultra]
+>> 
+>> ### balena-supervisor-12.11.41
+>> #### (2022-03-16)
+>> 
+>> * Added PR template doc [20k-ultra]
+>> 
+>> ### balena-supervisor-12.11.40
+>> #### (2022-03-16)
+>> 
+>> * Only count report connectivity errors for healthcheck [Felipe Lalanne]
+>> * update packages for vulnerabilities [20k-ultra]
+>> 
+>> ### balena-supervisor-12.11.39
+>> #### (2022-03-16)
+>> 
+>> * Move report throttle out of reporting logic [20k-ultra]
+>> * Update npm dep sinon to v11.1.2 [20k-ultra]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.98.13
+> ### (2022-05-03)
+> 
+> * os: tests: optimize connectivity tests [Joseph Kogut]
+> 
+> ## meta-balena-2.98.12
+> ### (2022-05-02)
+> 
+> * tests/hup: Test hostapp-update from current release [Kyle Harding]
+> 
+> ## meta-balena-2.98.11
+> ### (2022-04-29)
+> 
+> * tests: os: create swap test [Joseph Kogut]
+> 
+> ## meta-balena-2.98.10
+> ### (2022-04-28)
+> 
+> * tests: bump leviathan to 2.13 [rcooke-warwick]
+> 
+> ## meta-balena-2.98.9
+> ### (2022-04-28)
+> 
+> * tests: bump leviathan to 2.2.11 [rcooke-warwick]
+> 
+> ## meta-balena-2.98.8
+> ### (2022-04-28)
+> 
+> * tests/cloud: fix ssh test for testbot workers [rcooke-warwick]
+> 
+> ## meta-balena-2.98.7
+> ### (2022-04-27)
+> 
+> * linux-firmware: package QuZ-a0-jf-b0 separately [Michal Toman]
+> 
+> ## meta-balena-2.98.6
+> ### (2022-04-26)
+> 
+> * timeinit/timesync-https: Update rtc after setting system time [Alexandru Costache]
+> 
+> ## meta-balena-2.98.5
+> ### (2022-04-26)
+> 
+> * networkmanager: Use default DHCP timeout [Zahari Petkov]
+> 
+> ## meta-balena-2.98.4
+> ### (2022-04-25)
+> 
+> * Disable Engine startup timeouts [Leandro Motta Barros]
+> 
+> ## meta-balena-2.98.3
+> ### (2022-04-25)
+> 
+> * Add renovate configuration [Kyle Harding]
+> 
+> ## meta-balena-2.98.2
+> ### (2022-04-25)
+> 
+> * balena-config-vars: unit-conf: Correct description [Alex Gonzalez]
+> * tests: os: Remove sshKeys test [Alex Gonzalez]
+> * tests: cloud: Add SSH authentication tests [Alex Gonzalez]
+> * os-sshkeys: When ssh keys change, regenerate development configuration [Alex Gonzalez]
+> * development-features: use os-helpers-devmode include file [Alex Gonzalez]
+> * os-helpers: Add os-helpers-devmode [Alex Gonzalez]
+> 
+> ## meta-balena-2.98.1
+> ### (2022-04-23)
+> 
+> * tests/leviathan: Update leviathan to v2.2.4 [Kyle Harding]
+> 
+> ## meta-balena-2.98.0
+> ### (2022-04-23)
+> 
+> * Refresh PKI assets from config endpoint [ab77]
+> 
+> ## meta-balena-2.97.0
+> ### (2022-04-23)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.16 [Leandro Motta Barros] </summary>
+> 
+>> ### balena-engine-20.10.16
+>> #### (2022-04-07)
+>> 
+>> * contrib/init/systemd: update balena-engine.service [TIAN Yuanhao]
+>> 
+>> ### balena-engine-20.10.15
+>> #### (2022-04-05)
+>> 
+>> * Log more info upon when raising errRootFSMismatch [Leandro Motta Barros]
+>> 
+>> ### balena-engine-20.10.14
+>> #### (2022-04-01)
+>> 
+>> * Add more integration tests for deltas [Leandro Motta Barros]
+>> 
+>> ### balena-engine-20.10.13
+>> #### (2022-03-09)
+>> 
+>> * Add link to post to test landr [andrew]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.96.1
+> ### (2022-04-22)
+> 
+> * kernel-balena: Mention https protocol for github repository [Alexandru Costache]
+> 
+> ## meta-balena-2.96.0
+> ### (2022-04-22)
+> 
+> * mobynit: Update to v0.2.0 [Alex Gonzalez]
+> 
+> ## meta-balena-2.95.17
+> ### (2022-04-22)
+> 
+> * resin-device-register: avoid blocking the flasher when not connected [Alexandru Costache]
+> 
+> ## meta-balena-2.95.16
+> ### (2022-04-19)
+> 
+> * Package iwlwifi-QuZ-a0-hr-b0 firmware separately [Florin Sarbu]
+> 
+> ## meta-balena-2.95.15
+> ### (2022-04-06)
+> 
+> * kernel-headers-test: clean tools like fixdep [Alexandru Costache]
+> 
+> ## meta-balena-2.95.14
+> ### (2022-04-06)
+> 
+> * Updates SIM info for soracom and provides docs. [Alex]
+> 
+> ## meta-balena-2.95.13
+> ### (2022-04-06)
+> 
+> * test/hup: fix unmounting error [rcooke-warwick]
+> 
+> ## meta-balena-2.95.12
+> ### (2022-04-01)
+> 
+> * grub-efi: Remove patch passing secure boot status to the kernel [Michal Toman]
+> 
+> ## meta-balena-2.95.11
+> ### (Invalid date)
+> 
+> * hostapp-update: Mount data partition on target balena/tmp [Kyle Harding]
+> 
+> ## meta-balena-2.95.10
+> ### (Invalid date)
+> 
+> * tests/os: check supervisor is pulled  after purge [rcooke-warwick]
+> 
+> ## meta-balena-2.95.9
+> ### (2022-03-28)
+> 
+> * tests: update leviathan to 2.0.4 [rcooke-warwick]
+> * tests: update config for new leviathan version [rcooke-warwick]
+> 
+> ## meta-balena-2.95.8
+> ### (2022-03-25)
+> 
+> * resindataexpander: Check and fix end GPT if necessary [Alexandru Costache]
+> 
+> ## meta-balena-2.95.7
+> ### (2022-03-23)
+> 
+> * hostapp-update-hooks: Always update legacy development variants to development mode [Alex Gonzalez]
+> 
+> ## meta-balena-2.95.6
+> ### (2022-03-22)
+> 
+> * balena-supervisor: Use architecture instead of device type to query API [Alex Gonzalez]
+> * update-balena-supervisor: Support passing command line image argument [Alex Gonzalez]
+> 
+> ## meta-balena-2.95.5
+> ### (2022-03-21)
+> 
+> * tests/kernel-overlap: Prevent test run failure on older kernels [Alexandru Costache]
+> 
+> ## meta-balena-2.95.4
+> ### (2022-03-17)
+> 
+> * tests/os: wait for osconfig service to be inactive [rcooke-warwick]
+> 
+> ## meta-balena-2.95.3
+> ### (2022-03-15)
+> 
+> * balena-supervisor: Update balena-supervisor to v12.11.38 Ensure preloaded applications are ran when no internet is available on first run [20k-ultra]
+> 
+> ## meta-balena-2.95.2
+> ### (2022-03-11)
+> 
+> * kernel-balena: Disable building gcc plugins [Alexandru Costache]
+> 
+</details>
+
 # v2.95.1+rev5
 ## (2022-04-01)
 

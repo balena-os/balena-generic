@@ -1,6 +1,44 @@
 Change log
 -----------
 
+# v2.98.31
+## (2022-05-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 7ae427858052ddad086a32a7458e301103d02013 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.31
+> ### (2022-05-26)
+> 
+> * tests: os: config-json: fix race by waiting for InvocationID change [Joseph Kogut]
+> * tests: os: reformat config-json tests [Joseph Kogut]
+> 
+> ## meta-balena-2.98.30
+> ### (2022-05-24)
+> 
+> * Remove localMode setting from standalone image configuration [Alex Gonzalez]
+> 
+</details>
+
+* Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a [Renovate Bot]
+
+<details>
+<summary> Update layers/meta-balena to c8f7eb1fdd6b342cc816e7b2b7e0c60634de2e87 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.31
+> ### (2022-05-26)
+> 
+> * tests: os: config-json: fix race by waiting for InvocationID change [Joseph Kogut]
+> * tests: os: reformat config-json tests [Joseph Kogut]
+> 
+> ## meta-balena-2.98.30
+> ### (2022-05-24)
+> 
+> * Remove localMode setting from standalone image configuration [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.28+rev4
 ## (2022-05-24)
 

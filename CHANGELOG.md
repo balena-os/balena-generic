@@ -1,6 +1,22 @@
 Change log
 -----------
 
+# v2.98.33
+## (2022-05-28)
+
+
+<details>
+<summary> Update contracts to 35dea15031cf273d469171f81ed24c394332caf5 [Renovate Bot] </summary>
+
+> ## contracts-2.0.0
+> ### (2022-05-27)
+> 
+> * Clean up installation method and add instruction partials [Micah Halter]
+> 
+</details>
+
+* Update layers/meta-balena to 95c96e0624507fd9701912c67d3ae5ec5dbdf6f9 [Renovate Bot]
+
 # v2.98.31
 ## (2022-05-26)
 

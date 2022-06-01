@@ -1,6 +1,42 @@
 Change log
 -----------
 
+# v2.98.33+rev1
+## (2022-06-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8cce34e9763389eb59e4e375c532c81eb592fc1e [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.8
+> ### (2022-06-01)
+> 
+> * balena-lib: release_finalize: Do not retag phase for ESR branch patch [Alex Gonzalez]
+> 
+</details>
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2df9e2ae2084a293e7b729eb0538f69b221bc0be [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.8
+> ### (2022-06-01)
+> 
+> * balena-lib: release_finalize: Do not retag phase for ESR branch patch [Alex Gonzalez]
+> 
+</details>
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8c132cde993d3a8d9e4eea2517edf27b53b47ef3 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.8
+> ### (2022-06-01)
+> 
+> * balena-lib: release_finalize: Do not retag phase for ESR branch patch [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.33
 ## (2022-05-28)
 

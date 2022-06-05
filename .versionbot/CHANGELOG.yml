@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b
+      hash: 8833e37cbafad5d397cbdf46849b658dacab75a0
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b
+        changelog-entry: Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "sw.os - hw.device-type: Update Xavier NX SD and Xavier NX eMMC to
+                32.7.1"
+              hash: 5550fdff88e0f6c4c93af3ceec5936f937791dd7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.2
+          title: "'sw.os - hw.device-type: Update Xavier NX SD and Xavier NX eMMC to L4T
+            32.7.1'"
+          date: 2022-06-05T12:34:53.567Z
+    - subject: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+      hash: 81ae46f83d0a9dfd2c07e5cc95ffb489e71a6e22
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+        changelog-entry: Update layers/meta-balena to 82f6128a170dd68e671e30278a4f98398f5d1034
+      author: Renovate Bot
+      nested: []
+    - subject: Update layers/meta-balena to 17a4e839adefeedbe603b9b007800656588c6d77
+      hash: fdb8a3c75b6ae364b484d9f2e82634ae6e2c5a03
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 17a4e839adefeedbe603b9b007800656588c6d77
+        changelog-entry: Update layers/meta-balena to 17a4e839adefeedbe603b9b007800656588c6d77
+      author: Renovate Bot
+      nested: []
+  version: 2.98.39
+  title: "'Update contracts digest to 58bcfbc'"
+  date: 2022-06-05T14:14:51.464Z
+- commits:
     - subject: Update contracts to bba65f2a1904e5ccc61e25793c8b4be1f02f3942
       hash: 78fa1e12a74c33bffca2e8b9751cbf14535ce740
       body: Update contracts

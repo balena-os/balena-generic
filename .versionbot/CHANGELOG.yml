@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+      hash: 58de1a9415b8be0815a05bcf5f45727ddaa7701f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+        changelog-entry: Update layers/meta-balena to fa207fb198e4e4736d3937901b5ef6d25562eb32
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: cloud: update container names"
+              hash: 8b85216ea886c77788ceaf377ee775e9c48913df
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.98.43
+          title: "'tests: cloud: update container names'"
+          date: 2022-06-09T11:03:45.627Z
+  version: 2.98.43
+  title: "'Update layers/meta-balena digest to fa207fb'"
+  date: 2022-06-09T22:38:19.660Z
+- commits:
     - subject: Add build and deploy workflow
       hash: 4e247e4575fbe7fb4a9d4e9bf61228b1a6b77932
       body: >

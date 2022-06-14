@@ -1,4 +1,50 @@
 - commits:
+    - subject: Update contracts to b2bddbdc896e6c628231512b363e5c93d16f5b15
+      hash: d08318218db447f2edfd17317cf8bddb813d1e95
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b2bddbdc896e6c628231512b363e5c93d16f5b15
+        changelog-entry: Update contracts to b2bddbdc896e6c628231512b363e5c93d16f5b15
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Add Python v3.10.5 and v3.9.13
+              hash: 971223d30b9bf7391ffe57b36182c4857bf4c3aa
+              body: >
+                Update checksum for v3.8.13 and v3.7.13 since they were rebuilt
+                to add tkinter modules
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add support for Alpine Linux 3.16
+              hash: 49617527cd147d2013158786ee22f8489340143c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add support for Ubuntu Jammy and Kinetic
+              hash: 143ad01883d861aba4f6359a4386634eb9592684
+              body: |
+                Drop support for Ubuntu Hirsute
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.3
+          title: "'Few base images updates'"
+          date: 2022-06-13T20:38:36.573Z
+  version: 2.98.45+rev1
+  title: "'Update contracts digest to b2bddbd'"
+  date: 2022-06-14T00:58:01.632Z
+- commits:
     - subject: Update layers/meta-balena to 466c0e3a56da6605f033d8fd1b37c301c96af979
       hash: 6e6a71b0f5ad081acbdb6482830de1923b60120c
       body: Update layers/meta-balena

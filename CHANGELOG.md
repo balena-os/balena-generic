@@ -1,6 +1,35 @@
 Change log
 -----------
 
+# v2.99.3
+## (2022-06-17)
+
+
+<details>
+<summary> Update layers/meta-balena to 6db02b204e1a33c90fa6f2e8f81f5f45eb9359ca [Renovate Bot] </summary>
+
+> ## meta-balena-2.99.3
+> ### (2022-06-16)
+> 
+> * tests: os: Run os suite before hup and cloud [Kyle Harding]
+> * tests: os: Refactor config-json tests to wait for passing results [Kyle Harding]
+> * tests: os: chrony: Avoid conflicts with supervisor firewall [Kyle Harding]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to ee8110bd257ff145acba793720ea739f14f2429a [Renovate Bot] </summary>
+
+> ## meta-balena-2.99.3
+> ### (2022-06-16)
+> 
+> * tests: os: Run os suite before hup and cloud [Kyle Harding]
+> * tests: os: Refactor config-json tests to wait for passing results [Kyle Harding]
+> * tests: os: chrony: Avoid conflicts with supervisor firewall [Kyle Harding]
+> 
+</details>
+
 # v2.99.1
 ## (2022-06-14)
 

@@ -1,4 +1,96 @@
 - commits:
+    - subject: Update layers/meta-balena to ecbbdd001ec3b7a052d170a5592ea8bfc43477f0
+      hash: cef6b2993ae64a3ba04ce98b6ff88da1218fde07
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ecbbdd001ec3b7a052d170a5592ea8bfc43477f0
+        changelog-entry: Update layers/meta-balena to ecbbdd001ec3b7a052d170a5592ea8bfc43477f0
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-supervisor: Replace BOOT_MOUNTPOINT with
+                BALENA_BOOT_MOUNTPOINT"
+              hash: 8e4ed15d512304498540fd30c280a5f000dc4ba9
+              body: >
+                BOOT_MOUNTPOINT is no longer exported in the configuration
+                environment.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: Remove BOOT_MOUNTPOINT from configuration
+                environment"
+              hash: 5ae6971c2574f4cc7a26ea420d25f2e36d80a965
+              body: >
+                BALENA_BOOT_MOUNTPOINT is used in 32 places in the OS, while
+
+                BOOT_MOUNTPOINT is used in 5.
+
+
+                This commit replaces BOOT_MOUNTPOINT with BALENA_BOOT_MOUNTPOINT to
+
+                remove the duplication.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.99.22
+          title: "'Replace BOOT_MOUNTPOINT with BALENA_BOOT_MOUNTPOINT'"
+          date: 2022-06-27T18:01:12.674Z
+    - subject: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+      hash: b5c019e745e1d4ccc28c936340d8cac8891224f4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+        changelog-entry: Update layers/meta-balena to b266b1a4ebeb269145192f8412fa12c902a30812
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-supervisor: Replace BOOT_MOUNTPOINT with
+                BALENA_BOOT_MOUNTPOINT"
+              hash: 8e4ed15d512304498540fd30c280a5f000dc4ba9
+              body: >
+                BOOT_MOUNTPOINT is no longer exported in the configuration
+                environment.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: Remove BOOT_MOUNTPOINT from configuration
+                environment"
+              hash: 5ae6971c2574f4cc7a26ea420d25f2e36d80a965
+              body: >
+                BALENA_BOOT_MOUNTPOINT is used in 32 places in the OS, while
+
+                BOOT_MOUNTPOINT is used in 5.
+
+
+                This commit replaces BOOT_MOUNTPOINT with BALENA_BOOT_MOUNTPOINT to
+
+                remove the duplication.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.99.22
+          title: "'Replace BOOT_MOUNTPOINT with BALENA_BOOT_MOUNTPOINT'"
+          date: 2022-06-27T18:01:12.674Z
+  version: 2.99.22
+  title: "'Update: update layers/meta-balena digest to ecbbdd0'"
+  date: 2022-06-28T00:58:37.261Z
+- commits:
     - subject: Update layers/meta-balena to 34e139b190f7aef385f9d7a831fe90e5efee007d
       hash: 9e7ac7f0bc940cb9a53128bd8b38a35ee10d409a
       body: Update layers/meta-balena

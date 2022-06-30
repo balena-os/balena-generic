@@ -1,6 +1,24 @@
 Change log
 -----------
 
+# v2.99.26
+## (2022-06-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5e003d52ac8e118af3cce662362d45f780ade704 [renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.19.10
+> ### (2022-06-29)
+> 
+> * balena-deploy: Use balena-img instead of resin-img [Alex Gonzalez]
+> * Global rename from dockerhub resin to balena accounts [Alex Gonzalez]
+> * automation: Stop deploying images to dockerhub [Alex Gonzalez]
+> 
+</details>
+
+* Update layers/meta-balena to 1f79bcbb751f8715c49b207fdf737a2a089aff4c [renovate[bot]]
+
 # v2.99.25
 ## (2022-06-29)
 

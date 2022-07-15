@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.99.26+rev2
+## (2022-07-15)
+
+* hostapp-update-hooks: Install grub update hooks [Kyle Harding]
+
 # v2.99.26+rev1
 ## (2022-07-08)
 

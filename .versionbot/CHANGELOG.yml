@@ -1,4 +1,23 @@
 - commits:
+    - subject: "hostapp-update-hooks: Install grub update hooks"
+      hash: 8954fb7cdc0429502b6008c855c7eb5340175b15
+      body: |
+        The grub hook is required to set change the boot
+        partition after a HUP.
+
+        The boot-cleaner hook is copied from balena-intel
+        to clean the boot partition of redundant files.
+      footer:
+        Changelog-entry: "hostapp-update-hooks: Install grub update hooks"
+        changelog-entry: "hostapp-update-hooks: Install grub update hooks"
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.99.26+rev2
+  title: "'hostapp-update-hooks: Install grub update hooks'"
+  date: 2022-07-15T16:48:24.746Z
+- commits:
     - subject: Update build and deploy workflow to support ESR tags
       hash: fc76436b322762ae995c46f68d7aae380773abb5
       body: |

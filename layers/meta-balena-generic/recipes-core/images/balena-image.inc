@@ -27,4 +27,5 @@ IMAGE_ROOTFS_SIZE = "1024000"
 
 IMAGE_INSTALL_append = " \
     linux-firmware \
+    efibootmgr \
     "

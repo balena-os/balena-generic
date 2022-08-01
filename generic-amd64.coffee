@@ -19,9 +19,9 @@ postProvisioningInstructions = [
 
 module.exports =
 	version: 1
-	slug: 'genericx86-64-ext'
-	aliases: [ 'genericx86-64-ext' ]
-	name: 'Generic x86_64'
+	slug: 'generic-amd64'
+	aliases: [ 'generic-amd64' ]
+	name: 'Generic x86_64 (GPT)'
 	arch: 'amd64'
 	state: 'new'
 
@@ -42,11 +42,11 @@ module.exports =
 		linux: 'https://www.balena.io/docs/learn/getting-started/intel-nuc/nodejs/'
 
 	yocto:
-		machine: 'genericx86-64-ext'
+		machine: 'generic-amd64'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
 		version: 'yocto-dunfell'
-		deployArtifact: 'balena-image-flasher-genericx86-64-ext.balenaos-img'
+		deployArtifact: 'balena-image-flasher-generic-amd64.balenaos-img'
 		compressed: true
 
 	configuration:

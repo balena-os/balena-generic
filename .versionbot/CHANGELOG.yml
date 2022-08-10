@@ -1,4 +1,24 @@
 - commits:
+    - subject: rename genericx86-64-ext to generic-amd64
+      hash: 4f025d12c10d5917451a18429f5dcafa36fddd0d
+      body: |
+        Maintaining compatibility with the existing legacy BIOS boot method
+        while switching to GPT is technically infeasible. Switch back to
+        generic-amd64 slug to offer generic x86_64 UEFI/GPT as a separate device
+        type.
+
+        This reverts commit 63557bef9a828c0aef7d4196875bb2f77aed2bdc.
+      footer:
+        Changelog-entry: rename genericx86-64-ext to generic-amd64
+        changelog-entry: rename genericx86-64-ext to generic-amd64
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.101.3+rev1
+  title: "'Generic amd64'"
+  date: 2022-08-10T21:37:47.510Z
+- commits:
     - subject: Update layers/meta-balena to afcbee0c5dad04f02ba2a3ecb5d6d7db21f7ebe4
       hash: 75318e9a4b72c1fec5917ac0fbcfbdc46b8660c0
       body: Update layers/meta-balena

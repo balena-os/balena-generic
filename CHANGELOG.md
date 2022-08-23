@@ -1,6 +1,44 @@
 Change log
 -----------
 
+# v2.101.10
+## (2022-08-23)
+
+
+<details>
+<summary> Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de [renovate[bot]] </summary>
+
+> ## meta-balena-2.101.10
+> ### (2022-08-23)
+> 
+> * meta-resin-sumo: linux-firmware: Move to a location included in BBPATH [Alex Gonzalez]
+> * meta-resin-sumo: use v1.14.2 [Alex Gonzalez]
+> * meta-resin-sumo: libqmi: Use v1.26.0 [Alex Gonzalez]
+> * meta-resin-sumo: libmbim: use v 1.24.2 [Alex Gonzalez]
+> * balena: Disable GOCACHE [Alex Gonzalez]
+> 
+> ## meta-balena-2.101.9
+> ### (2022-08-23)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to f7533c1 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.7.3
+>> #### (2022-08-16)
+>> 
+>> * compose: qemu: enable loopback and metadata devices [Joseph Kogut]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.101.8
+> ### (2022-08-23)
+> 
+> * Update balena-io/balena-supervisor to v14.0.14 [renovate[bot]]
+> 
+</details>
+
 # v2.101.7+rev2
 ## (2022-08-19)
 

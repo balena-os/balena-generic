@@ -1,4 +1,117 @@
 - commits:
+    - subject: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      hash: c91e0d149a62f04871a4a4163e4dc0465b501638
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+        changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "meta-resin-sumo: linux-firmware: Move to a location included in
+                BBPATH"
+              hash: 148fcadbb792bdbabdbc152b886125415b3e4838
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "meta-resin-sumo: use v1.14.2"
+              hash: 5bb3a29c1c5dfa0f02da47e48f3b64d3d3f9cd08
+              body: |
+                Newer versions are not compatible with the libc version in sumo.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "meta-resin-sumo: libqmi: Use v1.26.0"
+              hash: 1c25bb333c6cb458af955274c82f164a83a2b914
+              body: |
+                Newer versions are incompatible with the libc available in sumo.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "meta-resin-sumo: libmbim: use v 1.24.2"
+              hash: 1fe708b4bf84e60032c4e7f52316632a49ecc490
+              body: >
+                The current meta-balena libmbim is not compatible with sumo's
+                libc
+
+                version.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena: Disable GOCACHE"
+              hash: 2e79582c81a6f0f5ff42ed01bdc69ba06550e63a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.101.10
+          title: "'Update sumo compatibility layer'"
+          date: 2022-08-23T08:15:40.582Z
+        - commits:
+            - subject: Update tests/leviathan digest to f7533c1
+              hash: d31e056f263085ce4451bd99a01911c359b9e0f6
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: "compose: qemu: enable loopback and metadata devices"
+                      hash: 962a1705b11457c7d9a87c17cc9e3bf1671d2257
+                      body: >
+                        Copied from
+                        https://github.com/balena-os/leviathan-worker/pull/21
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Joseph Kogut <joseph@balena.io>
+                        signed-off-by: Joseph Kogut <joseph@balena.io>
+                      author: Joseph Kogut
+                      nested: []
+                  version: leviathan-2.7.3
+                  title: "'compose: qemu: enable loopback and metadata devices'"
+                  date: 2022-08-16T17:06:56.295Z
+          version: meta-balena-2.101.9
+          title: "'Update tests/leviathan digest to f7533c1'"
+          date: 2022-08-23T03:16:57.699Z
+        - commits:
+            - subject: Update balena-io/balena-supervisor to v14.0.14
+              hash: b4bc31f23aac390eb8ad99fc361dc39d14b0c92e
+              body: Update balena-io/balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.101.8
+          title: "'Update balena-io/balena-supervisor to v14.0.14'"
+          date: 2022-08-23T00:10:09.726Z
+  version: 2.101.10
+  title: "'Update layers/meta-balena digest to a1084cf'"
+  date: 2022-08-23T17:41:23.230Z
+- commits:
     - subject: Update contracts to 39a79c43f1b8ab4426d7a9c1cdeb9a9514101061
       hash: 460d4f308ebc740fcc1b655033300cbd07688157
       body: Update contracts

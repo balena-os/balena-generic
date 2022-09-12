@@ -1,4 +1,4 @@
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
-PREFERRED_VERSION_linux-yocto ?= "5.10%"
+PREFERRED_VERSION_linux-yocto ?= "5.15%"
 
 FIRMWARE_COMPRESSION = "1"

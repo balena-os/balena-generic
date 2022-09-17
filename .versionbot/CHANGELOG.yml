@@ -1,4 +1,58 @@
 - commits:
+    - subject: Update contracts to 7ea918011dc38f509a7ae3bce30c3391bc839dd9
+      hash: 66c599223831cd51dae0b7b98931e9b06c04c1df
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 7ea918011dc38f509a7ae3bce30c3391bc839dd9
+        changelog-entry: Update contracts to 7ea918011dc38f509a7ae3bce30c3391bc839dd9
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Set LED to false for rockpi-4b"
+              hash: a3ba8781439427390d2dbd21d01b66cc6f33c027
+              body: |
+                LED is not supported for this DT in the device
+                repository, let's set it to false here so that
+                the tests are aware of this being unsupported.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.15
+          title: "'hw.device-type: Set LED to false for rockpi-4b'"
+          date: 2022-09-14T14:17:49.155Z
+        - commits:
+            - subject: Add node v18.8.0
+              hash: 22cc7c47e7582fa9ecf05d0b607b0e8619b5ac4e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.14
+          title: "'Add node v18.8.0'"
+          date: 2022-09-06T04:10:31.763Z
+        - commits:
+            - subject: "imx8mm-var-som: Add device type"
+              hash: a26ca290387c3c250b59d1b49df45c8a9ea9a89a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.13
+          title: "'imx8mm-var-som: Add imx8mm-var-som devkit device type'"
+          date: 2022-08-26T11:11:21.899Z
+  version: 2.103.3+rev1
+  title: "'Update contracts digest to 7ea9180'"
+  date: 2022-09-17T06:30:05.480Z
+- commits:
     - subject: Update layers/meta-balena to a17b3251407b74e424a6bcf7850783975c366cf0
       hash: ae1d1d56c1e536c03c1197e58609e74117b18370
       body: Update layers/meta-balena

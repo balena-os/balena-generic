@@ -1,6 +1,45 @@
 Change log
 -----------
 
+# v2.105.1
+## (2022-09-21)
+
+
+<details>
+<summary> Update layers/meta-balena to ce91b3f1807f5dc1d1ee861a164957215757d8a0 [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.1
+> ### (2022-09-21)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 15d608b [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.9.6
+>> #### (2022-09-21)
+>> 
+>> * core/contracts: bump contracts to v2.0.16 [Alexandru Costache]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.105.0
+> ### (2022-09-20)
+> 
+> * Update balena-os/balena-supervisor to v14.2.0 [renovate[bot]]
+> 
+> ## meta-balena-2.104.1
+> ### (2022-09-20)
+> 
+> * balena: remove kernel-module-nf-nat-native dependency for host build [Alexandru Costache]
+> 
+> ## meta-balena-2.104.0
+> ### (2022-09-19)
+> 
+> * Update balena-os/balena-supervisor to v14.1.1 [renovate[bot]]
+> 
+</details>
+
 # v2.103.5
 ## (2022-09-19)
 

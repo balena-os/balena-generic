@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use Yocto Kirkstone to build generic images
+      hash: 74149b19e6df41ad292b7e7c5950768fcb994260
+      body: ""
+      footer:
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+        Changelog-entry: Use Yocto Kirkstone to build generic images
+        changelog-entry: Use Yocto Kirkstone to build generic images
+      author: Joseph Kogut
+      nested: []
+  version: 2.105.2+rev1
+  title: "'Kirkstone'"
+  date: 2022-09-28T01:40:48.310Z
+- commits:
     - subject: Update layers/meta-balena to d17b08668a56aa67c7b55594c3c910e66fbd4baf
       hash: bf6f448ba87429ad0d2475b8fd65a100cc6b48bc
       body: Update layers/meta-balena

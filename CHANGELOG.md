@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.2+rev1
+## (2022-09-28)
+
+* Use Yocto Kirkstone to build generic images [Joseph Kogut]
+
 # v2.105.2
 ## (2022-09-26)
 

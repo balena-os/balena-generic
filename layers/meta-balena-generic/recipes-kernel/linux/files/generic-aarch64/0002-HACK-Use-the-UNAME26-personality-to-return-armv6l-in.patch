@@ -1,0 +1,73 @@
+From: Zubair Lutfullah Kakakhel <zubair@balena.io>
+Date: Mon, 11 Feb 2019 15:52:06 +0000
+Subject: [PATCH] HACK: Use the UNAME26 personality to return armv6l instead of
+ v2.6.32+
+
+We'd like to make our arm builders return two different machine strings
+at runtime for different processes. armv7l and armv6l. This is so that
+a docker daemon for armv6l/armv8l device builds thinks the docker build
+is unning under the correct machine arch. Various package managers such
+as pip rely on the output of uname -m to be correct.
+
+The UNAME26 personality is used by old userspace programs to make the
+kernel version string appear as 2.6+.
+
+Add a hack in the kernel to modify the machine string for the uname26
+personality and make it show armv6l. And don't change the kernel
+version string to 2.6.+
+
+The benefit of this hack instead of adding a new personality is
+- we won't have to carry a custom version of the setarch userspace utility
+- simpler to implement and keep lying around
+
+Trade-off. I'm hoping no customer is pushing applications that depend
+on the kernel version string being 2.6+ and the actual uname26
+personality usage.
+
+With this patch and compat_uts_machine=armv7l in the kernel cmdline
+on our arm builder
+
+root@arm02:~# linux32 --uname-2.6 uname -m
+armv6l
+root@arm02:~# linux32 uname -m
+armv7l
+root@arm02:~# uname -m
+aarch64
+root@arm02:~#
+
+Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+---
+ kernel/sys.c | 19 ++-----------------
+ 1 file changed, 2 insertions(+), 17 deletions(-)
+
+diff --git a/kernel/sys.c b/kernel/sys.c
+index 4e0a24b0c14d..f8807b47740b 100644
+--- a/kernel/sys.c
++++ b/kernel/sys.c
+@@ -1173,24 +1173,9 @@ static int override_release(char __user *release, size_t len)
+ {
+ 	int ret = 0;
+ 
++	strncpy(compat_uts_machine, "armv7l", __OLD_UTS_LEN);
+ 	if (current->personality & UNAME26) {
+-		const char *rest = UTS_RELEASE;
+-		char buf[65] = { 0 };
+-		int ndots = 0;
+-		unsigned v;
+-		size_t copy;
+-
+-		while (*rest) {
+-			if (*rest == '.' && ++ndots >= 3)
+-				break;
+-			if (!isdigit(*rest) && *rest != '.')
+-				break;
+-			rest++;
+-		}
+-		v = ((LINUX_VERSION_CODE >> 8) & 0xff) + 60;
+-		copy = clamp_t(size_t, len, 1, sizeof(buf));
+-		copy = scnprintf(buf, copy, "2.6.%u%s", v, rest);
+-		ret = copy_to_user(release, buf, copy + 1);
++		strncpy(compat_uts_machine, "armv6l", __OLD_UTS_LEN);
+ 	}
+ 	return ret;
+ }

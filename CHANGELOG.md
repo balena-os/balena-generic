@@ -1,6 +1,113 @@
 Change log
 -----------
 
+# v2.105.16
+## (2022-10-21)
+
+
+<details>
+<summary> Update layers/meta-balena to 0c378990ffead64c9141e82f76299914c416436d [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.16
+> ### (2022-10-20)
+> 
+> * common: openvpn: remove resin.conf [Joseph Kogut]
+> 
+> ## meta-balena-2.105.15
+> ### (2022-10-19)
+> 
+> * Revert "chrony: update to version 4.1 to match kirkstone's version" [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.14
+> ### (2022-10-18)
+> 
+> * patch: Enable RPi3-64 for Device tree tests [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-2.105.13
+> ### (2022-10-18)
+> 
+> * ntp: Remove race condition from directory creation [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.12
+> ### (2022-10-17)
+> 
+> * classes: kernel-balena: Allow aufs patching to use network [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.11
+> ### (2022-10-13)
+> 
+> * Update balena-os/balena-supervisor to v14.2.10 [renovate[bot]]
+> 
+> ## meta-balena-2.105.10
+> ### (2022-10-12)
+> 
+> * classes: kernel-balena: improve aufs branch selection [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.9
+> ### (2022-10-11)
+> 
+> * meta-balena-rust: Fix ABI for arm [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.8
+> ### (2022-10-11)
+> 
+> * meta-balena-thud: Enable GOCACHE [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.7
+> ### (2022-10-06)
+> 
+> * Update balena-os/balena-supervisor to v14.2.8 [renovate[bot]]
+> 
+> ## meta-balena-2.105.6
+> ### (2022-10-06)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 4482393 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.9.9
+>> #### (2022-10-05)
+>> 
+>> * Revert "worker: Pin to stable release 2.5.10 prior to md support" [Kyle Harding]
+>> 
+>> ### leviathan-2.9.8
+>> #### (2022-10-05)
+>> 
+>> * Switch to Flowzone for CI [Kyle Harding]
+>> * Remove leftover balena.yml file [Kyle Harding]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.105.5
+> ### (2022-10-01)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to a2079bd [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.9.7
+>> #### (Invalid date)
+>> 
+>> * Splie interface name into config [rcooke-warwick]
+>> * core: Specify wireless interface name for the 243390 device type [Alexandru Costache]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.105.4
+> ### (2022-10-01)
+> 
+> * Update balena-os/balena-supervisor to v14.2.7 [renovate[bot]]
+> 
+> ## meta-balena-2.105.3
+> ### (Invalid date)
+> 
+> * flowzone: Run also for pull requests into ESR branches [Alex Gonzalez]
+> * Switch from balenaCI to flowzone [Pagan Gazzard]
+> 
+</details>
+
 # v2.105.2+rev2
 ## (2022-10-15)
 

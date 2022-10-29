@@ -8,6 +8,8 @@ SRC_URI_append_generic-amd64 = " \
 
 SRC_URI_append_generic-aarch64 = " \
     file://defconfig;sha256sum=bcf0b7ae134386c459bc7bccce567792a553fe7735f28ea576746b5d656086cc \
+    file://0001-UBUNTU-SAUCE-no-up-add-compat_uts_machine-kernel-com.patch;sha256sum=38a9f1a5e896bfcc9e527d119a440d888d59b5d9881a9a08e3e91494790a5c26 \
+    file://0002-HACK-Use-the-UNAME26-personality-to-return-armv6l-in.patch;sha256sum=a3665233eebd44dc8f34ddda9ae9446bb1ef2f9c06979850bd9cc60d1e7d6f79 \
     "
 
 KCONFIG_MODE="--alldefconfig"

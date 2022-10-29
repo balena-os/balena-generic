@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.21+rev1
+## (2022-10-29)
+
+* Modify aarch64 kernel to use in ARM builders [Alex Gonzalez]
+
 # v2.105.21
 ## (2022-10-29)
 

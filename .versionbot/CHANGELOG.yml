@@ -1,4 +1,20 @@
 - commits:
+    - subject: Modify aarch64 kernel to use in ARM builders
+      hash: cff3eed3b0acc3717a4e5b5730479e709ba6f324
+      body: |
+        This allows to use this kernel in our ARM builder that require armv7l
+        and armv6l machine strings to build.
+      footer:
+        Changelog-entry: Modify aarch64 kernel to use in ARM builders
+        changelog-entry: Modify aarch64 kernel to use in ARM builders
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.105.21+rev1
+  title: ""
+  date: 2022-10-29T18:39:39.181Z
+- commits:
     - subject: Update layers/meta-balena to 2e9f69012d326b5925304c9d25427c5cc46dfbd4
       hash: 324b00e3c8b73479d98ef1207a8349e466044ed9
       body: Update layers/meta-balena

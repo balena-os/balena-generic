@@ -1,4 +1,4 @@
-DEPENDS_remove = "kernel-modules-headers"
+DEPENDS:remove = "kernel-modules-headers"
 IMAGE_FSTYPES = " balenaos-img"
 
 PARTITION_TABLE_TYPE = "gpt"
@@ -11,12 +11,12 @@ BALENA_BOOT_PARTITION_FILES = " \
     grub_extraenv:/EFI/BOOT/grub_extraenv \
     "
 
-BALENA_BOOT_PARTITION_FILES_append_generic-aarch64 = " \
+BALENA_BOOT_PARTITION_FILES:append:generic-aarch64 = " \
     grub-efi-bootaa64.efi:/EFI/BOOT/bootaa64.efi \
     grub/arm64-efi/:/EFI/BOOT/arm64-efi/ \
     "
 
-BALENA_BOOT_PARTITION_FILES_append_generic-amd64 = " \
+BALENA_BOOT_PARTITION_FILES:append:generic-amd64 = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     grub/x86_64-efi/:/EFI/BOOT/x86_64-efi/ \
     "
@@ -25,7 +25,7 @@ BALENA_BOOT_PARTITION_FILES_append_generic-amd64 = " \
 # This matches the value in the balena-intel generic-amd64 DT for compatibility
 IMAGE_ROOTFS_SIZE = "1024000"
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     linux-firmware \
     efibootmgr \
     "

@@ -1,6 +1,0 @@
-KBRANCH_generic-amd64 = "v5.10/standard/base"
-SRCREV_machine_generic-amd64 ?= "ab49d2db98bdee2c8c6e17fb59ded9e5292b0f41"
-SRCREV_machine_generic-aarch64 ?= "ab49d2db98bdee2c8c6e17fb59ded9e5292b0f41"
-KMACHINE_generic-amd64 ?= "common-pc-64"
-COMPATIBLE_MACHINE = "generic-amd64|generic-aarch64"
-LINUX_VERSION = "5.10.43"

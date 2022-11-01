@@ -1,4 +1,28 @@
 - commits:
+    - subject: adapt generic-aarch64 linux kernel patches to v5.15
+      hash: ee5f4f3f9561dd1e44906a6ec88fdce285d6c8c1
+      body: ""
+      footer:
+        Changelog-entry: adapt generic-aarch64 linux kernel patches to v5.15
+        changelog-entry: adapt generic-aarch64 linux kernel patches to v5.15
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Use Yocto Kirkstone to build generic images
+      hash: a91e15a231570d89c8aaa6029d5827a97eed7405
+      body: ""
+      footer:
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+        Changelog-entry: Use Yocto Kirkstone to build generic images
+        changelog-entry: Use Yocto Kirkstone to build generic images
+      author: Joseph Kogut
+      nested: []
+  version: 2.105.23+rev3
+  title: ""
+  date: 2022-11-01T23:49:32.703Z
+- commits:
     - subject: Update contracts to edff7336f8c7fd074aed1fd087a595ee2ca05651
       hash: 3bc7c7b33f23ad2cb08ee10bb22e4de792d9facd
       body: Update contracts

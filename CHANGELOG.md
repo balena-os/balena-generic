@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.105.23+rev3
+## (2022-11-01)
+
+* adapt generic-aarch64 linux kernel patches to v5.15 [Alex Gonzalez]
+* Use Yocto Kirkstone to build generic images [Joseph Kogut]
+
 # v2.105.23+rev2
 ## (2022-11-01)
 

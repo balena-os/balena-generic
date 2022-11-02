@@ -1,4 +1,23 @@
 - commits:
+    - subject: Default to flasher image for generic-amd64
+      hash: c051be136577c94c246a38110a33dc2ef731c98a
+      body: |
+        We already process and upload both flasher and raw images that are
+        explicitly labeled, but for legacy reasons, the unlabeled image is also
+        used as the default. Upload the flasher image as the default/unlabeled
+        artifact to remain consistent with the genericx86-64-ext DT provided in
+        balena-intel.
+      footer:
+        Changelog-entry: Default to flasher image for generic-amd64
+        changelog-entry: Default to flasher image for generic-amd64
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.105.23+rev4
+  title: ""
+  date: 2022-11-02T19:52:08.067Z
+- commits:
     - subject: adapt generic-aarch64 linux kernel patches to v5.15
       hash: ee5f4f3f9561dd1e44906a6ec88fdce285d6c8c1
       body: ""

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.23+rev4
+## (2022-11-02)
+
+* Default to flasher image for generic-amd64 [Joseph Kogut]
+
 # v2.105.23+rev3
 ## (2022-11-01)
 

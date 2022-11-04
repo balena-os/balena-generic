@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update layers/meta-balena to 81cdced65f90570af857c9cf012775558003c1c5
+      hash: 90a28e954327d39babb028a28a6c9f740c1c5000
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 81cdced65f90570af857c9cf012775558003c1c5
+        changelog-entry: Update layers/meta-balena to 81cdced65f90570af857c9cf012775558003c1c5
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.2.20
+              hash: 6b77e059fb1fc0e3eddebaa5702fce26f11b5e76
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.105.25
+          title: ""
+          date: 2022-11-04T02:27:30.706Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.2.18
+              hash: 797d966e06f4ef02962f8afc51a78a5a4b2bcc03
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.105.24
+          title: ""
+          date: 2022-11-03T01:52:10.456Z
+  version: 2.105.25
+  title: ""
+  date: 2022-11-04T09:15:01.230Z
+- commits:
     - subject: Default to flasher image for generic-amd64
       hash: c051be136577c94c246a38110a33dc2ef731c98a
       body: |

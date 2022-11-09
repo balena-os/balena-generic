@@ -1,4 +1,50 @@
 - commits:
+    - subject: Update layers/meta-balena to b6e5de2abcadd369a37891b17494048d6a82b1cc
+      hash: 32db8ef3c856616827c557eb08bcf08e9931dd88
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b6e5de2abcadd369a37891b17494048d6a82b1cc
+        changelog-entry: Update layers/meta-balena to b6e5de2abcadd369a37891b17494048d6a82b1cc
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Enable network access for tasks talking to the signing service
+              hash: ab1d75a0db11cde16d93cb7b3ebe734f61583e28
+              body: >
+                Since kirkstone tasks have network access disabled by default so we need
+
+                to enable it explicitly for tasks that talk to the signing service.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.105.32
+          title: ""
+          date: 2022-11-09T15:15:46.084Z
+        - commits:
+            - subject: Add meta-balena-esr workflow
+              hash: bcaddc164814569a9971c728bfbae316bbae88b3
+              body: >
+                This workflow will create an ESR branch from the latest patch of the
+
+                previous minor version the first day of each quarter.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.105.31
+          title: ""
+          date: 2022-11-08T20:30:19.317Z
+  version: 2.105.32
+  title: ""
+  date: 2022-11-09T22:17:16.857Z
+- commits:
     - subject: Update layers/meta-balena to 0d399dcb9ac7ece013f76a119e8643228eb114b7
       hash: 6d78bcfb1604ecafa4ad14372a6da36b6961eede
       body: Update layers/meta-balena

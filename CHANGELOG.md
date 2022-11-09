@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.105.32
+## (2022-11-09)
+
+
+<details>
+<summary> Update layers/meta-balena to b6e5de2abcadd369a37891b17494048d6a82b1cc [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.32
+> ### (2022-11-09)
+> 
+> * Enable network access for tasks talking to the signing service [Michal Toman]
+> 
+> ## meta-balena-2.105.31
+> ### (2022-11-08)
+> 
+> * Add meta-balena-esr workflow [Alex Gonzalez]
+> 
+</details>
+
 # v2.105.30
 ## (2022-11-08)
 

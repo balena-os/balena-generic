@@ -1,4 +1,21 @@
 - commits:
+    - subject: Add software RAID arrays to flasher targets
+      hash: 2f7d320b6ba7788731660a79d6bc6ad2d0fc1728
+      body: |
+        This allows users to manually create an MD array to be an installation
+        target using the appropriate level, metadata version, and label, and the
+        flasher will automatically install to it.
+      footer:
+        Changelog-entry: Add software RAID arrays to flasher targets
+        changelog-entry: Add software RAID arrays to flasher targets
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.105.32+rev2
+  title: ""
+  date: 2022-11-11T08:22:46.927Z
+- commits:
     - subject: Update contracts to b20827d63cbe7b1168f2b63b3bde216231e1b4ba
       hash: b290feeb37f679605cbc17e6f904193ef51d95a3
       body: Update contracts

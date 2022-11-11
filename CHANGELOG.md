@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.32+rev2
+## (2022-11-11)
+
+* Add software RAID arrays to flasher targets [Joseph Kogut]
+
 # v2.105.32+rev1
 ## (2022-11-10)
 

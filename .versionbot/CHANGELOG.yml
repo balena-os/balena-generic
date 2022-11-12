@@ -1,4 +1,189 @@
 - commits:
+    - subject: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+      hash: 1ca938c8e642d820c057c92631e1dfc83c1e9adf
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+        changelog-entry: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "ssh-auth: setConfig: run synchronously"
+              hash: 5534839614a5221068d25fb703658b780d6c7463
+              body: >
+                Most tests expects a specific device configuration so having the setting
+
+                run asynchronously leads to unexpected failures.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "cloud: ssh-auth: use custom path for custom key"
+              hash: 6c83fd02383baf7b6932858a3e88ae207cbecc3b
+              body: >
+                Right now it overwrites the key created by the cloud suite to connect
+
+                to the proxy.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: Set permissions for cache file"
+              hash: 3406f9a45a5a97542972c442f1c8a8e3e80a7d37
+              body: >
+                The sshd daemon is configured to fetch keys from the API for local
+
+                user connections. The script that fetches the keys, cloud-public-sshkeys,
+
+                sources balena-config-vars and is run as an exclusive non-root user.
+
+
+                Let's set the correct permissions for this file to allow not to break
+
+                the above.
+
+
+                Also, add a test to check that the SSH authentication with user
+
+                registered keys does not break again.
+
+
+                Fixes #2785
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.4
+          title: ""
+          date: 2022-11-12T15:47:45.326Z
+        - commits:
+            - subject: "common: kernel-devsrc: fix pseudo abort"
+              hash: e5307d7c7459ac977914122edc11d9ae7222e54b
+              body: >
+                Yocto builds will abort due to inconsistencies between the pseudo
+
+                database and files modified outside of the pseudo context [0].
+
+
+                This will occasionally cause builds to fail in the do_deploy step of the
+
+                kernel-devsrc recipe. [1]
+
+
+                Fix this by not removing the kernel_source tarball in the do_deploy
+
+                step.
+
+
+                Fixes: https://github.com/balena-os/meta-balena/issues/2806
+
+
+                [0] https://wiki.yoctoproject.org/wiki/Pseudo_Abort
+
+                [1] https://github.com/balena-os/meta-balena/issues/2806
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.106.3
+          title: ""
+          date: 2022-11-11T08:21:56.144Z
+        - commits:
+            - subject: "flasher: minor formatting"
+              hash: b92ade134716ea122949a0d5adf7238f274acc96
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "flasher: fix detection and exclusion of installation media"
+              hash: 02ba95a7f2b3889443f8fc2857723898140ff05e
+              body: >
+                The old test no longer matches on full disk paths including /dev, which
+
+                can potentially result in the installation disk not being excluded from
+
+                the pool of installation targets.
+
+
+                Fix the comparison so that the installation disk will not be
+
+                overwritten.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "flasher: properly expand device_pattern globs"
+              hash: 1b8059cf553b99de9a854dbbc7d81d7c079fe2a5
+              body: >
+                Previously, globs such as 'md/balena{,_*}' and 'mmcblk?' weren't being
+
+                properly expanded, resulting in the old behavior of explicit lists of
+
+                disks continuing to work, but consolidated globs matching multiple disks
+
+                would not.
+
+
+                Fix glob expansion to enable this feature to work properly.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.106.2
+          title: ""
+          date: 2022-11-10T21:20:24.210Z
+        - commits:
+            - subject: "tests: cloud: use cloud ssh to avoid race cond"
+              hash: 970d504c2fec7f82d8a87b1203702cb4320fbe9b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.106.1
+          title: ""
+          date: 2022-11-10T17:19:31.839Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.3.0
+              hash: 099700fd5247b20af5aec205f51e54c0a6c1fef3
+              body: Update balena-supervisor
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.106.0
+          title: ""
+          date: 2022-11-10T05:31:24.750Z
+  version: 2.106.4
+  title: ""
+  date: 2022-11-12T21:28:28.081Z
+- commits:
     - subject: Add software RAID arrays to flasher targets
       hash: 2f7d320b6ba7788731660a79d6bc6ad2d0fc1728
       body: |

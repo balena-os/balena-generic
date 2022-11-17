@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update layers/meta-balena to 8c48d6b05236f1ab2fe8b081181947ed8683b0f1
+      hash: 05c612d2d6a1b2aa1f73a917aaca396901f5fb60
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 8c48d6b05236f1ab2fe8b081181947ed8683b0f1
+        changelog-entry: Update layers/meta-balena to 8c48d6b05236f1ab2fe8b081181947ed8683b0f1
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes: kernel-balena: add wireguard module"
+              hash: a3491c4ba4161ca7b6e9c25e6e0beb33f0f67a04
+              body: >
+                Add the wireguard module by default so it is included in all device
+
+                types. This is a frequently requested by customers and will avoid having
+
+                to patch individual device repositories.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.8
+          title: ""
+          date: 2022-11-17T11:04:24.192Z
+        - commits:
+            - subject: "test: ssh-auth: fix test cases using custom keys"
+              hash: b24d92774a67cf0c0b83a29848bdcf6ed8a574db
+              body: >
+                There are two sets of keys used in this test, one stored in `/root/id`
+
+                which is created by the cloud suite to SSH via the proxy server, and
+
+                a custom key stored in `/root/test_id` used in some of the subtests.
+
+
+                Fix the test cases using the custom key to use the correct private key.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.7
+          title: ""
+          date: 2022-11-15T15:37:55.466Z
+  version: 2.106.8
+  title: ""
+  date: 2022-11-17T19:46:34.080Z
+- commits:
     - subject: Update layers/meta-balena to 0bcd2db1e6e5bf04ad2882028aa26cbab0ee49ea
       hash: 4a35ec8a5504481fbe5ef3b51892a0e79dede8c1
       body: Update layers/meta-balena

@@ -1,4 +1,137 @@
 - commits:
+    - subject: Update layers/meta-balena to 1add3a4b003475a96b0414a5dec83152eab58bf3
+      hash: 5de551937ccaf1fa7798dde1464161ff958c2e5a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1add3a4b003475a96b0414a5dec83152eab58bf3
+        changelog-entry: Update layers/meta-balena to 1add3a4b003475a96b0414a5dec83152eab58bf3
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.4
+              hash: 6917f26494d1c68803508c8c5ff3d06e5fa0d99c
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.6
+          title: ""
+          date: 2022-11-22T21:24:54.566Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.2
+              hash: f5b649f4a2ad0192bad28f332ad45d35725e8d56
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.5
+          title: ""
+          date: 2022-11-22T01:19:51.508Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.1
+              hash: 3904c5734f5307cc6d225df7021dea61d8a014fd
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.4
+          title: ""
+          date: 2022-11-19T22:54:21.548Z
+        - commits:
+            - subject: "kernel-balena: Kernel version check should include provided version"
+              hash: 42ec259c4d1c6e9a7c8171f21157562ed3a07cc9
+              body: >
+                When adding a kernel configuration conditional in a provided kernel
+
+                version, make the check include the provided kernel version as that is
+
+                the intuitive way to understand it.
+
+
+                The two places that use this function already used it in this way.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.107.3
+          title: ""
+          date: 2022-11-19T14:52:45.759Z
+        - commits:
+            - subject: "chronyd: allow service status notification socket access to all"
+              hash: ddf2c4ed50e812296ed5f9fe3ece48b1ce8a0107
+              body: >
+                chrony 4.2 introduces security hardening in the
+
+                service definition that removes the CAP_SYS_ADMIN permission, affecting
+
+                the way healthdog uses execve to become chronyd.
+
+
+                commit 83f96efdfd2d (examples: harden systemd services)
+
+
+                This commits works around it by allowing all members of the service's
+
+                control group to send notification messages.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "chrony: update to version 4.2"
+              hash: 6a923864e66d7a2a552f3977727caefda444045d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.107.2
+          title: ""
+          date: 2022-11-18T19:49:48.786Z
+        - commits:
+            - subject: "docs: add RAID setup info"
+              hash: c1be8607aca2b4086230305689a0bc6ea77f5cc7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.107.1
+          title: ""
+          date: 2022-11-17T22:46:30.954Z
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.0
+              hash: ca6727af811b274e036b259e286316170292d401
+              body: Update balena-supervisor
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.0
+          title: ""
+          date: 2022-11-17T17:45:43.032Z
+  version: 2.107.6
+  title: ""
+  date: 2022-11-23T03:07:14.811Z
+- commits:
     - subject: Update layers/meta-balena to 8c48d6b05236f1ab2fe8b081181947ed8683b0f1
       hash: 05c612d2d6a1b2aa1f73a917aaca396901f5fb60
       body: Update layers/meta-balena

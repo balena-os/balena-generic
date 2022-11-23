@@ -1,6 +1,51 @@
 Change log
 -----------
 
+# v2.107.6
+## (2022-11-23)
+
+
+<details>
+<summary> Update layers/meta-balena to 1add3a4b003475a96b0414a5dec83152eab58bf3 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.6
+> ### (2022-11-22)
+> 
+> * Update balena-os/balena-supervisor to v14.4.4 [renovate[bot]]
+> 
+> ## meta-balena-2.107.5
+> ### (2022-11-22)
+> 
+> * Update balena-os/balena-supervisor to v14.4.2 [renovate[bot]]
+> 
+> ## meta-balena-2.107.4
+> ### (2022-11-19)
+> 
+> * Update balena-os/balena-supervisor to v14.4.1 [renovate[bot]]
+> 
+> ## meta-balena-2.107.3
+> ### (2022-11-19)
+> 
+> * kernel-balena: Kernel version check should include provided version [Alex Gonzalez]
+> 
+> ## meta-balena-2.107.2
+> ### (2022-11-18)
+> 
+> * chronyd: allow service status notification socket access to all [Alex Gonzalez]
+> * chrony: update to version 4.2 [Alex Gonzalez]
+> 
+> ## meta-balena-2.107.1
+> ### (2022-11-17)
+> 
+> * docs: add RAID setup info [Joseph Kogut]
+> 
+> ## meta-balena-2.107.0
+> ### (2022-11-17)
+> 
+> * Update balena-os/balena-supervisor to v14.4.0 [renovate[bot]]
+> 
+</details>
+
 # v2.106.8
 ## (2022-11-17)
 

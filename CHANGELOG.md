@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.107.13+rev1
+## (2022-11-30)
+
+* Include peak CAN driver [Michal Toman]
+
 # v2.107.13
 ## (2022-11-29)
 

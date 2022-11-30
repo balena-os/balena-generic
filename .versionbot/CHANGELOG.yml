@@ -1,4 +1,22 @@
 - commits:
+    - subject: Include peak CAN driver
+      hash: 04e67af8a24f6848218c2a64398fa1494c873bd9
+      body: |
+        This is a 3rd party CAN driver, we want to include it in the generic
+        device types.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Include peak CAN driver
+        changelog-entry: Include peak CAN driver
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.107.13+rev1
+  title: ""
+  date: 2022-11-30T10:49:02.333Z
+- commits:
     - subject: Update layers/meta-balena to e3888e2b46676499f47c148431d9d457535c6871
       hash: d0ff654ef25c6b108e5f591def86d7a6da06b08c
       body: Update layers/meta-balena

@@ -1,4 +1,42 @@
 - commits:
+    - subject: Make HUP work with secure boot and FDE
+      hash: 03c9c2c3a7e3c0d24e96152d453f94932ab41e9e
+      body: >
+        A couple changes necessary to fix secure boot and FDE HUP:
+
+        * follow symlinks looking for grub config, which is on a different partition
+
+        * do not touch boot order, this is protected with UEFI configuration
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Make HUP work with secure boot and FDE
+        changelog-entry: Make HUP work with secure boot and FDE
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+    - subject: Do not touch MBR during HUP
+      hash: 2ae52831a6a88e7a51db9a3c6669450e7d329de7
+      body: >
+        The generic device types are UEFI-only, unlike e.g. Intel NUC, which works
+
+        with both MBR and UEFI. In this repo there is no need to account
+
+        for situations where MBR might have been written during HUP.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Do not touch MBR during HUP
+        changelog-entry: Do not touch MBR during HUP
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.107.13+rev2
+  title: ""
+  date: 2022-12-01T14:02:56.958Z
+- commits:
     - subject: Include peak CAN driver
       hash: 04e67af8a24f6848218c2a64398fa1494c873bd9
       body: |

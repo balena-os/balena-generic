@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.107.13+rev2
+## (2022-12-01)
+
+* Make HUP work with secure boot and FDE [Michal Toman]
+* Do not touch MBR during HUP [Michal Toman]
+
 # v2.107.13+rev1
 ## (2022-11-30)
 

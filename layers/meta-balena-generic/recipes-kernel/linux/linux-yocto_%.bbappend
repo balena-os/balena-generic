@@ -134,6 +134,11 @@ BALENA_CONFIGS[usb_audio]=" \
     CONFIG_SND_USB_AUDIO=m \
 "
 
+BALENA_CONFIGS:append = " xhci"
+BALENA_CONFIGS[xhci] = " \
+    CONFIG_USB_XHCI_PCI=y \
+"
+
 # Enable WiFi adapters that use Realtek chipset (like Edimax EW-7811Un)
 BALENA_CONFIGS:append = " rtl_wifi"
 BALENA_CONFIGS[rtl_wifi]=" \

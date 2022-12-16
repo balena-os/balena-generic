@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.107.29+rev1
+## (2022-12-16)
+
+* Add modules required to boot from USB to initramfs [Joseph Kogut]
+
 # v2.107.29
 ## (2022-12-13)
 

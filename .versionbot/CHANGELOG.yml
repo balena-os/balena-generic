@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add modules required to boot from USB to initramfs
+      hash: d23871f08605a24e0af94e4e2839878222fe8c77
+      body: ""
+      footer:
+        Changelog-entry: Add modules required to boot from USB to initramfs
+        changelog-entry: Add modules required to boot from USB to initramfs
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.107.29+rev1
+  title: ""
+  date: 2022-12-16T14:39:54.166Z
+- commits:
     - subject: Update layers/meta-balena to 79367a045b9e8d483e3d330b70d43cadc5462f78
       hash: 827f7d3e6281c4d60a72a4ceeebdd9cabd62f80d
       body: Update layers/meta-balena

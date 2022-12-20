@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+      hash: ba3e03f3691f54d01a5a5cdd14e5b6339417cd21
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+        changelog-entry: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Owasys owa5X device"
+              hash: d92fb422d14da698061c53422ae7bfb4fdd64b03
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+                signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+              author: Alvaro Guzman
+          version: contracts-2.0.35
+          title: ""
+          date: 2022-12-20T11:53:50.722Z
+  version: 2.108.3+rev2
+  title: ""
+  date: 2022-12-20T20:26:46.038Z
+- commits:
     - subject: Define serial consoles for amd64 and aarch64
       hash: f866a654fba7d78475165a8b62895f04bc45c218
       body: |

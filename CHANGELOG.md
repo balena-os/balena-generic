@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.3+rev1
+## (2022-12-20)
+
+* Define serial consoles for amd64 and aarch64 [Alex Gonzalez]
+
 # v2.108.3
 ## (2022-12-20)
 

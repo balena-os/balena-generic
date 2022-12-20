@@ -1,4 +1,19 @@
 - commits:
+    - subject: Define serial consoles for amd64 and aarch64
+      hash: f866a654fba7d78475165a8b62895f04bc45c218
+      body: |
+        This is used in OS development mode to enable serial consoles.
+      footer:
+        Changelog-entry: Define serial consoles for amd64 and aarch64
+        changelog-entry: Define serial consoles for amd64 and aarch64
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.108.3+rev1
+  title: ""
+  date: 2022-12-20T14:07:14.970Z
+- commits:
     - subject: Update layers/meta-balena to 29f12b0d5adc6cdfa993f68e00422371708342d9
       hash: e9c13e125ccb24cd083be6eaa09a699275036d91
       body: Update layers/meta-balena

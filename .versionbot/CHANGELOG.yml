@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 0f1d0265bbabdb2b869f6cf9363d418b52681ffc
+      hash: 784c100ba5f8c3f24c4d24e0f445c59f026c8005
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0f1d0265bbabdb2b869f6cf9363d418b52681ffc
+        changelog-entry: Update balena-yocto-scripts to 0f1d0265bbabdb2b869f6cf9363d418b52681ffc
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "jenkins_generate_ami: support using both live and installer images as
+                AMIs"
+              hash: fa4fcbb106695ba646a383d4efff3cc325626330
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-generate-ami: Enable nitroTPM support"
+              hash: 23cb657399160486341dd05cea555504845f1d22
+              body: |
+                This allows to use secure boot in AMI images.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "jenkins_build: add argument to build OS development images"
+              hash: 07f20dae6f06831181fc2ae306f9c4a52499ca24
+              body: >
+                Building OS development images is useful for example when debugging and
+
+                testing AMI images.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.17
+          title: ""
+          date: 2022-12-23T15:16:00.319Z
+  version: 2.108.5+rev1
+  title: ""
+  date: 2022-12-23T17:56:55.083Z
+- commits:
     - subject: Update layers/meta-balena to 4f5dc08a949432990996fbb0e9955d261c1282b3
       hash: e1e4ee15c5ea28ea8b4e3b634c8327ac0c4d7b8c
       body: Update layers/meta-balena

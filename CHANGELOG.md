@@ -1,6 +1,42 @@
 Change log
 -----------
 
+# v2.108.8
+## (2022-12-29)
+
+
+<details>
+<summary> Update layers/meta-balena to e45cf66e8d8f7145127614153a2694c9a9850ed7 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.8
+> ### (2022-12-28)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e09fae4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.7
+>> #### (2022-12-28)
+>> 
+>> * renovate: Remove v prefix from leviathan-worker github-tags [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.7
+> ### (2022-12-28)
+> 
+> * tests: os: fix modem test teardown [rcooke-warwick]
+> 
+> ## meta-balena-2.108.6
+> ### (2022-12-27)
+> 
+> * flasher: output logs to serial console [Joseph Kogut]
+> 
+
+</details>
+
 # v2.108.5+rev2
 ## (2022-12-23)
 

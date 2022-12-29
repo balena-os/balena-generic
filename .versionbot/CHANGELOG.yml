@@ -1,4 +1,73 @@
 - commits:
+    - subject: Update layers/meta-balena to e45cf66e8d8f7145127614153a2694c9a9850ed7
+      hash: d1e0eacfe7639f6c43884d2c5fa227fe5cd98916
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e45cf66e8d8f7145127614153a2694c9a9850ed7
+        changelog-entry: Update layers/meta-balena to e45cf66e8d8f7145127614153a2694c9a9850ed7
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to e09fae4
+              hash: 49c24a43ede0371c2c5a992e9197124492b55808
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: "renovate: Remove v prefix from leviathan-worker github-tags"
+                      hash: 80778c4b2ea6f2e225b903b6d0a43000a492701e
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.11.7
+                  title: ""
+                  date: 2022-12-28T16:49:10.897Z
+          version: meta-balena-2.108.8
+          title: ""
+          date: 2022-12-28T21:07:27.490Z
+        - commits:
+            - subject: "tests: os: fix modem test teardown"
+              hash: e5f9b72eae7bcc88cb28d99f8b1bf7f2c1b65789
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.108.7
+          title: ""
+          date: 2022-12-28T16:06:50.921Z
+        - commits:
+            - subject: "flasher: output logs to serial console"
+              hash: 131893e433ef64a1f3b05dfcd44b0e022f13646d
+              body: >
+                Improve debugging experience of flasher service by outputting logs to
+
+                serial console.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.108.6
+          title: ""
+          date: 2022-12-27T20:53:27.624Z
+  version: 2.108.8
+  title: ""
+  date: 2022-12-29T01:18:48.137Z
+- commits:
     - subject: Update contracts to 4698e4ef55fdc61aa3df8d8494f2cbbd306b26c9
       hash: 7b9b7f9c7ef51d7d1e831225163f51489626a713
       body: Update contracts

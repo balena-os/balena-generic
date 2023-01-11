@@ -1,4 +1,34 @@
 - commits:
+    - subject: Disable AppArmor in aarch64-generic, to align it with amd64-generic
+      hash: fe5249c462f95db848d337931e77c9b1b9e839c5
+      body: |
+        This aligns the generic-aarch64 kernel to the generic-amd64 kernel with
+        regards to AppArmor configuration.
+
+        Initial motivation for this change comes balenaEngine: newer releases of
+        Moby expect the AppArmor userland tools to be installed if AppArmor is
+        enabled on the kernel. Given that balenaOS doesn't distribute the
+        AppArmor tools, our aarch64 tests running on CI were failing for new
+        Engine releases that incorporate those Moby changes.
+      footer:
+        Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+        signed-off-by: Leandro Motta Barros <leandro@balena.io>
+        Changelog-entry: Disable AppArmor in aarch64-generic, to align it with amd64-generic
+        changelog-entry: Disable AppArmor in aarch64-generic, to align it with amd64-generic
+      author: Leandro Motta Barros
+      nested: []
+    - subject: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+      hash: ab8f45b7d0a8a91931032bbabd5ebbca75bdd414
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+        changelog-entry: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+      author: renovate[bot]
+      nested: []
+  version: 2.108.19+rev2
+  title: ""
+  date: 2023-01-11T16:51:29.742Z
+- commits:
     - subject: Update balena-yocto-scripts to 56bb055d91481023a6b6cff92d61ebfffa884139
       hash: b8fcdd6f8d6aae8cfc0ed7cac2b204478a19b7c0
       body: Update balena-yocto-scripts

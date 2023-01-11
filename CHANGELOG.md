@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.19+rev2
+## (2023-01-11)
+
+* Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6 [renovate[bot]]
+
 # v2.108.19+rev1
 ## (2023-01-11)
 

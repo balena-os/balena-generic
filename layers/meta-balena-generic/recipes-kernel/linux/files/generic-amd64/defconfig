@@ -9926,7 +9926,7 @@ CONFIG_EVM_ADD_XATTRS=y
 # CONFIG_DEFAULT_SECURITY_TOMOYO is not set
 # CONFIG_DEFAULT_SECURITY_APPARMOR is not set
 CONFIG_DEFAULT_SECURITY_DAC=y
-CONFIG_LSM="yama,loadpin,safesetid,integrity"
+CONFIG_LSM="lockdown,yama,loadpin,safesetid,integrity"
 
 #
 # Kernel hardening options

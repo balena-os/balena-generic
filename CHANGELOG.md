@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.108.19+rev3
+## (2023-01-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 89c346a17dc5f33038cad7a9251d7cc4298e34f7 [renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.19.19
+> ### (2023-01-14)
+> 
+> * balena-generate-ami: do not remove AMI snapshot [Alex Gonzalez]
+> * jenkins_generate_ami: use balena_os tokens instead of org specific token [Alex Gonzalez]
+> * jenkins_build: respect the preserve build flag [Alex Gonzalez]
+> * balena-generate-ami: cleanup images after deployment [Alex Gonzalez]
+> * balena-generate-ami: test image before making it public [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.19+rev2
 ## (2023-01-14)
 

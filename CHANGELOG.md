@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v2.108.23
+## (2023-01-17)
+
+
+<details>
+<summary> Update layers/meta-balena to a4107bef96f18a701af94b555d0af3d3c445bce8 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.23
+> ### (2023-01-16)
+> 
+> * balena-keys: rebuild if keys change [Alex Gonzalez]
+> * classes: sign-*: resign if keys change [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.22
+> ### (2023-01-16)
+> 
+> * workflows: esr: use semver compatible versions [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.21
+> ### (2023-01-14)
+> 
+> * efitools: Package lock down EFI image into its own package [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.20
+> ### (2023-01-12)
+> 
+> * workflows: meta-balena-esr: Fix version calculation [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.19+rev3
 ## (2023-01-16)
 

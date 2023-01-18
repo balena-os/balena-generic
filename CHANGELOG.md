@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.24
+## (2023-01-18)
+
+
+<details>
+<summary> Update layers/meta-balena to 99eca83309f2275b27b90f955670f0c3efef959f [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.24
+> ### (2023-01-18)
+> 
+> * networkmanager: Make iptables wait for xtables.lock [Zahari Petkov]
+> 
+
+</details>
+
 # v2.108.23+rev1
 ## (2023-01-18)
 

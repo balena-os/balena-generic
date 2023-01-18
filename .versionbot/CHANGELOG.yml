@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to 99eca83309f2275b27b90f955670f0c3efef959f
+      hash: ae757f7f4237b1ffd16c0669e268485451e2282a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 99eca83309f2275b27b90f955670f0c3efef959f
+        changelog-entry: Update layers/meta-balena to 99eca83309f2275b27b90f955670f0c3efef959f
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "networkmanager: Make iptables wait for xtables.lock"
+              hash: afebbcddeebdda9e5988507a5fcf5ad93cf79cab
+              body: >
+                iptables takes a file lock at /run/xtables.lock. By default, if
+
+                the file is locked, iptables will fail with error. When that happens,
+
+                the iptables rules won't be configured, and the shared mode
+
+                (for which we use iptables) will not be setup properly.
+
+
+                Instead, pass "--wait 2", to block.
+
+
+                The included patch has to be removed once we upgrade to next
+
+                NetworkManager version as it is already included upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.108.24
+          title: ""
+          date: 2023-01-18T11:11:18.440Z
+  version: 2.108.24
+  title: ""
+  date: 2023-01-18T17:18:49.490Z
+- commits:
     - subject: Update balena-yocto-scripts to fa2e92c2fa73ada7211192472c9f2068cf96330a
       hash: 0138c87044a0b35039d0f176557b099e70390820
       body: Update balena-yocto-scripts

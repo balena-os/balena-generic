@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fa2e92c2fa73ada7211192472c9f2068cf96330a
+      hash: 0138c87044a0b35039d0f176557b099e70390820
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fa2e92c2fa73ada7211192472c9f2068cf96330a
+        changelog-entry: Update balena-yocto-scripts to fa2e92c2fa73ada7211192472c9f2068cf96330a
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "jenkins_generate_ami: default to pull cloud-config apps from
+                balena_os"
+              hash: 0e3f9ca33265d1fc84244a4e3e86b9e7a7c85715
+              body: >
+                These applications have been moved to the `balena_os` organization.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.20
+          title: ""
+          date: 2023-01-18T08:56:44.815Z
+  version: 2.108.23+rev1
+  title: ""
+  date: 2023-01-18T13:07:46.313Z
+- commits:
     - subject: Update layers/meta-balena to a4107bef96f18a701af94b555d0af3d3c445bce8
       hash: 02b606f053da1460a72d1523aa15a3a004415277
       body: Update layers/meta-balena

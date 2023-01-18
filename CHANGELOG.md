@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.23+rev1
+## (2023-01-18)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fa2e92c2fa73ada7211192472c9f2068cf96330a [renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.19.20
+> ### (2023-01-18)
+> 
+> * jenkins_generate_ami: default to pull cloud-config apps from balena_os [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.23
 ## (2023-01-17)
 

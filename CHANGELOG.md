@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.25
+## (2023-01-19)
+
+
+<details>
+<summary> Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.25
+> ### (2023-01-18)
+> 
+> * tests: os: add basic SB/FDE tests [Joseph Kogut]
+> 
+
+</details>
+
 # v2.108.24
 ## (2023-01-18)
 

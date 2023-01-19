@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      hash: f0514464b048b0efbb3737d87049cbb0163fab59
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+        changelog-entry: Update layers/meta-balena to b1bc70d3819c8c27041f843bccd82405a7832134
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: add basic SB/FDE tests"
+              hash: f8ada0481cc159fd03ac1291c981e4dc0d03342d
+              body: |
+                Check for secureboot and full-disk encryption when supported by
+                firmware.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.108.25
+          title: ""
+          date: 2023-01-18T21:44:59.128Z
+  version: 2.108.25
+  title: ""
+  date: 2023-01-19T01:27:42.701Z
+- commits:
     - subject: Update layers/meta-balena to 99eca83309f2275b27b90f955670f0c3efef959f
       hash: ae757f7f4237b1ffd16c0669e268485451e2282a
       body: Update layers/meta-balena

@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.108.25+rev1
+## (2023-01-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a30795acce48c90b23fcac273fe0cbcc7497c779 [renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.19.21
+> ### (2023-01-19)
+> 
+> * balene-generate-ami: remove key name [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.25
 ## (2023-01-19)
 

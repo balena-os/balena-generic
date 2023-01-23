@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+      hash: 21183533eb5ee4afe8ee1adf0f8ccb8553de55be
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+        changelog-entry: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: os: fix tests that use glider on rpi0"
+              hash: 864b4ed84c7af438d61501a77996639f3af3499c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.108.27
+          title: ""
+          date: 2023-01-20T23:08:16.096Z
+  version: 2.108.27
+  title: ""
+  date: 2023-01-23T19:15:50.711Z
+- commits:
     - subject: Update layers/meta-balena to 1d7b7e3bd6cd3bc1bbf4bd698a0b946bff498659
       hash: b6e3d52de5d15f3d980693c2d0c134cbe1557c07
       body: Update layers/meta-balena

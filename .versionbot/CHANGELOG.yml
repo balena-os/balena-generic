@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add virtio devices as installation target for flasher images
+      hash: 08205527229f0622372c7f6cd74ec35e933a57a6
+      body: ""
+      footer:
+        Changelog-entry: Add virtio devices as installation target for flasher images
+        changelog-entry: Add virtio devices as installation target for flasher images
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.108.27+rev1
+  title: ""
+  date: 2023-01-26T00:35:23.934Z
+- commits:
     - subject: Update layers/meta-balena to 73bc1884cad100723ee16dd08c1abd5796260cc2
       hash: 21183533eb5ee4afe8ee1adf0f8ccb8553de55be
       body: Update layers/meta-balena

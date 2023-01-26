@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.27+rev1
+## (2023-01-26)
+
+* Add virtio devices as installation target for flasher images [Joseph Kogut]
+
 # v2.108.27
 ## (2023-01-23)
 

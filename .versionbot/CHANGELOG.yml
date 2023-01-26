@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 41929c1daa51086e2b62c095efac7ca79bb783e0
+      hash: 740b0a57d3600468caeac710df7c451c23b88cd2
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 41929c1daa51086e2b62c095efac7ca79bb783e0
+        changelog-entry: Update balena-yocto-scripts to 41929c1daa51086e2b62c095efac7ca79bb783e0
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-generate-ami: allow for staging deployments"
+              hash: aa127c8c3066c94c5904834f8a18be1e2e6ee39a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "jenkins_generate_ami: allow for staging deployment"
+              hash: 0ed9b6082a086aca594cffabdbbeafcc541d3277
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.22
+          title: ""
+          date: 2023-01-25T13:40:41.034Z
+  version: 2.108.27+rev2
+  title: ""
+  date: 2023-01-26T03:59:05.676Z
+- commits:
     - subject: Add virtio devices as installation target for flasher images
       hash: 08205527229f0622372c7f6cd74ec35e933a57a6
       body: ""

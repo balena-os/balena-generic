@@ -1,6 +1,22 @@
 Change log
 -----------
 
+# v2.108.27+rev2
+## (2023-01-26)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 41929c1daa51086e2b62c095efac7ca79bb783e0 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.22
+> ### (2023-01-25)
+> 
+> * balena-generate-ami: allow for staging deployments [Alex Gonzalez]
+> * jenkins_generate_ami: allow for staging deployment [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.27+rev1
 ## (2023-01-26)
 

@@ -1,4 +1,30 @@
 - commits:
+    - subject: remove LSM hardcoding from linux defconfigs
+      hash: 6411efb44041cc1781bb947daac1c12ff9de659f
+      body: >
+        The defconfigs for both aarch64 and amd64 where setting differently
+
+        DEFAULT_SECURITY and LSM values. The aarch64 configuration is actually causing
+
+        problems with the engine as it forces apparmor initialization without the
+
+        required user space tools.
+
+
+        This commit removes the settings from the defconfig so the defaults will
+
+        be applied.
+      footer:
+        Changelog-entry: remove LSM hardcoding from linux defconfigs
+        changelog-entry: remove LSM hardcoding from linux defconfigs
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.108.28+rev2
+  title: ""
+  date: 2023-02-02T10:43:18.498Z
+- commits:
     - subject: add meta-perl to bblayers.conf
       hash: f8a5c930a0336ce3a14ab628a2a10a05cbc01f4f
       body: |

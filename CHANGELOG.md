@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.28+rev2
+## (2023-02-02)
+
+* remove LSM hardcoding from linux defconfigs [Alex Gonzalez]
+
 # v2.108.28+rev1
 ## (2023-01-28)
 

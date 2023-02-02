@@ -1,6 +1,24 @@
 Change log
 -----------
 
+# v2.108.28+rev3
+## (2023-02-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fe6beafdcfa7406b20257cf67a6b74cd8f59142f [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.23
+> ### (2023-01-28)
+> 
+> * balena-generate-ami: increase import snapshot timeout [Alex Gonzalez]
+> * balena-generate-ami: remove s3 temporary image if snapshot import times out [Alex Gonzalez]
+> * balena-generate-ami: match instance type with image type [Alex Gonzalez]
+> * balena-generate-ami: fix linter warnings [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.108.28+rev2
 ## (2023-02-02)
 

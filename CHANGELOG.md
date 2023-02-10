@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.28+rev4
+## (2023-02-10)
+
+* linux-firmware: Add AX211 NUC12 WiFI/BT firmare [Alexandru Costache]
+
 # v2.108.28+rev3
 ## (2023-02-02)
 

@@ -1,4 +1,20 @@
 - commits:
+    - subject: "linux-firmware: Add AX211 NUC12 WiFI/BT firmare"
+      hash: 8f064bd0a6404c8c48338039e52ce22b27fb3a5c
+      body: |
+        This firmware has also been included in the Generic X86
+        ext image.
+      footer:
+        Changelog-entry: "linux-firmware: Add AX211 NUC12 WiFI/BT firmare"
+        changelog-entry: "linux-firmware: Add AX211 NUC12 WiFI/BT firmare"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.108.28+rev4
+  title: ""
+  date: 2023-02-10T11:54:25.584Z
+- commits:
     - subject: Update balena-yocto-scripts to fe6beafdcfa7406b20257cf67a6b74cd8f59142f
       hash: 1b38226445e84f4d054b70dee5ca9b1aee9a03d1
       body: Update balena-yocto-scripts

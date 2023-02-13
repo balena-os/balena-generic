@@ -1,6 +1,44 @@
 Change log
 -----------
 
+# v2.111.2
+## (2023-02-13)
+
+
+<details>
+<summary> Update layers/meta-balena to 3e652503831c517ed60bc838c250d2910f2de8fe [Renovate Bot] </summary>
+
+> ## meta-balena-2.111.2
+> ### (2023-02-13)
+> 
+> * docs: add section for sb/fde opt-in [Joseph Kogut]
+> 
+> ## meta-balena-2.111.1
+> ### (2023-02-13)
+> 
+> * resin-init-flasher: do not report progress if unprovisioned [Alex Gonzalez]
+> * resin-init-flasher: check splash configuration exists before copying [Alex Gonzalez]
+> * resin-init-flasher: Move configuration data definitions to config file [Alex Gonzalez]
+> 
+> ## meta-balena-2.111.0
+> ### (2023-02-11)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.8.0 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.8.0
+>> #### (2023-02-10)
+>> 
+>> * Remove dependent devices content in codebase [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.110.4
 ## (2023-02-10)
 

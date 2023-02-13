@@ -1,4 +1,112 @@
 - commits:
+    - subject: Update layers/meta-balena to 3e652503831c517ed60bc838c250d2910f2de8fe
+      hash: 752ede5845b1c78f942b17382ce98c67c456270c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3e652503831c517ed60bc838c250d2910f2de8fe
+        changelog-entry: Update layers/meta-balena to 3e652503831c517ed60bc838c250d2910f2de8fe
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "docs: add section for sb/fde opt-in"
+              hash: 0b6b034cbb0ca5a9cd7a13690d1f8b0b7485e674
+              body: >
+                Document the opt-in boolean for secure boot and full-disk encryption.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.111.2
+          title: ""
+          date: 2023-02-13T14:35:32.625Z
+        - commits:
+            - subject: "resin-init-flasher: do not report progress if unprovisioned"
+              hash: c6e81823002c1b7f73373fc5eee9434c8805f5b5
+              body: >
+                If we know we have not provisioned, let's not print errors when the
+
+                report cannot be sent.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: check splash configuration exists before copying"
+              hash: 150bef07e330695cc2abcc1e46d533ed43b0a732
+              body: >
+                Otherwise, if the flasher is configured without a splash configuration
+
+                directory, the boot partition content is overwritten.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: Move configuration data definitions to config
+                file"
+              hash: be9f8c76eab4494d6dfaaca81ec2c695d9f78d8c
+              body: >
+                This exposes a file based interface for configuration sharing. The
+
+                clarity is needed while working on the migrator.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.111.1
+          title: ""
+          date: 2023-02-13T09:12:12.081Z
+        - commits:
+            - subject: Update balena-supervisor to v14.8.0
+              hash: 8b951dd95f2323524a7aab8a4a08182f31b43fc3
+              body: |
+                Update balena-supervisor from 14.7.1 to 14.8.0
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Remove dependent devices content in codebase
+                      hash: c4f9d72172ef678c73ee05e8766c9bcfddd47073
+                      body: >
+                        This includes:
+
+                        - proxyvisor.js
+
+                        - references in docs
+
+                        - references device-state, api-binder, compose modules, API
+
+                        - references in tests
+
+
+                        The commit also adds a migration to remove the 4 dependent device tables from the DB.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-14.8.0
+                  title: ""
+                  date: 2023-02-10T23:01:03.277Z
+          version: meta-balena-2.111.0
+          title: ""
+          date: 2023-02-11T01:57:28.602Z
+  version: 2.111.2
+  title: ""
+  date: 2023-02-13T19:12:51.909Z
+- commits:
     - subject: Update layers/meta-balena to 152fe5b0fde438279bf0bc05e8f51d2cafb28fc0
       hash: 6e3f808499362081f636866a73ca5f45af59100e
       body: Update layers/meta-balena

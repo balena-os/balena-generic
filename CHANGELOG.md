@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v2.112.12+rev1
+## (2023-02-21)
+
+
+<details>
+<summary> Update contracts to 93ba80ca1ffeced474d0567cc58703cdbeb629d5 [Renovate Bot] </summary>
+
+> ## contracts-2.0.46
+> ### (2023-02-20)
+> 
+> * <owa5X logo> Updated owa5X logo. [Alvaro Guzman]
+> 
+> ## contracts-2.0.45
+> ### (2023-02-18)
+> 
+> * Add node v19.6.1 v18.14.1 v16.19.1 and v14.21.3 [Trong Nghia Nguyen]
+> 
+> ## contracts-2.0.44
+> ### (2023-02-16)
+> 
+> * Add Golang v1.20.1 and v1.19.6 [Trong Nghia Nguyen]
+> 
+
+</details>
+
 # v2.112.12
 ## (2023-02-21)
 

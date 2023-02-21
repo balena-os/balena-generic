@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update contracts to 93ba80ca1ffeced474d0567cc58703cdbeb629d5
+      hash: 50170a519b08522f9facb7c028fbc73f6ecc5dbb
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 93ba80ca1ffeced474d0567cc58703cdbeb629d5
+        changelog-entry: Update contracts to 93ba80ca1ffeced474d0567cc58703cdbeb629d5
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: <owa5X logo> Updated owa5X logo.
+              hash: 65dc08be089c25740fdc53ea86b4e8037fff600b
+              body: >
+                The previous logo had some problems when show in Balena's dashboard and
+                other places.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+                signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+              author: Alvaro Guzman
+          version: contracts-2.0.46
+          title: ""
+          date: 2023-02-20T10:57:19.224Z
+        - commits:
+            - subject: Add node v19.6.1 v18.14.1 v16.19.1 and v14.21.3
+              hash: 9672d0c0833fa46ad78dd10924733f515ae8a6c8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.45
+          title: ""
+          date: 2023-02-18T12:11:03.237Z
+        - commits:
+            - subject: Add Golang v1.20.1 and v1.19.6
+              hash: e82d2434f55362857939d5a83c23f6b95c9b325d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.44
+          title: ""
+          date: 2023-02-16T05:44:53.995Z
+  version: 2.112.12+rev1
+  title: ""
+  date: 2023-02-21T09:12:31.764Z
+- commits:
     - subject: Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b
       hash: 4e203d9b643eb6d7b8671e395579d6459589afff
       body: Update layers/meta-balena

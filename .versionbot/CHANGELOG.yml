@@ -1,4 +1,298 @@
 - commits:
+    - subject: Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b
+      hash: 4e203d9b643eb6d7b8671e395579d6459589afff
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b
+        changelog-entry: Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "os-helpers-fs: get_internal_device() skip disks w/out media"
+              hash: 1da9ea7a3ea1fb87ce31c9281376c2ad5110c1dd
+              body: >
+                Block device nodes are sometimes created without attached media. These
+
+                devices can neither be read from, nor written to. In this case, the
+
+                flasher will attempt to install to the invalid disk and fail.  Detect
+
+                this case and skip the disk to allow flashing to continue.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.112.12
+          title: ""
+          date: 2023-02-20T23:28:32.426Z
+        - commits:
+            - subject: Update tests/leviathan digest to 84c2b96
+              hash: 42f3b3d1fb78b411cf2438c178c13bad293c98a9
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 93ba80c
+                      hash: af30f3eac9c532f57ddb2dc4abb5f06c63bc8877
+                      body: |
+                        Update core/contracts to
+
+                        Update core/contracts from  to
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                      author: Renovate Bot
+                      nested: []
+                  version: leviathan-2.22.0
+                  title: ""
+                  date: 2023-02-20T12:47:09.199Z
+          version: meta-balena-2.112.11
+          title: ""
+          date: 2023-02-20T17:44:14.866Z
+        - commits:
+            - subject: "tests: os: secureboot: skip if system is not locked down"
+              hash: 00ad363a00eef7805f9f0569d43b933b28504abb
+              body: >
+                Secure boot is now opt-in, even in the case where the image is signed,
+
+                and it's supported in firmware. Skip the secure boot tests when it's not
+
+                enabled at runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.112.10
+          title: ""
+          date: 2023-02-20T15:27:19.879Z
+        - commits:
+            - subject: Update tests/leviathan digest to 8a7bdcc
+              hash: 128aa14588d7422beed6ffa68f5594910a394dd3
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 103037c
+                      hash: 552aeee66ae5b0a1918e8ccd1c3e12203a602adc
+                      body: |
+                        Update core/contracts to
+
+                        Update core/contracts from  to
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                      author: Renovate Bot
+                      nested: []
+                  version: leviathan-2.21.0
+                  title: ""
+                  date: 2023-02-20T08:26:59.418Z
+                - commits:
+                    - subject: "client: throw errors instead of blanket handling"
+                      hash: 0f4b4b55b01bbfb023bcddba0ea585bcbe968a07
+                      body: >
+                        Remove try/catch block surrounding client code that blanket handles all
+
+                        exceptions, and makes debugging and log messages worse.
+
+
+                        When we don't have a valid way to handle an exception, just throw it.
+
+                        The traceback is more useful than the handler.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Joseph Kogut <joseph@balena.io>
+                        signed-off-by: Joseph Kogut <joseph@balena.io>
+                      author: Joseph Kogut
+                      nested: []
+                  version: leviathan-2.20.1
+                  title: ""
+                  date: 2023-02-20T06:55:01.314Z
+          version: meta-balena-2.112.9
+          title: ""
+          date: 2023-02-20T10:31:10.153Z
+        - commits:
+            - subject: Update balena-supervisor to v14.9.1
+              hash: c9ea12209bd6427234012a624304439ff32ddb62
+              body: |
+                Update balena-supervisor from 14.9.0 to 14.9.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Always lower case the cpu id to avoid bouncing between casing when
+                        reporting
+                      hash: d356f979d3addbf8b08933694b9e80f66af8d9e2
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                  version: balena-supervisor-14.9.1
+                  title: ""
+                  date: 2023-02-15T14:13:57.161Z
+          version: meta-balena-2.112.8
+          title: ""
+          date: 2023-02-17T11:27:28.794Z
+        - commits:
+            - subject: "renovate: Only consider github releases when bumping engine"
+              hash: 3793f39f0081e2e7a4d3ce38a206771e618faf20
+              body: |
+                The engine is currently versioned in such a way that upstream
+                semver tags are added to branches before merging to master.
+
+                We don't want to try and pin to those commits so only
+                consider automated GitHub Releases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.112.7
+          title: ""
+          date: 2023-02-16T15:20:17.402Z
+        - commits:
+            - subject: Update tests/leviathan digest to 92cb71a
+              hash: 029d02e0f656ed42fda0398a440741b7bf649f56
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 9b8811f
+                      hash: 377606d77cee69fff7f272b58e597f111e99de78
+                      body: |
+                        Update core/contracts to
+
+                        Update core/contracts from  to
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                      author: Renovate Bot
+                      nested: []
+                  version: leviathan-2.20.0
+                  title: ""
+                  date: 2023-02-16T07:39:32.419Z
+                - commits:
+                    - subject: "patch: Improve Getting Started instructions"
+                      hash: 50dfd8d30591dfd7a513e8b135d8866413cf5982
+                      body: ""
+                      footer:
+                        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                      author: Vipul Gupta (@vipulgupta2048)
+                      nested: []
+                  version: leviathan-2.19.2
+                  title: ""
+                  date: 2023-02-15T20:15:38.071Z
+          version: meta-balena-2.112.6
+          title: ""
+          date: 2023-02-16T12:52:59.268Z
+        - commits:
+            - subject: "grub: Add chain module to support multiboot"
+              hash: 4bf5883849e869cfe3e166cd69e2db8e7861b492
+              body: >
+                This is used to support falling back into the original OS when
+
+                performing a brownfield migration into balenaOS from a flasher image.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.112.5
+          title: ""
+          date: 2023-02-16T10:19:12.824Z
+        - commits:
+            - subject: Update backports with current 2.102.x
+              hash: 23f8f6428cecd2933800e3ae9f7cdc82f6bdebc7
+              body: |
+                Set current to 2.102.x, next to 2.107.x and sunset to 2.99.x
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: BalenaCI github workflow
+              nested: []
+          version: meta-balena-2.112.4
+          title: ""
+          date: 2023-02-15T13:23:18.936Z
+        - commits:
+            - subject: "workflows: update-backports: remove skipping tests"
+              hash: 36ee78634fdc2c95644fcf2ad303d48b6193b6f2
+              body: >
+                It's not clear how the feature to skip tests work, so modify the commit
+
+                message to be of type patch to avoid balenaCI errors on type none.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.112.3
+          title: ""
+          date: 2023-02-15T13:15:45.445Z
+        - commits:
+            - subject: "workflows: add update-backports"
+              hash: 04b6db97ced04eeae3204c9c88d162355abd297c
+              body: >
+                This workflow will update the backports entry in repo.yml after a new
+
+                ESR release is created.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.112.2
+          title: ""
+          date: 2023-02-15T12:29:05.023Z
+        - commits:
+            - subject: Update aufs5 kernel patches for 5.10 versions
+              hash: 525ae72f84fe7092dd642cb1068238e0593f9e2e
+              body: >
+                We update to the newest patch revisions for 5.10 kernel versions from
+                upstream
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Update aufs5 kernel patches for 5.10 versions
+                changelog-entry: Update aufs5 kernel patches for 5.10 versions
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.112.1
+          title: ""
+          date: 2023-02-15T10:31:48.529Z
+  version: 2.112.12
+  title: ""
+  date: 2023-02-21T05:12:48.470Z
+- commits:
     - subject: Update layers/meta-balena to 7cc56305880ded60850c3440840dcdba823bd179
       hash: 43598f493ed013132956e9a55a6b44039a99d7e4
       body: Update layers/meta-balena

@@ -1,6 +1,130 @@
 Change log
 -----------
 
+# v2.112.12
+## (2023-02-21)
+
+
+<details>
+<summary> Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b [Renovate Bot] </summary>
+
+> ## meta-balena-2.112.12
+> ### (2023-02-20)
+> 
+> * os-helpers-fs: get_internal_device() skip disks w/out media [Joseph Kogut]
+> 
+> ## meta-balena-2.112.11
+> ### (2023-02-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 84c2b96 [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.22.0
+>> #### (2023-02-20)
+>> 
+>> * Update core/contracts digest to 93ba80c [Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.112.10
+> ### (2023-02-20)
+> 
+> * tests: os: secureboot: skip if system is not locked down [Joseph Kogut]
+> 
+> ## meta-balena-2.112.9
+> ### (2023-02-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 8a7bdcc [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.21.0
+>> #### (2023-02-20)
+>> 
+>> * Update core/contracts digest to 103037c [Renovate Bot]
+>> 
+>> ### leviathan-2.20.1
+>> #### (2023-02-20)
+>> 
+>> * client: throw errors instead of blanket handling [Joseph Kogut]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.112.8
+> ### (2023-02-17)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.9.1 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.9.1
+>> #### (2023-02-15)
+>> 
+>> * Always lower case the cpu id to avoid bouncing between casing when reporting [Pagan Gazzard]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.112.7
+> ### (2023-02-16)
+> 
+> * renovate: Only consider github releases when bumping engine [Kyle Harding]
+> 
+> ## meta-balena-2.112.6
+> ### (2023-02-16)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 92cb71a [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.20.0
+>> #### (2023-02-16)
+>> 
+>> * Update core/contracts digest to 9b8811f [Renovate Bot]
+>> 
+>> ### leviathan-2.19.2
+>> #### (2023-02-15)
+>> 
+>> * patch: Improve Getting Started instructions [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.112.5
+> ### (2023-02-16)
+> 
+> * grub: Add chain module to support multiboot [Alex Gonzalez]
+> 
+> ## meta-balena-2.112.4
+> ### (2023-02-15)
+> 
+> * Update backports with current 2.102.x [BalenaCI github workflow]
+> 
+> ## meta-balena-2.112.3
+> ### (2023-02-15)
+> 
+> * workflows: update-backports: remove skipping tests [Alex Gonzalez]
+> 
+> ## meta-balena-2.112.2
+> ### (2023-02-15)
+> 
+> * workflows: add update-backports [Alex Gonzalez]
+> 
+> ## meta-balena-2.112.1
+> ### (2023-02-15)
+> 
+> * Update aufs5 kernel patches for 5.10 versions [Florin Sarbu]
+> 
+
+</details>
+
 # v2.112.0
 ## (2023-02-15)
 

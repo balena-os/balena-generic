@@ -1,4 +1,19 @@
 - commits:
+    - subject: define raid in machine features for generic devices
+      hash: c21ddc9648a5b7e085b12d77c1ef22177937541e
+      body: |
+        Newer meta-balena uses the raid machine feature to include RAID support.
+      footer:
+        Changelog-entry: define raid in machine features for generic devices
+        changelog-entry: define raid in machine features for generic devices
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.112.12+rev3
+  title: ""
+  date: 2023-02-22T17:37:43.179Z
+- commits:
     - subject: Update CI workflow to allow external contributions
       hash: c4c90950692e1a27861831fe356ad45ed592e050
       body: ""

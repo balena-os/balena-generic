@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.112.12+rev3
+## (2023-02-22)
+
+* define raid in machine features for generic devices [Alex Gonzalez]
+
 # v2.112.12+rev2
 ## (2023-02-21)
 

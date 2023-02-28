@@ -1,4 +1,83 @@
 - commits:
+    - subject: Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31
+      hash: a0b0b4e9839972dcce666575f869d073e3b7170b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31
+        changelog-entry: Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "os-helpers-fs: formatting and fixing lint warning"
+              hash: 69878f0fa6c83dfc7d38921c364577f00c2a4461
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers-fs: fix check for media attached"
+              hash: 7f84a4220469f7324997488945ea2fd8eda45bb5
+              body: |
+                Fix the check for media attached to device that fails with:
+
+                sh: [: -l: binary operator expected
+
+                Also, redirect all output to use only the exit code.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "initrdscripts: migrate: use du instead of wc to calculate byte sizes"
+              hash: 28eb87859810e0a9e43936b4fc893fc5893510b0
+              body: >
+                The `du` utility has the same output format for single or several files,
+
+                while the `wc` utility doesn't and does not display a total for single
+
+                files.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.113.1
+          title: ""
+          date: 2023-02-28T13:33:39.382Z
+    - subject: trigger deploy builds on multi-digit revisions too
+      hash: cd33bb31f9e4b2f7832a0c939fe21b3f87a1b7cd
+      body: >
+        According to github action syntax [1], there is no special character
+
+        to denote a match on zero or more of the preceding character, so
+
+        replace `[0-9]?` which only matches zero or one of the preceding
+
+        characters with a `*`.
+
+
+        [1] https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: trigger deploy builds on multi-digit revisions too
+        changelog-entry: trigger deploy builds on multi-digit revisions too
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.113.1
+  title: ""
+  date: 2023-02-28T17:07:38.897Z
+- commits:
     - subject: Update layers/meta-balena to 2454c531db3f57e98ec3f15459f9ab342a38b8b0
       hash: 1620f5448519f2d867ea09ffa001941bb33d67fa
       body: Update layers/meta-balena

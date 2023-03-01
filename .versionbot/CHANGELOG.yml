@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+      hash: 71828db70f084be18ba4e6356fef46e3c884d138
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+        changelog-entry: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "Dockerfile: yocto-build-env: update balenaCLI to 14.5.15"
+              hash: 5fe3f9a353668d9197d7f32c0f7cd3789606202b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.25
+          title: ""
+          date: 2023-03-01T10:00:57.712Z
+        - commits:
+            - subject: "balena-api: ignore quotes from API replies"
+              hash: ad7065112eee4e6e3865ef5581e4c53676536459
+              body: >
+                The balenaAPI has replied both `OK` and `"OK"` to patch requests. Accept
+
+                any of them as long as they contain OK.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.24
+          title: ""
+          date: 2023-02-28T18:19:17.093Z
+  version: 2.113.1+rev1
+  title: ""
+  date: 2023-03-01T12:19:46.614Z
+- commits:
     - subject: Update layers/meta-balena to 6d5f0882b3b1a0386b3b56eac221fe9d955eac31
       hash: a0b0b4e9839972dcce666575f869d073e3b7170b
       body: Update layers/meta-balena

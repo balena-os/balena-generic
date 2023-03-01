@@ -29,3 +29,5 @@ IMAGE_INSTALL:append = " \
     linux-firmware \
     efibootmgr \
     "
+
+do_resin_boot_dirgen_and_deploy[depends] += "grub-conf:do_deploy"

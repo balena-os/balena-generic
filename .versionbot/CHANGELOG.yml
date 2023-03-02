@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update layers/meta-balena to 1636133761f7957f2a684d5788e37139abc17ee6
+      hash: 170198efda9354d1d67214f08858e249a46e2709
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1636133761f7957f2a684d5788e37139abc17ee6
+        changelog-entry: Update layers/meta-balena to 1636133761f7957f2a684d5788e37139abc17ee6
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Refer to balenaEngine by its full name
+              hash: 74b747bd20bf906704b75058f43248f8a5f0c20c
+              body: >
+                Previously, it was being referred to only as "balena". Being explicit
+
+                that this is about balenaEngine makes it simpler to grep for
+
+                Engine-related portions of balenaOS. Might also help a tad bit when
+
+                looking at logs.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: meta-balena-2.113.2
+          title: ""
+          date: 2023-03-02T13:07:15.621Z
+  version: 2.113.2
+  title: ""
+  date: 2023-03-02T22:06:08.584Z
+- commits:
     - subject: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
       hash: 71828db70f084be18ba4e6356fef46e3c884d138
       body: Update balena-yocto-scripts

@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.113.2
+## (2023-03-02)
+
+
+<details>
+<summary> Update layers/meta-balena to 1636133761f7957f2a684d5788e37139abc17ee6 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.2
+> ### (2023-03-02)
+> 
+> * Refer to balenaEngine by its full name [Leandro Motta Barros]
+> 
+
+</details>
+
 # v2.113.1+rev1
 ## (2023-03-01)
 

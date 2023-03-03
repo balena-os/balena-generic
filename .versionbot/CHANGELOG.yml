@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to bf3395a2805ce859ac52f63c79c5b33adb54277b
+      hash: d9343e63aa404870f7b9ea6fd730aaac13856707
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to bf3395a2805ce859ac52f63c79c5b33adb54277b
+        changelog-entry: Update layers/meta-balena to bf3395a2805ce859ac52f63c79c5b33adb54277b
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-units-conf: launch os-config on config changes"
+              hash: b3324272950bffa587963b8ce53d7111ebc04471
+              body: >
+                This allows to transition from unmanaged to managed by just writing
+
+                a config.json file, like it's the case with AWS cloud configuration.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.113.3
+          title: ""
+          date: 2023-03-02T21:55:35.239Z
+  version: 2.113.3
+  title: ""
+  date: 2023-03-03T08:35:19.115Z
+- commits:
     - subject: Update contracts to 40d6eaa3f0455babd1abcc1d11a6e6db60387797
       hash: acc61cadbc2a11fe33638efcc18dd006b5195862
       body: Update contracts

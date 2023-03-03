@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.113.3
+## (2023-03-03)
+
+
+<details>
+<summary> Update layers/meta-balena to bf3395a2805ce859ac52f63c79c5b33adb54277b [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.3
+> ### (2023-03-02)
+> 
+> * balena-units-conf: launch os-config on config changes [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.113.2+rev1
 ## (2023-03-03)
 

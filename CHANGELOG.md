@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.113.4
+## (2023-03-06)
+
+
+<details>
+<summary> Update layers/meta-balena to f5bcab2926c9cf709954ec6acf87b839abe7a489 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.4
+> ### (2023-03-03)
+> 
+> * balena-keys: do not ship certificates in DER format [Michal Toman]
+> 
+
+</details>
+
 # v2.113.3
 ## (2023-03-03)
 

@@ -1,6 +1,57 @@
 Change log
 -----------
 
+# v2.113.12
+## (2023-03-14)
+
+
+<details>
+<summary> Update layers/meta-balena to 2bd8992875e24689207dfa8eac37670851984cb1 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.12
+> ### (2023-03-14)
+> 
+> * Remove a bad check in Internet connection sharing test [Zahari Petkov]
+> 
+> ## meta-balena-2.113.11
+> ### (2023-03-14)
+> 
+> * peak: Ship signed module when signing is enabled [Michal Toman]
+> 
+> ## meta-balena-2.113.10
+> ### (2023-03-09)
+> 
+> * patch: Add balenaOS debugging docs [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-2.113.9
+> ### (2023-03-09)
+> 
+> * flasher: fix installation when in user mode w/ sb disabled [Joseph Kogut]
+> 
+> ## meta-balena-2.113.8
+> ### (2023-03-08)
+> 
+> * fix ip for dummy interface to avoid ip conflicts [rcooke-warwick]
+> * tests: os: NetworkManager iptables rules test for Internet sharing [Zahari Petkov]
+> 
+> ## meta-balena-2.113.7
+> ### (2023-03-07)
+> 
+> * conf: distro: balena-os: use lower case for signing key names [Alex Gonzalez]
+> 
+> ## meta-balena-2.113.6
+> ### (2023-03-07)
+> 
+> * recipes-core/images: Ensure redsocks sample files are deployed [Alexandru Costache]
+> 
+> ## meta-balena-2.113.5
+> ### (2023-03-07)
+> 
+> * image-balena.bbclass: deploy grub-conf before building the boot partition [Michal Toman]
+> 
+
+</details>
+
 # v2.113.4
 ## (2023-03-06)
 

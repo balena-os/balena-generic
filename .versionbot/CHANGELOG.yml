@@ -1,4 +1,220 @@
 - commits:
+    - subject: Update layers/meta-balena to 2bd8992875e24689207dfa8eac37670851984cb1
+      hash: 810f33fddab2b9b50cf67896f486ce8ac32a7b23
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2bd8992875e24689207dfa8eac37670851984cb1
+        changelog-entry: Update layers/meta-balena to 2bd8992875e24689207dfa8eac37670851984cb1
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove a bad check in Internet connection sharing test
+              hash: 80d2c45d7318464935516acdc2dd884efaacf31a
+              body: >
+                In the Internet connection sharing test one of the checks may run
+
+                into a racing problem. The following command is holding the iptables
+
+                lock for 3 seconds while NetworkManager activates a connection with
+
+                sharing enabled:
+
+
+                `flock /run/xtables.lock sleep 3 & nmcli c up dummy & wait`
+
+
+                NetworkManager waits for 2 seconds for the lock to be released and
+
+                those three seconds should be enough for one of the iptables rules
+
+                to fail. However there is no guarantee that NetworkManager will start
+
+                adding the iptables rules that quickly - it may start adding those
+
+                after one out of those three seconds already passed, which will
+
+                lead to all iptables rules to be set at the end.
+
+
+                This check is non-essential for the test itself, so it is removed with
+
+                this commit.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.113.12
+          title: ""
+          date: 2023-03-14T10:35:04.209Z
+        - commits:
+            - subject: "peak: Ship signed module when signing is enabled"
+              hash: 97d64167c1bcbb76d1638486aa3eb158f37785c9
+              body: >
+                At this moment, when module signing is enabled, the peak module is signed
+
+                but do_install ignores the signed variant and installs the original
+
+                unsigned file. With this patch do_install installs the signed file
+
+                if available.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.113.11
+          title: ""
+          date: 2023-03-14T01:03:28.843Z
+        - commits:
+            - subject: "patch: Add balenaOS debugging docs"
+              hash: a091584f0ab6af190fd7ad18ab7f5db091ae90f0
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: meta-balena-2.113.10
+          title: ""
+          date: 2023-03-09T16:37:31.248Z
+        - commits:
+            - subject: "flasher: fix installation when in user mode w/ sb disabled"
+              hash: 1592a4cfa4035892fcdc1484717bfcb5966221f3
+              body: >
+                Previously, we bailed out of the installer when the system was in user
+
+                mode (keys enrolled) but the user had not opted in to secure boot, as it
+
+                was ambiguous whether the user actually wanted SB/FDE.
+
+
+                However, some systems come with vendor keys pre-enrolled, and a user may
+
+                simply turn off secure boot in the firmware setup menu without erasing
+
+                the keys. This would result in the installer bailing out even though
+
+                secure boot is disabled in the firmware menu.
+
+
+                Check that secure boot is enabled in addition to having keys enrolled
+
+                before bailing out.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.113.9
+          title: ""
+          date: 2023-03-09T05:34:10.446Z
+        - commits:
+            - subject: fix ip for dummy interface to avoid ip conflicts
+              hash: e3fd7de4f5a61773a77cf33bd05a58c77186ecf2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests: os: NetworkManager iptables rules test for Internet sharing"
+              hash: 90dbb8f414435c88e95a53535d003039ca7d42a4
+              body: >
+                Test for the NetworkManager patch done in
+
+                https://github.com/balena-os/meta-balena/pull/2963
+
+
+                A racing condition between balenaEngine and NetworkManager led to some Internet
+
+                connection sharing iptables rules not being applied when NM connection profile
+
+                with Internet sharing was activated at boot.
+
+
+                This test checks whether all necessary iptables rules are added by artificially
+
+                blocking iptables for 1 second and then for 3 seconds while a connection
+
+                profile with Internet sharing is activated.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.113.8
+          title: ""
+          date: 2023-03-08T11:28:57.215Z
+        - commits:
+            - subject: "conf: distro: balena-os: use lower case for signing key names"
+              hash: 177a88c334a43fb8959f842170d6cbd976a9e53d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.113.7
+          title: ""
+          date: 2023-03-07T18:26:31.574Z
+        - commits:
+            - subject: "recipes-core/images: Ensure redsocks sample files are deployed"
+              hash: fe8b2b248d6a65b26def40c9d374f04c813fd40c
+              body: >
+                ... before trying to include them in the boot partition, otherwise
+
+                the yocto build may fail sporadically.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.113.6
+          title: ""
+          date: 2023-03-07T14:25:45.437Z
+        - commits:
+            - subject: "image-balena.bbclass: deploy grub-conf before building the boot
+                partition"
+              hash: 22942a52bdf3f1cde6201c0bcc71cb72e3c899b9
+              body: >
+                do_resin_boot_dirgen_and_deploy needs all the partial files deployed
+
+                when it runs as it will be copying them to the actual boot partition.
+
+                There is a race condition between it and grub_conf:do_deploy,
+
+                we have seen builds fail when grub_conf:do_deploy does not execute
+
+                in time. This patch adds an explicit dependency to avoid such situation.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.113.5
+          title: ""
+          date: 2023-03-07T11:02:11.648Z
+  version: 2.113.12
+  title: ""
+  date: 2023-03-14T14:05:34.538Z
+- commits:
     - subject: Update layers/meta-balena to f5bcab2926c9cf709954ec6acf87b839abe7a489
       hash: c9a674a84d9e93681ec14b51a7e19ecd4906d7ab
       body: Update layers/meta-balena

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Prevent duplicate CI workflow executions
+      hash: a78ee68506eaa455e40b385d615a46c0b7124fc9
+      body: ""
+      footer:
+        Changelog-entry: Prevent duplicate CI workflow executions
+        changelog-entry: Prevent duplicate CI workflow executions
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.113.12+rev1
+  title: ""
+  date: 2023-03-16T18:35:46.199Z
+- commits:
     - subject: Update layers/meta-balena to 2bd8992875e24689207dfa8eac37670851984cb1
       hash: 810f33fddab2b9b50cf67896f486ce8ac32a7b23
       body: Update layers/meta-balena

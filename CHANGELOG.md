@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.113.12+rev1
+## (2023-03-16)
+
+* Prevent duplicate CI workflow executions [Kyle Harding]
+
 # v2.113.12
 ## (2023-03-14)
 

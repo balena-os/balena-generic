@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 66e817cc08c391f06d0cf16dded7e6cf2082d0ca
+      hash: 4630b8f32ba5d34bc00314d9824a18103567b803
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 66e817cc08c391f06d0cf16dded7e6cf2082d0ca
+        changelog-entry: Update balena-yocto-scripts to 66e817cc08c391f06d0cf16dded7e6cf2082d0ca
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-lib: Do not return error if no balena user token is available"
+              hash: e335e248305cda86ce55f934b2b3ba8202f17454
+              body: >
+                The balena API token is only required for private device access so don't
+
+                fail if there is not one available.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.26
+          title: ""
+          date: 2023-04-12T15:18:36.631Z
+  version: 2.113.12+rev2
+  title: ""
+  date: 2023-04-18T18:58:47.227Z
+- commits:
     - subject: Prevent duplicate CI workflow executions
       hash: a78ee68506eaa455e40b385d615a46c0b7124fc9
       body: ""

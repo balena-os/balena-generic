@@ -1,6 +1,60 @@
 Change log
 -----------
 
+# v2.115.1
+## (2023-05-17)
+
+
+<details>
+<summary> Update layers/meta-balena to 5bf3a7b37f4e33264629144c9bf355b4d81c1dee [Renovate Bot] </summary>
+
+> ## meta-balena-2.115.1
+> ### (2023-05-17)
+> 
+> * tests: config: set both network options to false [rcooke-warwick]
+> * tests: hup: use contract to configure network [rcooke-warwick]
+> * tests: cloud: use contract to configure network [rcooke-warwick]
+> * tests: os: use contract to configure network [rcooke-warwick]
+> 
+> ## meta-balena-2.115.0
+> ### (2023-05-12)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v14.11.1 [Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-14.11.1
+>> #### (2023-05-11)
+>> 
+>> * Fix `sw.arch` typo when testing contracts [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.11.0
+>> #### (2023-05-10)
+>> 
+>> * Add `arch.sw` to the valid container requirements [Felipe Lalanne]
+>> * Allow using slug to validate hw.device-type contract [Felipe Lalanne]
+>> * Simplify and move lib/contract.spec.ts to tests/unit [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-14.10.11
+>> #### (2023-05-08)
+>> 
+>> * Add information about hdmi port 2 config vars [Felipe Lalanne]
+>> * Update table formatting on configurations.md [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.114.25
+> ### (2023-05-12)
+> 
+> * tests: hup: enable boot-switch skip [rcooke-warwick]
+> * tests: cloud: enable boot-switch skip Commit body [rcooke-warwick]
+> * tests: os: enable boot-switch skip [rcooke-warwick]
+> 
+
+</details>
+
 # v2.114.24+rev1
 ## (2023-05-12)
 

@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update layers/meta-balena to f06ec1fc32f6c5baa0c734eaf9e94ee88f7993bb
+      hash: b288025cc8e86ef87dd34ed1181b6751680104ae
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f06ec1fc32f6c5baa0c734eaf9e94ee88f7993bb
+        changelog-entry: Update layers/meta-balena to f06ec1fc32f6c5baa0c734eaf9e94ee88f7993bb
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "docs: Make secure boot docs more detailed"
+              hash: 96ec764b245197380d58a556949011ab444ce96e
+              body: >
+                This patch extends secure boot documentation with more details
+                about
+
+                how the feature works and tries to explain why some decisions were made.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.115.4
+          title: ""
+          date: 2023-06-01T09:37:58.007Z
+    - subject: Remove pull_request_target event run for ESR targets
+      hash: e65c6c21d0c3339446a72aa3e6729544e5bbd180
+      body: >
+        Backporting to ESR branches hits a flowzone error as both pull_request
+
+        and pull_request_target run and this only works for master.
+
+
+        Removing the pull_request_target run for ESR branches fixes this, but
+
+        also removes the possibility of external pull requests into ESR branches,
+
+        which we don't actually need.
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: Remove pull_request_target event run for ESR targets
+        changelog-entry: Remove pull_request_target event run for ESR targets
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.115.4
+  title: ""
+  date: 2023-06-05T19:55:37.100Z
+- commits:
     - subject: Update balena-os/github-workflows to
       hash: 5c38e9e941644f8e31a63540a691aa7b3f2138cf
       body: Update balena-os/github-workflows

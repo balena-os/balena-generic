@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v2.115.8+rev3
+## (2023-07-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 45e32821ac6e3efba81e24a21e417a375da5e154 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.34
+> ### (2023-07-12)
+> 
+> * Remove all traces of --skip-discontinued [Florin Sarbu]
+> * barys: Remove documenting the --skip-discontinued option [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.19.33
+> ### (2023-07-10)
+> 
+> * Update device-types package from v10.3.0 to v10.5.1 [Alex Gonzalez]
+> * barys: remove option to skip discontinued device types [Alex Gonzalez]
+> * balena-lib: remove balena_lib_get_dt_state [Alex Gonzalez]
+> * jenkins_build: remove discontinued device check [Alex Gonzalez]
+> * balena-deploy: remove discontinued check [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.32
+> ### (2023-06-19)
+> 
+> * balena-deploy: Newer meta-balena do not create a kernel_source tarball [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.8+rev2
 ## (2023-06-29)
 

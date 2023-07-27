@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update linux-yocto to v6.1.35
+      hash: 19ce7d54bea870ac8b59753cd7d5663d32d5e39b
+      body: ""
+      footer:
+        Changelog-entry: Update linux-yocto to v6.1.35
+        changelog-entry: Update linux-yocto to v6.1.35
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: "recipes-kernel: Update kernel from 5.15 to 6.1"
+      hash: f032299ce076cf8a17a2dee0e7fbd9a52796b90c
+      body: >
+        And also enable CONFIG_IWLMEI as per
+        https://linux-hardware.org/?id=pci:8086-51f1
+
+
+        This update is done in order to support the newer AX211 WiFi chip found
+
+        in the intel NUC 13.
+      footer:
+        Changelog-entry: "recipes-kernel: Update kernel from 5.15 to 6.1"
+        changelog-entry: "recipes-kernel: Update kernel from 5.15 to 6.1"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 3.1.1+rev1
+  title: ""
+  date: 2023-07-27T09:32:17.961Z
+- commits:
     - subject: Update layers/meta-balena to ced059b1f06281129434311dddc8ddab3d65fb5b
       hash: 7fcd28e4cb2c0b1f333618c30426c46afa4d8105
       body: Update layers/meta-balena

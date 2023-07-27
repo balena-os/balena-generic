@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v3.1.1+rev1
+## (2023-07-27)
+
+* Update linux-yocto to v6.1.35 [Alex Gonzalez]
+* recipes-kernel: Update kernel from 5.15 to 6.1 [Alexandru Costache]
+
 # v3.1.1
 ## (2023-07-26)
 

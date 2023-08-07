@@ -37,7 +37,10 @@ if [ "$DURING_UPDATE" = "1" ]; then
 			boot_part="/dev/$(lsblk -sJ "${boot_dev}" | jq -r '.blockdevices[].name')"
 			device="/dev/$(lsblk "$boot_part" -dnlo PKNAME)"
 			printf "[INFO] Re-add EFI boot entry for starting resinOS from internal media.\n"
-			mount -t efivarfs efivarfs /sys/firmware/efi/efivars
+			if [ -z "$(ls -A /sys/firmware/efi/efivars)" ]; then
+				# efivars not bind-mounted by hostapp-update script
+				mount -t efivarfs efivarfs /sys/firmware/efi/efivars
+			fi
 			duplicates=`efibootmgr | grep resinOS |sed 's/Boot*//g' | sed 's/* resinOS//g'`
 			for i in $duplicates; do efibootmgr -B -b $i; done
 			efibootmgr -c -d $device -p 1 -L "resinOS" -l "\EFI\BOOT\bootx64.efi"

@@ -1,4 +1,21 @@
 - commits:
+    - subject: "hostapp-update-hooks: Don't fail if efivars fs already mounted"
+      hash: d4fa2bdb8ca9fc74a7ed78a18a5123d7e797dc4b
+      body: >
+        This prevents the following error and hup abort when sysfs is
+        bind-mounted in the hostapp-update container:
+            mount: /sys/firmware/efi/efivars: efivarfs already mounted or mount point busy.
+      footer:
+        Changelog-entry: "hostapp-update-hooks: Don't fail if efivars fs already mounted"
+        changelog-entry: "hostapp-update-hooks: Don't fail if efivars fs already mounted"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 3.1.8+rev1
+  title: ""
+  date: 2023-08-10T14:33:38.603Z
+- commits:
     - subject: Update layers/meta-balena to b64d73fcc51374ed90f2ede803b3efee13351d30
       hash: bd71757bc9a42033704004946c9bee6cb0fb4d3b
       body: Update layers/meta-balena

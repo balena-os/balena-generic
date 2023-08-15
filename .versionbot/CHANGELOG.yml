@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to d09ff464591acafff8da686110ecc315f94745fa
+      hash: 16a02c6f75b8f57e9800a17a34186bd9ff06f1b4
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to d09ff464591acafff8da686110ecc315f94745fa
+        changelog-entry: Update contracts to d09ff464591acafff8da686110ecc315f94745fa
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "iot-gate-imx8plus: Improve provisioning instructions for Windows"
+              hash: dbfd03e791d69c657a295d92cd823e32f4bf2369
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.68
+          title: ""
+          date: 2023-08-15T07:20:27.206Z
+  version: 3.1.12+rev1
+  title: ""
+  date: 2023-08-15T13:48:45.157Z
+- commits:
     - subject: Update layers/meta-balena to 07e9c06daa0b46154a241b448569c89ab307b6e7
       hash: 231ee204adfed1be5b06c4ac5d282a7567111376
       body: Update layers/meta-balena

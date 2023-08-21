@@ -1,4 +1,81 @@
 - commits:
+    - subject: Update layers/meta-balena to ab712a25ab4b9747037fc2a20f76e1d0b6f49e5e
+      hash: 450b33e467681ca229dcace706d6b8723c369069
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ab712a25ab4b9747037fc2a20f76e1d0b6f49e5e
+        changelog-entry: Update layers/meta-balena to ab712a25ab4b9747037fc2a20f76e1d0b6f49e5e
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: cloud: lockfile: change test order"
+              hash: 3134d64124c6dbbcd34f54874a1f4eaee09a4c6f
+              body: |
+                Change the test order to make things more consistent.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-3.2.4
+          title: ""
+          date: 2023-08-21T17:51:32.589Z
+        - commits:
+            - subject: Update tests/leviathan digest to 26e6cea
+              hash: 59254670dbe87a26764f9264e5a2d2839deb245d
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: improve autokit quickstart
+                      hash: fb7005cb55d91ce5b0713af9e534803d0841ff57
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: leviathan-2.28.11
+                  title: ""
+                  date: 2023-08-18T14:21:19.299Z
+                - commits:
+                    - subject: "patch: Update suites dependencies to latest"
+                      hash: 6b20fa345404169da50b3b9bd853c41105448e67
+                      body: ""
+                      footer:
+                        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                      author: Vipul Gupta (@vipulgupta2048)
+                      nested: []
+                  version: leviathan-2.28.10
+                  title: ""
+                  date: 2023-08-18T14:00:30.655Z
+                - commits:
+                    - subject: "patch: Add balenaCloud configurable environments to e2e"
+                      hash: e1858f52a46fc154644352ae9d85d22959523e22
+                      body: ""
+                      footer:
+                        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                      author: Vipul Gupta (@vipulgupta2048)
+                      nested: []
+                  version: leviathan-2.28.9
+                  title: ""
+                  date: 2023-08-18T10:12:14.545Z
+          version: meta-balena-3.2.3
+          title: ""
+          date: 2023-08-21T11:51:01.752Z
+  version: 3.2.4
+  title: ""
+  date: 2023-08-21T23:52:55.148Z
+- commits:
     - subject: Update layers/meta-balena to ba317bb80bb108576d8421a81547bf9cfdad1faf
       hash: 4331591af9faba1600f454b55d8cfc8eca099167
       body: Update layers/meta-balena

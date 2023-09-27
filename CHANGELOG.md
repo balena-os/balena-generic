@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v4.0.14
+## (2023-09-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 57aaaf0107f42f88956e9216dfb497bbf5c1d38e [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-4.0.14
+> ### (2023-09-27)
+> 
+> * patch: Add custom build docs [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## meta-balena-4.0.13
+> ### (2023-09-26)
+> 
+> * balena-rollback: Add support for balena bootloader [Michal Toman]
+> * hostapp-update-hooks: Add hook for balena bootloader [Michal Toman]
+> * initrdscripts: add a script that switches between rootA and rootB [Michal Toman]
+> * initrdscripts: make kexec script more robust [Michal Toman]
+> * initrdscripts: add missing dependencies to rootfs script [Michal Toman]
+> * balena-image-bootloader-initramfs: Add balena bootloader [Alex Gonzalez]
+> 
+> ## meta-balena-4.0.12
+> ### (2023-09-25)
+> 
+> * Check if SUPERVISOR_OVERRIDE_LOCK is set [jaomaloy]
+> * Check and get service lockfiles on HUP reboot [jaomaloy]
+> 
+
+</details>
+
 # v4.0.11
 ## (2023-09-21)
 

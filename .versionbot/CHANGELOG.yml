@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 27ea28be5e65c06cac559ab5bddeccf77d13830f
+      hash: 4175d95f9317d011198c512da3cb6474de67beeb
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 27ea28be5e65c06cac559ab5bddeccf77d13830f
+        changelog-entry: Update contracts to 27ea28be5e65c06cac559ab5bddeccf77d13830f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "raspberrypi5: Add new device type"
+              hash: cde68c6076b7ed4277027f29778efac42109b0e8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.73
+          title: ""
+          date: 2023-09-28T07:07:06.913Z
+  version: 4.0.15+rev1
+  title: ""
+  date: 2023-09-28T11:16:16.005Z
+- commits:
     - subject: Update layers/meta-balena to 44da832b8ba67e5889f8c0d09cea7372ca0b7c09
       hash: 8ec6c70b4f592ffa31dd41df933bdd46ad258226
       body: Update layers/meta-balena

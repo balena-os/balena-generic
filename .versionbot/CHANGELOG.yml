@@ -1,4 +1,60 @@
 - commits:
+    - subject: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+      hash: aae014a91947c7a1b043787d130aef8ae03cc642
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+        changelog-entry: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Eurotec Lowpad lcbzu9 device"
+              hash: dab4d718a6012af2774111fb00c0a4d2f3497d24
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois Loubser
+          version: contracts-2.0.76
+          title: ""
+          date: 2023-10-02T06:46:15.804Z
+        - commits:
+            - subject: "raspberrypi5: remove reference to 64bits in display name"
+              hash: 5f7d9230b8ed3caffbfab717b2a197a5b6d83466
+              body: |
+                There won't be a 32bits OS for this device type.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+          version: contracts-2.0.75
+          title: ""
+          date: 2023-09-28T14:04:28.190Z
+        - commits:
+            - subject: "raspberrypi5: Explicitly flag as public for the switch to apply"
+              hash: da8c456a1aecb30dfe1ef3ad27e0ac59449ecac8
+              body: >
+                As the device was previously private, the `is_private` needs to
+                be
+
+                explicitly set to false for the device type to become public.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+          version: contracts-2.0.74
+          title: ""
+          date: 2023-09-28T13:27:54.317Z
+  version: 4.0.16+rev3
+  title: ""
+  date: 2023-10-02T14:31:10.446Z
+- commits:
     - subject: Update layers/poky to 0e4966eb77928a07230e031d6d9c477c01ec9cce
       hash: 13293e1f4782e5bb96d070c5cd8fab6c242ab731
       body: Update layers/poky

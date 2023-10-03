@@ -1,6 +1,22 @@
 Change log
 -----------
 
+# v4.0.19+rev1
+## (2023-10-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 29e8e0678085db54226956617ae66b59f5a28f8d [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.35
+> ### (2023-09-28)
+> 
+> * balena-deploy: fail if device type not found [rcooke-warwick]
+> * balena-api: Dont assume private if can't get DT [rcooke-warwick]
+> 
+
+</details>
+
 # v4.0.19
 ## (2023-10-03)
 

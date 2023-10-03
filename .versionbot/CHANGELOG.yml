@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 29e8e0678085db54226956617ae66b59f5a28f8d
+      hash: 5621bc07e4b5a2da4afa7b09c8c76d2ddfc1e51d
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 29e8e0678085db54226956617ae66b59f5a28f8d
+        changelog-entry: Update balena-yocto-scripts to 29e8e0678085db54226956617ae66b59f5a28f8d
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-deploy: fail if device type not found"
+              hash: 14896d0846e52ce45ed5b14e2b62cb965983c44a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "balena-api: Dont assume private if can't get DT"
+              hash: ae7c2e15e7ce6ee3588e1026653f0e54ff7c39f8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.19.35
+          title: ""
+          date: 2023-09-28T08:26:37.671Z
+  version: 4.0.19+rev1
+  title: ""
+  date: 2023-10-03T20:35:44.304Z
+- commits:
     - subject: Update layers/meta-balena to 953223d8666ab4ca470e1e5def671a4d0c12cb50
       hash: 52cb20f1a825483fd6e964b7dcdee4cfdef45023
       body: Update layers/meta-balena

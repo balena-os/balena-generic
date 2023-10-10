@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to a06c0ccb61620b3a805339c523f85f69a780b6a5
+      hash: 7beb14460b068de418fa9b4f5d09301889cb9a62
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to a06c0ccb61620b3a805339c523f85f69a780b6a5
+        changelog-entry: Update contracts to a06c0ccb61620b3a805339c523f85f69a780b6a5
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add bluechiptechnology-tm3"
+              hash: 68790a8618f57524be7ea70b7502d65917de91ad
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+                signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+              author: crichardson
+          version: contracts-2.0.77
+          title: ""
+          date: 2023-10-09T06:33:17.864Z
+  version: 4.0.22+rev2
+  title: ""
+  date: 2023-10-10T22:24:29.698Z
+- commits:
     - subject: Update balena-yocto-scripts to 37a4aa0421848226b41dda508e5fc05fdcc01389
       hash: 908225ab6ecaa234aeeb2052cee034d003df19e8
       body: Update balena-yocto-scripts

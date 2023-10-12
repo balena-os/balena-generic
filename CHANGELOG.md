@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v4.0.25
+## (2023-10-12)
+
+
+<details>
+<summary> Update layers/meta-balena to 4b47f04ece3742de572dd04180e1e30744ed3980 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-4.0.25
+> ### (2023-10-11)
+> 
+> * Update Pin dependencies [Self-hosted Renovate Bot]
+> 
+> ## meta-balena-4.0.24
+> ### (2023-10-11)
+> 
+> * classes: image_types_balena: do not hardcode path to data image [Alex Gonzalez]
+> 
+
+</details>
+
 # v4.0.23
 ## (2023-10-11)
 

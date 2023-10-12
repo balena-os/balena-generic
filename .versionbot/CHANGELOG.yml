@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update layers/meta-balena to 4b47f04ece3742de572dd04180e1e30744ed3980
+      hash: 8c9a54484d46fc9b9c4d44dd89f9416e4c4a36fb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4b47f04ece3742de572dd04180e1e30744ed3980
+        changelog-entry: Update layers/meta-balena to 4b47f04ece3742de572dd04180e1e30744ed3980
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update Pin dependencies
+              hash: 52aec8faecdffd8c957d75bef99bb632ab79aceb
+              body: |
+                Update actions/checkout
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: meta-balena-4.0.25
+          title: ""
+          date: 2023-10-11T21:28:49.290Z
+        - commits:
+            - subject: "classes: image_types_balena: do not hardcode path to data image"
+              hash: 68365fdf211485e4a9694192cf10899136ce75ce
+              body: >
+                Use the `DEPLOY_DIR_IMAGES` variable which is filled by the
+                deploy
+
+                class from the docker-disk recipe deploy task.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-4.0.24
+          title: ""
+          date: 2023-10-11T16:21:53.282Z
+  version: 4.0.25
+  title: ""
+  date: 2023-10-12T03:06:14.984Z
+- commits:
     - subject: Update layers/meta-balena to 2a57fb406f8ddf36f1e907c1b7c236fed64574be
       hash: 1bcebdef551993b0a41113cf1d2cb53eb4f4d910
       body: Update layers/meta-balena

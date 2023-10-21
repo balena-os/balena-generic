@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update contracts to 42e712dfe54929870e1ef51fc95cff10f760ab08
+      hash: 3dc17fff9f70f4bbb742142cd2fa1807fedb32bf
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 42e712dfe54929870e1ef51fc95cff10f760ab08
+        changelog-entry: Update contracts to 42e712dfe54929870e1ef51fc95cff10f760ab08
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Modify bluechiptechnology-tm3"
+              hash: 3d2002c5e35f4d20fc5ef5307f52f1cfbb91d6ab
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+                signed-off-by: Chris Richardson <crichardson@bluechiptechnology.com>
+              author: crichardson
+          version: contracts-2.0.80
+          title: ""
+          date: 2023-10-20T05:40:17.796Z
+        - commits:
+            - subject: "device: Add Compulab UCM-iMX93"
+              hash: 2bbde3e92d6e1a6c3f9d63e9e79b14b70b755f80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexnadru Costache <alexandru@balena.io>
+                signed-off-by: Alexnadru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.79
+          title: ""
+          date: 2023-10-19T12:44:49.999Z
+  version: 4.0.28+rev1
+  title: ""
+  date: 2023-10-21T03:55:27.147Z
+- commits:
     - subject: Update layers/meta-balena to caa8a7842e0680a4f3a2a51d6b81017ff08fb390
       hash: 1c7dbec7d47ecffd4ba8683ab2face792cd86194
       body: Update layers/meta-balena

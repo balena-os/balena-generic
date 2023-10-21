@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v4.0.28+rev1
+## (2023-10-21)
+
+
+<details>
+<summary> Update contracts to 42e712dfe54929870e1ef51fc95cff10f760ab08 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.80
+> ### (2023-10-20)
+> 
+> * hw.device-type: Modify bluechiptechnology-tm3 [crichardson]
+> 
+> ## contracts-2.0.79
+> ### (2023-10-19)
+> 
+> * device: Add Compulab UCM-iMX93 [Alexandru Costache]
+> 
+
+</details>
+
 # v4.0.28
 ## (2023-10-21)
 

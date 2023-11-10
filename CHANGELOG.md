@@ -1,6 +1,63 @@
 Change log
 -----------
 
+# v4.1.4
+## (2023-11-10)
+
+
+<details>
+<summary> Update layers/meta-balena to 96b949b1282438824db7b960413407401a8512ea [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-4.1.4
+> ### (2023-11-10)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to af50e8d [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.10
+>> #### (2023-11-08)
+>> 
+>> * core: remove request timeout on flashing [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-4.1.3
+> ### (2023-11-06)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 2a64939 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.9
+>> #### (2023-11-06)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.8
+>> #### (Invalid date)
+>> 
+>> * patch: Update Learn More docs content [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.29.7
+>> #### (Invalid date)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.6
+>> #### (2023-10-26)
+>> 
+>> * Update core/contracts digest to 1091793 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v4.1.2
 ## (2023-11-01)
 

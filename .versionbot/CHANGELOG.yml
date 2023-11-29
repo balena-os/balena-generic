@@ -1,4 +1,139 @@
 - commits:
+    - subject: Update layers/meta-balena to 0fed99ef0c338962d463b38eb58cd64cdf5804ae
+      hash: bdf4210b79c3fc05305f9dca567185dc3276c224
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 0fed99ef0c338962d463b38eb58cd64cdf5804ae
+        changelog-entry: Update layers/meta-balena to 0fed99ef0c338962d463b38eb58cd64cdf5804ae
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Make Engine healthcheck performance test aware of device type
+              hash: def871a2cc2e35076ba5d57e0885b05ae80a6bd9
+              body: >
+                We previously tried to use a single time limit for the execution
+                of the
+
+                healthcheck test on all device types. This was causing occasional false
+
+                positives in our Continuous Integration pipeline, though -- especially
+
+                on slow devices like Pi Zeros and the generic-aarch64, which runs on
+
+                emulated hardware.
+
+
+                This commit addresses this issue, this commit:
+
+
+                1. Limits execution for device types for which we have collected enough
+                   data to have a good idea of how long the test should take.
+                2. Uses time limits specific for each device type.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: meta-balena-5.0.1
+          title: ""
+          date: 2023-11-29T14:34:44.373Z
+        - commits:
+            - subject: Update balena-supervisor to v15
+              hash: c41b110760f510d97ed4244bf39531a0f5bf562b
+              body: |
+                Update balena-supervisor from 14.13.13 to 15.0.1
+              footer:
+                Change-type: major
+                change-type: major
+              author: Felipe Lalanne
+              nested:
+                - commits:
+                    - subject: Expose ports from port mappings on services
+                      hash: 9bd216327fda4526cd60ccf98178960242383769
+                      body: >
+                        PR #2217 removed the expose configuration but also
+                        caused a regresion
+
+                        where ports set via the `ports` configuration would no longer get
+
+                        exposed to the host, despite portmappings being set. This fixes that
+
+                        issue by exposing only those ports comming from port mappings.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-15.0.1
+                  title: ""
+                  date: 2023-10-25T13:04:05.171Z
+                - commits:
+                    - subject: Ignore `expose` service compose configuration
+                      hash: 416170bc05a9a725f5a7f8ecbab4f8b1c8da5ddf
+                      body: >
+                        The docker EXPOSE directive and corresponding
+                        docker-compose `expose`
+
+                        service configuration serves as documentation/metadata that a container
+
+                        listens on a certain port that may be used for service discovery but it doesn't
+
+                        have any real impact on the ability for
+
+                        other containers on the same network to access the exposed service via
+
+                        the port. In newer engine implementations, this property may conflict
+
+                        with other network configurations, and prevent the container from being
+
+                        started by the docker engine (see #2211).
+
+
+                        This PR removes code that would manage the expose property and takes the
+
+                        property out of the whitelist. A composition with the `expose` property
+
+                        will result in the log message `Ignoring unsupported or unknown compose fields: expose`.
+
+
+                        While this change should not have operational impact, it still removes
+
+                        a previously supported configuration and as such there is a chance of it
+
+                        being a breaking change for some applications. For this reason it is
+
+                        being published as a new major version.
+                      footer:
+                        Change-type: major
+                        change-type: major
+                        Closes: "#2211"
+                        closes: "#2211"
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-15.0.0
+                  title: ""
+                  date: 2023-10-23T17:31:08.436Z
+                - commits:
+                    - subject: Add note regading API jitter on target state poll
+                      hash: b107868765563e26ec04746f84d1bc15dd211723
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-14.13.14
+                  title: ""
+                  date: 2023-10-23T13:34:41.452Z
+          version: meta-balena-5.0.0
+          title: ""
+          date: 2023-11-28T14:07:17.302Z
+  version: 5.0.1
+  title: ""
+  date: 2023-11-29T23:13:28.288Z
+- commits:
     - subject: Update contracts to 9a8805526c0fbe4aa1477f32b23c3d0e3647792a
       hash: aa147f260357233f0d92cdf8b6bb00502d948743
       body: Update contracts

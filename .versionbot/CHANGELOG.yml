@@ -1,4 +1,74 @@
 - commits:
+    - subject: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+      hash: 44dd09911136dc23affa046abad39a8881789e00
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+        changelog-entry: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update actions/setup-python action to v5
+              hash: 964061a70249cd4dabc99ae98083be5f1e650bc3
+              body: |
+                Update actions/setup-python from v4 to v5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: meta-balena-5.0.7
+          title: ""
+          date: 2023-12-06T16:38:31.017Z
+        - commits:
+            - subject: "os-helpers-logging: replace broken container check"
+              hash: 2dc4f8eb88dc51304cca55498b4bd5ceb7127d98
+              body: >
+                Detecting whether the script is running in a PID namespace by
+                checking
+
+                `/proc/1/sched` does not work for newer kernels
+
+                (see https://github.com/systemd/systemd/pull/17917).
+
+
+                Properly detecting this is too cumbersome for a bash logging script,
+
+                see https://github.com/systemd/systemd/pull/17902, however, falling
+
+                back to the last check, that is, seeing if `/.dockerenv` exists is easy
+
+                enough and works for our use case.
+
+
+                This script will only be called from the hostOS, and the only case it is
+
+                called from a container is during HUP and the container is always a hostOS
+
+                image. So even though the interface chosen by moby, a file under /,
+
+                is a bad interface in general, it works fine for the specific limitations
+
+                of balenaOS.
+
+
+                Also, check for `/run/.containerenv` which is the equivalent interface
+
+                for podman for future proofing.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-5.0.6
+          title: ""
+          date: 2023-12-05T18:35:11.870Z
+  version: 5.0.7
+  title: ""
+  date: 2023-12-06T20:39:11.358Z
+- commits:
     - subject: Update layers/meta-balena to 11ab946c68bc4245e2449ebf4765ecfc1c73831d
       hash: e2b59dc530f3050afaeb99a7142c456a8318bc74
       body: Update layers/meta-balena

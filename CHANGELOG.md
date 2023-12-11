@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.0.7+rev1
+## (2023-12-11)
+
+* add tpm machine feature to generic-amd64 [Alex Gonzalez]
+
 # v5.0.7
 ## (2023-12-06)
 

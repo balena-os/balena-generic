@@ -1,4 +1,20 @@
 - commits:
+    - subject: add tpm machine feature to generic-amd64
+      hash: c2300a146ca35485d47b38652293ec8e470ca61a
+      body: |
+        This is used by meta-balena to use TPM features for disk encryption
+        support.
+      footer:
+        Changelog-entry: add tpm machine feature to generic-amd64
+        changelog-entry: add tpm machine feature to generic-amd64
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 5.0.7+rev1
+  title: ""
+  date: 2023-12-11T10:13:17.851Z
+- commits:
     - subject: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
       hash: 44dd09911136dc23affa046abad39a8881789e00
       body: Update layers/meta-balena

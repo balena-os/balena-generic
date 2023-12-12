@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to eadd5efcb3a7a78e9b89be935ac1649dc33cbad6
+      hash: 47db36cc6ee6305b2c9ff5ff9c60cddf753e92dc
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to eadd5efcb3a7a78e9b89be935ac1649dc33cbad6
+        changelog-entry: Update layers/poky to eadd5efcb3a7a78e9b89be935ac1649dc33cbad6
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.0.7+rev2
+  title: ""
+  date: 2023-12-12T18:24:29.312Z
+- commits:
     - subject: add tpm machine feature to generic-amd64
       hash: c2300a146ca35485d47b38652293ec8e470ca61a
       body: |

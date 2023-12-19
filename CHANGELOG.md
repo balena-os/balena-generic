@@ -1,6 +1,63 @@
 Change log
 -----------
 
+# v5.1.0
+## (2023-12-19)
+
+
+<details>
+<summary> Update layers/meta-balena to d80ee36afa682981b8acce253e28c8237ed8166a [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.0
+> ### (2023-12-19)
+> 
+> * migrate: check for mount point before umounting [Alex Gonzalez]
+> * initrdscripts: move mounting of log mounts to finish module [Alex Gonzalez]
+> 
+> ## meta-balena-5.0.11
+> ### (2023-12-14)
+> 
+> * update-balena-supervisor: fix supervisor.conf when image already downloaded [Alex Gonzalez]
+> 
+> ## meta-balena-5.0.10
+> ### (2023-12-13)
+> 
+> * hostapp-update-hooks: add debug mode [Alex Gonzalez]
+> 
+> ## meta-balena-5.0.9
+> ### (2023-12-12)
+> 
+> * timesync-https: increase default connection max time to 10s [Alex Gonzalez]
+> 
+> ## meta-balena-5.0.8
+> ### (2023-12-11)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to c681ee1 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.22
+>> #### (2023-12-11)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.21
+>> #### (2023-12-04)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.26 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.20
+>> #### (2023-12-04)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.0.7+rev5
 ## (2023-12-14)
 

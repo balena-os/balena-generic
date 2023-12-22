@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v5.1.2
+## (2023-12-22)
+
+
+<details>
+<summary> Update layers/meta-balena to a3b1dd7c9cb8bf593ead65b5c41d5977ad020ab7 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.2
+> ### (2023-12-21)
+> 
+> * balena-config-vars: increase config.json parsing resilience [Alex Gonzalez]
+> 
+> ## meta-balena-5.1.1
+> ### (2023-12-20)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.42 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-engine-20.10.42
+>> #### (2023-12-19)
+>> 
+>> * Update actions/upload-artifact to v4 and generate unique artifacts [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.0+rev1
 ## (2023-12-20)
 

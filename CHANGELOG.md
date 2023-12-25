@@ -1,6 +1,68 @@
 Change log
 -----------
 
+# v5.1.4
+## (2023-12-25)
+
+
+<details>
+<summary> Update layers/meta-balena to b1ad16750b2392ca2301e0a85c272fb4a3ebbde8 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.4
+> ### (2023-12-25)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 5068028 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.28
+>> #### (2023-12-25)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.3
+> ### (2023-12-22)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 57546f9 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.27
+>> #### (2023-12-22)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.27 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.26
+>> #### (2023-12-21)
+>> 
+>> * Update core/contracts digest to 31188f5 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.25
+>> #### (2023-12-18)
+>> 
+>> * Update actions/upload-artifact action to v4 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.24
+>> #### (2023-12-18)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.23
+>> #### (2023-12-13)
+>> 
+>> * Update core/contracts digest to 591fda9 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.2+rev4
 ## (2023-12-23)
 

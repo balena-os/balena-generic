@@ -19,9 +19,8 @@ postProvisioningInstructions = [
 
 module.exports =
 	version: 1
-	slug: 'generic-amd64'
-	aliases: [ 'generic-amd64' ]
-	name: 'Generic x86_64 (GPT)'
+	slug: 'generic-amd64-fs'
+	name: 'Generic x86_64 (GPT) fs'
 	arch: 'amd64'
 	state: 'new'
 

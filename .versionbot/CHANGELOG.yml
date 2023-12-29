@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove unused icon files
+      hash: 34fa35156deda0e451890f90618ce523aac9e5e3
+      body: |
+        These are used nowadays from the contracts repos.
+      footer:
+        Changelog-entry: Remove unused icon files
+        changelog-entry: Remove unused icon files
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.1.4+rev1
+  title: ""
+  date: 2023-12-29T15:07:18.093Z
+- commits:
     - subject: Update layers/meta-balena to b1ad16750b2392ca2301e0a85c272fb4a3ebbde8
       hash: 279454f67cd4e7ef4e9e6c2cb90dec26682ed959
       body: Update layers/meta-balena

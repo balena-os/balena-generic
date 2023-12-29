@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.4+rev1
+## (2023-12-29)
+
+* Remove unused icon files [Florin Sarbu]
+
 # v5.1.4
 ## (2023-12-25)
 

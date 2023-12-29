@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update contracts to dd3614e53254562a7f93415de7e7aaaf73637a96
+      hash: 1c3134ef52d7b0a60709ba2a26680f7b41b05514
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to dd3614e53254562a7f93415de7e7aaaf73637a96
+        changelog-entry: Update contracts to dd3614e53254562a7f93415de7e7aaaf73637a96
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Fix device type is_private flag for imx8mp-var-dart"
+              hash: 31176adf167c7f9754c0f7f01f92c759d12b8c2b
+              body: >
+                This was added by mistake as private when it is supposed to be a
+                public dt.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.87
+          title: ""
+          date: 2023-12-29T14:04:58.033Z
+        - commits:
+            - subject: "hw.device-type: Add Variscite DART-MX8M-PLUS"
+              hash: dd4e9de9d010e49040adf8d9f4ce8a4d68c69cce
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.86
+          title: ""
+          date: 2023-12-28T11:16:43.472Z
+  version: 5.1.4+rev2
+  title: ""
+  date: 2023-12-29T19:26:49.085Z
+- commits:
     - subject: Remove unused icon files
       hash: 34fa35156deda0e451890f90618ce523aac9e5e3
       body: |

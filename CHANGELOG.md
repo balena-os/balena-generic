@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.5+rev1
+## (2024-01-06)
+
+* Add new generic-amd64-fs device type for kernel module signing based on generic-amd64 [Florin Sarbu]
+
 # v5.1.5
 ## (2024-01-01)
 

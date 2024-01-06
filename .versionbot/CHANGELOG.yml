@@ -1,4 +1,22 @@
 - commits:
+    - subject: Add new generic-amd64-fs device type for kernel module signing based on
+        generic-amd64
+      hash: 270aa70b4d56704bdb349ed9b6935cbed3bec8ac
+      body: |
+        This creates a new device type that uses kernel module signing.
+      footer:
+        Changelog-entry: Add new generic-amd64-fs device type for kernel module signing
+          based on generic-amd64
+        changelog-entry: Add new generic-amd64-fs device type for kernel module signing
+          based on generic-amd64
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.1.5+rev1
+  title: ""
+  date: 2024-01-06T10:58:43.690Z
+- commits:
     - subject: Update layers/meta-balena to aa9cd7315d801b22635e8468a0341d5dd7182a11
       hash: 9be9ba0e0a66c1bafe5ae0d07c9d5a894cfc4b23
       body: Update layers/meta-balena

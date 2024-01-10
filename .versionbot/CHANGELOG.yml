@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update contracts to b469f315f2dc5dbd396cbeab6fe3577b948af945
+      hash: f26d3cbbe5be055e3b82291071c38e23913cecf6
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b469f315f2dc5dbd396cbeab6fe3577b948af945
+        changelog-entry: Update contracts to b469f315f2dc5dbd396cbeab6fe3577b948af945
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Fix hyperlinks in provisioning instructions"
+              hash: 7ba9c9e03fe93110b2c8f3c866fbd4a3d7c8248b
+              body: |
+                If hyperlinks are unquoted, a target=blank is added and entire
+                link is broken in the dashboard. This doesn't happen for devices
+                which use quoted links, like for example the CM4.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.89
+          title: ""
+          date: 2024-01-05T11:04:31.513Z
+        - commits:
+            - subject: "jetson-orin-nx-seeed-j4012: Add Seeed J4012 device-type"
+              hash: 2f35889ca436bcb17cb8fba3e9192676b9872042
+              body: |
+                This is the initial commit, necessary to create the DT
+                in the API. The icon will need to be updated.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.88
+          title: ""
+          date: 2024-01-03T13:26:42.845Z
+  version: 5.1.7+rev2
+  title: ""
+  date: 2024-01-10T02:52:27.244Z
+- commits:
     - subject: Update layers/poky to 3ef22a75a3d97cd68ebaad476882937baedd9d25
       hash: eeee546d8cbcb20c71708cb1a9b77e7cb7b5162c
       body: Update layers/poky

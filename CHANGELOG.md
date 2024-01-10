@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v5.1.7+rev2
+## (2024-01-10)
+
+
+<details>
+<summary> Update contracts to b469f315f2dc5dbd396cbeab6fe3577b948af945 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.89
+> ### (2024-01-05)
+> 
+> * hw.device-type: Fix hyperlinks in provisioning instructions [Alexandru Costache]
+> 
+> ## contracts-2.0.88
+> ### (2024-01-03)
+> 
+> * jetson-orin-nx-seeed-j4012: Add Seeed J4012 device-type [Alexandru Costache]
+> 
+
+</details>
+
 # v5.1.7+rev1
 ## (2024-01-09)
 

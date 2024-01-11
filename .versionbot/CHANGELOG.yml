@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 14a10d925b56660c59471447ca74ae324da68f79
+      hash: 0643db28ca140018a2588f4939e7eaa891ea8310
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 14a10d925b56660c59471447ca74ae324da68f79
+        changelog-entry: Update contracts to 14a10d925b56660c59471447ca74ae324da68f79
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Update svg icon for seeed-j4012"
+              hash: 26b20e8e64f1a52c042bf5974931fb3baaa5d8fb
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.90
+          title: ""
+          date: 2024-01-10T10:48:43.053Z
+  version: 5.1.8+rev2
+  title: ""
+  date: 2024-01-11T15:57:36.598Z
+- commits:
     - subject: Update layers/poky to d9532264b9f8677914bfe6646c8cee7aa108d175
       hash: 51360de8292682bacd0d791b9d91d0c0b895d34f
       body: Update layers/poky

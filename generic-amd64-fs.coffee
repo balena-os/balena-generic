@@ -41,13 +41,13 @@ module.exports =
 		linux: 'https://www.balena.io/docs/learn/getting-started/intel-nuc/nodejs/'
 
 	yocto:
-		machine: 'generic-amd64'
+		machine: 'generic-amd64-fs'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
 		version: 'yocto-dunfell'
-		deployArtifact: 'balena-image-flasher-generic-amd64.balenaos-img'
-		deployFlasherArtifact: 'balena-image-flasher-generic-amd64.balenaos-img'
-		deployRawArtifact: 'balena-image-generic-amd64.balenaos-img'
+		deployArtifact: 'balena-image-flasher-generic-amd64-fs.balenaos-img'
+		deployFlasherArtifact: 'balena-image-flasher-generic-amd64-fs.balenaos-img'
+		deployRawArtifact: 'balena-image-generic-amd64-fs.balenaos-img'
 		compressed: true
 
 	configuration:

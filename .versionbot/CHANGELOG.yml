@@ -1,4 +1,20 @@
 - commits:
+    - subject: add generic-amd64-fs yocto-machine
+      hash: 480785dd77068022245cc96b733c0bec2097d5eb
+      body: >
+        This is to resolve build and deploy pipeline issues - perviously we were
+        breaking our pipeline conventions which created a cascade of errors
+      footer:
+        Changelog-entry: add generic-amd64-fs yocto-machine
+        changelog-entry: add generic-amd64-fs yocto-machine
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+  version: 5.1.11+rev2
+  title: ""
+  date: 2024-01-22T20:00:16.907Z
+- commits:
     - subject: Update layers/meta-openembedded to
         730e44900a0a86265bad93a16b5a5ff344a07266
       hash: a3d2ff90684f7ba24a59fbb689d272b9977c3173

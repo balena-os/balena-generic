@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.11+rev2
+## (2024-01-22)
+
+* add generic-amd64-fs yocto-machine [rcooke-warwick]
+
 # v5.1.11+rev1
 ## (2024-01-19)
 

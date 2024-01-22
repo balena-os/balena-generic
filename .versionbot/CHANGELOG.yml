@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 426dfdc8d246cae5f4fd37415ece280f169bee08
+      hash: dd46eed0546f2d420f769e80bbd54cc6930088b8
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 426dfdc8d246cae5f4fd37415ece280f169bee08
+        changelog-entry: Update layers/poky to 426dfdc8d246cae5f4fd37415ece280f169bee08
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.1.11+rev3
+  title: ""
+  date: 2024-01-22T23:01:39.195Z
+- commits:
     - subject: add generic-amd64-fs yocto-machine
       hash: 480785dd77068022245cc96b733c0bec2097d5eb
       body: >

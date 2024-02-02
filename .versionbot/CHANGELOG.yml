@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update layers/meta-balena to 2ba79c7ce73fde702831a041729da21bdff65627
+      hash: 96836616878c96d0c26563d6632290f6525970c4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2ba79c7ce73fde702831a041729da21bdff65627
+        changelog-entry: Update layers/meta-balena to 2ba79c7ce73fde702831a041729da21bdff65627
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-rollback/rollback-health: Allow old OS hooks to access efivars"
+              hash: df9d9986ab6965b653abd8d5d06dbfc3beb285e9
+              body: >
+                This fixes rollback-health failures for boards like the Jetson
+                Seeeed
+
+                J4012, which updates efivars for capsule updates from container hooks
+
+                and not from the current OS hooks.
+
+
+                While the actual HUP works because of /sys being bindmounted by
+
+                hostapp-update, rollbacks will fail to run the old OS hooks unless
+
+                efivarfs is mounted.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-5.1.22
+          title: ""
+          date: 2024-02-02T16:21:23.127Z
+  version: 5.1.22
+  title: ""
+  date: 2024-02-02T22:22:34.620Z
+- commits:
     - subject: Update contracts to 75a97647a44cfe534f93926ab039afca6570cb86
       hash: 73ede2b91a3286bf9c12ca1b00f1be9fabca9ce8
       body: Update contracts

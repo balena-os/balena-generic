@@ -1,4 +1,51 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+      hash: 23dd3dcfc3ae1b271192039ab3d2fbf8a8c0de37
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+        changelog-entry: Update balena-yocto-scripts to 6ccd3b1013b6d25ea9990a07a06bee864fe0a172
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "automation/include: Pass helper image version"
+              hash: 2a8e25e0d0b46b3249c1c77b0c38219ebcdea1f0
+              body: >
+                This is needed by the balena-push-env helper image that needs
+                the
+
+                balena-yocto-scripts version but has no way of getting that info
+
+                otherwise.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: balena-yocto-scripts-1.21.2
+          title: ""
+          date: 2024-02-08T07:44:50.538Z
+        - commits:
+            - subject: "balena-deploy: Remove docker.io when pulling image"
+              hash: bd23b9ad59a1645bce79b0df5ef3879d10774a3a
+              body: |
+                This seems to cause docker images --format to fail
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: balena-yocto-scripts-1.21.1
+          title: ""
+          date: 2024-02-07T12:39:41.622Z
+  version: 5.1.26+rev1
+  title: ""
+  date: 2024-02-08T15:46:28.540Z
+- commits:
     - subject: Update layers/meta-balena to cde215eca198fddfd900cf481ed5cc3f26d901ab
       hash: 292ff635d9d447829f70a52d9fe70209c2a4393f
       body: Update layers/meta-balena

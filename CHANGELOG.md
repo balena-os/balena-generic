@@ -1,6 +1,42 @@
 Change log
 -----------
 
+# v5.1.50
+## (2024-03-08)
+
+
+<details>
+<summary> Update layers/meta-balena to bbe9d4c565bbb3b158de268ee0a77076504e5419 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.50
+> ### (2024-03-07)
+> 
+> * tests/device-tree: Rework to account for new form of setting dtoverlay in config.txt by the supervisor [Florin Sarbu]
+> 
+> ## meta-balena-5.1.49
+> ### (2024-03-06)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to a677d89 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.64
+>> #### (2024-03-04)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.48
+> ### (2024-03-06)
+> 
+> * hostapp-update-hooks: Soft include balena-config-defaults [Michal Toman]
+> 
+
+</details>
+
 # v5.1.47+rev2
 ## (2024-03-07)
 

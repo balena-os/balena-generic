@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.50+rev1
+## (2024-03-08)
+
+* Initialize VMD devices before the migrator runs [Michal Toman]
+
 # v5.1.50
 ## (2024-03-08)
 

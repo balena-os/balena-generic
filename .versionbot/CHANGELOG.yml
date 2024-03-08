@@ -1,4 +1,27 @@
 - commits:
+    - subject: Initialize VMD devices before the migrator runs
+      hash: 94cd4dd53a288cd5c5afebed327f571737c30b02
+      body: |
+        This is a driver that adds a PCI bridge that provides access
+        to (mostly storage) devices "located in a different PCI domain".
+
+        Without the driver/bridge, such devices are invisible to the kernel,
+        which may trick the migrator into thinking there are no valid flashing
+        targets and start the in-memory migration.
+
+        This patch makes the driver built-in, which means the devices will
+        get initialized before the migrator checks for potential targets.
+      footer:
+        Changelog-entry: Initialize VMD devices before the migrator runs
+        changelog-entry: Initialize VMD devices before the migrator runs
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 5.1.50+rev1
+  title: ""
+  date: 2024-03-08T13:41:48.743Z
+- commits:
     - subject: Update layers/meta-balena to bbe9d4c565bbb3b158de268ee0a77076504e5419
       hash: 5cbe77282c0932517c03b031ae478d6f38f3e938
       body: Update layers/meta-balena

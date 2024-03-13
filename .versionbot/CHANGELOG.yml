@@ -1,4 +1,203 @@
 - commits:
+    - subject: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+      hash: 5bbcfcbfb6e6ba0511469297d50fced0d3991576
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+        changelog-entry: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "mkfs-hostapp-native: Disable iptables features in yocto balena daemon"
+              hash: 1e563863caf75fc88a8e7c7f2ab15f65ad21ebe8
+              body: >
+                We don't need any iptables features in order to perform
+
+                hostapp-update in this build recipe, and it has no impact
+
+                on build output.
+
+
+                It does, however, improve compatbility with build environments
+                and
+
+                reduces the dependencies of the build host kernel.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-5.1.54
+          title: ""
+          date: 2024-03-13T06:45:02.830Z
+        - commits:
+            - subject: Update balena-supervisor to v16.1.5
+              hash: b15d808d021e647afc8c4da22f64dc9e7c929310
+              body: |
+                Update balena-supervisor from 16.1.4 to 16.1.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update fatrw to v0.2.21
+                      hash: 772702793c3ebf9bf3ac8119934436f2caa44bef
+                      body: |
+                        Update fatrw from 0.2.9 to 0.2.21
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.5
+                  title: ""
+                  date: 2024-03-12T13:33:05.116Z
+          version: meta-balena-5.1.53
+          title: ""
+          date: 2024-03-12T18:48:47.631Z
+        - commits:
+            - subject: "images: balena-image-initramfs: remove uneeded kernel image"
+              hash: f1ac14d114955678b62a0cbe661f71297e32a621
+              body: |
+                Remove the kernel image from the initramfs to save space.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: kernel-balena-noimage: add extra space"
+              hash: 3696a0d8ad5f6d67903e3918bbe186300a2245ff
+              body: >
+                When appending a variable a space needs to be prefixed to create
+                a
+
+                space separated list.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-5.1.52
+          title: ""
+          date: 2024-03-11T15:55:46.939Z
+        - commits:
+            - subject: Update balena-supervisor to v16.1.4
+              hash: 932d20360314f8297c9b34f5940a95847cc48f58
+              body: |
+                Update balena-supervisor from 16.1.0 to 16.1.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update balena-register-device and its deps
+                      hash: 790f6b71e4c127a6c6078e3f3797992e78995d3b
+                      body: |
+                        This bumps the related dependencies
+
+                        - balena-register-device
+                        - balena-request
+                        - balena-auth
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.4
+                  title: ""
+                  date: 2024-03-08T14:10:19.423Z
+                - commits:
+                    - subject: Remove dependency on @balena/happy-eyeballs
+                      hash: 08727ed2b5f67c55b2469d3ee5c5e2857119521b
+                      body: >
+                        Node 20 now implements the happy eyeballs algorithm as
+                        part of its core
+
+                        `net` module, with the
+                        [autoSelectFamily](https://nodejs.org/docs/latest-v20.x/api/net.html#netgetdefaultautoselectfamily)
+                        option of `socket.connect`. This option defaults to
+                        `true`, meaning that a separate
+
+                        implementation of happy eyeballs is no longer needed.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                    - subject: Update Node to v20
+                      hash: b77dba20462df90ca720dae3fcacb84628fd5069
+                      body: >
+                        This updates the supervisor runtime to latest Node LTS
+                        version. There
+
+                        are no breaking changes related to this bump.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.3
+                  title: ""
+                  date: 2024-03-07T16:10:24.150Z
+                - commits:
+                    - subject: Update typescript to v5
+                      hash: 6217546894e25c8216d305f231876fc888a6e407
+                      body: >
+                        This also updates code to use the default import syntax
+                        instead of
+
+                        `import * as` when the imported module exposes a
+                        default. This is needed
+
+                        with the latest typescript version.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.2
+                  title: ""
+                  date: 2024-03-06T14:06:45.274Z
+                - commits:
+                    - subject: Update @balena/lint to v7
+                      hash: 988a1c9e9a2317a66f2be0a1dbddb89f8084014f
+                      body: >
+                        This updates balena lint to the latest version to enable
+                        eslint support
+
+                        and unblock Typescript updates. This is a huge number of
+                        changes as the
+
+                        linting rules are much more strict now, requiring
+                        modifiying most files
+
+                        in the codebase. This commit also bumps the test
+                        dependency `rewire` as
+
+                        that was interfering with the update of balena-lint
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.1
+                  title: ""
+                  date: 2024-03-04T18:16:11.250Z
+          version: meta-balena-5.1.51
+          title: ""
+          date: 2024-03-08T18:44:40.323Z
+  version: 5.1.54
+  title: ""
+  date: 2024-03-13T11:51:35.199Z
+- commits:
     - subject: Initialize VMD devices before the migrator runs
       hash: 94cd4dd53a288cd5c5afebed327f571737c30b02
       body: |

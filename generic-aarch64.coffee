@@ -19,7 +19,7 @@ module.exports =
 		machine: 'generic-aarch64'
 		image: 'balena-image'
 		fstype: 'balenaos-img'
-		version: 'yocto-dunfell'
+		version: 'yocto-kirkstone'
 		deployArtifact: 'balena-image-generic-aarch64.balenaos-img'
 		compressed: true
 

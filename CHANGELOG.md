@@ -1,6 +1,27 @@
 Change log
 -----------
 
+# v5.3.15+rev3
+## (2024-06-07)
+
+
+<details>
+<summary> Update contracts to 8adfb6d81fb673d26e3ab7038b3ef2264c1d1fe7 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.105
+> ### (2024-06-06)
+> 
+> * sw.os+hw.device-type: Update Jetson Orin distro configs for L4T 35.5.0 repositories [Alexandru Costache]
+> 
+> ## contracts-2.0.104
+> ### (2024-06-02)
+> 
+> * jetson-orin-nano-seeed-j3010: Specify RAM size for the Seeed J3010 [Alexandru Costache]
+> * jetson-orin-nano-seeed-j3010: add Seeed J3010 device-type [Alex Suykov]
+> 
+
+</details>
+
 # v5.3.15+rev2
 ## (2024-06-07)
 

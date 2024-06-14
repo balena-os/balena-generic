@@ -1,4 +1,53 @@
 - commits:
+    - subject: Update balena-yocto-scripts to cd813faad0e261ad00f791c8788c8f70a0a32a2d
+      hash: 21bf468020930a0e3e3d0079e0d6b2cd5ca6ce64
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to cd813faad0e261ad00f791c8788c8f70a0a32a2d
+        changelog-entry: Update balena-yocto-scripts to cd813faad0e261ad00f791c8788c8f70a0a32a2d
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "jenkins_generate_ami: pass yocto scripts version as an env var to
+                helper container"
+              hash: af71169b93e855c8ecb378b5de3d4a1c12f44510
+              body: >
+                The ami deploys in jenkins fail at the moment because the
+                balena-lib.inc script fails to fetch the version of the yocto
+                scripts when running inside the helper image. Passing the
+                version to the helper image via an env var helps this
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.22.3
+          title: ""
+          date: 2024-06-13T19:04:31.350Z
+        - commits:
+            - subject: Update the triggers on the example test workflow
+              hash: 1f09e509e09a1a44b62772b9e197fe183c72744d
+              body: |
+                We do not need to run the workflow on close/merge, and we
+                can skip the manual workflow runs on this project as
+                each device type will have it's own workflow in the device
+                repos supporting manual triggers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.22.2
+          title: ""
+          date: 2024-06-12T17:54:57.718Z
+  version: 5.3.20+rev1
+  title: ""
+  date: 2024-06-14T00:52:15.510Z
+- commits:
     - subject: Update layers/meta-balena to 4b3ccea138ea87cf44be8ac421faa6e4dfc0a8c0
       hash: 907077a88d54e7ca9855d6024fcd3c194036ddea
       body: Update layers/meta-balena

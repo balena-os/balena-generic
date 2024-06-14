@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v5.3.20+rev1
+## (2024-06-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to cd813faad0e261ad00f791c8788c8f70a0a32a2d [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.22.3
+> ### (2024-06-13)
+> 
+> * jenkins_generate_ami: pass yocto scripts version as an env var to helper container [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.22.2
+> ### (2024-06-12)
+> 
+> * Update the triggers on the example test workflow [Kyle Harding]
+> 
+
+</details>
+
 # v5.3.20
 ## (2024-06-11)
 

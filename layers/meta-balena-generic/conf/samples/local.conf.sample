@@ -2,6 +2,7 @@
 #MACHINE ?= "generic-aarch64.conf"
 #MACHINE ?= "generic-amd64.conf"
 #MACHINE ?= "generic-amd64-fs.conf"
+#MACHINE ?= "kontron-come-xelx"
 
 # More info meta-balena/README.md
 #RESIN_CONNECTABLE ?= "1"

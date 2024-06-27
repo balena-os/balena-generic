@@ -1,4 +1,26 @@
 - commits:
+    - subject: Add new kontron-come-xelx device type for kernel module signing based
+        on generic-amd64
+      hash: a31a84a05b244cae205d64c1b5aca5f74cfc1ba9
+      body: |
+        This creates a new device type that uses kernel module signing.
+
+        This code is hosted temporarily in this repo. The machine should
+        have its own device repo with the Kontron BSP. When that happens,
+        this code from here must be removed.
+      footer:
+        Changelog-entry: Add new kontron-come-xelx device type for kernel module signing
+          based on generic-amd64
+        changelog-entry: Add new kontron-come-xelx device type for kernel module signing
+          based on generic-amd64
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.3.21+rev5
+  title: ""
+  date: 2024-06-27T12:20:37.357Z
+- commits:
     - subject: Update balena-yocto-scripts to 0164431c7032e80f145464e8cc7becfe8bb8597c
       hash: ee10aa0e1b952b0eb0031e11522aecde47bf4bdf
       body: Update balena-yocto-scripts

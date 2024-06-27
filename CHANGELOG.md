@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.3.21+rev6
+## (2024-06-27)
+
+* Add new studio-automatedx86-sb device type for kernel module signing based on generic-amd64 [Florin Sarbu]
+
 # v5.3.21+rev5
 ## (2024-06-27)
 

@@ -1,4 +1,22 @@
 - commits:
+    - subject: Add new studio-automatedx86-sb device type for kernel module signing
+        based on generic-amd64
+      hash: 3b74c970d7ca3e393a805dcc8d9f45938f452a70
+      body: |
+        This creates a new device type that uses kernel module signing.
+      footer:
+        Changelog-entry: Add new studio-automatedx86-sb device type for kernel module
+          signing based on generic-amd64
+        changelog-entry: Add new studio-automatedx86-sb device type for kernel module
+          signing based on generic-amd64
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 5.3.21+rev6
+  title: ""
+  date: 2024-06-27T12:38:32.894Z
+- commits:
     - subject: Add new kontron-come-xelx device type for kernel module signing based
         on generic-amd64
       hash: a31a84a05b244cae205d64c1b5aca5f74cfc1ba9

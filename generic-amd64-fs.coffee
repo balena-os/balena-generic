@@ -44,7 +44,7 @@ module.exports =
 		machine: 'generic-amd64-fs'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-dunfell'
+		version: 'yocto-kirkstone'
 		deployArtifact: 'balena-image-flasher-generic-amd64-fs.balenaos-img'
 		deployFlasherArtifact: 'balena-image-flasher-generic-amd64-fs.balenaos-img'
 		deployRawArtifact: 'balena-image-generic-amd64-fs.balenaos-img'

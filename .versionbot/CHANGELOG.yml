@@ -1,4 +1,143 @@
 - commits:
+    - subject: Update layers/meta-balena to e6c2037615db74af70250c5d3351c44e2ee31fbb
+      hash: 8d29b3da84786336671faf2c39dc7f62af03ead7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e6c2037615db74af70250c5d3351c44e2ee31fbb
+        changelog-entry: Update layers/meta-balena to e6c2037615db74af70250c5d3351c44e2ee31fbb
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update balena-supervisor to v16.3.17
+              hash: 521d51db1023846cf95e40a9f2b0a514ec8aea6d
+              body: |
+                Update balena-supervisor from 16.3.15 to 16.3.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Fix engine deadlock on network+service change
+                      hash: ede27b63cecc2a9ae3139a905d9c6ab32418a72b
+                      body: >
+                        This fixes a regression on the supervisor state engine
+                        computation
+
+                        (added on v16.2.0) when
+
+                        the target state removes a network at the same time that
+                        a service
+
+                        referencing that network is changed. Example going from
+
+
+                        ```
+
+                        services:
+                           one:
+                              image: alpine: 3.18
+                              networks: ['balena']
+
+                        networks:
+                           balena:
+                        ```
+
+
+                        to
+
+
+                        ```
+
+                        services:
+                           one:
+                              image: alpine: latest
+                        ```
+
+
+                        Would never reach the target state as killing the
+                        service in order to
+
+                        remove the network is prioritized, but one of the
+                        invariants in the target state calculation is
+
+                        to not kill any services until all images have been
+                        downloaded. These
+
+                        two instructions were in contradiction leading to a
+                        deadlock.
+
+
+                        The fix involves only adding removal steps for services
+                        depending on a
+
+                        changing network or volume if the service container is
+                        not being removed
+
+                        already.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.3.17
+                  title: ""
+                  date: 2024-06-25T01:03:26.734Z
+                - commits:
+                    - subject: Update balena-io/deploy-to-balena-action action to v2.0.72
+                      hash: 170733422a7a8fb2e58482508fe74dc2fcb282a5
+                      body: >
+                        Update balena-io/deploy-to-balena-action from 2.0.71 to
+                        2.0.72
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.16
+                  title: ""
+                  date: 2024-06-17T01:56:08.257Z
+          version: meta-balena-5.3.23
+          title: ""
+          date: 2024-07-02T14:03:58.762Z
+        - commits:
+            - subject: "initrdscripts: make the kexec script fail hard in unexpected states"
+              hash: 0b6199dddbb52e963d7b6e5feb5771f2b61a0f35
+              body: >
+                At this moment the kexec initrd script is skipped when
+                ROOTFS_DIR
+
+                is not defined or if the new rootfs is mounted, but does not
+                contain
+
+                a kernel image in the expected place. This is undesirable as we
+
+                assume this is the last script executed by the balena
+                bootloader.
+
+
+                This patch makes the kexec script always execute in the balena
+
+                bootloader and makes it fail hard in unexpected states, which
+                means
+
+                the script is always an exit point for the balena bootloader,
+
+                whether the actual kexec call succeeds or not.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.3.22
+          title: ""
+          date: 2024-07-01T15:01:00.393Z
+  version: 5.3.23
+  title: ""
+  date: 2024-07-03T01:48:43.564Z
+- commits:
     - subject: Add new studio-automatedx86-sb device type for kernel module signing
         based on generic-amd64
       hash: 3b74c970d7ca3e393a805dcc8d9f45938f452a70

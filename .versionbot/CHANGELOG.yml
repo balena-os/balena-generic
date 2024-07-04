@@ -1,4 +1,190 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+      hash: 4af4cc2b3be81c3c9beec7ca4baecf724215ba7d
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+        changelog-entry: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove dry-run flag from S3 upload
+              hash: cf0301996022ef58a9c19d40d002d72a1bbcf705
+              body: |
+                We are publishing hostapp releases to staging already, we should
+                start including the associated S3 files as well.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.2
+          title: ""
+          date: 2024-07-03T21:19:20.964Z
+        - commits:
+            - subject: Fix actionlint errors and warnings in shell steps
+              hash: da910ed9ac6fdd70bd0ebd1beb0dbbd1248517fd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.1
+          title: ""
+          date: 2024-07-03T18:33:05.802Z
+        - commits:
+            - subject: Do not run any tests by default unless provided by calling workflow
+              hash: d0cfc42cf8a17ef6b5f2ac4eed6f84d1581435e6
+              body: >
+                As there are currently more device types without tests than
+                with,
+
+                and some of those with tests need to provide overrides anyway,
+                it's
+
+                simpler to assume an empty test matrix unless provided.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.0
+          title: ""
+          date: 2024-07-03T15:44:25.729Z
+        - commits:
+            - subject: "patch: No upload to GH artifacts when PR is closed"
+              hash: cdee530e227972e251a2c7c06f4a3e97747419ca
+              body: >
+                Uploading artifacts to GH artifact storage when PR is merged
+
+                (closed event) is wasterful. Since they are only uploaded for
+                temporary
+
+                basis so it can be used for testing. Hence, the PR to stop doing
+                that
+
+                for closed PR event
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: balena-yocto-scripts-1.24.3
+          title: ""
+          date: 2024-07-02T22:05:09.072Z
+        - commits:
+            - subject: Fix quoting of $GITHUB_OUTPUT
+              hash: 5f56f3236d8ee3d764e46e419aa2431dd42d45ff
+              body: |
+                We had typos in two cases, in which we missed the opening quote.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: balena-yocto-scripts-1.24.2
+          title: ""
+          date: 2024-07-02T00:54:39.074Z
+        - commits:
+            - subject: Simplify check for secure boot
+              hash: be189f7e2f6fb26f778f29e1f955a1cdd01bc8a4
+              body: >
+                We were previously introducing a variable that was essentially
+
+                replicating the contents of an input. This commit makes use of
+                the input
+
+                directly.
+
+
+                Incidentally, the previous code also had a small bug/typo, in
+                which we
+
+                mixed a test for string length with a test for string equality.
+              footer:
+                Signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                signed-off-by: Leandro Motta Barros <leandro@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Leandro Motta Barros
+              nested: []
+          version: balena-yocto-scripts-1.24.1
+          title: ""
+          date: 2024-06-27T20:35:29.474Z
+        - commits:
+            - subject: Support runner selection in the test matrix
+              hash: d409cb0fbaa307a179973b60e5faff8cda6bc34b
+              body: >
+                Default to self-hosted X64 with KVM for now to align with
+                Jenkins but in the future
+
+                we should consider using GitHub hosted runners for the testbot
+                workers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Allow both combinatorial and include syntax for test_matrix
+              hash: 2bfc3a0d72830626366cf210f4fe9a0e649688c5
+              body: >
+                The include syntax allows full control over settings used
+
+                in each test job, but the combinatorial is simpler to write
+
+                for basic use cases.
+
+
+                Rather than force one, we can allow both and default to the
+                simple
+
+                syntax.
+
+
+                Marking as minor since the input syntax has changed, but isn't
+
+                currently used in production anywhere.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.24.0
+          title: ""
+          date: 2024-06-26T21:26:13.711Z
+        - commits:
+            - subject: Refactor secrets and variables to use environments
+              hash: c46eb9cfa4a272f00af4029c31e355477169802a
+              body: |
+                Reduce the required secrets and inputs required by
+                relying on vars and secrets set in each GitHub Environment.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.23.1
+          title: ""
+          date: 2024-06-26T12:43:22.833Z
+  version: 5.3.23+rev1
+  title: ""
+  date: 2024-07-04T03:10:04.377Z
+- commits:
     - subject: Update layers/meta-balena to e6c2037615db74af70250c5d3351c44e2ee31fbb
       hash: 8d29b3da84786336671faf2c39dc7f62af03ead7
       body: Update layers/meta-balena

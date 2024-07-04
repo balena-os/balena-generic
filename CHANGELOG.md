@@ -1,6 +1,57 @@
 Change log
 -----------
 
+# v5.3.23+rev1
+## (2024-07-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.25.2
+> ### (2024-07-03)
+> 
+> * Remove dry-run flag from S3 upload [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.1
+> ### (2024-07-03)
+> 
+> * Fix actionlint errors and warnings in shell steps [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.0
+> ### (2024-07-03)
+> 
+> * Do not run any tests by default unless provided by calling workflow [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.24.3
+> ### (2024-07-02)
+> 
+> * patch: No upload to GH artifacts when PR is closed [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## balena-yocto-scripts-1.24.2
+> ### (2024-07-02)
+> 
+> * Fix quoting of $GITHUB_OUTPUT [Leandro Motta Barros]
+> 
+> ## balena-yocto-scripts-1.24.1
+> ### (2024-06-27)
+> 
+> * Simplify check for secure boot [Leandro Motta Barros]
+> 
+> ## balena-yocto-scripts-1.24.0
+> ### (2024-06-26)
+> 
+> * Support runner selection in the test matrix [Kyle Harding]
+> * Allow both combinatorial and include syntax for test_matrix [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.23.1
+> ### (2024-06-26)
+> 
+> * Refactor secrets and variables to use environments [Kyle Harding]
+> 
+
+</details>
+
 # v5.3.23
 ## (2024-07-03)
 

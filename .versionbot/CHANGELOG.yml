@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+      hash: 4bb29a1f8fe139cd038ed7798367238a72e3d6ee
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+        changelog-entry: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-deploy: deploy secure boot lock artifacts if available"
+              hash: 01378a49b0b2264afcf6d2dc4d016e2be206fde7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.25.4
+          title: ""
+          date: 2024-07-06T09:01:53.726Z
+        - commits:
+            - subject: use workflow run of PR head instead of statuses to determine test
+                results
+              hash: ad06820f4174568383678710fa68b2054da6db57
+              body: >
+                Since we have moved to workflows for tests instead of status
+                checks, we have to fetch the workflow runs for the appropriate
+                commit to determine a test pass/fail.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.3
+          title: ""
+          date: 2024-07-05T12:42:09.570Z
+  version: 5.3.27+rev2
+  title: ""
+  date: 2024-07-07T22:33:48.528Z
+- commits:
     - subject: Update layers/meta-openembedded to
         6ff0748a4741517519a281985fc3cd95dadb633e
       hash: d751c3776bf28763f980f3391c56f7b960962f89

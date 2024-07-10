@@ -370,3 +370,9 @@ BALENA_CONFIGS:append:generic-amd64 = " i40e"
 BALENA_CONFIGS[i40e] = " \
     CONFIG_I40E=m \
 "
+
+# requested by customer
+BALENA_CONFIGS:append:generic-amd64 = " pinctrl_alderlake"
+BALENA_CONFIGS[pinctrl_alderlake] = " \
+    CONFIG_PINCTRL_ALDERLAKE=m \
+"

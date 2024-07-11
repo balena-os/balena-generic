@@ -1,4 +1,20 @@
 - commits:
+    - subject: "recipes-kernel/linux-yocto: Enable CONFIG_PINCTRL_ALDERLAKE"
+      hash: 12cf1f8da3a4e695e6a476716f04ab41423cb53b
+      body: >
+        as per the request in the internal thread:
+          https://balena.zulipchat.com/#narrow/stream/360838-balena-io.2Fos.2Fdevices/topic/generic-amd64.20pinctrl.20drvier/near/450383112
+      footer:
+        Changelog-entry: "recipes-kernel/linux-yocto: Enable CONFIG_PINCTRL_ALDERLAKE"
+        changelog-entry: "recipes-kernel/linux-yocto: Enable CONFIG_PINCTRL_ALDERLAKE"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.3.27+rev5
+  title: ""
+  date: 2024-07-11T10:38:02.966Z
+- commits:
     - subject: Update balena-yocto-scripts to 09a174bf33ea56788ac4b483fdf1b7828c118f23
       hash: 339515fb4dcfd871e5c7db6fc6e40366aed1d554
       body: Update balena-yocto-scripts

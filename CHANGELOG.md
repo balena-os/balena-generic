@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.3.27+rev5
+## (2024-07-11)
+
+* recipes-kernel/linux-yocto: Enable CONFIG_PINCTRL_ALDERLAKE [Alexandru Costache]
+
 # v5.3.27+rev4
 ## (2024-07-08)
 

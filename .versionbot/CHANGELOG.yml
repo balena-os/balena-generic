@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to be9285cbd9c959e1c712971b6dd753a971717c79
+      hash: 178af503f32d350bc5617f7eb051c072a79a399a
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to be9285cbd9c959e1c712971b6dd753a971717c79
+        changelog-entry: Update layers/poky to be9285cbd9c959e1c712971b6dd753a971717c79
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.3.27+rev6
+  title: ""
+  date: 2024-07-11T14:39:16.922Z
+- commits:
     - subject: "recipes-kernel/linux-yocto: Enable CONFIG_PINCTRL_ALDERLAKE"
       hash: 12cf1f8da3a4e695e6a476716f04ab41423cb53b
       body: >

@@ -282,7 +282,7 @@ BALENA_CONFIGS[no-debug-info] ?= " \
 #
 # Support Intel wrieless LAN adapter
 #
-BALENA_CONFIGS:append_generic-amd64 = " iwlwifi"
+BALENA_CONFIGS:append:generic-amd64 = " iwlwifi"
 BALENA_CONFIGS_DEPS[iwlwifi] = " \
     CONFIG_PCI=m \
     CONFIG_MAC80211=m \
@@ -297,7 +297,7 @@ BALENA_CONFIGS[iwlwifi] = " \
 #
 # Support Intel NUC Bluetooth
 #
-BALENA_CONFIGS:append_generic-amd64 = " nuc_bluetooth"
+BALENA_CONFIGS:append:generic-amd64 = " nuc_bluetooth"
 BALENA_CONFIGS[nuc_bluetooth] = " \
     CONFIG_BT_HCIUART=m \
     CONFIG_BT_HCIUART_INTEL=y \
@@ -306,13 +306,13 @@ BALENA_CONFIGS[nuc_bluetooth] = " \
 
 # Enable Intel Low Power Subsystem Support
 # (for detecting the eMMC on some Atom based Intel SoCs)
-BALENA_CONFIGS:append_generic-amd64 = " lpss"
+BALENA_CONFIGS:append:generic-amd64 = " lpss"
 BALENA_CONFIGS[lpss] = " \
     CONFIG_X86_INTEL_LPSS=y \
 "
 
 # requested by user
-BALENA_CONFIGS:append_generic-amd64 = " ad5593r"
+BALENA_CONFIGS:append:generic-amd64 = " ad5593r"
 BALENA_CONFIGS[ad5593r] = " \
     CONFIG_AD5593R=m \
 "
@@ -322,51 +322,57 @@ BALENA_CONFIGS_DEPS[ad5593r] = " \
 
 # set ATA_PIIX as built-in so we can boot legacy IDE mode without adding the ata_piix driver in the initramfs
 # (some boards do not support AHCI mode)
-BALENA_CONFIGS:append_generic-amd64 = " ata_piix"
+BALENA_CONFIGS:append:generic-amd64 = " ata_piix"
 BALENA_CONFIGS[ata_piix] = " \
     CONFIG_ATA_PIIX=y \
 "
 
 # requested by customer
-BALENA_CONFIGS:append_generic-amd64 = " pinctrl_baytrail"
+BALENA_CONFIGS:append:generic-amd64 = " pinctrl_baytrail"
 BALENA_CONFIGS[pinctrl_baytrail] = " \
     CONFIG_PINCTRL_BAYTRAIL=y \
 "
 
 # requested by user (this module was previously available but apparently got removed when we updated to warrior and a new kernel)
-BALENA_CONFIGS:append_generic-amd64 = " ch341"
+BALENA_CONFIGS:append:generic-amd64 = " ch341"
 BALENA_CONFIGS[ch341] = " \
     CONFIG_USB_SERIAL_CH341=m \
 "
 
-BALENA_CONFIGS:append_generic-amd64 = " i2c_designware"
+BALENA_CONFIGS:append:generic-amd64 = " i2c_designware"
 BALENA_CONFIGS[i2c_designware] = " \
     CONFIG_I2C_DESIGNWARE_PLATFORM=y \
     CONFIG_I2C_DESIGNWARE_PCI=y \
 "
 
 # requested by user for mounting HFS drives
-BALENA_CONFIGS:append_generic-amd64 = " apple_hfs"
+BALENA_CONFIGS:append:generic-amd64 = " apple_hfs"
 BALENA_CONFIGS[apple_hfs] = " \
     CONFIG_HFS_FS=m \
     CONFIG_HFSPLUS_FS=m \
 "
 
 # requested by customer
-BALENA_CONFIGS:append_generic-amd64 = " ixgbe"
+BALENA_CONFIGS:append:generic-amd64 = " ixgbe"
 BALENA_CONFIGS[ixgbe] = " \
     CONFIG_IXGBE=m \
 "
 
 # requested by customer
-BALENA_CONFIGS:append_generic-amd64 = " xillybus"
+BALENA_CONFIGS:append:generic-amd64 = " xillybus"
 BALENA_CONFIGS[xillybus] = " \
     CONFIG_XILLYBUS=m \
     CONFIG_XILLYBUS_PCIE=m \
 "
 
 # requested by customer
-BALENA_CONFIGS:append_generic-amd64 = " i40e"
+BALENA_CONFIGS:append:generic-amd64 = " i40e"
 BALENA_CONFIGS[i40e] = " \
     CONFIG_I40E=m \
+"
+
+# requested by customer
+BALENA_CONFIGS:append:generic-amd64 = " pinctrl_alderlake"
+BALENA_CONFIGS[pinctrl_alderlake] = " \
+    CONFIG_PINCTRL_ALDERLAKE=m \
 "

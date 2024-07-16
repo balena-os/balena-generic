@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.0+rev3
+## (2024-07-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7c73eefe9aac870b5fd9050e5d429dd56b0ab4ff [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.25.6
+> ### (2024-07-15)
+> 
+> * Use App Installation tokens so we can clone private submodules [Kyle Harding]
+> 
+
+</details>
+
 # v5.4.0+rev2
 ## (2024-07-16)
 

@@ -1,4 +1,93 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 7b65acc0280a2239d7f8fcfd7260151d97b6f3d5
+      hash: 10ebf9e52307140da516af5bfca58f3478527a3a
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 7b65acc0280a2239d7f8fcfd7260151d97b6f3d5
+        changelog-entry: Update balena-yocto-scripts to 7b65acc0280a2239d7f8fcfd7260151d97b6f3d5
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: use token to fetch private contracts
+              hash: acfc8d20ce8dd4b29eae67679dd1a89ffcc75c7c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: unroll balena_lib_build_contract function
+              hash: 82c9e482f3bfb0fcd960c455f2c8ff0c42c98baa
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: unroll balena_api_is_dt_private function
+              hash: cc3102dbb1348ee563b08dfd3afd37daaa0404ca
+              body: >
+                when building + deploying or a private DT , the check to see if
+                the DT is private fails. This is due to
+                https://github.com/balena-os/balena-yocto-scripts/blob/master/automation/include/balena-api.inc#L424
+                using this function:
+                https://github.com/balena-os/balena-yocto-scripts/blob/master/automation/include/balena-lib.inc#L191
+                - which uses the jenkins deployTo variable to select the correct
+                api url and token.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.9
+          title: ""
+          date: 2024-07-22T16:18:49.689Z
+        - commits:
+            - subject: Use env vars BALENA_HOST and BALENACLOUD_SSH_URL when provided
+              hash: f04607fc0f50a99bb2fd14370a2e2dae0e3f7094
+              body: |
+                These currently differ between environments, and we will need
+                to start supporting environment names that are not the same
+                as the balena host.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.8
+          title: ""
+          date: 2024-07-17T19:56:20.231Z
+        - commits:
+            - subject: Fix handling of empty test matrix input
+              hash: 727d8d275455361d3bc82b5aec392e9aaa08248b
+              body: |
+                Previously an empty test matrix would cause
+                an error in the workflow.
+
+                Added an if condition to check for a valid
+                test_suite property where applicable.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.7
+          title: ""
+          date: 2024-07-16T20:10:01.990Z
+  version: 6.0.5+rev1
+  title: ""
+  date: 2024-07-23T00:26:34.431Z
+- commits:
     - subject: Update layers/meta-balena to 7c9d2c889576bf75a7b90fcbe3502541df286fe3
       hash: 305e67703942e04267b5784139e99acc835c2b09
       body: Update layers/meta-balena

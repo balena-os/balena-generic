@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v6.0.5+rev1
+## (2024-07-23)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7b65acc0280a2239d7f8fcfd7260151d97b6f3d5 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.25.9
+> ### (2024-07-22)
+> 
+> * use token to fetch private contracts [rcooke-warwick]
+> * unroll balena_lib_build_contract function [rcooke-warwick]
+> * unroll balena_api_is_dt_private function [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.8
+> ### (2024-07-17)
+> 
+> * Use env vars BALENA_HOST and BALENACLOUD_SSH_URL when provided [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.7
+> ### (2024-07-16)
+> 
+> * Fix handling of empty test matrix input [Kyle Harding]
+> 
+
+</details>
+
 # v6.0.5
 ## (2024-07-22)
 

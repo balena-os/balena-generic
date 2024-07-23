@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.5+rev4
+## (2024-07-23)
+
+* Update kernel from 6.1 to 6.6 [Florin Sarbu]
+
 # v6.0.5+rev3
 ## (2024-07-23)
 

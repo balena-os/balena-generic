@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update kernel from 6.1 to 6.6
+      hash: 64d427963a290f135da4a5692df24b498d2986b8
+      body: |
+        The updated recipes have been taken from scarthgap-5.0 branch of poky
+      footer:
+        Changelog-entry: Update kernel from 6.1 to 6.6
+        changelog-entry: Update kernel from 6.1 to 6.6
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.0.5+rev4
+  title: ""
+  date: 2024-07-23T20:08:47.431Z
+- commits:
     - subject: Update balena-yocto-scripts to 34b4ee6c3aeabd21b9bb7b90536d837dbf465730
       hash: 27f4d4ae5a1e04abe24798952856b0a4ecddefa3
       body: Update balena-yocto-scripts

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.5+rev5
+## (2024-07-24)
+
+* Enable module compression for generic-amd64 [Joseph Kogut]
+
 # v6.0.5+rev4
 ## (2024-07-23)
 

@@ -1,4 +1,20 @@
 - commits:
+    - subject: Enable module compression for generic-amd64
+      hash: 8655c18970ced02cf1a4bcd95b0d5e5f503cbed9
+      body: |
+        Upstream meta-balena now enables kernel module compression by default.
+        Remove the defconfig line that disables module compression.
+      footer:
+        Changelog-entry: Enable module compression for generic-amd64
+        changelog-entry: Enable module compression for generic-amd64
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 6.0.5+rev5
+  title: ""
+  date: 2024-07-24T07:22:17.965Z
+- commits:
     - subject: Update kernel from 6.1 to 6.6
       hash: 64d427963a290f135da4a5692df24b498d2986b8
       body: |

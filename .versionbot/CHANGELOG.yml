@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update layers/meta-balena to 137a7882c5f56d505ee5c757cedfb27ab20d89a8
+      hash: d6a159eb2b8ff03687b49decfbffa70ab355f90a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 137a7882c5f56d505ee5c757cedfb27ab20d89a8
+        changelog-entry: Update layers/meta-balena to 137a7882c5f56d505ee5c757cedfb27ab20d89a8
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: Fix broken links in CDS Docs"
+              hash: 1a9cee2069b3381eddbea606a5aeaa4a436f5643
+              body: ""
+              footer: {}
+              author: Vipul Gupta
+              nested: []
+          version: meta-balena-6.0.6
+          title: ""
+          date: 2024-07-25T10:23:04.133Z
+  version: 6.0.6
+  title: ""
+  date: 2024-07-25T16:34:05.550Z
+- commits:
     - subject: Enable module compression for generic-amd64
       hash: 8655c18970ced02cf1a4bcd95b0d5e5f503cbed9
       body: |

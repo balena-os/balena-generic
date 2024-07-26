@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+      hash: c9e10689948dfe6925f5fffc565b41febbda2fde
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+        changelog-entry: Update contracts to 1d499fe7d33791e1ac6dccfe031e178b7d520bb4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add new device-type Jetson AGX Orin 64GB Devkit"
+              hash: b329046af8d6427955627231ba0d332d23dc0f87
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.108
+          title: ""
+          date: 2024-07-25T08:53:00.318Z
+  version: 6.0.6+rev2
+  title: ""
+  date: 2024-07-26T02:35:12.157Z
+- commits:
     - subject: Update layers/poky to 322d4df8cb51b531a998de92298914a6710d7677
       hash: 96ab0a0b2a6e0951e11f09b445721f9f36254d86
       body: Update layers/poky

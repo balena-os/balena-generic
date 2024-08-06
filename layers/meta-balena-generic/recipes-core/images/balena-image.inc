@@ -25,7 +25,7 @@ BALENA_BOOT_PARTITION_FILES:append = "${@oe.utils.conditional('SIGN_API','','','
 
 # Increase image rootfs size to accomodate more drivers and functionality in generic images
 # This matches the value in the balena-intel generic-amd64 DT for compatibility
-IMAGE_ROOTFS_SIZE = "1024000"
+IMAGE_ROOTFS_SIZE = "8192000"
 
 IMAGE_INSTALL:append = " \
     linux-firmware \

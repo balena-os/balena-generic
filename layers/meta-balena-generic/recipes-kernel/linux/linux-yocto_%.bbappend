@@ -12,7 +12,7 @@ SRC_URI:append:generic-aarch64 = " \
     file://0002-HACK-Use-the-UNAME26-personality-to-return-armv6l-in.patch;sha256sum=a3665233eebd44dc8f34ddda9ae9446bb1ef2f9c06979850bd9cc60d1e7d6f79 \
     "
 
-KCONFIG_MODE="--alldefconfig"
+KCONFIG_MODE="alldefconfig"
 
 # enable AUFS support from kernel-balena
 BALENA_CONFIGS:append = " aufs"
@@ -132,6 +132,12 @@ BALENA_CONFIGS[batman] = "\
 BALENA_CONFIGS:append = " usb_audio"
 BALENA_CONFIGS[usb_audio]=" \
     CONFIG_SND_USB_AUDIO=m \
+"
+
+BALENA_CONFIGS:append = " usb_mass_storage"
+BALENA_CONFIGS[usb_mass_storage]  = " \
+    CONFIG_USB_MASS_STORAGE=y \
+    CONFIG_USB_UAS=y \
 "
 
 # Enable WiFi adapters that use Realtek chipset (like Edimax EW-7811Un)

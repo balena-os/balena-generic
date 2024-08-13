@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f
+      hash: a80c84298e995a6e1a8be49497ac5c4e42345e37
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f
+        changelog-entry: Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: 156711aceb7e2be7048ea668800ff9368bf35df8
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.22
+          title: ""
+          date: 2024-08-12T01:57:02.017Z
+  version: 6.0.6+rev10
+  title: ""
+  date: 2024-08-13T13:47:38.616Z
+- commits:
     - subject: Update layers/poky to bba60774f74f8c05b8fdd609e8cdc40afd59c6a8
       hash: e0bfafe6ec098feea1ab6872d1b634f0f5fb57a6
       body: Update layers/poky

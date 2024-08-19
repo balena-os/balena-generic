@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+      hash: 4ce31b12f7edb3984ddf50d43c13b07500affb39
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+        changelog-entry: Update contracts to e1d59ac348642e274b442db4a41edab5c511576c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add support for Ubuntu Noble
+              hash: 909a9e8fd4f81731975f4a82304947f82a2d5378
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: ruffsl <roxfoxpox@gmail.com>
+                signed-off-by: ruffsl <roxfoxpox@gmail.com>
+              author: ruffsl
+          version: contracts-2.0.112
+          title: ""
+          date: 2024-08-19T15:53:05.491Z
+  version: 6.0.7+rev2
+  title: ""
+  date: 2024-08-19T20:11:27.698Z
+- commits:
     - subject: Update layers/poky to 7db7a86fbc28eb8b7616010ee4542664ee65ef4f
       hash: 2ba8714772c9b3091199bd1b22e47b0d000b8129
       body: Update layers/poky

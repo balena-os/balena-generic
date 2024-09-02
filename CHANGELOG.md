@@ -1,6 +1,67 @@
 Change log
 -----------
 
+# v6.0.20+rev2
+## (2024-09-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 578161cba337cccf1a23a2b4b8a5f45cbb16abb2 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.31
+> ### (2024-09-01)
+> 
+> * Update actions/upload-artifact action to v4.4.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.30
+> ### (2024-09-01)
+> 
+> * Update balena-os/leviathan digest to ff6a079 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.29
+> ### (2024-09-01)
+> 
+> * Restrict runners via yocto label, not 16cpu [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.28
+> ### (Invalid date)
+> 
+> * checkout private contracts for test job [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.27
+> ### (2024-08-29)
+> 
+> * use apt-get to install s4cmd instead of pip [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.26
+> ### (2024-08-27)
+> 
+> * Fix if condition for checking merge commit test results [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.25
+> ### (2024-08-23)
+> 
+> * Add unique unique identifiers to summary job [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.24
+> ### (2024-08-21)
+> 
+> * ensure "force-finalize" guarantees a finalized release [rcooke-warwick]
+> * update example workflow to use "deploy-environment" input [rcooke-warwick]
+> * remove "deploy-esr" input [rcooke-warwick]
+> * remove "deploy-s3" input [rcooke-warwick]
+> * remove "deploy-hostapp" and add "force-finalize" and "finalize-on-push-if-tests-passed" [rcooke-warwick]
+> * rename "envinroment" input to "deploy-environment" for clarity [rcooke-warwick]
+> * remove os-dev input [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.25.23
+> ### (2024-08-15)
+> 
+> * Add mermaid flowchart to yocto workflow README [Kyle Harding]
+> 
+
+</details>
+
 # v6.0.20+rev1
 ## (2024-09-01)
 

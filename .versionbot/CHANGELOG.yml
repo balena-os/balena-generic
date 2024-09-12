@@ -1,4 +1,121 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+      hash: 54df5654ea05587217b5580318121ec45ffc3e3b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+        changelog-entry: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.11.0
+              hash: f96ac0de8cb911cacb2e9699a35d2b7a22cd7404
+              body: |
+                Update actions/create-github-app-token from 1.10.4 to 1.11.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.39
+          title: ""
+          date: 2024-09-11T22:32:31.676Z
+        - commits:
+            - subject: Include semver when bumping leviathan action
+              hash: 39084536604f4713516ab50bce7a82a0aae28523
+              body: >
+                This makes it more human readable, and allows us to treat patch,
+                minor, and major revisions of the action differently if needed.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.38
+          title: ""
+          date: 2024-09-09T17:05:16.878Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to 8fb47f2
+              hash: 0bdd362c660078414259a167e492f1e91f3ea70e
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.37
+          title: ""
+          date: 2024-09-05T23:21:25.987Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to 5db2b5d
+              hash: 3ea0421883a4c50185c8fa4f66de9f4e74f12a0b
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.36
+          title: ""
+          date: 2024-09-05T16:03:09.417Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to da52396
+              hash: 807851bdb98648080dfd8565e3de047f92323454
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.35
+          title: ""
+          date: 2024-09-04T09:07:04.754Z
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.10.4
+              hash: e6a68531b03ca9d6b477fa85c9ec43990edd1a7a
+              body: |
+                Update actions/create-github-app-token from 1.10.3 to 1.10.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.34
+          title: ""
+          date: 2024-09-04T06:38:29.340Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to d8572e2
+              hash: 32066fde42690d51da3609f028cb68a2e3c7be2c
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.33
+          title: ""
+          date: 2024-09-02T19:01:22.932Z
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: ef09edfd0b30062bbf0744e9fa2694a1326544ed
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.32
+          title: ""
+          date: 2024-09-02T01:59:38.392Z
+  version: 6.0.20+rev4
+  title: ""
+  date: 2024-09-12T03:51:39.861Z
+- commits:
     - subject: Update layers/poky to 2b5ca6638e1a490a1230bccdb34a95b43f3d253e
       hash: 4998bc34b2701ce148a40a0f12b1f0223e0f04e1
       body: Update layers/poky

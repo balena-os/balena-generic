@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.0.23
+## (2024-09-13)
+
+
+<details>
+<summary> Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.23
+> ### (2024-09-12)
+> 
+> * tests:os: Avoid setting apiEndpoint for unmanaged tests [Kyle Harding]
+> 
+> ## meta-balena-6.0.22
+> ### (2024-09-12)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.39 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.21
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.30 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.0.20+rev4
 ## (2024-09-12)
 

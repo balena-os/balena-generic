@@ -1,4 +1,64 @@
 - commits:
+    - subject: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+      hash: fd25a5030c64d17a09473d33911d1fa2455ba256
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+        changelog-entry: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests:os: Avoid setting apiEndpoint for unmanaged tests"
+              hash: 123e5476c4740abb29e0818d93449ca8da804f5c
+              body: >
+                When this config.json field has a value, the supervisor will
+                treat the device as managed and will crash and start to boot
+                loop.
+
+
+                On faster device-types we don't seem to notice and the tests
+                pass by chance, but on Pi Zero and similar we consistently see
+                ECONNRESET when hitting local SV endpoints.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.23
+          title: ""
+          date: 2024-09-12T18:15:21.088Z
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.25.39
+              hash: 6e1c2685e6be2982ca7175936e0f4babae37081f
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.30 to v1.25.39
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.22
+          title: ""
+          date: 2024-09-12T01:14:39.979Z
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.25.30
+              hash: c6c64ab317c0a7756c6a0aa218ab656b468b56df
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.28 to v1.25.30
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.21
+          title: ""
+          date: 2024-09-01T04:40:51.408Z
+  version: 6.0.23
+  title: ""
+  date: 2024-09-13T01:52:08.315Z
+- commits:
     - subject: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
       hash: 54df5654ea05587217b5580318121ec45ffc3e3b
       body: Update balena-yocto-scripts

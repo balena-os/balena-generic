@@ -1,4 +1,59 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 659a7ebd075bb77fb46422d377a68458acbc646d
+      hash: 91a194d3540ad81bf8f5e82b1bb705e29a2696b1
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 659a7ebd075bb77fb46422d377a68458acbc646d
+        changelog-entry: Update balena-yocto-scripts to 659a7ebd075bb77fb46422d377a68458acbc646d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.44
+              hash: ec2c830e179ca39b6338b48c1949d70e36944317
+              body: |
+                Update balena-os/leviathan from 2.31.43 to 2.31.44
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.44
+          title: ""
+          date: 2024-09-18T20:53:09.966Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.43
+              hash: 1d06142fd45940bb41e902b3c03ba6fa5e1c7665
+              body: |
+                Update balena-os/leviathan from 2.31.40 to 2.31.43
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.43
+          title: ""
+          date: 2024-09-18T13:23:47.644Z
+        - commits:
+            - subject: only upload artifacts when test_matrix is defined
+              hash: 51751d241c7e845351e3a26c74e615157ad38f52
+              body: >
+                This prevents uploads of artifacts that will never be used - as
+                they are only used in the tests step, if there are no tests then
+                no need to upload
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.42
+          title: ""
+          date: 2024-09-18T11:05:33.621Z
+  version: 6.0.24+rev4
+  title: ""
+  date: 2024-09-19T07:10:39.696Z
+- commits:
     - subject: Update layers/poky to e938b18b5342bd28eadb44ad39dbf1f5cf5be09b
       hash: 1a784e3a636dca9d36ca4d08d16f16158ee5110c
       body: Update layers/poky

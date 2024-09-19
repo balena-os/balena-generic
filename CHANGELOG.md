@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.0.24+rev4
+## (2024-09-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 659a7ebd075bb77fb46422d377a68458acbc646d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.44
+> ### (2024-09-18)
+> 
+> * Update balena-os/leviathan action to v2.31.44 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.43
+> ### (2024-09-18)
+> 
+> * Update balena-os/leviathan action to v2.31.43 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.42
+> ### (2024-09-18)
+> 
+> * only upload artifacts when test_matrix is defined [rcooke-warwick]
+> 
+
+</details>
+
 # v6.0.24+rev3
 ## (2024-09-16)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GHA workflows for each device type
+      hash: f41e8aa4585ca65bd5746073d4dae2b960a7b4b1
+      body: ""
+      footer:
+        Changelog-entry: Add GHA workflows for each device type
+        changelog-entry: Add GHA workflows for each device type
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 6.0.36
+  title: ""
+  date: 2024-10-17T12:52:45.383Z
+- commits:
     - subject: Update balena-yocto-scripts to 0899d814aa7f25d48825ac701c61e066f7b0c4f5
       hash: af545a991f0c9277743cb2a671536f940cae67b4
       body: Update balena-yocto-scripts

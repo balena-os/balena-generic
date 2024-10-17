@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.36
+## (2024-10-17)
+
+* Add GHA workflows for each device type [Kyle Harding]
+
 # v6.0.24+rev5
 ## (2024-09-20)
 

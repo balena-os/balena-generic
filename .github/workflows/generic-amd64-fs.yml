@@ -29,7 +29,7 @@ on:
         description: Environment to use for build and deploy
         required: false
         type: string
-        default: balena-staging.com
+        default: balena-staging.com+generic-amd64-fs-signing-key
       meta-balena-ref:
         description: meta-balena ref if not the currently pinned version
         required: false

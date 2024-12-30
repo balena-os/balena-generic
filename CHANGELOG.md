@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.36+rev2
+## (2024-12-30)
+
+* Allow custom meta-balena ref on workflow dispatch [Kyle Harding]
+
 # v6.0.36+rev1
 ## (2024-12-30)
 

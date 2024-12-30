@@ -1,4 +1,20 @@
 - commits:
+    - subject: Allow custom meta-balena ref on workflow dispatch
+      hash: a8374a0e025321f4454d0aa908b77c2fadc2b4a3
+      body: |
+        This enables manual testing of meta-balena PRs directly
+        on device repos.
+      footer:
+        Changelog-entry: Allow custom meta-balena ref on workflow dispatch
+        changelog-entry: Allow custom meta-balena ref on workflow dispatch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 6.0.36+rev2
+  title: ""
+  date: 2024-12-30T17:27:33.989Z
+- commits:
     - subject: Explicitly set GITHUB_TOKEN permissions for yocto workflow
       hash: 121061e0a8723a53a68ef2bbeb4393196fc5f112
       body: ""

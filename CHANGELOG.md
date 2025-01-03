@@ -1,6 +1,314 @@
 Change log
 -----------
 
+# v6.0.36+rev3
+## (2025-01-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a5d24c7ba0efb8441fca45d3cf103c86765edd7d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.4
+> ### (Invalid date)
+> 
+> * Update actions/create-github-app-token action to v1.11.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.3
+> ### (Invalid date)
+> 
+> * Update balena-os/leviathan action to v2.31.77 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.2
+> ### (2024-12-20)
+> 
+> * Update actions/upload-artifact action to v4.5.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.1
+> ### (2024-12-19)
+> 
+> * Update balena-os/leviathan action to v2.31.76 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.0
+> ### (2024-12-19)
+> 
+> * Append to MIRRORS instead of PREMIRRORS to limit egress [Kyle Harding]
+> * Use dedicated AWS S3 buckets for download mirrors [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.29.10
+> ### (2024-12-19)
+> 
+> * Update balena-os/leviathan action to v2.31.75 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.9
+> ### (2024-12-19)
+> 
+> * Update balena-os/leviathan action to v2.31.73 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.8
+> ### (2024-12-18)
+> 
+> * Update balena-os/leviathan action to v2.31.72 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.7
+> ### (2024-12-17)
+> 
+> * Unset AWS credentials to avoid overriding MinIO credentials [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.29.6
+> ### (2024-12-17)
+> 
+> * Update balena-os/leviathan action to v2.31.71 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.5
+> ### (2024-12-16)
+> 
+> * Remove hostapp creation step [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.29.4
+> ### (2024-12-14)
+> 
+> * Compress artifacts with gzip and zstd before encrypting [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.29.3
+> ### (2024-12-13)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.2
+> ### (2024-12-13)
+> 
+> * Update balena-os/leviathan action to v2.31.70 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.29.1
+> ### (2024-12-13)
+> 
+> * re-enable AMI deploys [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.29.0
+> ### (2024-12-13)
+> 
+> * Use S3 sstate cache on self-hosted runners [Kyle Harding]
+> * Sync shared downloads to S3 to use as a sources mirror [Kyle Harding]
+> * Sync the shared sstate to github actions cache [Kyle Harding]
+> * Use legacy yocto NFS cache as a source mirror [Kyle Harding]
+> * Enable mirror tarballs bitbake feature [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.28.1
+> ### (2024-12-10)
+> 
+> * Update balena-os/leviathan action to v2.31.69 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.28.0
+> ### (2024-12-09)
+> 
+> * Update the App Id and Private Key for ephemeral app tokens [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.20
+> ### (2024-12-09)
+> 
+> * barys: add support for scarthgap [Joseph Kogut]
+> * barys: make honister+ syntax default [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.27.19
+> ### (2024-12-07)
+> 
+> * Update balena-os/leviathan action to v2.31.68 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.18
+> ### (2024-12-07)
+> 
+> * Update balena-os/leviathan action to v2.31.67 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.17
+> ### (2024-12-04)
+> 
+> * Update balena-os/leviathan action to v2.31.66 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.16
+> ### (2024-11-29)
+> 
+> * Set additional github token permissions [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.27.15
+> ### (2024-11-23)
+> 
+> * Update balena-os/leviathan action to v2.31.65 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.14
+> ### (2024-11-20)
+> 
+> * Update balena-os/leviathan action to v2.31.62 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.13
+> ### (2024-11-18)
+> 
+> * Explicitly set GH_TOKEN permissions [Anton Belodedenko]
+> 
+> ## balena-yocto-scripts-1.27.12
+> ### (2024-11-18)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.11
+> ### (2024-11-17)
+> 
+> * github/workflows/yocto-build-deploy.yml: Add hostapp metadata to OS release [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.27.10
+> ### (2024-11-11)
+> 
+> * Set explicit permissions at the job level [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.9
+> ### (2024-11-11)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.8
+> ### (2024-11-04)
+> 
+> * Update product-os/review-commit-action action to v0.1.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.7
+> ### (2024-11-04)
+> 
+> * Update Pin product-os/review-commit-action action to 81db18c [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.6
+> ### (2024-11-04)
+> 
+> * Use official aws cli binaries and commands [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.5
+> ### (2024-11-04)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.4
+> ### (2024-11-01)
+> 
+> * Update actions/checkout action to v4.2.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.3
+> ### (2024-10-29)
+> 
+> * Add pull request write permissions for workflow approvals [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.2
+> ### (2024-10-23)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.1
+> ### (2024-10-23)
+> 
+> * remove CLI check if not deploying [rcooke-warwick]
+> 
+> ## balena-yocto-scripts-1.27.0
+> ### (2024-10-23)
+> 
+> * add review-commit-action to wait for approvals on PRT events [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.26.0
+> ### (2024-10-15)
+> 
+> * Expose secure boot testing features via matrix input [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.63
+> ### (2024-10-11)
+> 
+> * Update balena-os/leviathan action to v2.31.60 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.62
+> ### (2024-10-11)
+> 
+> * Fix concurrency and cancel in progress contexts [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.25.61
+> ### (2024-10-10)
+> 
+> * Update balena-os/leviathan action to v2.31.59 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.60
+> ### (2024-10-09)
+> 
+> * Update actions/upload-artifact action to v4.4.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.59
+> ### (2024-10-09)
+> 
+> * Update actions/upload-artifact action to v4.4.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.58
+> ### (2024-10-09)
+> 
+> * Update balena-os/leviathan action to v2.31.56 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.57
+> ### (2024-10-08)
+> 
+> * Update balena-os/leviathan action to v2.31.54 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.56
+> ### (2024-10-07)
+> 
+> * Update actions/upload-artifact action to v4.4.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.55
+> ### (2024-10-07)
+> 
+> * Update balena-os/leviathan action to v2.31.51 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.54
+> ### (2024-10-07)
+> 
+> * Update actions/checkout action to v4.2.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.53
+> ### (2024-10-07)
+> 
+> * fix balena deploy quotes [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.25.52
+> ### (2024-10-07)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.51
+> ### (2024-10-04)
+> 
+> * Update balena-os/leviathan action to v2.31.50 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.50
+> ### (2024-10-02)
+> 
+> * use github app installation token for device repository cloning [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.25.49
+> ### (2024-10-01)
+> 
+> * Only attempt to decrypt if we have encrypted in the build step [Ryan Cooke]
+> * Fetch full depth in order to checkout custom meta-balena-refs [Kyle Harding]
+> * Encrypt balenaOS artifacts at rest in GitHub [Anton Belodedenko]
+> 
+> ## balena-yocto-scripts-1.25.48
+> ### (2024-10-01)
+> 
+> * Update actions/checkout action to v4.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.47
+> ### (Invalid date)
+> 
+> * patch: Stop persisting credentials in actions/checkout [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## balena-yocto-scripts-1.25.46
+> ### (2024-09-27)
+> 
+> * use genericx86-64-ext image for testing the workflow [rcooke-warwick]
+> 
+
+</details>
+
 # v6.0.36+rev2
 ## (2024-12-30)
 

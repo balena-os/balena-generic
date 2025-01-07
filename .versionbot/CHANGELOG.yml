@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8d8a26d86da4a0b87f71d27f9b4504023491063e
+      hash: ed8b33643f6005fd436fbb9d682810aa867e8e26
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8d8a26d86da4a0b87f71d27f9b4504023491063e
+        changelog-entry: Update balena-yocto-scripts to 8d8a26d86da4a0b87f71d27f9b4504023491063e
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.79
+              hash: 57ef02559c9c4ecaf03c66e3220faf35cbea5cbf
+              body: |
+                Update balena-os/leviathan from 2.31.78 to 2.31.79
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.7
+          title: ""
+          date: 2025-01-06T22:10:03.219Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.78
+              hash: f3fdcbd7cf4e8240ed6656ce5d829d0753697e62
+              body: |
+                Update balena-os/leviathan from 2.31.77 to 2.31.78
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.6
+          title: ""
+          date: 2025-01-06T19:57:35.033Z
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: 477caabec217e54e26cdc693c5f62d676f8ae5da
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.5
+          title: ""
+          date: 2025-01-06T02:04:17.135Z
+  version: 6.0.36+rev4
+  title: ""
+  date: 2025-01-07T03:01:12.427Z
+- commits:
     - subject: Update balena-yocto-scripts to a5d24c7ba0efb8441fca45d3cf103c86765edd7d
       hash: d00d7b9e4dc753b27ad43bc82987f80d71f58fc3
       body: Update balena-yocto-scripts

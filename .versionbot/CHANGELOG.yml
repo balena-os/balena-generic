@@ -1,4 +1,175 @@
 - commits:
+    - subject: Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189
+      hash: b219046046088c3ae9a0ff201a3ef7b67cd0bf58
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189
+        changelog-entry: Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "sw.os+hw.device-type: Add Forecr DSB Orin Nano 8GB and Orin NX 16GB
+                distro tpl files"
+              hash: 62db64e1b73ce5b40f3d672109496ee9b6721c25
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+            - subject: "forecr-dsb-ornx-lan-orin-nx-16gb: Add new public device type"
+              hash: fa485d9a76dcbaf1d2e160889e36fe531d10fc10
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.124
+          title: ""
+          date: 2025-01-07T08:35:14.426Z
+        - commits:
+            - subject: "Forecr DSB ORNX: Update device name"
+              hash: 06d7cd7e8cd4864a6cb7547adb76ad698b821c4c
+              body: >
+                ... to match the carrier board more clearly. The slug stays the
+                same as the device is already present in the API.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.123
+          title: ""
+          date: 2025-01-02T09:27:41.615Z
+        - commits:
+            - subject: "hw.device-type: add Forecr DSB ORNX entries"
+              hash: aaacf7dde8997f5291da82aab537ca902a24267e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Suykov <alex.suykov@sirinsoftware.com>
+                signed-off-by: Alex Suykov <alex.suykov@sirinsoftware.com>
+              author: Alex Suykov
+          version: contracts-2.0.122
+          title: ""
+          date: 2024-12-23T10:57:21.261Z
+        - commits:
+            - subject: "hw.device-type: Fix compatibility with existing sdk structure"
+              hash: e234b48207f0a7e82e56fb636d2791ba2a364a68
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.121
+          title: ""
+          date: 2024-12-18T20:31:37.211Z
+        - commits:
+            - subject: add eg5120-imx8mp contract
+              hash: 272015edab63d911b6a716b43d3ef52f3c577153
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+          version: contracts-2.0.120
+          title: ""
+          date: 2024-12-18T12:47:37.969Z
+        - commits:
+            - subject: "contracts/hw.device-type: Update instructions for Orin flasher types"
+              hash: 79b1757276a189f0b898903f5d85658e0b5c478a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.119
+          title: ""
+          date: 2024-12-16T04:57:49.690Z
+        - commits:
+            - subject: "hw.device-type: update logo for nitrogen8M Mini"
+              hash: 3da872b57b5e5ff700410e0ceda9ac5bdac208e7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Jonathan Berger
+          version: contracts-2.0.118
+          title: ""
+          date: 2024-12-04T16:14:00.912Z
+        - commits:
+            - subject: "hw.device-type: Rename Seeed J3010 and J4012 to include module name"
+              hash: f803589c9885fb0d8cee7d9c674ec6bde235e7af
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.117
+          title: ""
+          date: 2024-11-25T15:38:04.848Z
+        - commits:
+            - subject: Add alpine 3.20
+              hash: 6d47b5012c98f11c2a6e83944509aee90db099c0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Otavio Jacobi
+          version: contracts-2.0.116
+          title: ""
+          date: 2024-10-17T14:55:03.926Z
+        - commits:
+            - subject: Add alpine 3.19
+              hash: a598678f0c478fe3f0f8a560d3e698ace3561e26
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Otavio Jacobi
+          version: contracts-2.0.115
+          title: ""
+          date: 2024-10-17T14:01:53.134Z
+        - commits:
+            - subject: "sw.os+hw.device-type: Update all Orin devices to r36.3 in
+                sources.list"
+              hash: f2b34b2d9c7c6a58b74984ca5c14217effe253d0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+            - subject: "hw.device-type: Remove superfluous instructions for beagleplay"
+              hash: 3f400e0f27d792734a2db70cc53863ffeb87907c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.114
+          title: ""
+          date: 2024-10-09T13:56:48.392Z
+  version: 6.0.36+rev6
+  title: ""
+  date: 2025-01-10T06:09:26.996Z
+- commits:
     - subject: Update layers/meta-openembedded to
         66ec16850573a7ec69248b81f9904cdfba79b930
       hash: 12cfff0960157812444b94ae2d78cca925cec42b

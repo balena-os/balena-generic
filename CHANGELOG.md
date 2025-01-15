@@ -1,6 +1,66 @@
 Change log
 -----------
 
+# v6.0.36+rev9
+## (2025-01-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to f5ec6993fd683b9a933bda067594ae5de6208fbd [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.16
+> ### (2025-01-13)
+> 
+> * workflows: yocto-build-deploy: allow to pass barys arguments [Alex Gonzalez]
+> * barys: allow for custom templates [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.30.15
+> ### (2025-01-13)
+> 
+> * revert to building secure boot with cache [Alex Gonzalez]
+> * workflows: yocto-build-deploy: allow to override SIGN_GRUB_KEY_ID [Alex Gonzalez]
+> * workflows: yocto-build-deploy: add PKI signing key ID [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.30.14
+> ### (2025-01-10)
+> 
+> * Update actions/upload-artifact action to v4.6.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.13
+> ### (2025-01-10)
+> 
+> * workflows: yocto-build-deploy: add SSH key to environment [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.30.12
+> ### (2025-01-09)
+> 
+> * Update balena-os/leviathan action to v2.31.83 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.11
+> ### (2025-01-09)
+> 
+> * Update balena-os/leviathan action to v2.31.82 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.10
+> ### (2025-01-09)
+> 
+> * Update tespkg/actions-cache action to v1.7.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.9
+> ### (2025-01-09)
+> 
+> * Update balena-os/leviathan action to v2.31.81 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.8
+> ### (2025-01-09)
+> 
+> * Upload yocto build logs even on failure [Kyle Harding]
+> 
+
+</details>
+
+* Update balena-os/balena-yocto-scripts to f5ec6993fd683b9a933bda067594ae5de6208fbd [balena-renovate[bot]]
+
 # v6.0.36+rev8
 ## (2025-01-13)
 

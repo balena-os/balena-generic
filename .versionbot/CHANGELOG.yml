@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update balena-yocto-scripts to c4cc5bde6b8c50f80d4c163776e4ff62609565cf
+      hash: 838b72788b03f674db4174870e013bd3c780788a
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to c4cc5bde6b8c50f80d4c163776e4ff62609565cf
+        changelog-entry: Update balena-yocto-scripts to c4cc5bde6b8c50f80d4c163776e4ff62609565cf
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.87
+              hash: 72422a8e8023a78b6cf76adc899f864b38edeab9
+              body: |
+                Update balena-os/leviathan from 2.31.86 to 2.31.87
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.22
+          title: ""
+          date: 2025-01-28T01:48:55.645Z
+        - commits:
+            - subject: Update aws-actions/configure-aws-credentials action to v4.0.3
+              hash: 5bf1f0e3fa2bd91d483e37b3391ea6f83f4b53c7
+              body: |
+                Update aws-actions/configure-aws-credentials from 4.0.2 to 4.0.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.21
+          title: ""
+          date: 2025-01-27T22:49:35.974Z
+  version: 6.0.36+rev13
+  title: ""
+  date: 2025-01-28T04:12:43.400Z
+- commits:
     - subject: Update balena-yocto-scripts to 0e3ab8bae71aa2164e9f9998bfae4c06f2a70bfe
       hash: 782acb2cae2a760a864b20d68b3316ec22b0d7be
       body: Update balena-yocto-scripts

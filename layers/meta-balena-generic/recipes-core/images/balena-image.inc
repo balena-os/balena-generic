@@ -1,5 +1,4 @@
 DEPENDS:remove = "kernel-modules-headers"
-IMAGE_FSTYPES = " balenaos-img"
 
 PARTITION_TABLE_TYPE = "gpt"
 

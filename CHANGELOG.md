@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.0.36+rev16
+## (2025-01-30)
+
+* Unblock builds for secure boot enabled device types [Michal Toman]
+
 # v6.0.36+rev15
 ## (2025-01-28)
 

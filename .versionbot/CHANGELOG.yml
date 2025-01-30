@@ -1,4 +1,29 @@
 - commits:
+    - subject: Unblock builds for secure boot enabled device types
+      hash: 881f866966fdd3302d260b849e4492e062d26d6b
+      body: |
+        At this moment meta-balena-raspberrypi overrides IMAGE_FSTYPES, which
+        breaks the build of signed images, because we have introduced a separate
+        image type for that use case. The override also seems unnecessary,
+        as it sets the value to the exact same thing that meta-balena already
+        did.
+
+        This patch removes the override and makes the devices use
+        the definition from meta-balena, which does account for the signature
+        split.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Unblock builds for secure boot enabled device types
+        changelog-entry: Unblock builds for secure boot enabled device types
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.0.36+rev16
+  title: ""
+  date: 2025-01-30T11:53:04.796Z
+- commits:
     - subject: Update contracts to b042ab7fbdd2b774e8b462f442c1c37fa6da1377
       hash: 8845c446bc07d7697cf3b5597545875d21c0c25a
       body: Update contracts

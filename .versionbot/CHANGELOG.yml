@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 6840d3b71ed6adfcd2c2e46daf8a93d3755c5d99
+      hash: 07ecb394272c3f2603494593ac4dcd81e97f9b47
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 6840d3b71ed6adfcd2c2e46daf8a93d3755c5d99
+        changelog-entry: Update layers/poky to 6840d3b71ed6adfcd2c2e46daf8a93d3755c5d99
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.0.36+rev17
+  title: ""
+  date: 2025-02-05T18:05:50.837Z
+- commits:
     - subject: Unblock builds for secure boot enabled device types
       hash: 881f866966fdd3302d260b849e4492e062d26d6b
       body: |

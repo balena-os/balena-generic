@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v6.3.14+rev1
+## (2025-02-06)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.26
+> ### (2025-02-06)
+> 
+> * Update actions/create-github-app-token action to v1.11.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.25
+> ### (2025-02-06)
+> 
+> * generate-oscontracts: remove sw.os-image selector [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.30.24
+> ### (2025-02-03)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.23
+> ### (2025-02-01)
+> 
+> * Update actions/create-github-app-token action to v1.11.2 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.3.14
 ## (2025-02-06)
 

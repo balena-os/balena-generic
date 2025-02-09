@@ -1,4 +1,109 @@
 - commits:
+    - subject: Update layers/meta-balena to 83093879d05654ba3a01c4409813f1cf0fe56206
+      hash: a91d8e0bb720fdb19c29b1a062aadb3eba94829a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 83093879d05654ba3a01c4409813f1cf0fe56206
+        changelog-entry: Update layers/meta-balena to 83093879d05654ba3a01c4409813f1cf0fe56206
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/setup-python digest to 4237552
+              hash: 9eadb53467b9c6e5bf39d33010119e74ed9d4792
+              body: >
+                Update actions/setup-python to
+                42375524e23c412d93fb67b49958b491fce71c38
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.3.18
+          title: ""
+          date: 2025-02-07T17:32:47.609Z
+        - commits:
+            - subject: Update tests/leviathan digest to ae96a7e
+              hash: 00cec0d947cd10e91d635e37a977dcaf68803852
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.57
+                      hash: b25a64d8d003c4f9eea7c4bd5f1b6438f12730f5
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.50 to 2.9.57
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.89
+                  title: ""
+                  date: 2025-02-06T20:21:54.156Z
+                - commits:
+                    - subject: Fix running tests over local worker IP
+                      hash: 0a642b8a0e21f9740ae8982f99da3506d62253a3
+                      body: >
+                        This has been broken since splitting the core from the
+                        worker - fixing it enables running tests with a local
+                        worker without the VPN, much faster and avoids VPN file
+                        transfer issues
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: Ryan Cooke
+                      nested: []
+                  version: leviathan-2.31.88
+                  title: ""
+                  date: 2025-02-06T14:35:10.115Z
+          version: meta-balena-6.3.17
+          title: ""
+          date: 2025-02-07T14:19:23.643Z
+        - commits:
+            - subject: "tests: os: swap: increase wiggle room in swap check"
+              hash: f13121bba5b413c932afd8f8db43f87ccb7bca0a
+              body: >
+                We encountered the variance in expected and measured swap in the
+                rpi5 to be higher than the allowed value of 10 - to make this
+                safe and allowing of more device types, changed the allowed
+                variation - still small enough to actually check the value is
+                right, but should reduce false negatives
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.3.16
+          title: ""
+          date: 2025-02-06T18:25:14.533Z
+        - commits:
+            - subject: "tests: cloud: env vars: restart supervisor to speed up tests"
+              hash: 047519b3d11b48b55a6dac8b5d5b4af63cb85171
+              body: >
+                Tests can get stuck here for 15 to 20 minutes if the timings are
+                unlucky. Forcing a supervisor restart ensures a clean slate and
+                ensures that the variables are included as quickly as possible
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.3.15
+          title: ""
+          date: 2025-02-06T17:05:15.720Z
+  version: 6.3.18
+  title: ""
+  date: 2025-02-09T18:33:47.105Z
+- commits:
     - subject: Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1
       hash: 917681396ed1c49730bd88830a8070e5bbd2db59
       body: Update balena-yocto-scripts

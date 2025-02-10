@@ -63,6 +63,8 @@ jobs:
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot
       sign-image: true
+      # Publish AMI for this device type
+      deploy-ami: true
       # Use QEMU workers for testing and run cloud suite against balenaCloud production.
       test_matrix: >
         {

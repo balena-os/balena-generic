@@ -1,4 +1,18 @@
 - commits:
+    - subject: Allow text matrix to use any x86 KVM runners
+      hash: ba0cdcfbe4cc362cbc0f406a5040acf206f27f7c
+      body: |
+        The boot issue on EPYC processors was resolved
+        by bumping OMVF in the leviathan-worker container.
+      footer:
+        Changelog-entry: Allow text matrix to use any x86 KVM runners
+        changelog-entry: Allow text matrix to use any x86 KVM runners
+      author: Kyle Harding
+      nested: []
+  version: 6.3.18+rev3
+  title: ""
+  date: 2025-02-10T15:21:53.511Z
+- commits:
     - subject: Update contracts to 1adfd1c331b3464969cc09a5c7cc3583ef1fe3de
       hash: 55b22cd1a369478b39ee3f56bcad37fe61556940
       body: Update contracts

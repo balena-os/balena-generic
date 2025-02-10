@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.18+rev3
+## (2025-02-10)
+
+* Allow text matrix to use any x86 KVM runners [Kyle Harding]
+
 # v6.3.18+rev2
 ## (2025-02-09)
 

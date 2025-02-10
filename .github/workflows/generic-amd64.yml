@@ -64,13 +64,11 @@ jobs:
       # Sign image for secure boot
       sign-image: true
       # Use QEMU workers for testing and run cloud suite against balenaCloud production.
-      # Avoid the AMD EPYC processors on the AX162 hosts as they seem to break SMP for secure boot.
-      # The AMD Ryzen 9 7950X3D 16-Core Processor is found in the AX102 hosts.
       test_matrix: >
         {
           "test_suite": ["os","cloud","hup"],
           "environment": ["balena-cloud.com"],
           "worker_type": ["qemu"],
-          "runs_on": [["self-hosted", "X64", "kvm", "cpu_model:AMD_Ryzen_9_7950X3D_16-Core_Processor"]],
+          "runs_on": [["self-hosted", "X64", "kvm"]],
           "secure_boot": ["sb",""]
         }

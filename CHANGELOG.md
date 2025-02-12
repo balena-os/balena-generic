@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.18+rev4
+## (2025-02-12)
+
+* workflows: deploy ami for generic-amd64 [Ryan Cooke]
+
 # v6.3.18+rev3
 ## (2025-02-10)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: "workflows: deploy ami for generic-amd64"
+      hash: d3491a257903f374e18e6027ebcd4837c365658b
+      body: ""
+      footer:
+        Changelog-entry: "workflows: deploy ami for generic-amd64"
+        changelog-entry: "workflows: deploy ami for generic-amd64"
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 6.3.18+rev4
+  title: ""
+  date: 2025-02-12T16:23:41.118Z
+- commits:
     - subject: Allow text matrix to use any x86 KVM runners
       hash: ba0cdcfbe4cc362cbc0f406a5040acf206f27f7c
       body: |

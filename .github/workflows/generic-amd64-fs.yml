@@ -29,7 +29,7 @@ on:
         description: Environment to use for build and deploy
         required: false
         type: string
-        default: balena-staging.com+generic-amd64-fs-signing-key
+        default: balena-staging.com
       meta-balena-ref:
         description: meta-balena ref if not the currently pinned version
         required: false
@@ -58,10 +58,11 @@ jobs:
       # Allow manual workflow runs to force finalize without checking previous test runs
       force-finalize: ${{ inputs.force-finalize || false }}
       # Default to balena-staging.com for workflow dispatch, but balena-cloud.com for other events
-      deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com+generic-amd64-fs-signing-key' }}
+      deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com' }}
       # Allow overriding the meta-balena ref for workflow dispatch events
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot
       sign-image: true
+      signing-environment: sign.balena-cloud.com+generic-amd64-fs
       # FIXME: Disable finalize-on-push until we have a test to verify that SIGN_KMOD_KEY_APPEND is set
       finalize-on-push-if-tests-passed: false

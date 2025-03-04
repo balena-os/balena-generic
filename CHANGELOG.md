@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.18+rev6
+## (2025-03-04)
+
+* Add patch for cdc_mbim.c to solve problem with ALAS5 [Kirill Zabelin]
+
 # v6.3.18+rev5
 ## (2025-03-03)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add patch for cdc_mbim.c to solve problem with ALAS5
+      hash: 3df8efb76b38fe6875b889c07eaee7ae6952376d
+      body: |
+        Add patch for cdc_mbim.c to solve kernel panic during initialisation
+        of ALAS5 modem which might happens some times because of race condition
+      footer:
+        Changelog-entry: Add patch for cdc_mbim.c to solve problem with ALAS5
+        changelog-entry: Add patch for cdc_mbim.c to solve problem with ALAS5
+      author: Kirill Zabelin
+      nested: []
+  version: 6.3.18+rev6
+  title: ""
+  date: 2025-03-04T14:11:46.037Z
+- commits:
     - subject: Provide signing environments to yocto workflows
       hash: 147181290a81b37e9d274c8900e27b7d73daa9df
       body: ""

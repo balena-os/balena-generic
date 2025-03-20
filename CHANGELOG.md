@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.18+rev13
+## (2025-03-20)
+
+* Switch to using the balena-os poky clone [Florin Sarbu]
+
 # v6.3.18+rev12
 ## (2025-03-18)
 

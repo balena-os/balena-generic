@@ -1,4 +1,18 @@
 - commits:
+    - subject: Switch to using the balena-os poky clone
+      hash: 735d537bab8a72986e8098214e7cb80ffd43f99c
+      body: ""
+      footer:
+        Changelog-entry: Switch to using the balena-os poky clone
+        changelog-entry: Switch to using the balena-os poky clone
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.3.18+rev13
+  title: ""
+  date: 2025-03-20T22:51:48.742Z
+- commits:
     - subject: Update balena-yocto-scripts to afdf2b80f244f0b9fd62c26ef50988a0f244f619
       hash: 8359ee55d8ea76068c88dc5727fad065130f8b62
       body: Update balena-yocto-scripts

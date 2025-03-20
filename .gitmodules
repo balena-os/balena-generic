@@ -4,7 +4,7 @@
 	branch = master
 [submodule "layers/poky"]
 	path = layers/poky
-	url = https://git.yoctoproject.org/git/poky
+	url = https://github.com/balena-os/poky
 	branch = kirkstone
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena

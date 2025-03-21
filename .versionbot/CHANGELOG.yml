@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update contracts to de98cd4040268e71693710039c7c9c91b1a07cfc
+      hash: 0fec5f5e6bd41c43e0167b30138ff8033bba8500
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to de98cd4040268e71693710039c7c9c91b1a07cfc
+        changelog-entry: Update contracts to de98cd4040268e71693710039c7c9c91b1a07cfc
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Mark Bookworm as the default version for Debian
+              hash: a8bfdf9a34c4642608db6d3140fd95bbc629f477
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Thodoris Greasidis
+          version: contracts-2.0.129
+          title: ""
+          date: 2025-03-14T13:31:13.451Z
+  version: 6.3.18+rev14
+  title: ""
+  date: 2025-03-21T03:13:08.751Z
+- commits:
     - subject: Switch to using the balena-os poky clone
       hash: 735d537bab8a72986e8098214e7cb80ffd43f99c
       body: ""

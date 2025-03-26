@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.18+rev17
+## (2025-03-26)
+
+* Make UAS driver built in [Michal Toman]
+
 # v6.3.18+rev16
 ## (2025-03-25)
 

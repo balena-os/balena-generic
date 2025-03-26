@@ -1,4 +1,24 @@
 - commits:
+    - subject: Make UAS driver built in
+      hash: 441d4725cccd1ae5b3c33714ba7b529bcce9fe6c
+      body: |
+        Until now the assumption was that USB storage devices that support UAS
+        mode can fall back to using usb-storage, but we have found a few
+        USB 3.2 drives that will only work with UAS. Such drives don't
+        work in the initramfs and can't be used for running flasher.
+
+        This patch makes the UAS driver built in.
+      footer:
+        Changelog-entry: Make UAS driver built in
+        changelog-entry: Make UAS driver built in
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.3.18+rev17
+  title: ""
+  date: 2025-03-26T14:17:16.704Z
+- commits:
     - subject: Update balena-yocto-scripts to 2fbfffdbd0ec59521cb0971548432d93603f8d71
       hash: 2b26072c7f821dd7254bbfb159b56125f51dcc8c
       body: Update balena-yocto-scripts

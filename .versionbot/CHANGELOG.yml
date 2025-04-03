@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      hash: a9b5c242b2c5b450e1217a23f8062aaa5438eaa7
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+        changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add EDATEC Sensing contract and logo
+              hash: 2504d5f5bb1a11056495ce3e44f8f60f297593e4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ray <rxie@edatec.cn>
+                signed-off-by: Ray <rxie@edatec.cn>
+              author: RayX123456
+          version: contracts-2.0.131
+          title: ""
+          date: 2025-04-03T09:12:05.127Z
+        - commits:
+            - subject: "hw.device-type: Update links to docs for UEFI version checking"
+              hash: cd8fa068d9e3a1a5d8aeda35829973963fc4e204
+              body: |
+                ... also include the L4T minor revision in the UEFI version
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.130
+          title: ""
+          date: 2025-03-28T11:36:03.120Z
+  version: 6.3.18+rev21
+  title: ""
+  date: 2025-04-03T17:07:16.732Z
+- commits:
     - subject: Update balena-yocto-scripts to 0ca5cb78828e7b8c0df024fd1d9e5c98786aa766
       hash: 2886297a1cdb689ccd7c5f439db7f07d2c0f0ddb
       body: Update balena-yocto-scripts

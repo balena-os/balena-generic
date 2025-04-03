@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v6.3.18+rev21
+## (2025-04-03)
+
+
+<details>
+<summary> Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.131
+> ### (2025-04-03)
+> 
+> * Add EDATEC Sensing contract and logo [RayX123456]
+> 
+> ## contracts-2.0.130
+> ### (2025-03-28)
+> 
+> * hw.device-type: Update links to docs for UEFI version checking [Alexandru Costache]
+> 
+
+</details>
+
 # v6.3.18+rev20
 ## (2025-04-02)
 

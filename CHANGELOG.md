@@ -1,6 +1,86 @@
 Change log
 -----------
 
+# v6.3.18+rev22
+## (2025-04-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8a606870dbc3193810c496442a06c1fca8122ab4 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.71
+> ### (2025-04-09)
+> 
+> * Update aws/aws-cli to v2.25.13 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.70
+> ### (2025-04-08)
+> 
+> * Update balena-os/leviathan action to v2.31.103 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.69
+> ### (2025-04-08)
+> 
+> * Update aws/aws-cli to v2.25.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.68
+> ### (2025-04-08)
+> 
+> * build/barys: Fix builds for older Poky variants [Alexandru Costache]
+> 
+> ## balena-yocto-scripts-1.31.67
+> ### (2025-04-07)
+> 
+> * Update balena-io/balena-cli to v21.1.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.66
+> ### (2025-04-07)
+> 
+> * workflows: yocto-build-deploy: provide header files to test suite [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.31.65
+> ### (2025-04-07)
+> 
+> * Update balena-os/leviathan action to v2.31.101 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.64
+> ### (2025-04-04)
+> 
+> * Update aws/aws-cli to v2.25.11 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.63
+> ### (2025-04-04)
+> 
+> * Update aws/aws-cli to v2.25.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.62
+> ### (2025-04-04)
+> 
+> * Update actions/create-github-app-token action to v2.0.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.61
+> ### (2025-04-03)
+> 
+> * Update actions/create-github-app-token action to v2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.60
+> ### (2025-04-03)
+> 
+> * Update balena-io/balena-cli to v21.1.8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.59
+> ### (2025-04-03)
+> 
+> * Update balena-os/leviathan action to v2.31.100 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.58
+> ### (2025-04-02)
+> 
+> * Update balena-io/balena-cli to v21.1.4 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.3.18+rev21
 ## (2025-04-03)
 

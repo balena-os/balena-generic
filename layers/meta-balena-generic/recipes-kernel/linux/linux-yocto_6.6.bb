@@ -28,8 +28,8 @@ SRCREV_machine:qemuriscv32 ?= "2d01bc1d4eeade12518371139dd24a21438f523c"
 SRCREV_machine:qemux86 ?= "2d01bc1d4eeade12518371139dd24a21438f523c"
 SRCREV_machine:qemux86-64 ?= "2d01bc1d4eeade12518371139dd24a21438f523c"
 SRCREV_machine:qemumips64 ?= "b0a73fa83073c8d7d7bc917bcbeac88d296ebe38"
-SRCREV_machine ?= "2d01bc1d4eeade12518371139dd24a21438f523c"
-SRCREV_meta ?= "f7f00b22efcfcae6489e9ec7db7002685fbc078b"
+SRCREV_machine ?= "8dd317512c57f68aa212eaf0dcf078fb39afc1bd"
+SRCREV_meta ?= "917317e6b8a757306a04d6d76dd1f5a1a5591ecd"
 
 # set your preferred provider of linux-yocto to 'linux-yocto-upstream', and you'll
 # get the <version>/base branch, which is pure upstream -stable, and the same
@@ -44,7 +44,7 @@ SRC_URI = "git://git.yoctoproject.org/linux-yocto.git;name=machine;branch=${KBRA
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.6;destsuffix=${KMETA};protocol=https"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "6.6.23"
+LINUX_VERSION ?= "6.6.84"
 
 PV = "${LINUX_VERSION}+git"
 

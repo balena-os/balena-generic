@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add workflow_call trigger for testing
+      hash: 3cd36e7c2463eab86d3025b5b5537c9dc6577b96
+      body: |
+        This simplifies the workflow required for meta-balena testing
+        as it can just call the device workflows directly.
+      footer:
+        Changelog-entry: Add workflow_call trigger for testing
+        changelog-entry: Add workflow_call trigger for testing
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 6.5.19+rev3
+  title: ""
+  date: 2025-04-18T18:59:34.402Z
+- commits:
     - subject: Update balena-yocto-scripts to 4ebe790eed9dbde36944496ee1ef14ba6bc4c5be
       hash: 08d49798433119bc0a11a32fff26787df348c24f
       body: Update balena-yocto-scripts

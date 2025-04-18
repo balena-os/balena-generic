@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.19+rev3
+## (2025-04-18)
+
+* Add workflow_call trigger for testing [Kyle Harding]
+
 # v6.5.19+rev2
 ## (2025-04-18)
 

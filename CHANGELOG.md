@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v6.5.21
+## (2025-04-20)
+
+
+<details>
+<summary> Update layers/meta-balena to 5f3124f1b6aca95eab4bcf5a422a96a907966eb6 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.21
+> ### (2025-04-19)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 5ecdcd3 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.104
+>> #### (2025-04-16)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.59 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.20
+> ### (2025-04-19)
+> 
+> * kernel-balena: add aufs commit for v6.6.84 [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.5.19+rev4
 ## (2025-04-19)
 

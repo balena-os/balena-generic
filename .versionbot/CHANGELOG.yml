@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update layers/meta-balena to ff1b4cc06eb027b8f5d51384b32cbcb01bcab6d8
+      hash: 8ebc6fded449e8dcd8a581fd23dffff6dd68471d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ff1b4cc06eb027b8f5d51384b32cbcb01bcab6d8
+        changelog-entry: Update layers/meta-balena to ff1b4cc06eb027b8f5d51384b32cbcb01bcab6d8
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use workflow_call for balena-generic device type tests
+              hash: 685b74e962f6805713118c887e8574fadf4148f3
+              body: >
+                This includes adding secure boot tests to the generic-amd64 test
+                matrix.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.5.22
+          title: ""
+          date: 2025-04-21T21:24:03.843Z
+  version: 6.5.22
+  title: ""
+  date: 2025-04-22T12:14:00.066Z
+- commits:
     - subject: Update layers/poky to 6eba29d9462a5833fbd49064ea32502c8da6405c
       hash: f28a425e8a409ec5f4cd0ec5fab47bf96d92bca0
       body: Update layers/poky

@@ -80,7 +80,7 @@ jobs:
       machine: generic-amd64-fs
       # Hardcode the device repo in case this workflow is called by another workflow
       device-repo: balena-os/balena-generic
-      device-repo-ref: ${{ inputs.device-repo-ref || '' }}
+      device-repo-ref: ${{ inputs.device-repo-ref || github.ref }}
       # Allow manual workflow runs to force finalize without checking previous test runs
       force-finalize: ${{ inputs.force-finalize || false }}
       # Default to balena-staging.com for workflow dispatch, but balena-cloud.com for other events

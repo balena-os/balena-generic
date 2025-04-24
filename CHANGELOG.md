@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.23+rev1
+## (2025-04-24)
+
+* update linux-yocto from 6.6.23 to 6.6.84 [Alex Gonzalez]
+
 # v6.5.23
 ## (2025-04-23)
 

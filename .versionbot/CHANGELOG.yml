@@ -1,4 +1,21 @@
 - commits:
+    - subject: update linux-yocto from 6.6.23 to 6.6.84
+      hash: d288d0f27f11cf2952c2e4467ff060806a2c1ef8
+      body: |
+        Note that for the aufs patches to apply the kernel sha1 cannot be the
+        linux yocto v6.6.84 tag, but the sha1 that corresponds to the merge
+        of v6.6.84 into the v6.6/standard/base branch.
+      footer:
+        Changelog-entry: update linux-yocto from 6.6.23 to 6.6.84
+        changelog-entry: update linux-yocto from 6.6.23 to 6.6.84
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 6.5.23+rev1
+  title: ""
+  date: 2025-04-24T12:13:27.694Z
+- commits:
     - subject: Update layers/meta-balena to 688d07fe8d3304534022c2e28578b097d3b49379
       hash: e443659155e1d878f6ee1f49170b672c3f76a0f1
       body: Update layers/meta-balena

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Restore the default device repo ref for yocto builds
+      hash: 530ffa1d3924d403cfa22f10e9ff892296a6103b
+      body: ""
+      footer:
+        Changelog-entry: Restore the default device repo ref for yocto builds
+        changelog-entry: Restore the default device repo ref for yocto builds
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 6.5.23+rev2
+  title: ""
+  date: 2025-04-25T13:54:27.983Z
+- commits:
     - subject: update linux-yocto from 6.6.23 to 6.6.84
       hash: d288d0f27f11cf2952c2e4467ff060806a2c1ef8
       body: |

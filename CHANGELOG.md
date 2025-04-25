@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.23+rev2
+## (2025-04-25)
+
+* Restore the default device repo ref for yocto builds [Kyle Harding]
+
 # v6.5.23+rev1
 ## (2025-04-24)
 

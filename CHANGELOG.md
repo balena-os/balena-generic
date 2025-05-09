@@ -1,6 +1,134 @@
 Change log
 -----------
 
+# v6.5.29+rev1
+## (2025-05-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 449116e7aa0d02a3a27147d4570bc6929bc71732 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.3
+> ### (2025-05-09)
+> 
+> * Update aws/aws-cli to v2.27.11 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.2
+> ### (2025-05-09)
+> 
+> * Use GH CLI to download build artifacts [Kyle Harding]
+> * Disable GHA compression for build artifacts [Kyle Harding]
+> * Provide yocto scripts ref to test build pipeline [Kyle Harding]
+> * Remove leviathan test suites from build artifacts [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.32.1
+> ### (2025-05-07)
+> 
+> * Update aws/aws-cli to v2.27.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.0
+> ### (2025-05-07)
+> 
+> * Remove legacy Jenkins deploy scripts [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.97
+> ### (2025-05-07)
+> 
+> * Update balena-io/balena-cli to v21.1.11 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.96
+> ### (2025-05-07)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.95
+> ### (2025-05-06)
+> 
+> * Update balena-os/leviathan action to v2.31.107 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.94
+> ### (2025-05-06)
+> 
+> * Update balena-os/leviathan action to v2.31.106 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.93
+> ### (2025-05-05)
+> 
+> * Update aws/aws-cli to v2.27.8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.92
+> ### (2025-05-05)
+> 
+> * Update balena-io/balena-cli to v21.1.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.91
+> ### (2025-05-03)
+> 
+> * Update actions/create-github-app-token action to v2.0.6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.90
+> ### (2025-05-03)
+> 
+> * Update aws/aws-cli to v2.27.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.89
+> ### (2025-05-03)
+> 
+> * Update balena-os/leviathan action to v2.31.105 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.88
+> ### (2025-05-02)
+> 
+> * Update actions/create-github-app-token action to v2.0.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.87
+> ### (2025-05-01)
+> 
+> * Update aws/aws-cli to v2.27.6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.86
+> ### (2025-05-01)
+> 
+> * Update actions/create-github-app-token action to v2.0.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.85
+> ### (Invalid date)
+> 
+> * Update actions/download-artifact digest to d3f86a1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.84
+> ### (Invalid date)
+> 
+> * Update aws/aws-cli to v2.27.4 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.83
+> ### (2025-04-29)
+> 
+> * Update balena-os/leviathan action to v2.31.104 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.82
+> ### (2025-04-28)
+> 
+> * Update aws/aws-cli to v2.27.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.81
+> ### (2025-04-25)
+> 
+> * Update aws/aws-cli to v2.27.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.80
+> ### (2025-04-22)
+> 
+> * Update aws/aws-cli to v2.26.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.79
+> ### (2025-04-21)
+> 
+> * Update aws/aws-cli to v2.26.6 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.29
 ## (2025-05-09)
 

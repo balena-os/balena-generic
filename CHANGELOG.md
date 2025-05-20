@@ -1,6 +1,56 @@
 Change log
 -----------
 
+# v6.5.29+rev3
+## (2025-05-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fcdb99d91f490ae7f304da24145f0386bfa4b722 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.15
+> ### (2025-05-19)
+> 
+> * Update aws/aws-cli to v2.27.18 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.14
+> ### (2025-05-19)
+> 
+> * grant actions: read permissions to jobs needing to download build artifacts [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.32.13
+> ### (2025-05-17)
+> 
+> * Update balena-os/leviathan action to v2.31.108 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.12
+> ### (2025-05-17)
+> 
+> * Update aws/aws-cli to v2.27.17 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.11
+> ### (2025-05-16)
+> 
+> * Update balena-io/balena-cli to v21.1.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.10
+> ### (2025-05-16)
+> 
+> * Remove the old grep for build errors [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.32.9
+> ### (2025-05-16)
+> 
+> * Update aws/aws-cli to v2.27.16 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.8
+> ### (2025-05-15)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.2.1 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.29+rev2
 ## (2025-05-15)
 

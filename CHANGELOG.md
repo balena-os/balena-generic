@@ -1,6 +1,61 @@
 Change log
 -----------
 
+# v6.5.34+rev1
+## (2025-05-26)
+
+
+<details>
+<summary> Update balena-yocto-scripts to e91b984e6b39e277d440cf810c461e07fc8e8772 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.24
+> ### (2025-05-24)
+> 
+> * Update balena-io/balena-cli to v21.1.14 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.23
+> ### (2025-05-24)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.22
+> ### (2025-05-24)
+> 
+> * Update balena-os/leviathan action to v2.32.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.21
+> ### (2025-05-24)
+> 
+> * Update balena-os/leviathan action to v2.31.111 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.20
+> ### (2025-05-23)
+> 
+> * Update aws/aws-cli to v2.27.22 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.19
+> ### (2025-05-22)
+> 
+> * Update aws/aws-cli to v2.27.20 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.18
+> ### (2025-05-21)
+> 
+> * Update balena-os/leviathan action to v2.31.109 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.17
+> ### (2025-05-21)
+> 
+> * Update balena-io/balena-cli to v21.1.13 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.16
+> ### (2025-05-20)
+> 
+> * Update tespkg/actions-cache action to v1.9.0 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.34
 ## (2025-05-23)
 

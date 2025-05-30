@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.34+rev2
+## (2025-05-30)
+
+* Enable drivers for Mediatek MT7921 and MT7922 wifi [Michal Toman]
+
 # v6.5.34+rev1
 ## (2025-05-26)
 

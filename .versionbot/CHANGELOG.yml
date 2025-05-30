@@ -1,4 +1,18 @@
 - commits:
+    - subject: Enable drivers for Mediatek MT7921 and MT7922 wifi
+      hash: 7dac262a5eba76266fbee049091ac1c1de82d199
+      body: ""
+      footer:
+        Changelog-entry: Enable drivers for Mediatek MT7921 and MT7922 wifi
+        changelog-entry: Enable drivers for Mediatek MT7921 and MT7922 wifi
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.5.34+rev2
+  title: ""
+  date: 2025-05-30T12:17:57.563Z
+- commits:
     - subject: Update balena-yocto-scripts to e91b984e6b39e277d440cf810c461e07fc8e8772
       hash: a7d533d1c762fb4c2b3b218e1a12062bf1e7f333
       body: Update balena-yocto-scripts

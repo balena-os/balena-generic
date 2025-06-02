@@ -2,7 +2,6 @@
 #MACHINE ?= "generic-aarch64.conf"
 #MACHINE ?= "generic-amd64.conf"
 #MACHINE ?= "generic-amd64-fs.conf"
-#MACHINE ?= "kontron-come-xelx"
 #MACHINE ?= "studio-automatedx86-sb"
 
 # More info meta-balena/README.md

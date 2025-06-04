@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.34+rev3
+## (2025-06-04)
+
+* Remove kontron-come-xelx from this repo [Florin Sarbu]
+
 # v6.5.34+rev2
 ## (2025-05-30)
 

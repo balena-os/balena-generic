@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove kontron-come-xelx from this repo
+      hash: 32afa4c6df918684f205e075decfcfc2140763e6
+      body: |
+        This reverts commit a31a84a05b244cae205d64c1b5aca5f74cfc1ba9.
+
+        This device type will be added from it's own separate repo
+      footer:
+        Changelog-entry: Remove kontron-come-xelx from this repo
+        changelog-entry: Remove kontron-come-xelx from this repo
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.34+rev3
+  title: ""
+  date: 2025-06-04T08:38:06.089Z
+- commits:
     - subject: Enable drivers for Mediatek MT7921 and MT7922 wifi
       hash: 7dac262a5eba76266fbee049091ac1c1de82d199
       body: ""

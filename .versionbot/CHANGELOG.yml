@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        45bddd258a3d1ded925faf8389e01bb948dc7f5b
+      hash: 68789053369f6e6b0b0913f2cd02334f960fe7eb
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          45bddd258a3d1ded925faf8389e01bb948dc7f5b
+        changelog-entry: Update layers/meta-openembedded to
+          45bddd258a3d1ded925faf8389e01bb948dc7f5b
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.5.34+rev4
+  title: ""
+  date: 2025-06-05T14:49:20.732Z
+- commits:
     - subject: Remove kontron-come-xelx from this repo
       hash: 32afa4c6df918684f205e075decfcfc2140763e6
       body: |

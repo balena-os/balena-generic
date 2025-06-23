@@ -1,6 +1,120 @@
 Change log
 -----------
 
+# v6.5.39
+## (2025-06-23)
+
+
+<details>
+<summary> Update layers/meta-balena to 3fb88b23e141d1177729937f08562e2a086fdbc1 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.39
+> ### (2025-06-20)
+> 
+> * workflows: remove Jetson Xavier AGX [Alex Gonzalez]
+> 
+> ## meta-balena-6.5.38
+> ### (2025-06-12)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 473af4b [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.33.1
+>> #### (2025-06-10)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.0
+>> #### (2025-06-10)
+>> 
+>> * minor: Upgrade Typedoc to v0.26.11 [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.32.9
+>> #### (2025-06-09)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.60 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.8
+>> #### (2025-06-09)
+>> 
+>> * Update balena-io/balena-cli to v22.0.6 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.7
+>> #### (2025-06-09)
+>> 
+>> * core/lib: Specify partition indexes for Jetson Nano eMMC and JN30B Nano [Alexandru]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.37
+> ### (2025-06-09)
+> 
+> * Update tests/leviathan digest to 2c6c6ef [balena-renovate[bot]]
+> * tests: hup: enable specifying image type [Ryan Cooke]
+> 
+> ## meta-balena-6.5.36
+> ### (2025-06-04)
+> 
+> * classes: Make sure we disable debug info for newer kernels [Florin Sarbu]
+> 
+> ## meta-balena-6.5.35
+> ### (2025-06-03)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 17aa86b [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.32.2
+>> #### (2025-05-27)
+>> 
+>> * Update balena-io/balena-cli to v22 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.1
+>> #### (2025-05-23)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.0
+>> #### (2025-05-23)
+>> 
+>> * Remove custom compose binary installation from Make [Kyle Harding]
+>> 
+>> ### leviathan-2.31.111
+>> #### (2025-05-23)
+>> 
+>> * Update balena-io/balena-cli to v21.1.14 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.110
+>> #### (2025-05-23)
+>> 
+>> * Core: update to node 22 [Ryan Cooke]
+>> 
+>> ### leviathan-2.31.109
+>> #### (2025-05-21)
+>> 
+>> * Update balena-io/balena-cli to v21.1.13 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.108
+>> #### (2025-05-14)
+>> 
+>> * Update core/contracts digest to 417aec2 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.107
+>> #### (2025-05-06)
+>> 
+>> * Update balena-io/balena-cli to v21.1.11 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> * tests: update for node 22 [Ryan Cooke]
+> 
+
+</details>
+
 # v6.5.34+rev5
 ## (2025-06-06)
 

@@ -65,3 +65,6 @@ CONF_VERSION = "1"
 HOSTTOOLS += "docker iptables"
 
 CONF_VERSION = "2"
+
+# Generate Cyclonedx SBOM and VEX files for each build target
+INHERIT += "cve_check cyclonedx_export"

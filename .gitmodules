@@ -20,5 +20,5 @@
 	branch = master
 [submodule "layers/meta-cyclonedx"]
 	path = layers/meta-cyclonedx
-	url = https://github.com/balena-io/meta-cyclonedx.git
+	url = https://github.com/balena-os/meta-cyclonedx.git
 	branch = kirkstone

@@ -65,3 +65,5 @@ CONF_VERSION = "1"
 HOSTTOOLS += "docker iptables"
 
 CONF_VERSION = "2"
+
+INHERIT += "cyclonedx-export"

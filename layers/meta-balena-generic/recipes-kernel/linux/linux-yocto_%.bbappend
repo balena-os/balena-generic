@@ -14,6 +14,8 @@ SRC_URI:append:generic-aarch64 = " \
 
 SRC_URI:append = " \
     file://0001-cinterion-mbim.patch;sha256sum=ed6fb66934cf9f1117efab8887ef67f0fb73286301a84430550700e9d57fd102 \
+    file://0002-wifi-iwlwifi-simplify-nested-if-checks.patch \
+    file://0003-wifi-iwlwifi-pcie-set-state-to-no-FW-before-reset-ha.patch \
 "
 
 KCONFIG_MODE="--alldefconfig"

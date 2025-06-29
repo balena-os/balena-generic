@@ -1,4 +1,21 @@
 - commits:
+    - subject: Backport iwlwifi pcie kernel patch
+      hash: 5018d6bf0d896644def6ff9cb2f15d6633471495
+      body: |
+        The patches we backport is https://github.com/torvalds/linux/commit/5f05c14e7c198415abe936514a6905f8b545b63b
+        We also added https://github.com/torvalds/linux/commit/63a59880ec116cebb8a01ead28b1b23c3846ebb9 so that the
+        pcie hotfix patch gets applied without errors or us having to change it to apply ok.
+      footer:
+        Changelog-entry: Backport iwlwifi pcie kernel patch
+        changelog-entry: Backport iwlwifi pcie kernel patch
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.39+rev2
+  title: ""
+  date: 2025-06-29T07:32:01.313Z
+- commits:
     - subject: Update layers/poky to 9bc0069f8b3968250c4245c8a81b65fdacabfba5
       hash: c162f21e838e1a9007b850b422301a0f371d06fb
       body: Update layers/poky

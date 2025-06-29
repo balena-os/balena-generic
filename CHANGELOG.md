@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.39+rev2
+## (2025-06-29)
+
+* Backport iwlwifi pcie kernel patch [Florin Sarbu]
+
 # v6.5.39+rev1
 ## (2025-06-26)
 

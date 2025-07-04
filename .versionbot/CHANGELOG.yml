@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update kernel from v6.6 to v6.12.31
+      hash: ad756afac177310859970fb1c6152ca74eb55e95
+      body: >
+        Copy kernel v6.12.31 recipes from poky
+        dc9faa3cdc057983b55fb6bd19091722c58bc62c
+      footer:
+        Changelog-entry: Update kernel from v6.6 to v6.12.31
+        changelog-entry: Update kernel from v6.6 to v6.12.31
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 6.5.42+rev1
+  title: ""
+  date: 2025-07-04T22:14:15.000Z
+- commits:
     - subject: Update layers/meta-balena to ee3fe620d7465af3eb3cbac007b315c9cfdbd2bc
       hash: de089809332f969329b8cc1b177ddac3d095fee3
       body: Update layers/meta-balena

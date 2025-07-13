@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update layers/meta-balena to 4e67673a7d7d67b5fc4b6d87065b900b00d72341
+      hash: ae8a2315238416d7a6e7baa0ec4461bce045aaf5
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4e67673a7d7d67b5fc4b6d87065b900b00d72341
+        changelog-entry: Update layers/meta-balena to 4e67673a7d7d67b5fc4b6d87065b900b00d72341
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "meta-balena-YOCTO_RELEASE: update bmap-tools branch name"
+              hash: ca3e8df431c811088982050c5053d4fb5ca46499
+              body: |
+                In Nov 2024 bmap-tools  master branch was renamed to main
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.5.44
+          title: ""
+          date: 2025-07-09T16:53:56.590Z
+        - commits:
+            - subject: "meta-balena-esr: fall back to current minor"
+              hash: b04c4769fdffb61e65c365aad7cea8907991cb2d
+              body: >
+                If an esr branch for a previous minor already exists, then fall
+                back to the current minor
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.5.43
+          title: ""
+          date: 2025-07-07T10:43:40.599Z
+  version: 6.5.44
+  title: ""
+  date: 2025-07-13T20:24:28.357Z
+- commits:
     - subject: Update balena-yocto-scripts to 7d52b5aa316f5f05df2e3e4701e9e2b3b92083cb
       hash: d6408871585f1e424b6655abe6ff69d77567f866
       body: Update balena-yocto-scripts

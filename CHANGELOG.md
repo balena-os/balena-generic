@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.44+rev1
+## (2025-07-16)
+
+* Update kernel to 6.12.36 [Michal Toman]
+
 # v6.5.44
 ## (2025-07-13)
 

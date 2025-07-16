@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update kernel to 6.12.36
+      hash: 2b79f5ac303bc9ecc399cb870199cf235ab3c2b3
+      body: ""
+      footer:
+        Changelog-entry: Update kernel to 6.12.36
+        changelog-entry: Update kernel to 6.12.36
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.5.44+rev1
+  title: ""
+  date: 2025-07-16T09:26:54.633Z
+- commits:
     - subject: Update layers/meta-balena to 4e67673a7d7d67b5fc4b6d87065b900b00d72341
       hash: ae8a2315238416d7a6e7baa0ec4461bce045aaf5
       body: Update layers/meta-balena

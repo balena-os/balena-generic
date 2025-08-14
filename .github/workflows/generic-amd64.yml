@@ -82,9 +82,9 @@ jobs:
       device-repo: balena-os/balena-generic
       device-repo-ref: ${{ inputs.device-repo-ref || github.ref }}
       # Allow manual workflow runs to force finalize without checking previous test runs
-      force-finalize: ${{ inputs.force-finalize || false }}
+      force-finalize: true
       # Default to balena-staging.com for workflow dispatch, but balena-cloud.com for other events
-      deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com' }}
+      deploy-environment: balena-staging.com
       # Allow overriding the meta-balena ref for workflow dispatch events
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot

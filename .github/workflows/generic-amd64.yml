@@ -69,7 +69,7 @@ permissions:
 jobs:
   yocto:
     name: Yocto
-    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@0cac2709cce34581cad24a40a6e0388ece5aff5f
+    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@kyle/split-testing-artifacts
     # Prevent duplicate workflow executions for pull_request (PR) and pull_request_target (PRT) events.
     # Both PR and PRT will be triggered for the same pull request, whether it is internal or from a fork.
     # This condition will prevent the workflow from running twice for the same pull request while
@@ -82,9 +82,9 @@ jobs:
       device-repo: balena-os/balena-generic
       device-repo-ref: ${{ inputs.device-repo-ref || github.ref }}
       # Allow manual workflow runs to force finalize without checking previous test runs
-      force-finalize: ${{ inputs.force-finalize || false }}
+      force-finalize: true
       # Default to balena-staging.com for workflow dispatch, but balena-cloud.com for other events
-      deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com' }}
+      deploy-environment: balena-staging.com
       # Allow overriding the meta-balena ref for workflow dispatch events
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot

@@ -66,9 +66,29 @@ permissions:
   packages: read
   contents: read
 
+env:
+  # Use QEMU workers for testing and run cloud suite against balenaCloud production
+  test_matrix: >
+    {
+      "test_suite": ["os","cloud","hup"],
+      "environment": ["balena-cloud.com"],
+      "worker_type": ["qemu"],
+      "runs_on": [["self-hosted", "X64", "kvm"]]
+    }
+
 jobs:
+  # Custom job to use multi-line env vars as defaults for empty inputs
+  get_inputs:
+    name: Get inputs
+    runs-on: ubuntu-latest
+    outputs:
+      test_matrix: ${{ inputs.test_matrix || env.test_matrix }} 
+    steps:
+      - run: echo "Hello World!"    
+
   yocto:
     name: Yocto
+    needs: get_inputs
     uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@d2b30dabd4df9ded5a2d0f4250a09e2516eda209
     # Prevent duplicate workflow executions for pull_request (PR) and pull_request_target (PRT) events.
     # Both PR and PRT will be triggered for the same pull request, whether it is internal or from a fork.
@@ -87,11 +107,4 @@ jobs:
       deploy-environment: ${{ inputs.deploy-environment || 'balena-cloud.com' }}
       # Allow overriding the meta-balena ref for workflow dispatch events
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
-      # Use QEMU workers for testing and run cloud suite against balenaCloud production
-      test_matrix: >
-        {
-          "test_suite": ["os","cloud","hup"],
-          "environment": ["balena-cloud.com"],
-          "worker_type": ["qemu"],
-          "runs_on": [["self-hosted", "X64", "kvm"]]
-        }
+      test_matrix: ${{ needs.get_inputs.outputs.test_matrix }}

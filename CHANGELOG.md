@@ -1,6 +1,61 @@
 Change log
 -----------
 
+# v6.5.50+rev1
+## (2025-08-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to d2b30dabd4df9ded5a2d0f4250a09e2516eda209 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.2
+> ### (2025-08-19)
+> 
+> * Update actions/checkout action to v5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.1
+> ### (2025-08-18)
+> 
+> * Update balena-io/balena-cli to v22.2.4 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.0
+> ### (2025-08-18)
+> 
+> * Split testing artifacts into individual files [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.37.20
+> ### (2025-08-18)
+> 
+> * barys: default to highest priority layers for template paths [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.37.19
+> ### (2025-08-15)
+> 
+> * Update aws/aws-cli to v2.28.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.18
+> ### (2025-08-14)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.30 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.17
+> ### (2025-08-14)
+> 
+> * Update actions/checkout action to v4.3.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.16
+> ### (2025-08-13)
+> 
+> * Update aws/aws-cli to v2.28.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.37.15
+> ### (2025-08-11)
+> 
+> * Update actions/create-github-app-token action to v2.1.1 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.50
 ## (2025-08-15)
 

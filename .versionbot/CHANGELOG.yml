@@ -1,4 +1,23 @@
 - commits:
+    - subject: Remove the AX102 requirement for secure boot tests
+      hash: 5db5e235002d252b96ef0c9e697a6f3f14024a26
+      body: |
+        The latest self-hosted runners support cpu templates
+        so the guests will experience a consistent feature set
+        supported by the host.
+
+        See: product-os/github-runner-vm#252
+      footer:
+        Changelog-entry: Remove the AX102 requirement for secure boot tests
+        changelog-entry: Remove the AX102 requirement for secure boot tests
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 6.5.53+rev1
+  title: ""
+  date: 2025-08-20T18:26:23.434Z
+- commits:
     - subject: Update layers/meta-balena to b733ec53d2848f43056fe344498fad8349ce6c02
       hash: 6b3d35e63b6878170c57bb729d98a51e3bcf6fb5
       body: Update layers/meta-balena

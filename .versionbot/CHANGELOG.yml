@@ -1,4 +1,144 @@
 - commits:
+    - subject: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      hash: 1a6956d4a92343709116e09367e520736c8c170c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+        changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fail if IOMMU is disabled on secure boot systems
+              hash: ecedf68132543a21d906b299c365db7be34abe9f
+              body: >
+                At this moment we provision secure boot systems without checking
+
+                whether the IOMMU is enabled. With the IOMMU disabled, all PCIe
+                cards
+
+                have full DMA access and are able to retrieve the encryption
+                keys
+
+                from memory. On some systems this logs an extra event into PCR7.
+
+
+                This patch makes the OS look for the event in the TPM event log
+
+                and refuse to provision or unlock the disks if the IOMMU is
+                disabled.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.6.4
+          title: ""
+          date: 2025-09-03T13:27:58.602Z
+        - commits:
+            - subject: "recipes-connectivity/libnss-ato: Do not hardcode the homedir for user
+                root"
+              hash: b5457ab54bcd354b01adcc001ee02afe76785f65
+              body: |
+                Starting with Scarthgap the homedir of user root is /root
+                instead of /home/root like in previous Yocto releases.
+
+                See https://github.com/balena-os/poky/commit/74f0fd144f73cf658f5018ab8f4140a4a2dc99b7
+                for details on why the home directory of user root has changed for systemd based distros
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.6.3
+          title: ""
+          date: 2025-08-29T13:49:39.497Z
+        - commits:
+            - subject: "linux-firmware: Ensure Intel AX210 firmware can be installed"
+              hash: f54f1988aaa46746c70ad8b4cf63a88218d4f983
+              body: |
+                ... on devices which enable firmware compression.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.2
+          title: ""
+          date: 2025-08-26T08:56:53.219Z
+        - commits:
+            - subject: Remove the AX102 requirement for secure boot tests
+              hash: 89822ae1c747c990c5ec0881e1a38a62d5b76913
+              body: |
+                The latest self-hosted runners support cpu templates
+                so the guests will experience a consistent feature set
+                supported by the host.
+
+                See: https://github.com/product-os/github-runner-vm/pull/252
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.6.1
+          title: ""
+          date: 2025-08-25T15:33:20.164Z
+        - commits:
+            - subject: "minor: remove ssh service from os-config.json"
+              hash: e6f4c951dcdfc32bc748807a4a40ab74a24309b9
+              body: ""
+              footer: {}
+              author: Edwin Joassart
+              nested: []
+          version: meta-balena-6.6.0
+          title: ""
+          date: 2025-08-23T05:15:48.339Z
+        - commits:
+            - subject: "patch: add metadata to improve balena-engine cve tracking"
+              hash: d3bacbe379e5ffd335daf111942998477e5fb58c
+              body: ""
+              footer: {}
+              author: Edwin Joassart
+              nested: []
+          version: meta-balena-6.5.55
+          title: ""
+          date: 2025-08-22T10:15:24.486Z
+        - commits:
+            - subject: "recipes-connectivity/balena-proxy-config: Clean-up redsocks rules by
+                index"
+              hash: 55d2b92a235efab0f131a99d670c122fea4be113
+              body: >
+                ... instead of rule matching, since this may fail on particular
+                devices
+
+                and prevent the redsocks chain from being removed, as well as
+
+                new iptables rules from being added.
+
+
+                We also switch to using the os logging helpers while we're at
+                this.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.5.54
+          title: ""
+          date: 2025-08-21T16:11:59.568Z
+  version: 6.6.4
+  title: ""
+  date: 2025-09-08T14:05:12.790Z
+- commits:
     - subject: Update balena-yocto-scripts to 99fda7aeef94ebc3dbb66a9a0920002d5003dc8e
       hash: fc30daf287bbba7f712b5623103ee189d03d271d
       body: Update balena-yocto-scripts

@@ -1,4 +1,24 @@
 - commits:
+    - subject: Enable IOMMU on secure boot systems
+      hash: b28245727385f0566468ea6e034fd0016446194f
+      body: |
+        Without the IOMMU, PCIe cards have full DMA access to the system
+        and can potentially read encryption keys from memory. Some UEFI
+        implementations even log an extra event if the IOMMU is disabled.
+
+        This patch makes IOMMU drivers built in and enables intel_iommu
+        and amd_iommu from the secure boot command line, similar to lockdown.
+      footer:
+        Changelog-entry: Enable IOMMU on secure boot systems
+        changelog-entry: Enable IOMMU on secure boot systems
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.6.4+rev2
+  title: ""
+  date: 2025-09-09T20:15:27.646Z
+- commits:
     - subject: Update balena-yocto-scripts to 091a11a3e305f7c91f9e0feb4f6d9068c8f782c8
       hash: de916f5fcf3b725093feeab52675209190d56a16
       body: Update balena-yocto-scripts

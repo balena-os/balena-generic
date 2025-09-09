@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.6.4+rev2
+## (2025-09-09)
+
+* Enable IOMMU on secure boot systems [Michal Toman]
+
 # v6.6.4+rev1
 ## (2025-09-09)
 

@@ -382,3 +382,12 @@ BALENA_CONFIGS:append:generic-amd64 = " pinctrl_alderlake"
 BALENA_CONFIGS[pinctrl_alderlake] = " \
     CONFIG_PINCTRL_ALDERLAKE=m \
 "
+
+# needed for Leaseweb dedicated instances
+# https://docs.kernel.org/next/networking/device_drivers/ethernet/mellanox/mlx5.html
+BALENA_CONFIGS:append:generic-amd64 = " mlx5"
+BALENA_CONFIGS:append:generic-aarch64 = " mlx5"
+BALENA_CONFIGS[mlx5] = "\
+    CONFIG_MLX5_CORE=m \
+    CONFIG_MLX5_CORE_EN=y \
+"

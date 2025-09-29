@@ -1,6 +1,194 @@
 Change log
 -----------
 
+# v6.6.8
+## (2025-09-29)
+
+
+<details>
+<summary> Update layers/meta-balena to dcf5e5a92daf96fc9a8e3ad5f6416984918423d3 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.8
+> ### (2025-09-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 73d4851 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.44
+>> #### (2025-09-29)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.8 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.43
+>> #### (2025-09-29)
+>> 
+>> * Update balena-io/balena-cli to v22.4.9 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.42
+>> #### (2025-09-29)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.41
+>> #### (2025-09-23)
+>> 
+>> * Update balena-io/balena-cli to v22.4.8 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.40
+>> #### (2025-09-23)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.7 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.39
+>> #### (2025-09-22)
+>> 
+>> * Update balena-io/balena-cli to v22.4.7 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.38
+>> #### (2025-09-22)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.7
+> ### (2025-09-19)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to d9e2486 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.37
+>> #### (2025-09-18)
+>> 
+>> * Update balena-io/balena-cli to v22.4.6 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.36
+>> #### (2025-09-17)
+>> 
+>> * Update balena-io/balena-cli to v22.4.5 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.6
+> ### (2025-09-17)
+> 
+> * Condition the start of update-balena-supervisor.service after internet connectivity [Florin Sarbu]
+> 
+> ## meta-balena-6.6.5
+> ### (2025-09-15)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 3e61af4 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.35
+>> #### (2025-09-15)
+>> 
+>> * Update balena-io/balena-cli to v22.4.4 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.34
+>> #### (2025-09-15)
+>> 
+>> * worker: extend total flashing timeout to 25 minutes [Alex Gonzalez]
+>> 
+>> ### leviathan-2.36.33
+>> #### (2025-09-15)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.32
+>> #### (2025-09-11)
+>> 
+>> * Core: worker: remove exponential backoff on flash status check [Ryan Cooke]
+>> 
+>> ### leviathan-2.36.31
+>> #### (2025-09-10)
+>> 
+>> * Update balena-io/balena-cli to v22.4.3 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.30
+>> #### (2025-09-10)
+>> 
+>> * Update balena-io/balena-cli to v22.4.2 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.29
+>> #### (2025-09-08)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.28
+>> #### (2025-09-02)
+>> 
+>> * Update balena-io/balena-cli to v22.4.1 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.27
+>> #### (2025-09-02)
+>> 
+>> * Update balena-io/balena-cli to v22.4.0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.26
+>> #### (2025-09-02)
+>> 
+>> * Update balena-io/balena-cli to v22.3.4 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.25
+>> #### (2025-09-02)
+>> 
+>> * Update balena-io/balena-cli to v22.3.3 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.24
+>> #### (2025-09-02)
+>> 
+>> * Update balena-io/balena-cli to v22.3.1 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.23
+>> #### (2025-09-01)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.22
+>> #### (2025-08-29)
+>> 
+>> * Update balena-io/balena-cli to v22.3.0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.21
+>> #### (2025-08-25)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.6 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.20
+>> #### (2025-08-25)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.19
+>> #### (2025-08-18)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.5 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.18
+>> #### (2025-08-18)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.4 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.17
+>> #### (2025-08-18)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.6.4+rev5
 ## (2025-09-20)
 

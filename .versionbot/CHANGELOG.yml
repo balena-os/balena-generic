@@ -1,4 +1,294 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fa7ef10ddba1892ffc0ab49e14169c2d5725f229
+      hash: 5a0754e30bb937f2e0189a743fb5bbbecaf0a313
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fa7ef10ddba1892ffc0ab49e14169c2d5725f229
+        changelog-entry: Update balena-yocto-scripts to fa7ef10ddba1892ffc0ab49e14169c2d5725f229
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.14
+              hash: cf133ed397d961566eb81c464cc1d9357107bf43
+              body: |
+                Update aws/aws-cli from 2.31.13 to 2.31.14
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.47
+          title: ""
+          date: 2025-10-13T22:42:09.732Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.48
+              hash: 94b71acd10a7e0e7b86f68862a62a19e62471bc4
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.46 to
+                0.0.48
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.46
+          title: ""
+          date: 2025-10-11T05:43:32.605Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.13
+              hash: df5e2b6655f7f5eafcf16aa71c13471aee9bc995
+              body: |
+                Update aws/aws-cli from 2.31.11 to 2.31.13
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.45
+          title: ""
+          date: 2025-10-11T02:24:15.377Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.11
+              hash: ed522d3eb4c33e679f526a1a452cf4bda1b3326e
+              body: |
+                Update balena-io/balena-cli from 22.4.10 to 22.4.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.44
+          title: ""
+          date: 2025-10-10T18:36:45.678Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.10
+              hash: 43a5a0c9e11c3a1ddd90966bab6be02b5e421d2e
+              body: |
+                Update balena-io/balena-cli from 22.4.9 to 22.4.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.43
+          title: ""
+          date: 2025-10-09T15:28:19.838Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.11
+              hash: 85272ab3a02a18939b4842052e91c2db8e4c54b1
+              body: |
+                Update aws/aws-cli from 2.31.10 to 2.31.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.42
+          title: ""
+          date: 2025-10-08T21:13:04.841Z
+        - commits:
+            - subject: Update GitHub Actions
+              hash: a0c369105a7e357b30853532162340fdf44ad25a
+              body: |
+                Update aws-actions/configure-aws-credentials from 5.0.0 to 5.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.41
+          title: ""
+          date: 2025-10-08T11:38:41.196Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.9
+              hash: c4043357c97cc8f30989a6b5e76fbc1ff896f7ec
+              body: |
+                Update balena-io/balena-cli from 22.4.8 to 22.4.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.40
+          title: ""
+          date: 2025-10-08T08:05:39.276Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.46
+              hash: d15d260d99faf3880e699d7372e457425725a8e1
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.42 to
+                0.0.46
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.39
+          title: ""
+          date: 2025-10-08T02:42:56.506Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.10
+              hash: e6ce52c72811da3146ffe742ddd4ddb02652b757
+              body: |
+                Update aws/aws-cli from 2.30.7 to 2.31.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.38
+          title: ""
+          date: 2025-10-07T23:25:44.873Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.30.7
+              hash: bd2f9b78e7a4cbba3b4554864a21b1989b2deda2
+              body: |
+                Update aws/aws-cli from 2.30.3 to 2.30.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.37
+          title: ""
+          date: 2025-10-07T19:40:24.497Z
+        - commits:
+            - subject: Fix check for present test matrix when checking test results
+              hash: 0518df044f76b0fcab1b1e5613d78489a7d68e3b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.38.36
+          title: ""
+          date: 2025-10-07T17:35:13.137Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.8
+              hash: 82f109dcbbdd43b84aa3aaa8ab6e423d46920016
+              body: |
+                Update balena-io/balena-cli from 22.4.7 to 22.4.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.35
+          title: ""
+          date: 2025-09-25T10:39:09.201Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.7
+              hash: 36796faf2a372df72568a958f7d7264e65931998
+              body: |
+                Update balena-io/balena-cli from 22.4.6 to 22.4.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.34
+          title: ""
+          date: 2025-09-22T05:11:33.668Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.6
+              hash: 24e893339b6689c142331a75d639002517e2d0dc
+              body: |
+                Update balena-io/balena-cli from 22.4.5 to 22.4.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.33
+          title: ""
+          date: 2025-09-18T12:59:08.228Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.42
+              hash: 0031df0847bffdcd66f8ed1bf373ed41ce7bc33a
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.40 to
+                0.0.42
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.32
+          title: ""
+          date: 2025-09-18T08:30:35.614Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.5
+              hash: b06cbe0da3eec785d33f45ce4790e2c47ac7f680
+              body: |
+                Update balena-io/balena-cli from 22.4.4 to 22.4.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.31
+          title: ""
+          date: 2025-09-17T17:55:52.817Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.30.3
+              hash: 59a5b576a2988f8eb9f02899d5bededf96b01780
+              body: |
+                Update aws/aws-cli from 2.30.2 to 2.30.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.30
+          title: ""
+          date: 2025-09-16T22:44:08.748Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.4
+              hash: 468c16827b436bce104d9ea8f13a007c70db1e66
+              body: |
+                Update balena-io/balena-cli from 22.4.3 to 22.4.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.29
+          title: ""
+          date: 2025-09-16T08:42:40.274Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.30.2
+              hash: f15ef826450600b3ab140823a0773f25cb14dc78
+              body: |
+                Update aws/aws-cli from 2.30.1 to 2.30.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.28
+          title: ""
+          date: 2025-09-16T01:49:03.269Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.40
+              hash: fb5a81ee36e75e94cc573474c291b1f94072fb78
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.39 to
+                0.0.40
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.27
+          title: ""
+          date: 2025-09-15T17:26:47.472Z
+  version: 6.6.10+rev1
+  title: ""
+  date: 2025-10-14T05:59:06.510Z
+- commits:
     - subject: Update layers/meta-balena to 3a3fa5f6be255506a45d7a98328e0b5f32e4cac4
       hash: 128910ce0b4b0b76fa010726d602f95f8dec5192
       body: Update layers/meta-balena

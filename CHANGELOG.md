@@ -1,6 +1,62 @@
 Change log
 -----------
 
+# v6.6.13+rev1
+## (2025-10-22)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ee9d9f77cab8411071a4653ccd92365bf4d5ddd9 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.56
+> ### (2025-10-21)
+> 
+> * Update aws/aws-cli to v2.31.19 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.55
+> ### (2025-10-21)
+> 
+> * Update aws/aws-cli to v2.31.18 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.54
+> ### (2025-10-20)
+> 
+> * Update acceptable states for previous test runs [Kyle Harding]
+> * Fix AMI decrypt step paths [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.38.53
+> ### (2025-10-18)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.51 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.52
+> ### (2025-10-17)
+> 
+> * Update balena-io/balena-cli to v22.4.14 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.51
+> ### (2025-10-16)
+> 
+> * Update aws/aws-cli to v2.31.17 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.50
+> ### (2025-10-15)
+> 
+> * Update aws/aws-cli to v2.31.16 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.49
+> ### (2025-10-15)
+> 
+> * Update balena-io/balena-cli to v22.4.13 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.48
+> ### (2025-10-14)
+> 
+> * Update aws/aws-cli to v2.31.15 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.6.13
 ## (2025-10-18)
 

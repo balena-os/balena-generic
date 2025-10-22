@@ -1,4 +1,151 @@
 - commits:
+    - subject: Update balena-yocto-scripts to ee9d9f77cab8411071a4653ccd92365bf4d5ddd9
+      hash: 2bd7a3692a71d219709bff0251aca14ba23d9454
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to ee9d9f77cab8411071a4653ccd92365bf4d5ddd9
+        changelog-entry: Update balena-yocto-scripts to ee9d9f77cab8411071a4653ccd92365bf4d5ddd9
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.19
+              hash: a1c6d0446605c448dd3fe4b5f28cfbe7667ce24f
+              body: |
+                Update aws/aws-cli from 2.31.18 to 2.31.19
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.56
+          title: ""
+          date: 2025-10-21T23:06:02.199Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.18
+              hash: 5f921d4304e84a85a0dd5fd1679890d325062ebf
+              body: |
+                Update aws/aws-cli from 2.31.17 to 2.31.18
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.55
+          title: ""
+          date: 2025-10-21T01:30:26.915Z
+        - commits:
+            - subject: Update acceptable states for previous test runs
+              hash: 736cb72e967d4e5e814b0d49a577283d0b4b5a76
+              body: |
+                This makes the test run check more robust and handles
+                cases where we may see unexpected results like more or
+                fewer test runs with varying conclusions.
+
+                Github script is also more secure and less prone
+                to string processing issues than bash CLI commands.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Fix AMI decrypt step paths
+              hash: 8257cae6fef47b7dd5fb5ec3693e893fc6b1314d
+              body: ""
+              footer:
+                CHange-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.54
+          title: ""
+          date: 2025-10-20T21:05:57.787Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.51
+              hash: ebdc564154f07898e858e65f99acf4c344b34a74
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.48 to
+                0.0.51
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.53
+          title: ""
+          date: 2025-10-18T01:47:52.552Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.14
+              hash: a7f6641013065b6bc5003eb42aeac3a349d978f9
+              body: |
+                Update balena-io/balena-cli from 22.4.13 to 22.4.14
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.52
+          title: ""
+          date: 2025-10-17T19:00:29.283Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.17
+              hash: 0c9254e5cb66b11cd471c7fddadb3f2bf1a1e997
+              body: |
+                Update aws/aws-cli from 2.31.16 to 2.31.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.51
+          title: ""
+          date: 2025-10-16T22:26:14.678Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.16
+              hash: cbce24e8dd509a17ce989bf941d0d19606bd56ac
+              body: |
+                Update aws/aws-cli from 2.31.15 to 2.31.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.50
+          title: ""
+          date: 2025-10-15T22:22:34.690Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.4.13
+              hash: f16b7523dcef538cbd1b7113351980a78c95df95
+              body: |
+                Update balena-io/balena-cli from 22.4.11 to 22.4.13
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.49
+          title: ""
+          date: 2025-10-15T03:35:42.711Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.15
+              hash: dcdd116cbb7b32629ee6542f19b2545cf63a6b9a
+              body: |
+                Update aws/aws-cli from 2.31.14 to 2.31.15
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.48
+          title: ""
+          date: 2025-10-14T22:42:13.938Z
+  version: 6.6.13+rev1
+  title: ""
+  date: 2025-10-22T19:24:44.091Z
+- commits:
     - subject: Update layers/meta-balena to e7cececd6d654b36e286b2759b0450e4c36dd629
       hash: 2b01a50ddc7fb0ff455c8433af4bf4369ddc13ab
       body: Update layers/meta-balena

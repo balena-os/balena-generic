@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.6.13+rev6
+## (2025-11-12)
+
+* Blacklist nouveau and nvidiafb on secure boot device types [Michal Toman]
+
 # v6.6.13+rev5
 ## (2025-11-12)
 

@@ -1,4 +1,29 @@
 - commits:
+    - subject: Blacklist nouveau and nvidiafb on secure boot device types
+      hash: 5239f5a2a9f41cea00fa35e438c55a3fa4e7d15d
+      body: |
+        In general, the recommended approach for using the out-of-tree NVIDIA
+        drivers is to unload nouveau and nvidiafb at runtime, right before
+        the NVIDIA driver is loaded. Certain cards do not like this approach
+        and won't work properly if nouveau is loaded at all.
+
+        Since the primary driver for creating separate secure boot device
+        types is to use secure boot in combination with NVIDIA GPUs
+        and the out-of-tree driver, we can safely blacklist nouveau
+        and nvidiafb at build time. This makes it easier to load the NVIDIA
+        driver from the application and reduces the risk of a double-reset
+        putting the card into an undefined state.
+      footer:
+        Changelog-entry: Blacklist nouveau and nvidiafb on secure boot device types
+        changelog-entry: Blacklist nouveau and nvidiafb on secure boot device types
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.6.13+rev6
+  title: ""
+  date: 2025-11-12T18:15:46.324Z
+- commits:
     - subject: Update balena-yocto-scripts to 052ceda565407997d0e1f8b4addee1ca657ccd4a
       hash: 3550aa300664f3c1d0292a7e3be2d2157bb9e4bb
       body: Update balena-yocto-scripts

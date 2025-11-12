@@ -1,4 +1,326 @@
 - commits:
+    - subject: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+      hash: 73014ac113166d0f0f8efb5e7359ec092b05e33b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+        changelog-entry: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: add CONFIG_DM_FLAKEY for disk-watchdog testing
+              hash: f523f9cde68a93b770f47f6cc2522b1a96284eea
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.7.4
+          title: ""
+          date: 2025-11-08T09:10:11.321Z
+        - commits:
+            - subject: Update tests/leviathan digest to c549c54
+              hash: e4de9a070360d2f934743b1bedcbfb62995bb079
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.14
+                      hash: 1492ec2da6a3a93a5bd1d06f076d4532d331497a
+                      body: >
+                        Update balena-os/leviathan-worker from 2.10.12 to 2.10.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.62
+                  title: ""
+                  date: 2025-11-06T14:45:42.174Z
+          version: meta-balena-6.7.3
+          title: ""
+          date: 2025-11-07T17:05:12.407Z
+        - commits:
+            - subject: "balena-os.inc: Enforce PACKAGE_CLASSES to package_ipk"
+              hash: 5c530095011bba2935b3dcac374a415b6710d7ec
+              body: >
+                We used to have the PACKAGE_CLASSES default to package_ipk by
+                using the soft ?= assignment.
+
+                However, starting with Scarthgap poky.conf also does a soft
+                assignment to package_rpm so we
+
+                end up with that instead.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.7.2
+          title: ""
+          date: 2025-11-07T10:28:02.622Z
+        - commits:
+            - subject: "packagegroups/packagegroup-resin-flasher: Set PACKAGE_ARCH"
+              hash: fb118c04107f0aa4c17caf933938038f13963e96
+              body: >
+                Fixes the following error:
+
+                    packagegroup-resin-flasher-1.0-r1 do_package_write_rpm: An allarch packagegroup shouldn't depend on packages which are dynamically renamed
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+            - subject: "tests/suites: Use USB relay to toggle boot switch on certain devices"
+              hash: 5890f661fac084258c26fe0fe7c5a3572af98521
+              body: |
+                We no longer need to override the boot switch from
+                the flasher image because we have access to the boot pins
+                of the device in question and can control them using a
+                relay. This way we can test if the bootswitch detection
+                mechanism in u-boot works properly.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.7.1
+          title: ""
+          date: 2025-11-06T11:49:00.999Z
+        - commits:
+            - subject: add disk-watchdog daemon
+              hash: fa725ce23e93d918d0eafaf9fa7b15549b0f8b7f
+              body: >
+                This service helps in detecting io errors and try to solve them
+                by issuing a reboot. It avoids reboot loops by tracking boot
+                with a timestamp.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.7.0
+          title: ""
+          date: 2025-11-05T10:29:49.790Z
+        - commits:
+            - subject: Update tests/leviathan digest to 2a3a310
+              hash: c8c839b8c113dfaac8da89c7047a1f20101678a2
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 4f0d5b6e503bd43388d6f5c2612459dd73b0ba03
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.61
+                  title: ""
+                  date: 2025-11-03T01:06:27.667Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.12
+                      hash: 2ef23809596a9d8d1b28c374b2500208603d718e
+                      body: >
+                        Update balena-os/leviathan-worker from 2.10.11 to 2.10.12
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.60
+                  title: ""
+                  date: 2025-10-31T18:39:38.518Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.16
+                      hash: d6ee2dba7f4fbdb9abb3931c7083997f50c7e3a0
+                      body: |
+                        Update balena-io/balena-cli from 22.4.15 to 22.4.16
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.59
+                  title: ""
+                  date: 2025-10-30T12:41:43.048Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: e5f5e44e678ddd168e75d5d592f7295240033eab
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.58
+                  title: ""
+                  date: 2025-10-27T01:04:34.052Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.11
+                      hash: a421f4e0de57989571aefb0bf3e2ef1b64cb5de2
+                      body: >
+                        Update balena-os/leviathan-worker from 2.10.10 to 2.10.11
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.57
+                  title: ""
+                  date: 2025-10-25T04:44:18.462Z
+                - commits:
+                    - subject: Update actions/upload-artifact action to v5
+                      hash: ebe9249cea7074f384efc0b47c9c03cecf4ae03e
+                      body: |
+                        Update actions/upload-artifact from 4 to 5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.56
+                  title: ""
+                  date: 2025-10-25T00:59:58.363Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.15
+                      hash: c76ba33a932e25f4936698134976d04fc0b2c396
+                      body: |
+                        Update balena-io/balena-cli from 22.4.14 to 22.4.15
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.55
+                  title: ""
+                  date: 2025-10-21T14:45:35.335Z
+          version: meta-balena-6.6.17
+          title: ""
+          date: 2025-11-03T06:10:54.794Z
+        - commits:
+            - subject: "recipes-support/balena-config-vars: Avoid failure caused by race in
+                cache file creation"
+              hash: 6ec251e48f3eaae6e3fded5b003d11f2fae2d418
+              body: >
+                Services like os-fan-profile or os-power-mode may fail
+
+                at startup due to a race in the creation of the
+                balena-config-vars
+
+                cache:
+
+                    mv: cannot create regular file '/var/cache/balena-config-vars': File exists
+
+                The cache file may bee generated at the same time by another
+
+                instance of the same helper function. To avoid that,
+
+                we now introduce the lock file
+                /var/cache/balena-config-vars.lock
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.16
+          title: ""
+          date: 2025-10-29T12:52:25.561Z
+        - commits:
+            - subject: Remove non-autokit DTs from build list
+              hash: 45e7c8c715168f16fea4eb8b52914da71116c7c1
+              body: >
+                These DT's are currently not tested, so are not getting new
+                releases - no value added in having them built as part of
+                meta-balena PRs
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.6.15
+          title: ""
+          date: 2025-10-28T15:05:49.954Z
+        - commits:
+            - subject: Update tests/leviathan digest to 19c382d
+              hash: 7049d36cc9302a3bfb2918643d5668ea6fdbb869
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: ffe44154a6f98b06324b18dfe9de24bbe3b39752
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.54
+                  title: ""
+                  date: 2025-10-20T01:06:24.485Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.14
+                      hash: 7a5ef964fb8ca00e80690144c0ff59c6d55fdd01
+                      body: |
+                        Update balena-io/balena-cli from 22.4.13 to 22.4.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.53
+                  title: ""
+                  date: 2025-10-17T18:55:11.552Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.13
+                      hash: e41a4514e4851cd3476108072b5930a8b3bb4ea6
+                      body: |
+                        Update balena-io/balena-cli from 22.4.12 to 22.4.13
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.52
+                  title: ""
+                  date: 2025-10-14T15:09:42.204Z
+          version: meta-balena-6.6.14
+          title: ""
+          date: 2025-10-20T07:06:29.629Z
+  version: 6.7.4
+  title: ""
+  date: 2025-11-12T21:22:05.328Z
+- commits:
     - subject: Blacklist nouveau and nvidiafb on secure boot device types
       hash: 5239f5a2a9f41cea00fa35e438c55a3fa4e7d15d
       body: |

@@ -1,6 +1,135 @@
 Change log
 -----------
 
+# v6.7.4
+## (2025-11-12)
+
+
+<details>
+<summary> Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.7.4
+> ### (2025-11-08)
+> 
+> * add CONFIG_DM_FLAKEY for disk-watchdog testing [Yann CARDAILLAC]
+> 
+> ## meta-balena-6.7.3
+> ### (2025-11-07)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to c549c54 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.62
+>> #### (2025-11-06)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.14 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.7.2
+> ### (2025-11-07)
+> 
+> * balena-os.inc: Enforce PACKAGE_CLASSES to package_ipk [Florin Sarbu]
+> 
+> ## meta-balena-6.7.1
+> ### (2025-11-06)
+> 
+> * packagegroups/packagegroup-resin-flasher: Set PACKAGE_ARCH [Alexandru Costache]
+> * tests/suites: Use USB relay to toggle boot switch on certain devices [Alexandru Costache]
+> 
+> ## meta-balena-6.7.0
+> ### (2025-11-05)
+> 
+> * add disk-watchdog daemon [Yann CARDAILLAC]
+> 
+> ## meta-balena-6.6.17
+> ### (2025-11-03)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 2a3a310 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.61
+>> #### (2025-11-03)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.60
+>> #### (2025-11-01)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.12 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.59
+>> #### (Invalid date)
+>> 
+>> * Update balena-io/balena-cli to v22.4.16 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.58
+>> #### (2025-10-27)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.57
+>> #### (2025-10-25)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.11 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.56
+>> #### (2025-10-25)
+>> 
+>> * Update actions/upload-artifact action to v5 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.55
+>> #### (2025-10-21)
+>> 
+>> * Update balena-io/balena-cli to v22.4.15 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.16
+> ### (2025-10-29)
+> 
+> * recipes-support/balena-config-vars: Avoid failure caused by race in cache file creation [Alexandru Costache]
+> 
+> ## meta-balena-6.6.15
+> ### (2025-10-28)
+> 
+> * Remove non-autokit DTs from build list [Ryan Cooke]
+> 
+> ## meta-balena-6.6.14
+> ### (2025-10-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 19c382d [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.54
+>> #### (2025-10-20)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.53
+>> #### (2025-10-17)
+>> 
+>> * Update balena-io/balena-cli to v22.4.14 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.52
+>> #### (2025-10-14)
+>> 
+>> * Update balena-io/balena-cli to v22.4.13 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.6.13+rev6
 ## (2025-11-12)
 

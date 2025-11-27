@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 74f3bfc67734a173fc733a53c0117bc3e46ee361
+      hash: 7bf4012b8b5afeb6fd1705e74cc1a2dc56ade3f1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 74f3bfc67734a173fc733a53c0117bc3e46ee361
+        changelog-entry: Update layers/meta-balena to 74f3bfc67734a173fc733a53c0117bc3e46ee361
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Upgrade linux-firmware from 20230404 to 20240909
+              hash: e01fbc5a5ff48e58e6a967e042be4454bbfcb9af
+              body: >
+                This new recipe is taken from Poky revision
+                711c93422918d1810e652e75405b9f9ad6f01167 (scarthgap branch)
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Upgrade linux-firmware from 20230404 to 20240909
+                changelog-entry: Upgrade linux-firmware from 20230404 to 20240909
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.8.1
+          title: ""
+          date: 2025-11-27T00:19:03.865Z
+  version: 6.8.1
+  title: ""
+  date: 2025-11-27T06:59:11.577Z
+- commits:
     - subject: Update balena-yocto-scripts to 2b1cf90fb0333b1d8cdb2c3dbf041fd109e563a2
       hash: c356595450f364dfe3da26eb7998e241e58715ee
       body: Update balena-yocto-scripts

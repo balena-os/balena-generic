@@ -69,7 +69,7 @@ permissions:
 jobs:
   yocto:
     name: Yocto
-    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@88f0e2fad1ef59b108b723a6f01bebb5b857d85f
+    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@6bd292c158a43863a3b0bf8730487748befeb87e
     # Prevent duplicate workflow executions for pull_request (PR) and pull_request_target (PRT) events.
     # Both PR and PRT will be triggered for the same pull request, whether it is internal or from a fork.
     # This condition will prevent the workflow from running twice for the same pull request while
@@ -89,6 +89,7 @@ jobs:
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot
       sign-image: true
+      extra_signing_key: true # expect a separate signing key for the kernel module signing
       signing-environment: sign.balena-cloud.com+generic-amd64-fs
       # FIXME: Disable finalize-on-push until we have a test to verify that SIGN_KMOD_KEY_APPEND is set
       finalize-on-push-if-tests-passed: false

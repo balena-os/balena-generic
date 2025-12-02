@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v6.8.1
+## (2025-11-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 74f3bfc67734a173fc733a53c0117bc3e46ee361 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.8.1
+> ### (2025-11-27)
+> 
+> * Upgrade linux-firmware from 20230404 to 20240909 [Florin Sarbu]
+> 
+
+</details>
+
+# v6.8.0+rev2
+## (2025-11-26)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2b1cf90fb0333b1d8cdb2c3dbf041fd109e563a2 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.96
+> ### (2025-11-24)
+> 
+> * workflows: Add Generic x86_64 (GPT) and Generic AARCH64 device tests [Kyle Harding]
+> * Dockerfile_yocto-build-env: Avoid balena CLI duplicate install [Kyle Harding]
+> 
+
+</details>
+
 # v6.8.0+rev1
 ## (2025-11-25)
 

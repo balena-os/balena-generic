@@ -412,3 +412,12 @@ BALENA_CONFIGS:append:generic-amd64 = " drm_accel_x86"
 BALENA_CONFIGS[drm_accel_x86] = " \
     CONFIG_DRM_ACCEL_IVPU=m \
 "
+
+# I2C touchpads on some laptops
+BALENA_CONFIGS:append = " i2c_hid"
+BALENA_CONFIGS[i2c_hid] = " \
+     CONFIG_I2C_HID=m \
+     CONFIG_I2C_HID_CORE=m \
+     CONFIG_I2C_HID_ACPI=m \
+     CONFIG_I2C_HID_OF=m \
+"

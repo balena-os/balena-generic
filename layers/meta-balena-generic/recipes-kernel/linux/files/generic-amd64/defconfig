@@ -6486,6 +6486,12 @@ CONFIG_DRM_LEGACY=y
 CONFIG_DRM_PANEL_ORIENTATION_QUIRKS=y
 
 #
+# Compute Acceleration Framework
+#
+CONFIG_DRM_ACCEL=y
+CONFIG_DRM_ACCEL_IVPU=m
+
+#
 # Frame buffer Devices
 #
 CONFIG_FB_CMDLINE=y

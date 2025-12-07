@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to e0d5ffd55a6dbfee857cdd4455bc37c3f70e7681
+      hash: f6b055153f4f8496fce0b70fbf0a59c5d648233f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e0d5ffd55a6dbfee857cdd4455bc37c3f70e7681
+        changelog-entry: Update layers/meta-balena to e0d5ffd55a6dbfee857cdd4455bc37c3f70e7681
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ModemManager to 1.24.2
+              hash: 1aab953699dda53d6beddba72dd64bee6ec9c2e1
+              body: |
+                This is the latest stable version available
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update ModemManager to 1.24.2
+                changelog-entry: Update ModemManager to 1.24.2
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.9.0
+          title: ""
+          date: 2025-12-07T00:03:29.091Z
+  version: 6.9.0
+  title: ""
+  date: 2025-12-07T08:54:50.838Z
+- commits:
     - subject: Update layers/meta-balena to 0f9c042a0961c07361fd516ccc93886b6234870c
       hash: 7580ad76c073ddb0b19209c5560a3c2201558f59
       body: Update layers/meta-balena

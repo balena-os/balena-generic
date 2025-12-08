@@ -1,4 +1,20 @@
 - commits:
+    - subject: Enable Intel Xe GPU driver
+      hash: d9147b9c2b6bc057d385db96f52ba0bbdf36cfbd
+      body: |
+        i915 replacement for Tiger Lake and later iGPUs
+        The configuration mimics Debian 13
+      footer:
+        Changelog-entry: Enable Intel Xe GPU driver
+        changelog-entry: Enable Intel Xe GPU driver
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.9.0+rev2
+  title: ""
+  date: 2025-12-08T16:10:25.708Z
+- commits:
     - subject: Update layers/poky to 40701465df90b38b9068bcbd0ce6aa6587807433
       hash: 7f79a88ee04e89168a6165a2ffee21edec92259c
       body: Update layers/poky

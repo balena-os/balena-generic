@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.0+rev2
+## (2025-12-08)
+
+* Enable Intel Xe GPU driver [Michal Toman]
+
 # v6.9.0+rev1
 ## (2025-12-07)
 

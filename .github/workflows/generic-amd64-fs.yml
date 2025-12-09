@@ -89,6 +89,7 @@ jobs:
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}
       # Sign image for secure boot
       sign-image: true
+      extra_signing_key: true # expect a separate signing key for the kernel module signing
       signing-environment: sign.balena-cloud.com+generic-amd64-fs
       # FIXME: Disable finalize-on-push until we have a test to verify that SIGN_KMOD_KEY_APPEND is set
       finalize-on-push-if-tests-passed: false

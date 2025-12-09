@@ -1,4 +1,18 @@
 - commits:
+    - subject: verify that SIGN_KMOD_KEY_APPEND made it to the final kernel
+      hash: 7e78b6037ceeeb8db42dc18f03c8bf47c1931611
+      body: ""
+      footer:
+        Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+        signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+        Changelog-entry: verify that SIGN_KMOD_KEY_APPEND made it to the final kernel
+        changelog-entry: verify that SIGN_KMOD_KEY_APPEND made it to the final kernel
+      author: Yann CARDAILLAC
+      nested: []
+  version: 6.9.2+rev1
+  title: ""
+  date: 2025-12-09T13:43:32.209Z
+- commits:
     - subject: Update layers/meta-balena to 6bfa26bd140e368e06d72af56cbfc8133f9f0b33
       hash: 8b73c6d8118ffe2f543087a492b3123092444d6e
       body: Update layers/meta-balena

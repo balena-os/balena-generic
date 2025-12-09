@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.2+rev1
+## (2025-12-09)
+
+* verify that SIGN_KMOD_KEY_APPEND made it to the final kernel [Yann CARDAILLAC]
+
 # v6.9.2
 ## (2025-12-09)
 

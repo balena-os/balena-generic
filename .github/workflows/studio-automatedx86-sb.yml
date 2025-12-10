@@ -89,7 +89,5 @@ jobs:
       sign-image: true
       extra_signing_key: true # expect a separate signing key for the kernel module signing
       signing-environment: sign.balena-cloud.com+studio-automatedx86-sb
-      # FIXME: Disable finalize-on-push until we have a test to verify that SIGN_KMOD_KEY_APPEND is set
-      finalize-on-push-if-tests-passed: false
       # Allow overriding the meta-balena ref for workflow dispatch events
       meta-balena-ref: ${{ inputs.meta-balena-ref || '' }}

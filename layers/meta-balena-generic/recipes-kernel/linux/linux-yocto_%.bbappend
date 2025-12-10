@@ -398,3 +398,17 @@ BALENA_CONFIGS[xe] = " \
     CONFIG_DRM_XE_PREEMPT_TIMEOUT_MIN=1 \
     CONFIG_DRM_XE_ENABLE_SCHEDTIMEOUT_LIMIT=y \
 "
+
+# AI accelerators
+BALENA_CONFIGS:append = " drm_accel"
+BALENA_CONFIGS[drm_accel] = " \
+    CONFIG_DRM_ACCEL=y \
+    CONFIG_DRM_ACCEL_HABANALABS=m \
+    CONFIG_DRM_ACCEL_QAIC=m \
+"
+
+# AI accelerators integrated into x86 CPUs
+BALENA_CONFIGS:append:generic-amd64 = " drm_accel_x86"
+BALENA_CONFIGS[drm_accel_x86] = " \
+    CONFIG_DRM_ACCEL_IVPU=m \
+"

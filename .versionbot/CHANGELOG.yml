@@ -1,4 +1,26 @@
 - commits:
+    - subject: Enable drivers for AI accelerators
+      hash: 461e26fc7aefd218f5407822ed1c6cd38ad842e7
+      body: |
+        In particular this enables
+        * CONFIG_DRM_ACCEL (generic compute acceleration)
+        * CONFIG_DRM_ACCEL_IVPU (Intel Core Ultra series NPUs)
+        * CONFIG_DRM_ACCEL_HABANALABS (now also Intel)
+        * CONFIG_DRM_ACCEL_QAIC (Qualcomm)
+
+        This is everything available in kernel 6.12, other vendors
+        must be enabled after a kernel update.
+      footer:
+        Changelog-entry: Enable drivers for AI accelerators
+        changelog-entry: Enable drivers for AI accelerators
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.9.2+rev2
+  title: ""
+  date: 2025-12-10T11:19:12.878Z
+- commits:
     - subject: verify that SIGN_KMOD_KEY_APPEND made it to the final kernel
       hash: 7e78b6037ceeeb8db42dc18f03c8bf47c1931611
       body: ""

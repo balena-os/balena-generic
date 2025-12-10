@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.2+rev2
+## (2025-12-10)
+
+* Enable drivers for AI accelerators [Michal Toman]
+
 # v6.9.2+rev1
 ## (2025-12-09)
 

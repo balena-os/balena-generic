@@ -1,4 +1,21 @@
 - commits:
+    - subject: Now that SIGN_KMOD_KEY_APPEND is verified in the workflow we can safely
+        remove finalize-on-push-if-tests-passed
+      hash: 842a912d6116fbaae01f5e4fc1ff1e2c4c6a6015
+      body: ""
+      footer:
+        Changelog-entry: Now that SIGN_KMOD_KEY_APPEND is verified in the workflow we
+          can safely remove finalize-on-push-if-tests-passed
+        changelog-entry: Now that SIGN_KMOD_KEY_APPEND is verified in the workflow we
+          can safely remove finalize-on-push-if-tests-passed
+        Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+        signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+      author: Yann CARDAILLAC
+      nested: []
+  version: 6.9.2+rev3
+  title: ""
+  date: 2025-12-10T18:02:31.732Z
+- commits:
     - subject: Enable drivers for AI accelerators
       hash: 461e26fc7aefd218f5407822ed1c6cd38ad842e7
       body: |

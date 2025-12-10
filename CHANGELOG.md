@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.2+rev3
+## (2025-12-10)
+
+* Now that SIGN_KMOD_KEY_APPEND is verified in the workflow we can safely remove finalize-on-push-if-tests-passed [Yann CARDAILLAC]
+
 # v6.9.2+rev2
 ## (2025-12-10)
 

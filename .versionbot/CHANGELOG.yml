@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update kernel to 6.12.47
+      hash: a587687a827f8c46aee24fd2e994b803ee7cf24d
+      body: >
+        Recipes taken from Poky walnascar release, revision
+        cd993c7abba53b145acb1ee614b6a722349ca6e0
+      footer:
+        Changelog-entry: Update kernel to 6.12.47
+        changelog-entry: Update kernel to 6.12.47
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.10.1+rev1
+  title: ""
+  date: 2025-12-19T20:14:23.497Z
+- commits:
     - subject: Update layers/meta-balena to f8542a3b92f2c76f7051477d298422f7cdd5238b
       hash: 30cfd48c6eb018a54d7c26793388c81e2f95debc
       body: Update layers/meta-balena

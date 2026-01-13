@@ -41,9 +41,11 @@ PN:class-devupstream = "linux-yocto-upstream"
 KBRANCH:class-devupstream = "v6.12/base"
 
 SRC_URI = "git://git.yoctoproject.org/linux-yocto.git;name=machine;branch=${KBRANCH};protocol=https \
-           git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.12;destsuffix=${KMETA};protocol=https"
+           git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.12;destsuffix=${KMETA};protocol=https \
+           file://GPL-2.0-with-Linux-syscall-note"
 
-LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
+NO_GENERIC_LICENSE[GPL-2.0-with-Linux-syscall-note] = "GPL-2.0-with-Linux-syscall-note"
+LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46 file://GPL-2.0-with-Linux-syscall-note;md5=0bad96c422c41c3a94009dcfe1bff992"
 LINUX_VERSION ?= "6.12.47"
 
 PV = "${LINUX_VERSION}+git"
@@ -74,3 +76,7 @@ KERNEL_FEATURES:append:powerpc64 = " arch/powerpc/powerpc-debug.scc"
 KERNEL_FEATURES:append:powerpc64le = " arch/powerpc/powerpc-debug.scc"
 
 INSANE_SKIP:kernel-vmlinux:qemuppc64 = "textrel"
+
+do_configure:prepend() {
+    install -m 0644 ${WORKDIR}/GPL-2.0-with-Linux-syscall-note ${S}/GPL-2.0-with-Linux-syscall-note
+}

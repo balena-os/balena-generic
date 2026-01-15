@@ -1,4 +1,27 @@
 - commits:
+    - subject: ": add GPL-2.0-with-Linux-syscall-note from upstream"
+      hash: a71c2219ffc0a22f3faafbe360d7c131df37c345
+      body: >
+        fixes WARNING: linux-yocto-6.12.47+git-r0 do_populate_lic: QA Issue:
+
+        linux-yocto: No generic license file exists for:
+        GPL-2.0-with-Linux-syscall-note
+
+        in any provider [license-exists]
+
+
+        by adding it in our own licenses directory
+      footer:
+        Changelog-entry: ": add GPL-2.0-with-Linux-syscall-note from upstream"
+        changelog-entry: ": add GPL-2.0-with-Linux-syscall-note from upstream"
+        Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+        signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+      author: Yann CARDAILLAC
+      nested: []
+  version: 6.10.15+rev2
+  title: ""
+  date: 2026-01-15T19:00:14.804Z
+- commits:
     - subject: Update balena-yocto-scripts to d3e228e92b3c9f714f4514206f085fa76c2f6629
       hash: 5b5117d5e34a9e3a266dd766bf747fbe955472f9
       body: Update balena-yocto-scripts

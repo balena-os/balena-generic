@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.10.15+rev2
+## (2026-01-15)
+
+* : add GPL-2.0-with-Linux-syscall-note from upstream [Yann CARDAILLAC]
+
 # v6.10.15+rev1
 ## (2026-01-14)
 

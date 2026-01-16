@@ -1,4 +1,23 @@
 - commits:
+    - subject: Enable I2C touchpads on generic-amd64
+      hash: 401c693b4dea7fb6252a01f69270ea70a5063b55
+      body: |
+        We currently only enable CONFIG_I2C_HID, which is not enough to make
+        I2C touchpads work, we also need I2C_HID_ACPI or I2C_HID_OF based
+        on whether the device is advertised in ACPI or device tree.
+
+        This patch adds both.
+      footer:
+        Changelog-entry: Enable I2C touchpads on generic-amd64
+        changelog-entry: Enable I2C touchpads on generic-amd64
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.10.15+rev5
+  title: ""
+  date: 2026-01-16T14:49:10.139Z
+- commits:
     - subject: Update layers/meta-openembedded to
         7d4507f226bd2af939d4482fb14a809867ece939
       hash: 61288b815841e17fba5fd7804e12b8debaafbe03

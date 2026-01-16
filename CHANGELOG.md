@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.10.15+rev5
+## (2026-01-16)
+
+* Enable I2C touchpads on generic-amd64 [Michal Toman]
+
 # v6.10.15+rev4
 ## (2026-01-16)
 

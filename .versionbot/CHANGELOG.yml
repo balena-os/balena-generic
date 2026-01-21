@@ -1,4 +1,25 @@
 - commits:
+    - subject: Make MPI3MR storage driver built-in
+      hash: fa977e93e53441c5bf5fc3afa277342adf3b534d
+      body: |
+        In commit 611057f78bdaef4587f866584602b407e09aaa1a we've enabled
+        a set of common RAID card drivers directly in defconfig which works,
+        but is relatively fragile.
+
+        We want this change to survive kernel updates, so this patch moves
+        the configuration to BALENA_CONFIGS. It also enables one new driver,
+        MPI3MR, which is the only change visible from the outside.
+      footer:
+        Changelog-entry: Make MPI3MR storage driver built-in
+        changelog-entry: Make MPI3MR storage driver built-in
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 6.10.15+rev6
+  title: ""
+  date: 2026-01-21T17:56:43.287Z
+- commits:
     - subject: Enable I2C touchpads on generic-amd64
       hash: 401c693b4dea7fb6252a01f69270ea70a5063b55
       body: |

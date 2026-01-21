@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.10.15+rev6
+## (2026-01-21)
+
+* Make MPI3MR storage driver built-in [Michal Toman]
+
 # v6.10.15+rev5
 ## (2026-01-16)
 

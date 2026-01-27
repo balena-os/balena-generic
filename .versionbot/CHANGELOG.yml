@@ -1,4 +1,202 @@
 - commits:
+    - subject: Update layers/meta-balena to 3238e53bf8221718b32066a36cddec8ecfafa979
+      hash: ca21de0c7c64136a9562fd646f85ab90f4f62da3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3238e53bf8221718b32066a36cddec8ecfafa979
+        changelog-entry: Update layers/meta-balena to 3238e53bf8221718b32066a36cddec8ecfafa979
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/kernel-balena: Fix typo in kernel-balena.bbclass"
+              hash: 892d3d965db1a1fe02ba5e29d76a7e903570f28f
+              body: |
+                The variable allSetConfigs is not in this context and
+                it appears to be a typo. Replacing it with 'allSetKernelConfigs'
+                which appears to be the intended one.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+            - subject: Fix type allSetConfigs -> allSetKernelConfigs
+              hash: 60cdbc889156f816aee432897209f927ee339438
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Christina Ying Wang <christina@balena.io>
+                signed-off-by: Christina Ying Wang <christina@balena.io>
+              author: Christina Ying Wang
+              nested: []
+          version: meta-balena-6.10.21
+          title: ""
+          date: 2026-01-26T21:36:10.894Z
+        - commits:
+            - subject: Update actions/setup-python digest to a309ff8
+              hash: 0b7ff6146520a85ba1d3256e30ac4d76766da2d5
+              body: >
+                Update actions/setup-python to
+                a309ff8b426b58ec0e2a45f0f869d46889d02405
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.10.20
+          title: ""
+          date: 2026-01-26T08:08:03.906Z
+        - commits:
+            - subject: Further reduce the size of the balena bootloader by removing PTP clock
+                support
+              hash: 793ab6bf9a64f1a27418c301a5c920454fd75f85
+              body: >
+                This disables support for PTP clock since it's not something
+
+                I foresee us needing in the balena bootloader.
+
+
+                Additionaly, fix the actual bootloader shrinking since the
+                initial
+
+                commit which introduced this did not effectively add the
+                disabling
+
+                of these options to the .config
+              footer:
+                Changelog-entry: Further reduce the size of the balena bootloader by removing
+                  PTP clock support
+                changelog-entry: Further reduce the size of the balena bootloader by removing
+                  PTP clock support
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.10.19
+          title: ""
+          date: 2026-01-23T05:03:51.721Z
+        - commits:
+            - subject: "initrdscripts: export IS_ROLLBACK and ROOT_PART flags from abroot
+                script"
+              hash: 19ed842efafa473f1f6d4a39cae8ac3fccf9df64
+              body: >
+                Some device types apply additional (bootloader-level) rollback
+                hooks
+
+                when the abroot script decides to roll back. Right now they keep
+
+                a cusomized fork of the abroot script in the device repo.
+
+
+                This patch exports the ROOT_PART variable from abroot to
+                indicate
+
+                which partition we're about to boot into, as well as a new
+                IS_ROLLBACK
+
+                variable. This way all the device types should be able to use
+                the same
+
+                abroot and add hooks as separate initrd scripts ordered after
+                abroot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: "initrdscripts: add extrafw script"
+              hash: f51d22a0f232844221badef4e793fa057d70fe1a
+              body: >
+                This enables the balena bootloader to set a custom firmware
+                search path
+
+                on the kernel command line.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: "initrdscripts: separate mounting boot partition from abroot"
+              hash: 49a3c942b852dcc1e96b0bdfded6666c1fd7b369
+              body: >
+                Right now, abroot is the only script executed in the balena
+                bootloader
+
+                so it does everything - find the boot partition, mount it, read
+                boot
+
+                configuration, perform A/B selection, and unmount the boot
+                partition.
+
+
+                Long-term, we want to introduce other bootloader scripts that
+                read
+
+                the boot configuration and do other things, so we want to have
+
+                an "entry" script that finds and mounts the boot partition, so
+                that
+
+                the subsequently executed scripts can just use it.
+
+
+                This patch splits the abroot script into two - the mountboot
+                script
+
+                that finds and mounts the boot partition, and the abroot script,
+
+                that only performs tha A/B selection.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.10.18
+          title: ""
+          date: 2026-01-21T18:19:00.076Z
+        - commits:
+            - subject: Update vacuum-size to 128M to match vacuum.conf and
+                journald-balena-os.conf
+              hash: 42ac8ca0096c93c486ea29f2de4cd3bacd0460ff
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Chris Sawer <chris.sawer@demandlogic.co.uk>
+                signed-off-by: Chris Sawer <chris.sawer@demandlogic.co.uk>
+              author: Chris Sawer
+              nested: []
+          version: meta-balena-6.10.17
+          title: ""
+          date: 2026-01-21T11:49:44.917Z
+        - commits:
+            - subject: "os-helpers: safe-reboot: always sync filesystem before reboot"
+              hash: 69066785bef32cf64471f4e999d771dfd4d009fb
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.10.16
+          title: ""
+          date: 2026-01-20T11:56:13.550Z
+  version: 6.10.21
+  title: ""
+  date: 2026-01-27T12:33:25.644Z
+- commits:
     - subject: Update balena-yocto-scripts to 8dab33579c6e2fbafed0ca57735a6b0c0da40379
       hash: 3e775d6007329813f81be696b27659184eb7fa98
       body: Update balena-yocto-scripts

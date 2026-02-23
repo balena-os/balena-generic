@@ -18,7 +18,7 @@ SRC_URI:append = " \
     file://0003-wifi-iwlwifi-pcie-set-state-to-no-FW-before-reset-ha.patch \
 "
 
-KCONFIG_MODE="--alldefconfig"
+KCONFIG_MODE="alldefconfig"
 
 # enable AUFS support from kernel-balena
 BALENA_CONFIGS:append = " aufs"

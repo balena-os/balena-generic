@@ -1,50 +1,50 @@
-KBRANCH ?= "v6.12/standard/base"
+KBRANCH ?= "v6.18/standard/base"
 
 require recipes-kernel/linux/linux-yocto.inc
 
 # CVE exclusions
 include recipes-kernel/linux/cve-exclusion.inc
-include recipes-kernel/linux/cve-exclusion_6.12.inc
+include recipes-kernel/linux/cve-exclusion_6.18.inc
 
 # board specific branches
-KBRANCH:qemuarm  ?= "v6.12/standard/arm-versatile-926ejs"
-KBRANCH:qemuarm64 ?= "v6.12/standard/base"
-KBRANCH:qemumips ?= "v6.12/standard/mti-malta32"
-KBRANCH:qemuppc  ?= "v6.12/standard/qemuppc"
-KBRANCH:qemuriscv64  ?= "v6.12/standard/base"
-KBRANCH:qemuriscv32  ?= "v6.12/standard/base"
-KBRANCH:qemux86  ?= "v6.12/standard/base"
-KBRANCH:qemux86.104 ?= "v6.12/standard/base"
-KBRANCH:qemuloongarch64  ?= "v6.12/standard/base"
-KBRANCH:qemumips64 ?= "v6.12/standard/mti-malta64"
+KBRANCH:qemuarm  ?= "v6.18/standard/arm-versatile-926ejs"
+KBRANCH:qemuarm64 ?= "v6.18/standard/base"
+KBRANCH:qemumips ?= "v6.18/standard/mti-malta"
+KBRANCH:qemuppc  ?= "v6.18/standard/qemuppc"
+KBRANCH:qemuriscv64  ?= "v6.18/standard/base"
+KBRANCH:qemuriscv32  ?= "v6.18/standard/base"
+KBRANCH:qemux86  ?= "v6.18/standard/base"
+KBRANCH:qemux86-64 ?= "v6.18/standard/base"
+KBRANCH:qemuloongarch64  ?= "v6.18/standard/base"
+KBRANCH:qemumips64 ?= "v6.18/standard/mti-malta"
 
-SRCREV_machine:qemuarm ?= "ace248eb90be5ddc94caea17db41d7190fc87817"
-SRCREV_machine:qemuarm64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuloongarch64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemumips ?= "a766160558c9434368462f9fada2ac0871017cbd"
-SRCREV_machine:qemuppc ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuriscv64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuriscv32 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemux86 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemux86-64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemumips64 ?= "ea35e13b7cd3d7cea1c2e8c17f8144209496a8b7"
-SRCREV_machine ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_meta ?= "fb30a9a1d027d938de70890be92c22b33e0194b1"
+SRCREV_machine:qemuarm ?= "ee78c602479902ccc042f3b2c6467a6a1b2010e1"
+SRCREV_machine:qemuarm64 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemuloongarch64 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemumips ?= "62ea92a539f58803a222be98b81118403074206e"
+SRCREV_machine:qemuppc ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemuriscv64 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemuriscv32 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemux86 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemux86-64 ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_machine:qemumips64 ?= "9fb4ff0187c85426f21fd40d4c61b742800f65c4"
+SRCREV_machine ?= "3e243d2a1151b1ccb42f80f81c6d77f0af327a3d"
+SRCREV_meta ?= "1fbfcbd8a3ce8df814f51ef8710fc0197ff01986"
 
 # set your preferred provider of linux-yocto to 'linux-yocto-upstream', and you'll
 # get the <version>/base branch, which is pure upstream -stable, and the same
 # meta SRCREV as the linux-yocto-standard builds. Select your version using the
 # normal PREFERRED_VERSION settings.
 BBCLASSEXTEND = "devupstream:target"
-SRCREV_machine:class-devupstream ?= "f6cf124428f51e3ef07a8e54c743873face9d2b2"
+SRCREV_machine:class-devupstream ?= "b6fe42bc55af3fb17c8c03def2f8a1f7fa907af6"
 PN:class-devupstream = "linux-yocto-upstream"
-KBRANCH:class-devupstream = "v6.12/base"
+KBRANCH:class-devupstream = "v6.18/base"
 
 SRC_URI = "git://git.yoctoproject.org/linux-yocto.git;name=machine;branch=${KBRANCH};protocol=https \
-           git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.12;destsuffix=${KMETA};protocol=https"
+           git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.18;destsuffix=${KMETA};protocol=https"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "6.12.47"
+LINUX_VERSION ?= "6.18.6"
 
 PV = "${LINUX_VERSION}+git"
 
@@ -72,5 +72,8 @@ KERNEL_FEATURES:append = " ${@bb.utils.contains("DISTRO_FEATURES", "ptest", " cg
 KERNEL_FEATURES:append:powerpc = " arch/powerpc/powerpc-debug.scc"
 KERNEL_FEATURES:append:powerpc64 = " arch/powerpc/powerpc-debug.scc"
 KERNEL_FEATURES:append:powerpc64le = " arch/powerpc/powerpc-debug.scc"
-
+# Do not add debug info for riscv32, it fails during depmod
+# ERROR: modpost: __ex_table+0x17a4 references non-executable section '.debug_loclists'
+# Check again during next major version upgrade
+KERNEL_FEATURES:remove:riscv32 = "features/debug/debug-kernel.scc"
 INSANE_SKIP:kernel-vmlinux:qemuppc64 = "textrel"

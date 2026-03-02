@@ -1,0 +1,2 @@
+SRCREV = "a4a362d9f4f0abc8ab145a8673166b9bd875731a"
+S = "${WORKDIR}/git"

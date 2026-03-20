@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.12.1
+## (2026-03-20)
+
+
+<details>
+<summary> Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.1
+> ### (2026-03-18)
+> 
+> * os/tests: Fix sporadic failure in recover-sshd-socket [Alexandru Costache]
+> 
+> ## meta-balena-6.12.0
+> ### (2026-03-17)
+> 
+> * add flock and lockfile documentation [Yann CARDAILLAC]
+> 
+> ## meta-balena-6.11.14
+> ### (2026-03-16)
+> 
+> * wpa-supplicant: Align to recipe from Scarthgap [Florin Sarbu]
+> 
+
+</details>
+
 # v6.11.13+rev1
 ## (2026-03-17)
 

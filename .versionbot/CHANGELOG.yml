@@ -1,4 +1,97 @@
 - commits:
+    - subject: Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371
+      hash: eb5beb31f445473302723c80d4dd6f3a22bd73b6
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371
+        changelog-entry: Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "os/tests: Fix sporadic failure in recover-sshd-socket"
+              hash: 093e3cbd633e418aa00665e13d9b591310c5bb56
+              body: >
+                Occasionally the recover-sshd-socket test may fail if
+
+                the exit reason for sshd.socket is 'success' instead
+
+                of 'trigger-limit-hit'. This seems to be a race which could
+
+                be caused by factors like the speed of the hardware, the way
+
+                systemd calculates time, as well as to how it determines "bad"
+
+                connections. For example if the first connection is fully
+
+                handed off before the next one arrived, the burst counter may
+
+                not reach the limit.
+
+
+                Also, if the socket unit is restarted while the script sleeps
+
+                for two seconds, the Result property would show 'success' as the
+
+                unit is now healthy again.
+
+
+                We switch to a lower burst limit and keep each connection
+
+                active for a period of time longer than the systemd's sliding
+                window,
+
+                to ensure that the connection limit is always exceeded in the
+                defined
+
+                interval.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.12.1
+          title: ""
+          date: 2026-03-18T09:34:00.113Z
+        - commits:
+            - subject: add flock and lockfile documentation
+              hash: d5ae3bea0cce63d60e5048fe696c655a666b9550
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.12.0
+          title: ""
+          date: 2026-03-17T10:38:00.364Z
+        - commits:
+            - subject: "wpa-supplicant: Align to recipe from Scarthgap"
+              hash: bd8979799b88c68b40892af469d0fe1da5a7d791
+              body: >
+                We add the recipe with the patches from Scarthgap revision
+                97f732ce9b914ea4022c9425611c16d333c2787b
+
+
+                This is the same package version but adds additional CVE
+                patches.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.11.14
+          title: ""
+          date: 2026-03-16T13:02:38.469Z
+  version: 6.12.1
+  title: ""
+  date: 2026-03-20T07:04:00.096Z
+- commits:
     - subject: Update contracts to 7225779853a3904517285bd19f7e2be44026c108
       hash: fb59748162e64d85cac624fe4bf4f4c1a45593b4
       body: Update contracts

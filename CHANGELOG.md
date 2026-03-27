@@ -1,6 +1,28 @@
 Change log
 -----------
 
+# v6.12.3
+## (2026-03-27)
+
+
+<details>
+<summary> Update layers/meta-balena to f3eea3ba73b68ef4cb633efc6077ac5baced1fe1 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.3
+> ### (2026-03-26)
+> 
+> * initrdscripts: Unmount the state partition before kexec [Michal Toman]
+> 
+> ## meta-balena-6.12.2
+> ### (2026-03-20)
+> 
+> * balena-supervisor: remove redundant bind mounts and DOCKER_ROOT [Alex Gonzalez]
+> * balena-supervisor: remove apps.json initialization from start script [Alex Gonzalez]
+> * balena-supervisor: remove restart from engine run command [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.12.1
 ## (2026-03-20)
 

@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
+      hash: b1ea55fb1b402bbca489f7268d36cf86e48b113e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
+        changelog-entry: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.12.3+rev1
+  title: ""
+  date: 2026-03-27T11:29:23.518Z
+- commits:
     - subject: Update layers/meta-balena to f3eea3ba73b68ef4cb633efc6077ac5baced1fe1
       hash: 633a26b3a5b606e4ea1a7decb68f54d74d122fc9
       body: Update layers/meta-balena

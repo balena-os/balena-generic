@@ -44,7 +44,7 @@ module.exports =
 		machine: 'studio-automatedx86-sb'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-kirkstone'
+		version: 'yocto-scarthgap'
 		deployArtifact: 'balena-image-flasher-studio-automatedx86-sb.balenaos-img'
 		deployFlasherArtifact: 'balena-image-flasher-studio-automatedx86-sb.balenaos-img'
 		deployRawArtifact: 'balena-image-studio-automatedx86-sb.balenaos-img'

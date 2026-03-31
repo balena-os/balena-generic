@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.12.3+rev2
+## (2026-03-31)
+
+* Update to Scarthgap [Florin Sarbu]
+
 # v6.12.3+rev1
 ## (2026-03-27)
 

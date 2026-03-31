@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update to Scarthgap
+      hash: f59fd4ff62fdbf90dfc4b095cffb06de6ea69821
+      body: ""
+      footer:
+        Changelog-entry: Update to Scarthgap
+        changelog-entry: Update to Scarthgap
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.12.3+rev2
+  title: ""
+  date: 2026-03-31T08:18:59.046Z
+- commits:
     - subject: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
       hash: b1ea55fb1b402bbca489f7268d36cf86e48b113e
       body: Update balena-yocto-scripts

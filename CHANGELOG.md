@@ -1,62 +1,10 @@
 Change log
 -----------
 
-# v6.12.3+rev2
-## (2026-03-31)
+# 2026.4.0
+## (2026-04-02)
 
-* Update to Scarthgap [Florin Sarbu]
-
-# v6.12.3+rev1
-## (2026-03-27)
-
-* Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4 [balena-renovate[bot]]
-
-# v6.12.3
-## (2026-03-27)
-
-
-<details>
-<summary> Update layers/meta-balena to f3eea3ba73b68ef4cb633efc6077ac5baced1fe1 [balena-renovate[bot]] </summary>
-
-> ## meta-balena-6.12.3
-> ### (2026-03-26)
-> 
-> * initrdscripts: Unmount the state partition before kexec [Michal Toman]
-> 
-> ## meta-balena-6.12.2
-> ### (2026-03-20)
-> 
-> * balena-supervisor: remove redundant bind mounts and DOCKER_ROOT [Alex Gonzalez]
-> * balena-supervisor: remove apps.json initialization from start script [Alex Gonzalez]
-> * balena-supervisor: remove restart from engine run command [Alex Gonzalez]
-> 
-
-</details>
-
-# v6.12.1
-## (2026-03-20)
-
-
-<details>
-<summary> Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371 [balena-renovate[bot]] </summary>
-
-> ## meta-balena-6.12.1
-> ### (2026-03-18)
-> 
-> * os/tests: Fix sporadic failure in recover-sshd-socket [Alexandru Costache]
-> 
-> ## meta-balena-6.12.0
-> ### (2026-03-17)
-> 
-> * add flock and lockfile documentation [Yann CARDAILLAC]
-> 
-> ## meta-balena-6.11.14
-> ### (2026-03-16)
-> 
-> * wpa-supplicant: Align to recipe from Scarthgap [Florin Sarbu]
-> 
-
-</details>
+* Declare ESR 2026.4.0
 
 # v6.11.13+rev1
 ## (2026-03-17)

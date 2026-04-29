@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update .gitmodules branch references to scarthgap
+      hash: 86e7ce5ea9c9c72a586d7bf8b0f3c7921b1830bf
+      body: |
+        Since we are on Scarthgap now let's also reflect that in .gitmodules
+      footer:
+        Changelog-entry: Update .gitmodules branch references to scarthgap
+        changelog-entry: Update .gitmodules branch references to scarthgap
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.12.3+rev3
+  title: ""
+  date: 2026-04-29T11:34:34.045Z
+- commits:
     - subject: Update to Scarthgap
       hash: f59fd4ff62fdbf90dfc4b095cffb06de6ea69821
       body: ""

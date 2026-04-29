@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.12.3+rev3
+## (2026-04-29)
+
+* Update .gitmodules branch references to scarthgap [Florin Sarbu]
+
 # v6.12.3+rev2
 ## (2026-03-31)
 

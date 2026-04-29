@@ -31,3 +31,6 @@ IMAGE_INSTALL:append = " \
     linux-firmware \
     efibootmgr \
     "
+
+# Disable firmware exclusion
+BALENA_FIRMWARE_EXCLUSION_ENABLED = "0"

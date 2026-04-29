@@ -1,5 +1,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:${THISDIR}/files/ax211:"
 
+SRC_URI:append = " file://generic_WHENCE"
+
 # NOTE: These files show be removed once linux-firmware is updated in meta-balena,
 # see README.
 SRC_URI:append = " \
@@ -16,8 +18,8 @@ PACKAGES =+ " \
 
 
 FILES:${PN}-ibt-40-41  = " \
-    ${nonarch_base_libdir}/firmware/intel/ibt-0040-0041.ddc \
-    ${nonarch_base_libdir}/firmware/intel/ibt-0040-0041.sfi \
+    ${nonarch_base_libdir}/firmware/intel/ibt-0040-0041.ddc* \
+    ${nonarch_base_libdir}/firmware/intel/ibt-0040-0041.sfi* \
 "
 
 LICENSE:${PN}-ibt-40-41 = "Firmware-ibt_firmware"
@@ -25,8 +27,8 @@ RDEPENDS:${PN}-ibt-40-41 = "${PN}-ibt-license"
 
 
 FILES:${PN}-iwlwifi-so-a0  = " \
-    ${nonarch_base_libdir}/firmware/iwlwifi-so-a0-gf-a0-64.ucode \
-    ${nonarch_base_libdir}/firmware/iwlwifi-so-a0-gf-a0.pnvm \
+    ${nonarch_base_libdir}/firmware/iwlwifi-so-a0-gf-a0-64.ucode* \
+    ${nonarch_base_libdir}/firmware/iwlwifi-so-a0-gf-a0.pnvm* \
 "
 LICENSE:${PN}-iwlwifi-so-a0 = "Firmware-iwlwifi_firmware"
 RDEPENDS:${PN}-iwlwifi-so-a0 = "${PN}-iwlwifi-license"

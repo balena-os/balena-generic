@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+      hash: 17320527e2d49f159e2407a9e05fbace89c47791
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+        changelog-entry: Update balena-os/github-workflows to
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.12.3+rev5
+  title: ""
+  date: 2026-05-10T13:28:54.426Z
+- commits:
     - subject: Update contracts to 7c3bf64c92a839dcbf02cfd69367392e7728fcde
       hash: 4dd2471b074ed50c6d68340733b0d90dbf16218b
       body: Update contracts

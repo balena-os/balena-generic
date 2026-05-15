@@ -1,6 +1,51 @@
 Change log
 -----------
 
+# v7.0.3+rev1
+## (2026-05-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 50033716c5e2384d71a896205465d0a1223f3bed [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.34
+> ### (2026-05-07)
+> 
+> * Dockerfile_yocto-build-env: Switch to docker-ce, pin 28.5.2 [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.39.33
+> ### (2026-05-01)
+> 
+> * yocto-build-deploy.yml: Wait for self-CI helper image before Build [Kyle Harding]
+> * yocto-build-deploy.yml: Override helper image tag for self-CI [Kyle Harding]
+> * Dockerfile_yocto-build-env: Pin docker.io to 27.x [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.39.32
+> ### (Invalid date)
+> 
+> * Set the default source-mirror environment to balena-production.us-east-1 [Kyle Harding]
+> * Backup shared-downloads to S3 on build failure [Kyle Harding]
+> * .github/workflows/yocto-build-deploy.yml: Add the rust crates to MIRRORS [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.39.31
+> ### (2026-04-03)
+> 
+> * Update aws/aws-cli to v2.34.23 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.30
+> ### (2026-04-01)
+> 
+> * Update balena-io/balena-cli to v24 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.39.29
+> ### (2026-03-28)
+> 
+> * stop running AMI delete on failure step if no AMI created, and stop AMI deploy on non-finalised workflow-dispatch [Ryan Cooke]
+> * workflows: simplify esr check to tag comparison [Alex Gonzalez]
+> 
+
+</details>
+
 # v7.0.3
 ## (2026-05-13)
 

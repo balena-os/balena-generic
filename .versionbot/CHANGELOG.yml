@@ -1,4 +1,35 @@
 - commits:
+    - subject: Fix removal of duplicate EFI entries
+      hash: e5fb433b42488584568a42c1dfecde0c17a29382
+      body: |
+        At this moment the resin-boot-cleaner hook parses the output
+        of `efibootmgr` to remove duplicate resinOS boot entries. It expects
+        a very specific format:
+        Boot0002* resinOS
+        Boot0004* balenaOS
+
+        But on aarch64, the output also includes the executable path:
+        Boot0003* resinOS       HD(...)/\EFI\BOOT\bootx64.efi
+
+        Because of that the parsing fails, kills the hook and fails
+        the HUP or rollback being executed.
+
+        This patch does two things:
+        * Updates the parser to work with both output variants
+        * Replaces resinOS with balenaOS
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Fix removal of duplicate EFI entries
+        changelog-entry: Fix removal of duplicate EFI entries
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 7.0.3+rev2
+  title: ""
+  date: 2026-05-22T15:41:52.158Z
+- commits:
     - subject: Update balena-yocto-scripts to 50033716c5e2384d71a896205465d0a1223f3bed
       hash: d7f00873888df4c81c08e9a17a225db331ea1ddd
       body: Update balena-yocto-scripts

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.0.3+rev2
+## (2026-05-22)
+
+* Fix removal of duplicate EFI entries [Michal Toman]
+
 # v7.0.3+rev1
 ## (2026-05-15)
 

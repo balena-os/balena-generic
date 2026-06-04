@@ -1,4 +1,28 @@
 - commits:
+    - subject: "workflows: run generic-aarch64 tests on ESR branches"
+      hash: d2680ac9319e1164b79f8ebff648293b4f841375
+      body: ""
+      footer:
+        Changelog-entry: "workflows: run generic-aarch64 tests on ESR branches"
+        changelog-entry: "workflows: run generic-aarch64 tests on ESR branches"
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+    - subject: Update layers/meta-balena to bd18338dfe76c7d5231685e5751763c601c264d5
+      hash: 0641ab5f50e5a2c6502949561a5dd23d8d613062
+      body: ""
+      footer:
+        Changelog-entry: Update layers/meta-balena to bd18338dfe76c7d5231685e5751763c601c264d5
+        changelog-entry: Update layers/meta-balena to bd18338dfe76c7d5231685e5751763c601c264d5
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 2025.10.2
+  title: ""
+  date: 2026-06-04T12:14:59.569Z
+- commits:
     - subject: Update layers/poky to b0134a0f1382a267f79ec881af916d641d41b235
       hash: f8d5f632eb82b981ed9b4964fcfd0385153dc402
       body: Update layers/poky

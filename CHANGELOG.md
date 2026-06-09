@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.0.5+rev1
+## (2026-06-09)
+
+* Update linux-yocto to version 6.18.6 [Florin Sarbu]
+
 # v7.0.5
 ## (2026-05-25)
 

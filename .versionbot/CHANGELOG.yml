@@ -1,4 +1,151 @@
 - commits:
+    - subject: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+      hash: 8fe8d8f5adc25ca1d9c279d8aec6340d8ba73fb0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+        changelog-entry: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/image-balena: Cleanup issue file in Wrynose"
+              hash: f5591ed2b60d1bddd07152e1ac6ad5806d34566a
+              body: |
+                Commit https://git.openembedded.org/openembedded-core/commit/?id=b650bd2c94f9aefd4dec82b27285ed1d439778bc
+                introduces an empty root  password note in /etc/issue
+                at build time, if passwordless root login is enabled.
+
+                The Scarthgap bbclass does not include this note at all
+                and in Wrynose it breaks the /etc/issue file tests. It also
+                is only meaningful if developmentMode is set to 'true'.
+
+                We thus remove the note altogether to keep the /etc/issue file clean
+                and consistent across all versions.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.5.7
+          title: ""
+          date: 2026-06-24T16:43:04.211Z
+        - commits:
+            - subject: "tests: Add uptime regression test to the os suite"
+              hash: d2d0888090d64172ce92f547b23f0d1c67fb1006
+              body: >
+                Guards against the coreutils 9.4 utmp BOOT_TIME breakage fixed
+                in the
+
+                previous commit: asserts uptime exits 0, prints an elapsed time
+                and load
+
+                average, and emits neither "couldn't get boot time" nor the
+                "????"
+
+                placeholder. Provider-agnostic, so it holds whether uptime comes
+                from
+
+                coreutils, busybox or procps.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: "coreutils: Restore /proc/uptime read so uptime works on scarthgap"
+              hash: 1903d863d9d1de8cdfaeeec624564fee0640b6ea
+              body: >
+                GNU coreutils 9.4 (scarthgap) rewrote src/uptime.c onto gnulib
+                readutmp and
+
+                dropped the direct /proc/uptime read. uptime now derives the
+                elapsed time
+
+                solely from a utmp BOOT_TIME record, which balenaOS has no
+                usable entry for,
+
+                so it fails with "couldn't get boot time" and prints "up ????
+                days ??:??".
+
+
+                Backport the pre-9.4 behaviour: read the up-seconds from
+                /proc/uptime (gated on
+
+                -DHAVE_PROC_UPTIME, already set by the common coreutils
+                bbappend), falling back
+
+                to the utmp BOOT_TIME computation only when that read fails.
+                busybox's uptime
+
+                already relies on /proc/uptime on the same devices and reports
+                correctly.
+
+
+                Scoped to the scarthgap layer with a version-pinned bbappend so
+                it cannot affect
+
+                older layers (dunfell/honister/kirkstone, coreutils 8.32-9.1)
+                whose uptime.c
+
+                still reads /proc/uptime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.6
+          title: ""
+          date: 2026-06-23T13:29:39.960Z
+        - commits:
+            - subject: "meta-balena-esr: Use GitHub REST API for verified commits"
+              hash: 89ffe906af62cc1eb83afa93cbcb229987b4f4ae
+              body: |
+                Bring the meta-balena ESR workflow to parity with the sibling
+                balena-os/github-workflows esr.yml. Replace the local
+                git commit/push/tag commands with GitHub REST API calls
+                (createRef/createBlob/createTree/createCommit/updateRef/createTag) so
+                the ESR bot's branch and tag are authored by the GitHub App and show as
+                verified.
+
+                Also adopt the dual-format (raw PEM or base64) private key decode step,
+                switch from tibdex/github-app-token to actions/create-github-app-token,
+                and drop the now-unused GIT_AUTHOR/COMMITTER env vars (the API uses the
+                App identity). Harden the esr-version workflow_dispatch input by passing
+                it via env instead of interpolating into a run block.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.5
+          title: ""
+          date: 2026-06-22T19:33:56.967Z
+        - commits:
+            - subject: "balena: bump balena-engine to restore 1777 default for bare tmpfs
+                mounts"
+              hash: 94d798cdc879b302f5fc481f63e0be8f12e8175c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.4
+          title: ""
+          date: 2026-06-21T20:25:17.143Z
+  version: 7.5.7
+  title: ""
+  date: 2026-06-27T12:01:27.159Z
+- commits:
     - subject: Update layers/poky to 802e4c1135c4eb451e504996aa797c04736496d4
       hash: 48cd0572aeb50556c44ab6208fb72a358a2bd269
       body: Update layers/poky

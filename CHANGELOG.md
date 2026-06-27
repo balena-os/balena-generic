@@ -1,6 +1,37 @@
 Change log
 -----------
 
+# v7.5.7
+## (2026-06-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.5.7
+> ### (2026-06-24)
+> 
+> * classes/image-balena: Cleanup issue file in Wrynose [Alexandru Costache]
+> 
+> ## meta-balena-7.5.6
+> ### (2026-06-23)
+> 
+> * tests: Add uptime regression test to the os suite [Kyle Harding]
+> * coreutils: Restore /proc/uptime read so uptime works on scarthgap [Kyle Harding]
+> 
+> ## meta-balena-7.5.5
+> ### (2026-06-22)
+> 
+> * meta-balena-esr: Use GitHub REST API for verified commits [Kyle Harding]
+> 
+> ## meta-balena-7.5.4
+> ### (2026-06-21)
+> 
+> * balena: bump balena-engine to restore 1777 default for bare tmpfs mounts [Kyle Harding]
+> 
+
+</details>
+
 # v7.5.3+rev3
 ## (2026-06-27)
 

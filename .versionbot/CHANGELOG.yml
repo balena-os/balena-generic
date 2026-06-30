@@ -1,4 +1,95 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82
+      hash: 875e9b4b02060bb36d918619749dd25df6fe794e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82
+        changelog-entry: Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "yocto-build-deploy: replace pattern based all history first parent
+                match"
+              hash: b3c08ee1850c7013706a2e945f529aa28f329b1d
+              body: >
+                Instead, resolve the PR commit by walking the pushed ref's own
+
+                first-parent history.
+
+
+                Pattern search returns the youngest match reachable from ANY
+                ref,
+
+                so it can jump onto an unrelated branch (e.g. an ESR PR) whose
+                commit is
+
+                not even an ancestor of this tag.
+
+
+                Also,  match any `#<num>` instead of the literal "Merge pull
+                request"
+
+                prefix, so squash merged and custom titled merges
+
+                (like "Update GitHub Actions (#759)") are found, but not
+                version-bump
+
+                commits made by bots.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.41.5
+          title: ""
+          date: 2026-06-29T15:55:45.595Z
+        - commits:
+            - subject: Decode base64-encoded GitHub App private key before token generation
+              hash: dd490e2aa8ec393f4b0d3fd97cb2f68568234ad8
+              body: >
+                The BALENAOS_CI_APP_PRIVATE_KEY secret can now be stored raw or
+
+                base64-encoded. base64 avoids the newline mangling that
+                multi-line PEM
+
+                secrets are prone to in GitHub secret storage.
+
+
+                Each job gets a decode step that passes the key through
+                unchanged if it
+
+                already looks like a PEM (-----BEGIN), otherwise base64-decodes
+                it and
+
+                masks the decoded lines. The six create-github-app-token steps
+                now read
+
+                the decoded output instead of the secret directly.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update actions/create-github-app-token action to v3
+              hash: 87341be50b5fabca1c3c42499c49c30b0ed40ea7
+              body: |
+                Update actions/create-github-app-token from 2.2.2 to 3.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.41.4
+          title: ""
+          date: 2026-06-23T13:27:23.760Z
+  version: 7.5.7+rev1
+  title: ""
+  date: 2026-06-30T09:40:50.424Z
+- commits:
     - subject: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
       hash: 8fe8d8f5adc25ca1d9c279d8aec6340d8ba73fb0
       body: Update layers/meta-balena

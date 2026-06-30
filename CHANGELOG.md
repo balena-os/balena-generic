@@ -1,6 +1,27 @@
 Change log
 -----------
 
+# v7.5.7+rev1
+## (2026-06-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.41.5
+> ### (2026-06-29)
+> 
+> * yocto-build-deploy: replace pattern based all history first parent match [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.41.4
+> ### (2026-06-23)
+> 
+> * Decode base64-encoded GitHub App private key before token generation [Kyle Harding]
+> * Update actions/create-github-app-token action to v3 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v7.5.7
 ## (2026-06-27)
 

@@ -2,6 +2,7 @@
 #MACHINE ?= "generic-aarch64.conf"
 #MACHINE ?= "generic-amd64.conf"
 #MACHINE ?= "generic-amd64-fs.conf"
+#MACHINE ?= "generic-amd64-av.conf"
 #MACHINE ?= "studio-automatedx86-sb"
 
 # More info meta-balena/README.md

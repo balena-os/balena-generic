@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.5.7+rev2
+## (2026-07-06)
+
+* add generic-amd-64-av device type [Ryan Cooke]
+
 # v7.5.7+rev1
 ## (2026-06-30)
 

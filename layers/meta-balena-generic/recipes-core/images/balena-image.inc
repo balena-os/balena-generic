@@ -31,3 +31,12 @@ IMAGE_INSTALL:append = " \
     linux-firmware \
     efibootmgr \
     "
+
+BALENA_BOOT_SIZE:generic-aarch64 = "40960"
+BALENA_STATE_SIZE:generic-aarch64 = "20480"
+BALENA_BOOT_SIZE:generic-amd64-av = "40960"
+BALENA_STATE_SIZE:generic-amd64-av = "20480"
+BALENA_BOOT_SIZE:generic-amd64-fs = "40960"
+BALENA_STATE_SIZE:generic-amd64-fs = "20480"
+BALENA_BOOT_SIZE:generic-amd64 = "40960"
+BALENA_STATE_SIZE:generic-amd64 = "20480"

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.7.0+rev2
+## (2026-07-22)
+
+* Set explicit partition size overrides for each machine [guille-vega]
+
 # v7.7.0+rev1
 ## (2026-07-18)
 

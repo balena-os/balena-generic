@@ -1,4 +1,20 @@
 - commits:
+    - subject: Set explicit partition size overrides for each machine
+      hash: f94805f43acb3721224f900d7ef4a55a6c100923
+      body: |
+        Ensure IMAGE_ROOTFS_SIZE, BALENA_BOOT_SIZE, and BALENA_STATE_SIZE are
+        explicitly defined for every machine target
+      footer:
+        Changelog-entry: Set explicit partition size overrides for each machine
+        changelog-entry: Set explicit partition size overrides for each machine
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 7.7.0+rev2
+  title: ""
+  date: 2026-07-22T17:03:59.870Z
+- commits:
     - subject: Update layers/poky to e146cbbc73e10fecfb7f1c26e8567a5a2873c51b
       hash: 2293961c4a269637b4e78bf7b0da7939ac145590
       body: Update layers/poky

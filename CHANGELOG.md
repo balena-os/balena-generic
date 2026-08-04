@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.8.1+rev1
+## (2026-08-04)
+
+* Update balena-os/github-workflows to 95c18f8b04886c36223acc04a531c6af10086910 [balena-renovate[bot]]
+
 # v7.8.1
 ## (2026-08-01)
 

@@ -438,3 +438,11 @@ BALENA_CONFIGS[storage] = " \
     CONFIG_SCSI_GDTH=y \
     CONFIG_SCSI_IPS=y \
 "
+
+BALENA_CONFIGS:append = " gpio_usbio"
+BALENA_CONFIGS_DEPS[gpio_usbio] = " \
+    CONFIG_USB_USBIO=m \
+"
+BALENA_CONFIGS[gpio_usbio] = " \
+    CONFIG_GPIO_USBIO=m \
+"

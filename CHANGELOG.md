@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.8.1+rev2
+## (2026-08-05)
+
+* Enable gpio-usbio driver as per customer request [Florin Sarbu]
+
 # v7.8.1+rev1
 ## (2026-08-04)
 

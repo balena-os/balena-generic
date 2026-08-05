@@ -1,4 +1,19 @@
 - commits:
+    - subject: Enable gpio-usbio driver as per customer request
+      hash: 11e56acfe357ddef89ffdf854a803a785924f72b
+      body: |
+        As per custome request in https://balena.zendesk.com/agent/tickets/6512
+      footer:
+        Changelog-entry: Enable gpio-usbio driver as per customer request
+        changelog-entry: Enable gpio-usbio driver as per customer request
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 7.8.1+rev2
+  title: ""
+  date: 2026-08-05T11:23:29.629Z
+- commits:
     - subject: Update balena-os/github-workflows to
         95c18f8b04886c36223acc04a531c6af10086910
       hash: a5c76b2f4239d1ec2e1d26ce16935579031ec6bd

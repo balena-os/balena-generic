@@ -1,4 +1,18 @@
 - commits:
+    - subject: add generic-amd-64-xr device type
+      hash: f0d579279a553e6765ea7f0ebf89d9a2d9daf17f
+      body: ""
+      footer:
+        Changelog-entry: add generic-amd-64-xr device type
+        changelog-entry: add generic-amd-64-xr device type
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 7.8.1+rev3
+  title: ""
+  date: 2026-08-07T14:20:09.098Z
+- commits:
     - subject: Enable gpio-usbio driver as per customer request
       hash: 11e56acfe357ddef89ffdf854a803a785924f72b
       body: |

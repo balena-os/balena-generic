@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.8.1+rev3
+## (2026-08-07)
+
+* add generic-amd-64-xr device type [Ryan Cooke]
+
 # v7.8.1+rev2
 ## (2026-08-05)
 

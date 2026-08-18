@@ -1,6 +1,79 @@
 Change log
 -----------
 
+# v8.0.0
+## (2026-08-18)
+
+
+<details>
+<summary> Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.0
+> ### (2026-08-17)
+> 
+> * image_types_balena: force 4K block size for resin-state ext4 [guille-vega]
+> * Increase default boot, root and state partition sizes [guille-vega]
+> 
+> ## meta-balena-7.9.6
+> ### (2026-08-17)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 4ae6a0e [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.124
+>> #### (2026-08-15)
+>> 
+>> * Update debian:bullseye-slim Docker digest to f313b4b [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.123
+>> #### (2026-08-15)
+>> 
+>> * Update core/contracts digest to 410a252 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.122
+>> #### (2026-08-15)
+>> 
+>> * Update alpine Docker tag to v3.24.1 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.121
+>> #### (2026-08-14)
+>> 
+>> * Core: worker: fix error with custom DT [Ryan Cooke]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-7.9.5
+> ### (2026-08-16)
+> 
+> * workflows: Pin yocto-scripts submodule to master [Kyle Harding]
+> 
+> ## meta-balena-7.9.4
+> ### (2026-08-11)
+> 
+> * hostapp: Add deploy assets to hostapp composition [Kyle Harding]
+> 
+> ## meta-balena-7.9.3
+> ### (2026-08-08)
+> 
+> * balena-extension-runtime: do not duplicate binary [Alex Gonzalez]
+> * balena-extension-runtime: update to v1.2.1 [Alex Gonzalez]
+> 
+> ## meta-balena-7.9.2
+> ### (2026-08-07)
+> 
+> * extra-udev-rules: Disable power management on mlan* wireless network interfaces [Florin Sarbu]
+> 
+> ## meta-balena-7.9.1
+> ### (2026-08-07)
+> 
+> * recipes-containers/balena-extension-runtime: Enable Wrynose builds [Alexandru Costache]
+> 
+
+</details>
+
 # v7.9.0
 ## (2026-08-13)
 

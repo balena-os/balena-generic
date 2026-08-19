@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.0+rev1
+## (2026-08-19)
+
+* Add support for Qualcomm Technologies Wi-Fi 7 [Michal Toman]
+
 # v8.0.0
 ## (2026-08-18)
 

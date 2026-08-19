@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add support for Qualcomm Technologies Wi-Fi 7
+      hash: 9ddc1957935eb689640918dacccf7bccafa4e387
+      body: |
+        This adds support for Atheros/Qualcomm wifi 7 adapters
+      footer:
+        Changelog-entry: Add support for Qualcomm Technologies Wi-Fi 7
+        changelog-entry: Add support for Qualcomm Technologies Wi-Fi 7
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 8.0.0+rev1
+  title: ""
+  date: 2026-08-19T19:35:56.759Z
+- commits:
     - subject: Update layers/meta-balena to 9c83231c087d0ff78b943765551e2f061e0e9f72
       hash: e4efbc1c25c96dbd83f2729300a597fb40ddfee2
       body: Update layers/meta-balena

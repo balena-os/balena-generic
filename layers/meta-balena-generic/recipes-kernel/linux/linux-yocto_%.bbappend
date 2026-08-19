@@ -248,6 +248,11 @@ BALENA_CONFIGS[ath10k_pci] = " \
     CONFIG_ATH10K_PCI=m \
 "
 
+BALENA_CONFIGS:append = " ath12k"
+BALENA_CONFIGS[ath12k] = " \
+    CONFIG_ATH12K=m \
+"
+
 BALENA_CONFIGS:append = " mmc_realtek_pci"
 BALENA_CONFIGS_DEPS[mmc_realtek_pci] = " \
     CONFIG_MISC_RTSX_PCI=m \

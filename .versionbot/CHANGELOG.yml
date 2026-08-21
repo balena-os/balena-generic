@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-cyclonedx to 2ad28404e96f4f91e1493a7e10d2481294198b6d
+      hash: 3d8c86d37f507df6f526758571494637fe3ea177
+      body: Update layers/meta-cyclonedx
+      footer:
+        Changelog-entry: Update layers/meta-cyclonedx to
+          2ad28404e96f4f91e1493a7e10d2481294198b6d
+        changelog-entry: Update layers/meta-cyclonedx to
+          2ad28404e96f4f91e1493a7e10d2481294198b6d
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.0+rev4
+  title: ""
+  date: 2026-08-21T08:28:17.389Z
+- commits:
     - subject: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
       hash: 75ee61477f7a958117246460008048a9b0fd1d3b
       body: Update contracts

@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+        08a88ee3ca2a070d59140fa334be2784f17918e0
+      hash: 1792ec6230d7c8e93c80b7d4778cde201e69eb5d
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+          08a88ee3ca2a070d59140fa334be2784f17918e0
+        changelog-entry: Update balena-os/github-workflows to
+          08a88ee3ca2a070d59140fa334be2784f17918e0
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.4+rev3
+  title: ""
+  date: 2026-09-01T23:12:24.701Z
+- commits:
     - subject: Update flowzonify to 0.4.2
       hash: 5ab6816192a9d4d95a0e830f9266a92f35301770
       body: Update flowzonify

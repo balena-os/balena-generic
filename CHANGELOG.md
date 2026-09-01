@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.4+rev2
+## (2026-09-01)
+
+* Update flowzonify to 0.4.2 [balena-renovate[bot]]
+
 # v8.0.4+rev1
 ## (2026-09-01)
 

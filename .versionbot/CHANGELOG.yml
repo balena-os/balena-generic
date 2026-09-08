@@ -1,4 +1,31 @@
 - commits:
+    - subject: update kernel to 6.18.48
+      hash: f71fcf8ea7389e8760c9ba67119b56c4d8b3076c
+      body: |
+        Bump the vendored linux-yocto 6.18 recipe to the latest LTS point
+        release, following upstream OE-core's linux-yocto_6.18.bb: updated
+        LINUX_VERSION, SRCREV_machine (all machines), SRCREV_meta, and
+        SRCREV_machine:class-devupstream.
+
+        Upstream also consolidated per-version CVE exclusion data into the
+        single cve-exclusion.inc file, dropping cve-exclusion_6.18.inc -
+        mirrored that here and removed the now-unused include.
+
+        Also picked up an upstream linux-yocto.inc LICENSE field fix
+        (GPL-2.0-only WITH Linux-syscall-note).
+
+        Verified against upstream's v6.18.6..v6.18.48 diff that no new
+        kernel Kconfig options were introduced in this range, so no
+        BALENA_CONFIGS additions/disables are needed for this bump.
+      footer:
+        Changelog-entry: update kernel to 6.18.48
+        changelog-entry: update kernel to 6.18.48
+      author: Edwin Joassart
+      nested: []
+  version: 8.0.9+rev1
+  title: ""
+  date: 2026-09-08T21:09:42.291Z
+- commits:
     - subject: Update layers/meta-balena to 52a7cea12239941bcf068a78c960e11093db289c
       hash: 0b90681c25c288c27812c6c526f4cb8a64371d07
       body: Update layers/meta-balena

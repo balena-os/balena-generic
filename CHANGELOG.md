@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.9+rev1
+## (2026-09-08)
+
+* update kernel to 6.18.48 [Edwin Joassart]
+
 # v8.0.9
 ## (2026-09-08)
 

@@ -1,6 +1,63 @@
 Change log
 -----------
 
+# v8.0.14
+## (2026-10-13)
+
+
+<details>
+<summary> Update layers/meta-balena to be8adc6aa97c0ade2ae77f5034e2f8f5f2dc5754 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-8.0.14
+> ### (2026-10-01)
+> 
+> * os-extra-firmware.service: use bash instead of sh [guille-vega]
+> 
+> ## meta-balena-8.0.13
+> ### (2026-09-25)
+> 
+> * renovate: Use minor change-type for supervisor major updates [Kyle Harding]
+> 
+> ## meta-balena-8.0.12
+> ### (2026-09-23)
+> 
+> * kernel-balena.bbclass: Add aufs patches for 6.18 kernels [Florin Sarbu]
+> 
+> ## meta-balena-8.0.11
+> ### (2026-09-22)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to bac9173 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.133
+>> #### (2026-09-22)
+>> 
+>> * core/contracts: Update to v2.0.150 [Alexandru Costache]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-8.0.10
+> ### (2026-09-11)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 466e576 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.132
+>> #### (2026-09-02)
+>> 
+>> * Update Node.js [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v8.0.9+rev2
 ## (2026-09-09)
 

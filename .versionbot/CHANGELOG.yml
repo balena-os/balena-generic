@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        0f00f8b9a21950640da8c5707343e5540133f86e
+      hash: 7e0f98d9cdb33216d39a4dc296e27a1cd121850f
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          0f00f8b9a21950640da8c5707343e5540133f86e
+        changelog-entry: Update layers/meta-openembedded to
+          0f00f8b9a21950640da8c5707343e5540133f86e
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.14+rev2
+  title: ""
+  date: 2026-10-14T06:36:14.772Z
+- commits:
     - subject: Update contracts to 3b3e3a334e5aa3f67b99ee900b2d738f2fcf8574
       hash: 0e3dd01a41ef1da50c28b118407b603f7c216d66
       body: Update contracts

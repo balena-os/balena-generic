@@ -1,4 +1,78 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+      hash: 1d3e3f60e4ca0f64491eb35327cec0e8c29e81e4
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+        changelog-entry: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hostapp-composition(overlays): extend schema to check for runtime"
+              hash: 29a5adcbec208f1f723d464c5dcce3ae81ac0b75
+              body: >
+                An image declaring io.balena.image.class as overlay needs to
+                define
+
+                what runtime to use.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.42.17
+          title: ""
+          date: 2026-10-13T20:35:35.076Z
+        - commits:
+            - subject: Update ubuntu:22.04 Docker digest to b8b6ee6
+              hash: 13d81e84787dfd8d7f090de65c38faeade4af4f8
+              body: |
+                Update ubuntu
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.16
+          title: ""
+          date: 2026-10-02T08:34:42.921Z
+        - commits:
+            - subject: Update actions/download-artifact action to v8
+              hash: 6889fb775db182554bfc6299f6c4656f61b0271f
+              body: |
+                Update actions/download-artifact from 7.0.0 to 8.0.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.15
+          title: ""
+          date: 2026-09-15T00:23:21.877Z
+        - commits:
+            - subject: Fix ESR tagging step
+              hash: f2c61d1131f1e65491cc00970f669b742121295e
+              body: >
+                THere was a flaw in the ESR tagging logic that would tag the
+                most recently published ESR release as next etc. even if it was
+                an older base version - this could happen in the case of
+                backports
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.42.14
+          title: ""
+          date: 2026-09-14T19:03:42.788Z
+  version: 8.0.14+rev3
+  title: ""
+  date: 2026-10-14T15:11:13.374Z
+- commits:
     - subject: Update layers/meta-openembedded to
         0f00f8b9a21950640da8c5707343e5540133f86e
       hash: 7e0f98d9cdb33216d39a4dc296e27a1cd121850f

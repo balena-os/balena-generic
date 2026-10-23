@@ -41,7 +41,7 @@ if [ "$DURING_UPDATE" = "1" ]; then
 				# efivars not bind-mounted by hostapp-update script
 				mount -t efivarfs efivarfs /sys/firmware/efi/efivars
 			fi
-			duplicates=`efibootmgr | grep "resinOS\|balenaOS" | sed -e "s,^Boot\([0-9]*\)\*.*$,\1,"`
+			duplicates=`efibootmgr | grep "resinOS\|balenaOS" | sed -e "s,^Boot\([0-9]*\).*$,\1,"`
 			for i in $duplicates; do efibootmgr -B -b $i; done
 			efibootmgr -c -d $device -p 1 -L "balenaOS" -l "\EFI\BOOT\bootx64.efi"
 		fi

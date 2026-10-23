@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.0.3+rev2
+## (2026-10-23)
+
+* Clean up inactive entries in resin-boot-cleaner [Michal Toman]
+
 # v9.0.3+rev1
 ## (2026-10-22)
 

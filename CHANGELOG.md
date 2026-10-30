@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.0.3+rev3
+## (2026-10-30)
+
+* update kernel to 6.18.59 [Kyle Harding]
+
 # v9.0.3+rev2
 ## (2026-10-23)
 

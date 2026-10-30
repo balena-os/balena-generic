@@ -1,4 +1,20 @@
 - commits:
+    - subject: update kernel to 6.18.59
+      hash: dc92a4876b1b51eecafaea017e2a935a6fc4d099
+      body: |
+        Bump ahead of OE-core (still on 6.18.54) to pick up fixes for
+        CVE-2026-98432 (6.18.56) and CVE-2026-99999 (6.18.57).
+      footer:
+        Changelog-entry: update kernel to 6.18.59
+        changelog-entry: update kernel to 6.18.59
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 9.0.3+rev3
+  title: ""
+  date: 2026-10-30T18:07:31.647Z
+- commits:
     - subject: Clean up inactive entries in resin-boot-cleaner
       hash: 1b5b1aebdabb8b9aef44c1063598ee11736058e1
       body: |

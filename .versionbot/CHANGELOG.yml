@@ -1,4 +1,20 @@
 - commits:
+    - subject: update kernel to 6.18.59
+      hash: ac9e5352af4c09ad65b8e12abaaab9b457d133d5
+      body: |
+        Bump ahead of OE-core (still on 6.18.54) to pick up fixes for
+        CVE-2026-98432 (6.18.56) and CVE-2026-99999 (6.18.57).
+      footer:
+        Changelog-entry: update kernel to 6.18.59
+        changelog-entry: update kernel to 6.18.59
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2026.10.2
+  title: ""
+  date: 2026-11-09T14:39:23.759Z
+- commits:
     - subject: Update layers/meta-balena to e8d0fd74ed0f4b9348e4f1ed2b904b22fbc9237a
       hash: bfd7a3a50c3f001eb87beb698e207aa63f7733b3
       body: |

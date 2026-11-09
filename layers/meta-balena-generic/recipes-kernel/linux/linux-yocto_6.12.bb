@@ -19,24 +19,24 @@ KBRANCH:qemuloongarch64  ?= "v6.12/standard/base"
 KBRANCH:qemumips64 ?= "v6.12/standard/mti-malta64"
 
 SRCREV_machine:qemuarm ?= "ace248eb90be5ddc94caea17db41d7190fc87817"
-SRCREV_machine:qemuarm64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuloongarch64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
+SRCREV_machine:qemuarm64 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_machine:qemuloongarch64 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
 SRCREV_machine:qemumips ?= "a766160558c9434368462f9fada2ac0871017cbd"
-SRCREV_machine:qemuppc ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuriscv64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemuriscv32 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemux86 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_machine:qemux86-64 ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
+SRCREV_machine:qemuppc ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_machine:qemuriscv64 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_machine:qemuriscv32 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_machine:qemux86 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_machine:qemux86-64 ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
 SRCREV_machine:qemumips64 ?= "ea35e13b7cd3d7cea1c2e8c17f8144209496a8b7"
-SRCREV_machine ?= "8161e9a0fe4611484f3f055a7c633759a513bd84"
-SRCREV_meta ?= "fb30a9a1d027d938de70890be92c22b33e0194b1"
+SRCREV_machine ?= "43eb9bac6cb8881aebcc1340317564d0beac3969"
+SRCREV_meta ?= "4b64f290ab9ca1947c3848e049768421f74bf263"
 
 # set your preferred provider of linux-yocto to 'linux-yocto-upstream', and you'll
 # get the <version>/base branch, which is pure upstream -stable, and the same
 # meta SRCREV as the linux-yocto-standard builds. Select your version using the
 # normal PREFERRED_VERSION settings.
 BBCLASSEXTEND = "devupstream:target"
-SRCREV_machine:class-devupstream ?= "f6cf124428f51e3ef07a8e54c743873face9d2b2"
+SRCREV_machine:class-devupstream ?= "7fdb7c1824a1f9979d648d7ae28ac446bcee9c6e"
 PN:class-devupstream = "linux-yocto-upstream"
 KBRANCH:class-devupstream = "v6.12/base"
 
@@ -44,7 +44,7 @@ SRC_URI = "git://git.yoctoproject.org/linux-yocto.git;name=machine;branch=${KBRA
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.12;destsuffix=${KMETA};protocol=https"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "6.12.47"
+LINUX_VERSION ?= "6.12.113"
 
 PV = "${LINUX_VERSION}+git"
 

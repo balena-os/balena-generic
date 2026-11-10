@@ -1,4 +1,19 @@
 - commits:
+    - subject: update kernel to 6.12.113
+      hash: e2beefe11f588d945ef7c0226a0fad483486d6e6
+      body: |
+        Fix for CVE-2026-98432 and CVE-2026-99999
+      footer:
+        Changelog-entry: update kernel to 6.12.113
+        changelog-entry: update kernel to 6.12.113
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 2026.4.3
+  title: ""
+  date: 2026-11-10T08:38:25.663Z
+- commits:
     - subject: Update layers/meta-balena to 2699378ed65350144dc250607adfe538c5f275ac
       hash: 874ffbba31d62739e238aa878335849d57a01aa7
       body: |

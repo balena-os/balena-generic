@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.1.0+rev1
+## (2026-11-17)
+
+* update kernel to 6.18.63 to fix ACPI power button [guille-vega]
+
 # v9.1.0
 ## (2026-11-16)
 

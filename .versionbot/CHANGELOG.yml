@@ -1,4 +1,21 @@
 - commits:
+    - subject: update kernel to 6.18.63 to fix ACPI power button
+      hash: d6c351deb044fcbcc5df15f2883cbf2956006676
+      body: |
+        Bump ahead of OE-core (still on 6.18.59) to pick up the fix for
+        ACPI fixed-event power buttons not being bound to a driver, a
+        regression introduced in 6.18.57 and fixed in 6.18.60.
+      footer:
+        Changelog-entry: update kernel to 6.18.63 to fix ACPI power button
+        changelog-entry: update kernel to 6.18.63 to fix ACPI power button
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 9.1.0+rev1
+  title: ""
+  date: 2026-11-17T07:30:06.395Z
+- commits:
     - subject: Update layers/meta-balena to 6ce4cc6078d2f518a7141afc18f1a131d61e9da6
       hash: f5d371636773c5a9f10746f75d0c60559a0f7405
       body: Update layers/meta-balena
